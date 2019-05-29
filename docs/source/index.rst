@@ -11,6 +11,7 @@ Trustbloc : Interoperable Development Framework
    introduction
    architecture
    features
+   agents/msg-routing-storage
    projects
    contribution
    questions
