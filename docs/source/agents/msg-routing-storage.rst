@@ -53,6 +53,7 @@ Mediators may communicate through one or several relay networks as per their req
 
 For example, a mediator might leverage the public TOR relay network to protect the Agent's privacy, or it might simply use the internet.
 
+.. _trusted_contexts:
 
 Trusted Contexts
 ----------------

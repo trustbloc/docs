@@ -12,6 +12,7 @@ Trustbloc : Interoperable Development Framework
    architecture
    features
    agents/msg-routing-storage
+   trust-context-didcomm
    projects
    contribution
    questions
