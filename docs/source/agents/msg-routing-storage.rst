@@ -17,10 +17,10 @@ This proposal reuses, modifies, and adapts several proposals from the Hyperledge
 Specifically, this proposal builds on the foundation laid down by these proposals:
 
 * `DIF Identity Hub <https://github.com/decentralized-identity/identity-hub/blob/master/explainer.md>`_
-* `HIPE 0036 - Mediators and Relays <https://github.com/hyperledger/indy-hipe/tree/master/text/0036-mediators-and-relays>`_
+* `Aries RFC 0046: Mediators and Relays <https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0046-mediators-and-relays/README.md>`_
 * `Aries RFC 0019: Encryption Envelope <https://github.com/hyperledger/aries-rfcs/tree/master/features/0019-encryption-envelope>`_
-* `HIPE 0022 - Cross Domain Messaging <https://github.com/hyperledger/indy-hipe/tree/master/text/0022-cross-domain-messaging>`_
-* `HIPE 0013 - Wallets <https://github.com/hyperledger/indy-hipe/tree/master/text/0013-wallets>`_
+* `Aries RFC 0094: Cross Domain Messaging <https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0094-cross-domain-messaging/README.md>`_
+* `Aries RFC 0050: Wallets <https://github.com/hyperledger/aries-rfcs/blob/master/concepts/0050-wallets/README.md>`_
 
 Here is a generic, simplified view:
 
