@@ -13,6 +13,7 @@
 
 # IDE generated files
 .idea/
+.vscode/
 
 # OS generated files
 .DS_Store
