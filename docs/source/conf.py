@@ -16,12 +16,14 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
 
 # -- Project information -----------------------------------------------------
 
 project = u'trustbloc'
-copyright = u'2019, SecureKey Technologies Inc.'
 author = u'SecureKey Technologies Inc.'
+now = datetime.datetime.now()
+copyright = u'{}, {}'.format(now.year, author)
 
 # The short X.Y version
 version = u''
