@@ -1,4 +1,4 @@
-Trustbloc : Interoperable Development Framework
+TrustBloc : Interoperable Development Framework
 ===============================================
 
 .. image:: images/TrustBloc-Final.png
@@ -14,6 +14,7 @@ Trustbloc : Interoperable Development Framework
    agents/msg-routing-storage
    oauth2_priv
    projects
+   configuration_deployment
    contribution
    questions
 
