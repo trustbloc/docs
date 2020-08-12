@@ -16,12 +16,15 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import datetime
 
 # -- Project information -----------------------------------------------------
 
 project = u'trustbloc'
-copyright = u'2019, SecureKey Technologies Inc.'
 author = u'SecureKey Technologies Inc.'
+
+now = datetime.datetime.now()
+copyright = u'{}, {}'.format(now.year, author)
 
 # The short X.Y version
 version = u''
@@ -77,7 +80,6 @@ pygments_style = None
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': False,
-    'display_version': True,
     'collapse_navigation': True,
     'sticky_navigation': True,
     'display_version': True,
@@ -137,7 +139,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'trustbloc.tex', u'trustbloc Documentation',
+    (master_doc, 'trustbloc.tex', u'TrustBloc Documentation',
      u'SecureKey', 'manual'),
 ]
 
@@ -147,7 +149,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'trustbloc', u'trustbloc Documentation',
+    (master_doc, 'trustbloc', u'TrustBloc Documentation',
      [author], 1)
 ]
 
@@ -158,8 +160,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'trustbloc', u'trustbloc Documentation',
-     author, 'trustbloc', 'One line description of project.',
+    (master_doc, 'trustbloc', u'TrustBloc Documentation',
+     author, 'trustbloc', 'Open source digital identity solutions.',
      'Miscellaneous'),
 ]
 

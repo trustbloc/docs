@@ -1,6 +1,14 @@
 Projects
 ========
 
+**Edge**
+^^^^^^^^^^^^^^^^^^
+- `Edge-Adapter <https://github.com/trustbloc/edge-adapter>`__
+- `Edge-Agent <https://github.com/trustbloc/edge-agent>`__
+- `Edge-Core <https://github.com/trustbloc/edge-core>`__
+- `Edge-Sandbox <https://github.com/trustbloc/edge-sandbox>`__
+- `Edge-Service <https://github.com/trustbloc/edge-service>`__
+
 **Bloc Hub**
 ^^^^^^^^^^^^
 - `Bloc-Hub <https://trustbloc.readthedocs.io/projects/bloc-hub/en/latest/>`__
