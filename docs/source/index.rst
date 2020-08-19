@@ -14,7 +14,9 @@ TrustBloc : Interoperable Development Framework
    agents/msg-routing-storage
    oauth2_priv
    projects
-   configuration_deployment
+   vcs
+   adapters
+   wallet_chapi
    contribution
    questions
 
