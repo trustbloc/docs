@@ -179,19 +179,38 @@ TODO
 Using Edge-Service
 ******************
 
-Issue a PR Card
-===============
-TODO
+To use the demo, navigate to the `Demo Issuer <https://demo-issuer.sandbox.trustbloc.dev>`__ homepage.
+
+Then follow the steps in the videos below for their respective demonstrations.
+
+Issue a Credit Score Report
+===========================
+
+.. raw:: html
+
+         <iframe
+                width="560" 
+                height="315"
+                src="https://www.youtube.com/embed/X2i1mwyryYc"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    
 
 Issue a Driver's License
 ========================
-TODO
 
-Request the Issuance of a Driver's License
-===========================================
-TODO
+.. raw:: html
 
-
+         <iframe
+                width="560" 
+                height="315"
+                src="https://www.youtube.com/embed/Riv48wZuAcM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
 
 
 References
