@@ -51,16 +51,12 @@ Components
 DIDComm Components
 ------------------
 
-.. |DIDComm Components| image:: ./images/didcomm_component_diagram.svg
-  :width: 400px
-  :align: left
+.. image:: images/didcomm_component_diagram.svg
 
 Non-DIDComm Components
 ----------------------
 
-.. |Non-DIDComm Components| image:: ./images/nondidcomm_component_diagram.svg
-  :width: 400px
-  :align: left
+.. image:: images/nondidcomm_component_diagram.svg
 
 
 Flows
