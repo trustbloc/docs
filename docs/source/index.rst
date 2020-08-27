@@ -10,7 +10,6 @@ TrustBloc : Interoperable Development Framework
 
    introduction
    architecture
-   features
    agents/msg-routing-storage
    oauth2_priv
    projects

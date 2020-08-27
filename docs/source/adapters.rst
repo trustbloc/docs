@@ -22,7 +22,8 @@ TODO
 Deploying the RP Adapter
 ------------------------
 
-`Integration guide <https://github.com/trustbloc/edge-adapter/tree/master/docs/rp>`__
+To learn about integrating your OIDC client to a TrustBloc RP Adapter,
+read our `integration guide <https://github.com/trustbloc/edge-adapter/blob/master/docs/rp/integration/relying_parties.md>`__.
 
 Example Request
 ---------------
