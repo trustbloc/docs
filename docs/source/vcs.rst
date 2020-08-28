@@ -29,7 +29,109 @@ TrustBloc's `Edge-Service <https://github.com/trustbloc/edge-service>`__ contain
 
 Configuring the service
 =======================
-TODO
+
+Edge-Service can be used in the following modes:
+
+* Issuer
+* Verifier
+* Holder
+* Governance
+
+`Get vcs-rest from GitHub packages <https://github.com/trustbloc/edge-service/packages>`__.
+
+Configuration flags for the server::
+
+      Start vc-rest inside the edge-service
+
+      Usage:
+         vc-rest start [flags]
+
+      Flags:
+               --api-token string                     Check for bearer token in the authorization header (optional). Alternatively, this can be set with the following environment variable: VC_REST_API_TOKEN
+         -f, --backoff-factor string                If no VC is found when attempting to retrieve a VC from the EDV, this is the factor to increase the time to wait for subsequent retries after the first. Alternatively, this can be set with the following environment variable: BACKOFF-FACTOR
+         -b, --bloc-domain string                   Bloc domain
+               --database-prefix string               An optional prefix to be used when creating and retrieving underlying databases. Alternatively, this can be set with the following environment variable: DATABASE_PREFIX
+         -t, --database-type string                 The type of database to use for everything except key storage. Supported options: mem, couchdb. Alternatively, this can be set with the following environment variable: DATABASE_TYPE
+         -v, --database-url string                  The URL of the database. Not needed if using memstore. For CouchDB, include the username:password@ text if required. Alternatively, this can be set with the following environment variable: DATABASE_URL
+         -e, --edv-url string                       URL EDV instance is running on. Format: HostName:Port.
+               --governance-claims-file string        Path to governance claimsAlternatively, this can be set with the following environment variable: VC_REST_GOVERNANCE_CLAIMS_FILE
+         -h, --help                                 help for start
+         -u, --host-url string                      URL to run the vc-rest instance on. Format: HostName:Port.
+         -x, --host-url-external string             Host External Name:Port This is the URL for the host server as seen externally. If not provided, then the host url will be used here. Alternatively, this can be set with the following environment variable: VC_REST_HOST_URL_EXTERNAL
+         -i, --initial-backoff-millisec string      If no VC is found when attempting to retrieve a VC from the EDV, this is the time to wait (in milliseconds) before the first retry attempt. Alternatively, this can be set with the following environment variable: INITIAL_BACKOFF_MILLISEC
+               --kms-secrets-database-prefix string   An optional prefix to be used when creating and retrieving the underlying KMS secrets database. Alternatively, this can be set with the following environment variable: KMSSECRETS_DATABASE_PREFIX
+         -k, --kms-secrets-database-type string     The type of database to use for storage of KMS secrets. Supported options: mem, couchdb. Alternatively, this can be set with the following environment variable: KMSSECRETS_DATABASE_TYPE
+         -s, --kms-secrets-database-url string      The URL of the database. Not needed if using memstore. For CouchDB, include the username:password@ text if required. It's recommended to not use the same database as the one set in the database-url flag (or the DATABASE_URL env var) since having access to the KMS secrets may allow the host of the provider to decrypt EDV encrypted documents. Alternatively, this can be set with the following environment variable: DATABASE_URL
+         -l, --log-level string                     Logging level to set. Supported options: CRITICAL, ERROR, WARNING, INFO, DEBUG.Defaults to info if not set. Setting to debug may adversely impact performance. Alternatively, this can be set with the following environment variable: LOG_LEVEL
+         -a, --max-retries string                   If no VC is found when attempting to retrieve a VC from the EDV, this is the maximum number of times to retry retrieval. Defaults to 5 if not set. Alternatively, this can be set with the following environment variable: MAX-RETRIES
+         -m, --mode string                          Mode in which the vc-rest service will run. Possible values: ['issuer', 'verifier', 'holder', 'combined'] (default: combined).
+               --request-tokens stringArray           Tokens used for http request Alternatively, this can be set with the following environment variable: VC_REST_REQUEST_TOKENS
+               --tls-cacerts stringArray              Comma-Separated list of ca certs path.Alternatively, this can be set with the following environment variable: VC_REST_TLS_CACERTS
+               --tls-systemcertpool string            Use system certificate pool. Possible values [true] [false]. Defaults to false if not set. Alternatively, this can be set with the following environment variable: VC_REST_TLS_SYSTEMCERTPOOL
+         -r, --universal-resolver-url string        Universal Resolver instance is running on. Format: HostName:Port.
+
+
+Example: Running in Issuer Mode
+-------------------------------
+
+The following is a snippet of a Docker Compose :superscript:`TM` file showing how Edge Service can be configured.
+It makes use of environment variables declared `here <https://github.com/trustbloc/edge-sandbox/blob/master/test/bdd/fixtures/demo/.env>`__.
+
+.. code:: yaml
+
+  issuer.vcs.example.com:
+    container_name: issuer.vcs.example.com
+    image: ${VCS_IMAGE}:${VCS_IMAGE_TAG}
+    environment:
+      - VC_REST_HOST_URL=0.0.0.0:8070
+      - VC_REST_HOST_URL_EXTERNAL=https://issuer-vcs.trustbloc.local
+      - EDV_REST_HOST_URL=https://edv.trustbloc.local/encrypted-data-vaults
+      - BLOC_DOMAIN=${BLOC_DOMAIN}
+      - UNIVERSAL_RESOLVER_HOST_URL=https://did-resolver.trustbloc.local/1.0/identifiers
+      - VC_REST_MODE=issuer
+      - DATABASE_TYPE=couchdb
+      - DATABASE_URL=${COUCHDB_USERNAME}:${COUCHDB_PASSWORD}@shared.couchdb:5984
+      - DATABASE_PREFIX=issuer
+      - KMSSECRETS_DATABASE_TYPE=couchdb
+      - KMSSECRETS_DATABASE_URL=${COUCHDB_USERNAME}:${COUCHDB_PASSWORD}@shared.couchdb:5984
+      - KMSSECRETS_DATABASE_PREFIX=issuer
+      - VC_REST_TLS_CACERTS=/etc/tls/trustbloc-dev-ca.crt
+      - VC_REST_TLS_SYSTEMCERTPOOL=true
+      - VC_REST_API_TOKEN=vcs_issuer_rw_token
+      - VIRTUAL_HOST=issuer-vcs.trustbloc.local
+    ports:
+      - 8070:8070
+    entrypoint: ""
+    # wait 20 seconds for couchdb to start
+    command:  /bin/sh -c "sleep 20;/tmp/scripts/vcs_configure.sh& vc-rest start"
+    volumes:
+      - ../scripts/:/tmp/scripts #https://github.com/trustbloc/edge-sandbox/tree/master/test/bdd/fixtures/scripts
+      - ../keys/tls:/etc/tls
+    depends_on:
+      - edv.example.com
+    networks:
+      - demo-net
+
+  edv.example.com:
+    container_name: edv.example.com
+    image: ${EDV_IMAGE}:${EDV_IMAGE_TAG}
+    environment:
+      - EDV_HOST_URL=0.0.0.0:8081
+      - EDV_DATABASE_TYPE=couchdb
+      - EDV_DATABASE_URL=${COUCHDB_USERNAME}:${COUCHDB_PASSWORD}@shared.couchdb:5984
+      - EDV_DATABASE_PREFIX=edv
+      - VIRTUAL_HOST=edv.trustbloc.local
+    ports:
+      - 8081:8081
+    command: start
+    networks:
+      - demo-net
+
+
+Examples of how the other modes can be configures is available in the following repos:
+
+* `edge-sandbox <https://github.com/trustbloc/edge-sandbox/blob/master/test/bdd/fixtures/demo/docker-compose-edge-components.yml>`__
+* `edge-service <https://github.com/trustbloc/edge-service/blob/master/test/bdd/fixtures/vc-rest/docker-compose.yml>`__
 
 Deploying the service
 ======================
@@ -170,7 +272,8 @@ Try it `here <https://w3c-ccg.github.io/vc-http-api/#/Verifier/verifyCredential>
 
 Requesting a VC
 ===============
-TODO
+
+This is explained in the `Integration Guide for Relying Parties <https://github.com/trustbloc/edge-adapter/blob/master/docs/rp/integration/relying_parties.md#request-end-user-credentials>`__.
 
 Connecting to the TestNet
 *************************
