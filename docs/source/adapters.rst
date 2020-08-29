@@ -6,8 +6,8 @@ Adapters
 What is an Adapter?
 *******************
 
-TrustBloc's `Edge-Adapter <https://github.com/trustbloc/edge-adapter>`__ acts as a go-between for 
-Relying Party and Issuer components to support DIDComm operations. 
+TrustBloc's `Edge-Adapter <https://github.com/trustbloc/edge-adapter>`__ acts as a go-between for
+Relying Party and Issuer components to support DIDComm operations.
 
 RP Adapter
 ==========
@@ -49,15 +49,15 @@ Deploying the Issuer Adapter
 Components
 ===========================
 
-DIDComm Components
-------------------
+Adapter Components (CHAPI + DIDComm)
+------------------------------------
 
-.. image:: images/didcomm_component_diagram.svg
+.. image:: images/adapter_component_diagram.svg
 
-Non-DIDComm Components
-----------------------
+VCS Components (CHAPI + VC Services)
+------------------------------------
 
-.. image:: images/nondidcomm_component_diagram.svg
+.. image:: images/vcs_component_diagram.svg
 
 
 Flows
@@ -92,7 +92,7 @@ Watch the demo below.
 .. raw:: html
 
          <iframe
-                width="560" 
+                width="560"
                 height="315"
                 src="https://www.youtube.com/embed/JNUQaOwprT8"
                 frameborder="0"
@@ -100,4 +100,4 @@ Watch the demo below.
                 allowfullscreen>
         </iframe>
 
-    
+
