@@ -10,15 +10,15 @@ We use credentials everyday. A driver's license issued by the government certify
 that we are capable of operating a vehicle on the road. A Permanent Residence card
 shows the immigration status of an individual.
 
-A verifiable credential is then a document whose contents can be cryptographically proven/verified (VC-TERM_) to be true. 
+A verifiable credential is then a document whose contents can be cryptographically proven/verified (VC-TERM_) to be true.
 A VC could hold the same data that a physical credential does.
 Within the scope of TrustBloc projects, this act of verifying credentials can be done with the aid
 of technology such as digital identities and signatures. The use of digital signatures adds to the integrity
 of a credential when it is presented.
 
-Holders of verifiable credentials can generate verifiable presentations and then share these 
+Holders of verifiable credentials can generate verifiable presentations and then share these
 verifiable presentations with verifiers to prove they possess verifiable credentials with certain characteristics.
-Both verifiable credentials and verifiable presentations can be transmitted rapidly, making them more convenient 
+Both verifiable credentials and verifiable presentations can be transmitted rapidly, making them more convenient
 than their physical counterparts when trying to establish trust at a distance. (VC-DEF_)
 
 
@@ -136,6 +136,11 @@ Examples of how the other modes can be configures is available in the following 
 Deploying the service
 ======================
 TODO
+
+VCS Components (CHAPI + VC Services)
+====================================
+
+.. image:: images/vcs_component_diagram.svg
 
 Issuing a VC
 ============
@@ -270,10 +275,6 @@ More details `here <https://github.com/trustbloc/edge-service/blob/master/docs/v
 
 Try it `here <https://w3c-ccg.github.io/vc-http-api/#/Verifier/verifyCredential>`__.
 
-Requesting a VC
-===============
-
-This is explained in the `Integration Guide for Relying Parties <https://github.com/trustbloc/edge-adapter/blob/master/docs/rp/integration/relying_parties.md#request-end-user-credentials>`__.
 
 Connecting to the TestNet
 *************************
@@ -292,14 +293,14 @@ Issue a Credit Score Report
 .. raw:: html
 
          <iframe
-                width="560" 
+                width="560"
                 height="315"
                 src="https://www.youtube.com/embed/X2i1mwyryYc"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
-    
+
 
 Issue a Driver's License
 ========================
@@ -307,7 +308,7 @@ Issue a Driver's License
 .. raw:: html
 
          <iframe
-                width="560" 
+                width="560"
                 height="315"
                 src="https://www.youtube.com/embed/Riv48wZuAcM"
                 frameborder="0"

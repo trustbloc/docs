@@ -46,19 +46,10 @@ Deploying the Issuer Adapter
 `Integration guide <https://github.com/trustbloc/edge-adapter/tree/master/docs/issuer>`__
 
 
-Components
-===========================
-
 Adapter Components (CHAPI + DIDComm)
-------------------------------------
+====================================
 
 .. image:: images/adapter_component_diagram.svg
-
-VCS Components (CHAPI + VC Services)
-------------------------------------
-
-.. image:: images/vcs_component_diagram.svg
-
 
 Flows
 =====
@@ -85,7 +76,7 @@ and Credit Score (remote credential) are required.
 These are issued as VCs from a `Drivers License Issuer <https://demo-issuer.sandbox.trustbloc.dev/drivinglicense>`__ and
 a `Credit Score Issuer <https://demo-issuer.sandbox.trustbloc.dev/creditscore>`__.
 
-This uses the `Non-DIDComm <https://github.com/trustbloc/edge-sandbox/blob/master/docs/demo/sandbox_nondidcomm_playground.md>`__ flow.
+This uses the `Adapter/DIDComm <https://github.com/trustbloc/edge-sandbox/blob/master/docs/demo/sandbox_adapter_playground.md>`__ flow.
 
 Watch the demo below.
 
