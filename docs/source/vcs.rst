@@ -135,7 +135,42 @@ Examples of how the other modes can be configures is available in the following 
 
 Deploying the service
 ======================
-TODO
+
+In order to deploy Edge-Service, the following components are required.
+
+.. note::
+      An example of how these components interact together is shown `here <https://github.com/trustbloc/edge-sandbox/tree/master/test/bdd/fixtures/demo>`__.
+
+Sidetree
+--------
+
+Sidetree Fabric
+^^^^^^^^^^^^^^^
+
+.. image:: images/sandbox-deployment/docker-compose-sidetree-fabric.yml.png
+
+
+Sidetree Mock
+^^^^^^^^^^^^^
+
+.. image:: images/sandbox-deployment/docker-compose-sidetree-mock.yml.png
+
+Edge Components 
+---------------
+
+.. image:: images/sandbox-deployment/docker-compose-edge-components.yml.png
+
+DID Resolvers
+---------------
+
+.. image:: images/sandbox-deployment/docker-compose-universal-resolver.yml.png
+
+DID Registrars
+--------------
+
+.. image:: images/sandbox-deployment/docker-compose-universal-registrar.yml.png
+
+
 
 VCS Components (CHAPI + VC Services)
 ====================================
@@ -286,6 +321,24 @@ Using Edge-Service
 To use the demo, navigate to the `Demo Issuer <https://demo-issuer.sandbox.trustbloc.dev>`__ homepage.
 
 Then follow the steps in the videos below for their respective demonstrations.
+
+These demos make use of `Edge-Sandbox <https://github.com/trustbloc/edge-sandbox>`__ which is a demo environment for edge-service.
+
+Register A Wallet
+=================
+
+Be sure to register your wallet as in the video below:
+
+.. raw:: html
+
+         <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/-F9XOVJtWVs"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
 
 Issue a Credit Score Report
 ===========================
