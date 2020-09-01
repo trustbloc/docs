@@ -1,3 +1,7 @@
+[![Release](https://img.shields.io/github/release/trustbloc/bloc-docs.svg?style=flat-square)](https://github.com/trustbloc/bloc-docs/releases/latest)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/trustbloc/bloc-docs/master/LICENSE-APACHE2)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://raw.githubusercontent.com/trustbloc/bloc-docs/master/LICENSE)
+
 # bloc-docs
 
 This repository contains the assets and template files for documentation of [TrustBloc](https://github.com/trustbloc) projects.
