@@ -313,7 +313,106 @@ Try it `here <https://w3c-ccg.github.io/vc-http-api/#/Verifier/verifyCredential>
 
 Connecting to the TestNet
 *************************
-TODO
+
+Service Endpoints
+=================
+
+VC SERVICES
+-----------
+
+issuer_vcs: https://issuer.sandbox.trustbloc.dev
+
+verifier_vcs: https://verifier.sandbox.trustbloc.dev
+
+holder_vcs: https://holder.sandbox.trustbloc.dev
+
+governance_vcs: https://governance.sandbox.trustbloc.dev
+
+VC Adapters
+-----------
+
+issuer_adapter: 
+  rest: https://issuer-adapter.sandbox.trustbloc.dev
+
+  didcomm: https://issuer-adapter-didcomm.sandbox.trustbloc.dev
+
+verifier_adapter: #RP/Verifier Adapter
+  rest: https://verifier-adapter.sandbox.trustbloc.dev
+
+  didcomm: https://verifier-adapter-didcomm.sandbox.trustbloc.dev
+
+  hydra: https://verifier-adapter-hydra.sandbox.trustbloc.dev
+
+  hydra_admin: https://verifier-adapter-hydra-admin.sandbox.trustbloc.dev
+
+EDV/SDS
+-----------
+
+sds: https://sds.sandbox.trustbloc.dev
+
+resolver: https://resolver.sandbox.trustbloc.dev
+
+registrar: https://registrar.sandbox.trustbloc.dev
+
+kms: https://kms.sandbox.trustbloc.dev
+
+Wallet Mediator URL
+-------------------
+
+router: 
+  http: https://router.sandbox.trustbloc.dev
+
+  api: https://router-api.sandbox.trustbloc.dev
+
+  # ws: wss://router-ws.sandbox.trustbloc.dev
+
+router_ws: wss://router-ws.sandbox.trustbloc.dev
+
+# router_api:
+agent: https://agent.sandbox.trustbloc.dev
+
+uni_did: https://uni-did.sandbox.trustbloc.dev
+
+registrar_v1_driver: https://registrar-v1-driver.sandbox.trustbloc.dev
+
+resolver_sov_driver: https://resolver-sov-driver.sandbox.trustbloc.dev
+
+resolver_veresone_driver : https://resolver-veresone-driver.sandbox.trustbloc.dev
+
+resolver_uport_driver: https://resolver-uport-driver.sandbox.trustbloc.dev
+
+resolver_didkey_driver: https://resolver-didkey-driver.sandbox.trustbloc.dev
+
+Demo and 3rd party endpoints
+----------------------------
+demo_issuer: https://demo-issuer.sandbox.trustbloc.dev
+
+demo_verifier: https://demo-verifier.sandbox.trustbloc.dev
+
+hydra: https://hydra.sandbox.trustbloc.dev
+
+hydra_admin: https://hydra-admin.sandbox.trustbloc.dev
+
+strapi: https://strapi.sandbox.trustbloc.dev
+
+cms: https://cms.sandbox.trustbloc.dev
+
+login: https://login.sandbox.trustbloc.dev
+
+agent_resolver_urls:
+
+- trustbloc@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
+- v1@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
+- elem@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
+- sov@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
+- web@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
+- key@https://resolver.sandbox.trustbloc.dev/1.0/identifiers
+
 
 Using Edge-Service
 ******************
