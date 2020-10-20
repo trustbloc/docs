@@ -32,7 +32,7 @@ Request:
 
 	{
 	   "@id":"089a0775-7e5f-4b96-912f-25532ec6853d",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/diddoc-req"
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/diddoc-req"
 	}
 
 Response:
@@ -41,7 +41,7 @@ Response:
 
 	{
 	   "@id":"a8fb8f8f-4137-4e4e-9168-9b34f8d93fee",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/diddoc-resp",
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/diddoc-resp",
 	   "~thread":{
 		  "thid":"089a0775-7e5f-4b96-912f-25532ec6853d"
 	   },
@@ -64,7 +64,7 @@ Request:
 
 	{
 	   "@id":"1de30277-6849-4797-a9c3-e5f6449c9a17",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/create-conn-req",
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/create-conn-req",
 	   "data":{
 		  "didDoc":{
 			 <adapterDIDDoc>
@@ -78,7 +78,7 @@ Response:
 
 	{
 	   "@id":"39aefb3f-562b-410d-b992-ab88e829aae9",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/create-conn-resp",
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/create-conn-resp",
 	   "data":{
 		  "errorMsg":"<inCaseOfFailure>",
 		  "didDoc":{
@@ -100,7 +100,7 @@ Request:
 
 	{
 	   "@id":"2d8ae926-111d-4970-a8b6-376991750d0f",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/register-route-req",
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/register-route-req",
 	   "~thread":{
 		  "pthid":"089a0775-7e5f-4b96-912f-25532ec6853d"
 	   },
@@ -117,7 +117,7 @@ Response:
 
 	{
 	   "@id":"c3e8dfc0-aa84-420d-87d4-2401e2c41b7b",
-	   "@type":"https://trustbloc.github.io/blinded-routing/1.0/register-route-resp",
+	   "@type":"https://trustbloc.dev/blinded-routing/1.0/register-route-resp",
 	   "data":{
 		  "errorMsg":"<inCaseOfFailure>"
 	   }
