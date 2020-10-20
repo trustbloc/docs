@@ -10,12 +10,13 @@ TrustBloc : Interoperable Development Framework
 
    introduction
    architecture
-   agents/msg-routing-storage
-   oauth2_priv
    projects
    vcs
    adapters
    wallet_chapi
+   blinded_routing
+   agents/msg-routing-storage
+   oauth2_priv
    contribution
    questions
 
