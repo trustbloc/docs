@@ -2,7 +2,6 @@
 Adapters
 ########
 
-*******************
 What is an Adapter?
 *******************
 
@@ -45,7 +44,7 @@ Here are the flags for the server::
                         -r, --universal-resolver-url string          Universal Resolver instance is running on. Format: HostName:Port.
 
 RP Adapter
-==========
+************
 
 The Relying Party (RP) Adapter enables standard OpenID Connect flows on top of DIDComm.
 
@@ -100,7 +99,7 @@ read our `integration guide <https://github.com/trustbloc/edge-adapter/blob/mast
 
 
 Issuer Adapter
-==============
+**************
 
 This component is an intermediary to act on behalf of an Issuer to perform DIDComm related use cases.
 
@@ -147,12 +146,12 @@ Deploying the Issuer Adapter
 
 
 Adapter Components (CHAPI + DIDComm)
-====================================
+************************************
 
 .. image:: images/adapter_component_diagram.svg
 
 Flows
-=====
+*****
 
 The Evidence and Driver's License (DL) Flow
 -------------------------------------------
