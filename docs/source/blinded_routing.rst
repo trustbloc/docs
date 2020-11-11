@@ -2,19 +2,31 @@
 Blinded Routing
 ###############
 
-Note: This is a Work In Progress(WIP) Feature.
-
 Introduction
 ************
-TODO
+The Issuers and RPs can use the `TrustBloc Adapters <https://trustbloc.readthedocs.io/en/latest/adapters.html>`__ to interact
+with each other and with the Wallet using `DIDComm <https://github.com/hyperledger/aries-rfcs/tree/master/concepts/0005-didcomm>`__.
+The RP Adapter gets data from Issuer Adapter by calling its DIDComm URL and vice versa. In some cases, the Issuer wants to hide
+its identity from the RP and vice versa. The TrustBloc platforms provide Support for this through the Blinded Routing feature.
 
-The Wallet acts as an intermediary between the Router and TrustBloc Adapter (Issuer/RP).
+In Blinded Routing, the communication between TrustBloc Adapters (Issuer/RP) goes through the Router. The Wallet selects
+a Router and facilitates the creation of DIDComm connection between the Adapter (Issuer/RP) and the Router. The Adapter
+registers itself with the Router for that Adapter-Wallet combination. The DIDDocument of the Adapters would include Router's
+endpoint/keys, which would be shared with other parties to create DIDComm connection with each other.
 
 
 Flow Diagram
 ************
 
 .. image:: images/blinded_routing_flow.svg
+
+
+Components and Configurations
+*****************************
+- `Wallet <https://github.com/trustbloc/edge-agent/blob/master/docs/components/web_wallet.md#web-wallet-didcomm-flow-with-blinded-routing>`__
+- `Router <https://github.com/trustbloc/hub-router>`__
+- `Issuer Adapter <https://github.com/trustbloc/edge-adapter/blob/master/docs/issuer/issuer_integration.md#11-create-profile-api---http-post-profile>`__
+- `RP Adapter <https://github.com/trustbloc/edge-adapter/blob/master/docs/rp/integration/relying_parties.md#register-your-oidc-client>`__
 
 
 DIDComm Messages
