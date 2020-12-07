@@ -9,6 +9,10 @@ Projects
 - `Edge-Sandbox <https://github.com/trustbloc/edge-sandbox>`__
 - `Edge-Service <https://github.com/trustbloc/edge-service>`__
 
+**Agent SDK**
+^^^^^^^^^^^^
+- `Agent SDK <https://github.com/trustbloc/agent-sdk#bindings>`__
+
 **Bloc Hub**
 ^^^^^^^^^^^^
 - `Bloc-Hub <https://trustbloc.readthedocs.io/projects/bloc-hub/en/latest/>`__
