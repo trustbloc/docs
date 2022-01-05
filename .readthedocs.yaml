@@ -6,8 +6,7 @@ python:
     - method: pip
       path: .
       extra_requirements:
-        - linkify
-        - rtd
+        - myst-parser
 
 sphinx:
   builder: html
