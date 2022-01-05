@@ -12,10 +12,10 @@ We welcome contributions from anyone in the community. Follow our [community gui
 
 ## Build locally
 ```
-brew install python@3.7
-pip install sphinx
-pip install sphinx_rtd_theme
-pip install myst-parser
+brew install python@3.9
+pip3 install sphinx
+pip3 install sphinx_rtd_theme
+pip3 install myst-parser
 cd docs
 # this command will create build folder inside it html files click index.html
 make html
