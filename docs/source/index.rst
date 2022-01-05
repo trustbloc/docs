@@ -1,10 +1,5 @@
-.. TrustBloc documentation master file, created by
-   sphinx-quickstart on Wed Jan  5 07:31:08 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to TrustBloc's documentation!
-=====================================
+TrustBloc : Interoperable Development Framework
+===============================================
 
 .. image:: _static/TrustBloc-Final.png
    :width: 200px
@@ -14,10 +9,18 @@ Welcome to TrustBloc's documentation!
    :maxdepth: 1
 
    introduction.md
+   architecture.md
+   projects.md
+   vcs.md
+   adapters.md
+   wallet_chapi.md
+   blinded_routing.md
+   agents/msg-routing-storage.md
+   oauth2_priv.md
+   contribution.md
+   questions.md
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. note:: If you have questions not addressed by this documentation, please visit the :doc:`questions`
+          page for some tips on where to find additional help.
+
