@@ -10,6 +10,18 @@ This repository contains the assets and template files for documentation of [Tru
 
 We welcome contributions from anyone in the community. Follow our [community guidelines](https://github.com/trustbloc/community/blob/master/CONTRIBUTING.md) to learn how to contribute to this repository.
 
+## Build locally
+```
+brew install python@3.7
+pip install sphinx
+pip install sphinx_rtd_theme
+pip install myst-parser
+cd docs
+# this command will create build folder inside it html files click index.html
+make html
+
+```
+
 ## License
 The TrustBloc community repositories are licensed under [Apache License, Version 2.0 (Apache-2.0)](LICENSE-APACHE2).
 

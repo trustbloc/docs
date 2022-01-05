@@ -1,26 +1,23 @@
-TrustBloc : Interoperable Development Framework
-===============================================
+.. TrustBloc documentation master file, created by
+   sphinx-quickstart on Wed Jan  5 07:31:08 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-.. image:: images/TrustBloc-Final.png
+Welcome to TrustBloc's documentation!
+=====================================
+
+.. image:: _static/TrustBloc-Final.png
    :width: 200px
    :height: 200px
 
 .. toctree::
    :maxdepth: 1
 
-   introduction
-   architecture
-   projects
-   vcs
-   adapters
-   wallet_chapi
-   blinded_routing
-   agents/msg-routing-storage
-   oauth2_priv
-   contribution
-   questions
+   introduction.md
 
+Indices and tables
+==================
 
-.. note:: If you have questions not addressed by this documentation, please visit the :doc:`questions`
-          page for some tips on where to find additional help.
-
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
