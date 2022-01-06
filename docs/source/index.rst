@@ -12,6 +12,7 @@ TrustBloc : Interoperable Development Framework
    architecture.md
    projects.md
    vcs.md
+   kms.md
    adapters.md
    wallet_chapi.md
    blinded_routing.md
