@@ -19,6 +19,7 @@ TrustBloc : Interoperable Development Framework
    oauth2_priv.md
    contribution.md
    questions.md
+   orb/index.rst
 
 
 .. note:: If you have questions not addressed by this documentation, please visit the :doc:`questions`
