@@ -223,17 +223,13 @@ Set to "true" to verify latest operations against anchor origin.
 
 ## ORB_AUTH_TOKENS_DEF
 
-Authorization token definitions.
-
-## ORB_AUTH_TOKENS
-
 Contains the authorization definition for each of the REST endpoints. Format:
 
 ```
 <path-expr>|<read-token1>&<read-token2>&...>|<write-token1>&<write-token2>&...>,<path-expr>
 ```
 
-Where:
+**Where:**
 
 - path-expr contains a regular expression for a path. Path expressions are processed in the order they are specified.
 - read-token defines a token for a read (GET) operation. If not specified then authorization is not performed.
@@ -241,7 +237,7 @@ Where:
 
 If no definition is included for an endpoint then authorization is NOT performed for that endpoint.
 
-Example:
+**Example:**
 
 ```
 ORB_AUTH_TOKENS_DEF=/services/orb/outbox|admin&read|admin,/services/orb/.*|read&admin
@@ -250,6 +246,14 @@ ORB_AUTH_TOKENS_DEF=/services/orb/outbox|admin&read|admin,/services/orb/.*|read&
 - The client requires a 'read' or 'admin' token in order to view the outbox's contents
 - The client requires an 'admin' token in order to post to the outbox
 - The client requires a 'read' or 'admin' token in order to perform a GET on any endpoint starting with /services/orb/
+
+## ORB_AUTH_TOKENS
+
+Specifies the actual values of the tokens defined in ORB_AUTH_TOKENS_DEF.
+
+**Example:**
+
+admin=ADMIN_PASSWORD,read=READ_PASSWORD
 
 ## ORB_CLIENT_AUTH_TOKENS_DEF
 
@@ -307,7 +311,7 @@ The timeout for http requests. For example, '30s' for a 30 second timeout. Curre
 
 ## HTTP_DIAL_TIMEOUT
 
-The timeout for http dial. For example, '30s' for a 30 second timeout. Currently this setting only applies if you're using MongoDB.
+The timeout for HTTP dial. For example, '30s' for a 30 second timeout. Currently this setting only applies if you're using MongoDB.
 
 ## ANCHOR_EVENT_SYNC_INTERVAL
 
@@ -328,3 +332,7 @@ The maximum size of an ActivityPub actor IRI cache.
 ## ACTIVITYPUB_IRI_CACHE_EXPIRATION
 
 The expiration time of an ActivityPub actor IRI cache.
+
+## SERVER_IDLE_TIMEOUT
+
+The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout.
