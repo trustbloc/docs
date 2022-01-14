@@ -15,7 +15,7 @@ See the [latest spec](https://identity.foundation/sidetree/spec/) <span></span> 
 
 ## Sidetree Interactions
 
-![Sidetree Interactions Diagram](sidetree-interactions.png)
+![Sidetree Interactions Diagram](../_static/orb/sidetree-interactions.png)
 
 Orb node will validate each Sidetree operation as per specification. Valid operation will then be added 
 to the batch writer queue and unpublished operations store. Batch writer will then batch multiple Sidetree 
