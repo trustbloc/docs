@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="674px" preserveAspectRatio="none" style="width:549px;height:674px;background:#FFFFFF;" version="1.1" viewBox="0 0 549 674" width="549px" zoomAndPan="magnify"><defs><filter height="300%" id="f1xzxul5grk9zu" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="223.0625" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="50.2969"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="64.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="371.8906"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="64.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="541.6875"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="329.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="213" y="71.4297"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="383.8594" style="stroke:#A80036;stroke-width:1.0;" width="10" x="381" y="186.9609"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="46" x2="46" y1="40.2969" y2="630.9531"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="217.5" x2="217.5" y1="40.2969" y2="630.9531"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="386" x2="386" y1="40.2969" y2="630.9531"/><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="12" y="24.9951">Domain1</text><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="5" y="629.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="12" y="649.9482">Domain1</text><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="77" x="177.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="184.5" y="24.9951">Domain2</text><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="77" x="177.5" y="629.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="184.5" y="649.9482">Domain2</text><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="345" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="352" y="24.9951">Domain3</text><rect fill="#FEFECE" filter="url(#f1xzxul5grk9zu)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="345" y="629.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="352" y="649.9482">Domain3</text><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="223.0625" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="50.2969"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="64.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="371.8906"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="64.2656" style="stroke:#A80036;stroke-width:1.0;" width="10" x="41" y="541.6875"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="329.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="213" y="71.4297"/><rect fill="#FFFFFF" filter="url(#f1xzxul5grk9zu)" height="383.8594" style="stroke:#A80036;stroke-width:1.0;" width="10" x="381" y="186.9609"/><polygon fill="#A80036" points="201,67.4297,211,71.4297,201,75.4297,205,71.4297" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="51" x2="207" y1="71.4297" y2="71.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="58" y="66.3638">Offer activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="223" x2="265" y1="115.6953" y2="115.6953"/><line style="stroke:#A80036;stroke-width:1.0;" x1="265" x2="265" y1="115.6953" y2="128.6953"/><line style="stroke:#A80036;stroke-width:1.0;" x1="224" x2="265" y1="128.6953" y2="128.6953"/><polygon fill="#A80036" points="234,124.6953,224,128.6953,234,132.6953,230,128.6953" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="230" y="95.4966">Authenticate Domain1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="230" y="110.6294">using HTTP signature</text><polygon fill="#A80036" points="62,153.8281,52,157.8281,62,161.8281,58,157.8281" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="56" x2="212" y1="157.8281" y2="157.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="68" y="152.7622">OK</text><polygon fill="#A80036" points="369,182.9609,379,186.9609,369,190.9609,373,186.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="51" x2="375" y1="186.9609" y2="186.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="58" y="181.895">Offer activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="391" x2="433" y1="231.2266" y2="231.2266"/><line style="stroke:#A80036;stroke-width:1.0;" x1="433" x2="433" y1="231.2266" y2="244.2266"/><line style="stroke:#A80036;stroke-width:1.0;" x1="392" x2="433" y1="244.2266" y2="244.2266"/><polygon fill="#A80036" points="402,240.2266,392,244.2266,402,248.2266,398,244.2266" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="398" y="211.0278">Authenticate Domain1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="398" y="226.1606">using HTTP signature</text><polygon fill="#A80036" points="57,269.3594,47,273.3594,57,277.3594,53,273.3594" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51" x2="380" y1="273.3594" y2="273.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="63" y="268.2935">OK</text><line style="stroke:#A80036;stroke-width:1.0;" x1="223" x2="265" y1="316.125" y2="316.125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="265" x2="265" y1="316.125" y2="329.125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="224" x2="265" y1="329.125" y2="329.125"/><polygon fill="#A80036" points="234,325.125,224,329.125,234,333.125,230,329.125" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="230" y="311.0591">Authorize Domain1</text><path d="M31,286.3594 L31,341.3594 L204,341.3594 L204,296.3594 L194,286.3594 L31,286.3594 " fill="#FBFB77" filter="url(#f1xzxul5grk9zu)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M194,286.3594 L194,296.3594 L204,296.3594 L194,286.3594 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="37" y="303.4263">Authorization fails since</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="37" y="318.5591">Domain1 is not in the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="37" y="333.6919">witnessing list.</text><polygon fill="#A80036" points="62,367.8906,52,371.8906,62,375.8906,58,371.8906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="56" x2="212" y1="371.8906" y2="371.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="68" y="366.8247">Reject activity</text><polygon fill="#A80036" points="206,397.0234,216,401.0234,206,405.0234,210,401.0234" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51" x2="212" y1="401.0234" y2="401.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="58" y="395.9575">OK</text><line style="stroke:#A80036;stroke-width:1.0;" x1="51" x2="93" y1="435.1563" y2="435.1563"/><line style="stroke:#A80036;stroke-width:1.0;" x1="93" x2="93" y1="435.1563" y2="448.1563"/><line style="stroke:#A80036;stroke-width:1.0;" x1="46" x2="93" y1="448.1563" y2="448.1563"/><polygon fill="#A80036" points="56,444.1563,46,448.1563,56,452.1563,52,448.1563" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="58" y="430.0903">Log warning for Reject.</text><line style="stroke:#A80036;stroke-width:1.0;" x1="391" x2="433" y1="485.9219" y2="485.9219"/><line style="stroke:#A80036;stroke-width:1.0;" x1="433" x2="433" y1="485.9219" y2="498.9219"/><line style="stroke:#A80036;stroke-width:1.0;" x1="392" x2="433" y1="498.9219" y2="498.9219"/><polygon fill="#A80036" points="402,494.9219,392,498.9219,402,502.9219,398,498.9219" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="398" y="480.856">Authorize Domain1</text><path d="M199,456.1563 L199,511.1563 L372,511.1563 L372,466.1563 L362,456.1563 L199,456.1563 " fill="#FBFB77" filter="url(#f1xzxul5grk9zu)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M362,456.1563 L362,466.1563 L372,466.1563 L362,456.1563 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="205" y="473.2231">Authorization fails since</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="205" y="488.356">Domain1 is not in the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="205" y="503.4888">witnessing list.</text><polygon fill="#A80036" points="62,537.6875,52,541.6875,62,545.6875,58,541.6875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="56" x2="380" y1="541.6875" y2="541.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="91" x="68" y="536.6216">Reject activity</text><polygon fill="#A80036" points="374,566.8203,384,570.8203,374,574.8203,378,570.8203" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51" x2="380" y1="570.8203" y2="570.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="58" y="565.7544">OK</text><line style="stroke:#A80036;stroke-width:1.0;" x1="51" x2="93" y1="604.9531" y2="604.9531"/><line style="stroke:#A80036;stroke-width:1.0;" x1="93" x2="93" y1="604.9531" y2="617.9531"/><line style="stroke:#A80036;stroke-width:1.0;" x1="46" x2="93" y1="617.9531" y2="617.9531"/><polygon fill="#A80036" points="56,613.9531,46,617.9531,56,621.9531,52,617.9531" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="58" y="599.8872">Log warning for Reject.</text><!--MD5=[25f7987565537ac80ee68648c3fcb3b8]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+participant Domain1
+participant Domain2
+participant Domain3
+
+activate Domain1
+
+Domain1 -> Domain2: Offer activity
+
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 - -> Domain1: OK
+
+Domain1 -> Domain3: Offer activity
+
+activate Domain3
+Domain3 -> Domain3: Authenticate Domain1\nusing HTTP signature
+Domain3 - -> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> Domain2: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain2 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 - -> Domain2: OK
+deactivate Domain2
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+
+Domain3 -> Domain3: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain3 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 - -> Domain3: OK
+deactivate Domain3
+
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+@enduml
+
+@startuml
+
+
+participant Domain1
+participant Domain2
+participant Domain3
+
+activate Domain1
+
+Domain1 -> Domain2: Offer activity
+
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 - -> Domain1: OK
+
+Domain1 -> Domain3: Offer activity
+
+activate Domain3
+Domain3 -> Domain3: Authenticate Domain1\nusing HTTP signature
+Domain3 - -> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> Domain2: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain2 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 - -> Domain2: OK
+deactivate Domain2
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+
+Domain3 -> Domain3: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain3 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 - -> Domain3: OK
+deactivate Domain3
+
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+@enduml
+
+PlantUML version 1.2022.1beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

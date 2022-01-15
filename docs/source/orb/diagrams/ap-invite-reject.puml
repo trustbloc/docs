@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+actor Domain1Admin
+participant Domain1
+participant Domain2
+
+Domain1Admin -> Domain1: Post Invite
+
+activate Domain1
+
+Domain1 -> Domain1: Authenticate Domain1Admin\nusing bearer token
+
+note left
+Verify the bearer token
+of Domain1Admin.
+end note
+
+Domain1 --> Domain1Admin: OK
+
+Domain1 -> Domain2: Invite activity
+
+activate Domain2
+
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 --> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> Domain2: Authorize\nDomain1
+
+note right
+Authorization fails
+using Invite Witness
+Authorization Policy.
+end note
+
+Domain2 -> Domain1: Reject activity
+
+activate Domain1
+
+Domain1 -> Domain1: Authenticate Domain2\nusing HTTP signature
+Domain1 --> Domain2: OK
+
+deactivate Domain2
+
+Domain1 -> Domain1: Log warning for Reject.
+
+deactivate Domain1
+
+@enduml

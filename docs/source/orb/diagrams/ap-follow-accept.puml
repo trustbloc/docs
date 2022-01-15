@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+box Domain1 #White
+actor Domain1Admin
+participant Domain1
+database Domain1DB
+end box
+
+box Domain2
+participant Domain2
+database Domain2DB
+end box
+
+Domain1Admin -> Domain1: Post Follow
+
+activate Domain1
+
+Domain1 -> Domain1: Authenticate Domain1Admin\nusing bearer token
+
+Domain1 --> Domain1Admin: OK
+
+Domain1 -> Domain2: Follow activity
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 --> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> Domain2: Authorize Domain1
+
+note left
+Authorization successful using
+Follow Authorization Policy.
+end note
+
+Domain2 -> Domain2DB: Add Domain1 to\nfollowers list
+Domain2 -> Domain1: Accept activity
+
+activate Domain1
+
+Domain1 -> Domain1: Authenticate Domain2\nusing HTTP signature
+Domain1 --> Domain2: OK
+deactivate Domain2
+
+Domain1 -> Domain1: Validate Accept activity
+
+note right
+Validate the Follow activity
+embedded in the Accept activity
+against a previously posted Follow.
+end note
+
+Domain1 -> Domain1DB: Add Domain2 to following list
+
+deactivate Domain1
+
+@enduml

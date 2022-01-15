@@ -1,0 +1,59 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+participant Domain1
+participant Domain2
+participant Domain3
+
+activate Domain1
+
+Domain1 -> Domain2: Offer activity
+
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 --> Domain1: OK
+
+Domain1 -> Domain3: Offer activity
+
+activate Domain3
+Domain3 -> Domain3: Authenticate Domain1\nusing HTTP signature
+Domain3 --> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> Domain2: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain2 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 --> Domain2: OK
+deactivate Domain2
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+
+Domain3 -> Domain3: Authorize Domain1
+
+note left
+Authorization fails since
+Domain1 is not in the
+witnessing list.
+end note
+
+Domain3 -> Domain1: Reject activity
+
+activate Domain1
+Domain1 --> Domain3: OK
+deactivate Domain3
+
+Domain1 -> Domain1: Log warning for Reject.
+deactivate Domain1
+
+@enduml

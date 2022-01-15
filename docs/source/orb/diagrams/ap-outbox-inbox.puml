@@ -1,0 +1,95 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+actor Domain1Admin
+box Domain1 #White
+participant Outbox
+database OutboxDB
+queue OutboxQueue
+participant KMS1
+end box
+
+box DomainN
+participant Inbox
+database InboxDB
+queue InboxQueue
+end box
+
+Domain1Admin -> Outbox: Post Activity
+
+activate Outbox
+
+Outbox -> OutboxDB: Store Activity
+
+Outbox -> Outbox: Resolve URIs from\n"to" field"
+
+loop For each URI
+
+Outbox -> OutboxQueue: Activity message
+
+activate OutboxQueue
+
+OutboxQueue --> Outbox: ACK
+
+end loop
+
+deactivate Outbox
+
+OutboxQueue -> Outbox: Activity message
+
+note left
+An Activity message is
+processed for each URI
+in the "to" field of
+the Activity.
+end note
+
+activate Outbox
+
+deactivate OutboxQueue
+
+Outbox -> KMS1: Sign request
+
+activate KMS1
+
+KMS1 --> Outbox: signature
+
+deactivate KMS1
+
+Outbox -> Outbox: Add signature to\nHTTP header
+
+Outbox -> Inbox: Activity
+
+activate Inbox
+
+Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
+Outbox --> Inbox: actor
+
+Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
+Inbox --> Outbox: OK
+
+deactivate Outbox
+
+Inbox -> InboxQueue: Activity message
+
+activate InboxQueue
+
+InboxQueue --> Inbox: ACK
+
+deactivate Inbox
+
+InboxQueue -> Inbox: Activity message
+
+activate Inbox
+
+Inbox -> InboxDB: Store Activity
+
+Inbox -> Inbox: Authorize and\nHandle Activity
+
+Inbox --> InboxQueue: ACK
+
+deactivate InboxQueue
+
+@enduml

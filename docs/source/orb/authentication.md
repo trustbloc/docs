@@ -1,4 +1,4 @@
-# Authorization
+# Authentication
 
 ## Bearer Tokens
 
