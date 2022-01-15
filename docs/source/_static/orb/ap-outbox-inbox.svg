@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1057px" preserveAspectRatio="none" style="width:926px;height:1057px;background:#FFFFFF;" version="1.1" viewBox="0 0 926 1057" width="926px" zoomAndPan="magnify"><defs><filter height="300%" id="fcir837wgsmny" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" height="1045.7109" style="stroke:#A80036;stroke-width:1.0;" width="421.5" x="148.5" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="323.75" y="18.0669">Domain1</text><rect fill="#DDDDDD" height="1045.7109" style="stroke:#A80036;stroke-width:1.0;" width="348.5" x="572" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="68" x="712.25" y="18.0669">DomainN</text><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="183.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183" y="119.4297"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="392.4258" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183" y="352.0586"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="122.9648" style="stroke:#A80036;stroke-width:1.0;" width="10" x="434" y="259.0938"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="29.1328" style="stroke:#A80036;stroke-width:1.0;" width="10" x="532" y="438.8906"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="248.3281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="600" y="554.4219"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="124.5313" style="stroke:#A80036;stroke-width:1.0;" width="10" x="600" y="831.8828"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="173.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="859" y="773.6172"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="75.3984" style="stroke:#000000;stroke-width:2.0;" width="365.5" x="142.5" y="220.8281"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="84" x2="84" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="187.5" x2="187.5" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="330" x2="330" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="439" x2="439" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="537" x2="537" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="605" x2="605" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="767.5" x2="767.5" y1="88.2969" y2="965.4141"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="863.5" x2="863.5" y1="88.2969" y2="965.4141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="26" y="84.9951">Domain1Admin</text><ellipse cx="84" cy="15" fill="#FEFECE" filter="url(#fcir837wgsmny)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M84,23 L84,50 M71,31 L97,31 M84,50 L71,65 M84,50 L97,65 " fill="none" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="26" y="977.4092">Domain1Admin</text><ellipse cx="84" cy="990.7109" fill="#FEFECE" filter="url(#fcir837wgsmny)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M84,998.7109 L84,1025.7109 M71,1006.7109 L97,1006.7109 M84,1025.7109 L71,1040.7109 M84,1025.7109 L97,1040.7109 " fill="none" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="67" x="152.5" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="159.5" y="72.9951">Outbox</text><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="67" x="152.5" y="964.4141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="159.5" y="984.4092">Outbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="290" y="84.9951">OutboxDB</text><path d="M312,36 C312,26 330,26 330,26 C330,26 348,26 348,36 L348,62 C348,72 330,72 330,72 C330,72 312,72 312,62 L312,36 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#000000;stroke-width:1.5;"/><path d="M312,36 C312,46 330,46 330,46 C330,46 348,46 348,36 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="290" y="977.4092">OutboxDB</text><path d="M312,990.7109 C312,980.7109 330,980.7109 330,980.7109 C330,980.7109 348,980.7109 348,990.7109 L348,1016.7109 C348,1026.7109 330,1026.7109 330,1026.7109 C330,1026.7109 312,1026.7109 312,1016.7109 L312,990.7109 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#000000;stroke-width:1.5;"/><path d="M312,990.7109 C312,1000.7109 330,1000.7109 330,1000.7109 C330,1000.7109 348,1000.7109 348,990.7109 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><path d="M385,62 L493,62 C498,62 498,75.1484 498,75.1484 C498,75.1484 498,88.2969 493,88.2969 L385,88.2969 C380,88.2969 380,75.1484 380,75.1484 C380,75.1484 380,62 385,62 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M493,62 C488,62 488,75.1484 488,75.1484 C488,88.2969 493,88.2969 493,88.2969 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="385" y="79.9951">OutboxQueue</text><path d="M385,964.4141 L493,964.4141 C498,964.4141 498,977.5625 498,977.5625 C498,977.5625 498,990.7109 493,990.7109 L385,990.7109 C380,990.7109 380,977.5625 380,977.5625 C380,977.5625 380,964.4141 385,964.4141 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M493,964.4141 C488,964.4141 488,977.5625 488,977.5625 C488,990.7109 493,990.7109 493,990.7109 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="385" y="982.4092">OutboxQueue</text><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="508" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="515" y="72.9951">KMS1</text><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="508" y="964.4141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="515" y="984.4092">KMS1</text><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="576" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="583" y="72.9951">Inbox</text><rect fill="#FEFECE" filter="url(#fcir837wgsmny)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="576" y="964.4141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="583" y="984.4092">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="734.5" y="84.9951">InboxDB</text><path d="M750,36 C750,26 768,26 768,26 C768,26 786,26 786,36 L786,62 C786,72 768,72 768,72 C768,72 750,72 750,62 L750,36 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#000000;stroke-width:1.5;"/><path d="M750,36 C750,46 768,46 768,46 C768,46 786,46 786,36 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="734.5" y="977.4092">InboxDB</text><path d="M750,990.7109 C750,980.7109 768,980.7109 768,980.7109 C768,980.7109 786,980.7109 786,990.7109 L786,1016.7109 C786,1026.7109 768,1026.7109 768,1026.7109 C768,1026.7109 750,1026.7109 750,1016.7109 L750,990.7109 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#000000;stroke-width:1.5;"/><path d="M750,990.7109 C750,1000.7109 768,1000.7109 768,1000.7109 C768,1000.7109 786,1000.7109 786,990.7109 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><path d="M816.5,62 L911.5,62 C916.5,62 916.5,75.1484 916.5,75.1484 C916.5,75.1484 916.5,88.2969 911.5,88.2969 L816.5,88.2969 C811.5,88.2969 811.5,75.1484 811.5,75.1484 C811.5,75.1484 811.5,62 816.5,62 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M911.5,62 C906.5,62 906.5,75.1484 906.5,75.1484 C906.5,88.2969 911.5,88.2969 911.5,88.2969 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="816.5" y="79.9951">InboxQueue</text><path d="M816.5,964.4141 L911.5,964.4141 C916.5,964.4141 916.5,977.5625 916.5,977.5625 C916.5,977.5625 916.5,990.7109 911.5,990.7109 L816.5,990.7109 C811.5,990.7109 811.5,977.5625 811.5,977.5625 C811.5,977.5625 811.5,964.4141 816.5,964.4141 " fill="#FEFECE" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M911.5,964.4141 C906.5,964.4141 906.5,977.5625 906.5,977.5625 C906.5,990.7109 911.5,990.7109 911.5,990.7109 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="816.5" y="982.4092">InboxQueue</text><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="183.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183" y="119.4297"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="392.4258" style="stroke:#A80036;stroke-width:1.0;" width="10" x="183" y="352.0586"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="122.9648" style="stroke:#A80036;stroke-width:1.0;" width="10" x="434" y="259.0938"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="29.1328" style="stroke:#A80036;stroke-width:1.0;" width="10" x="532" y="438.8906"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="248.3281" style="stroke:#A80036;stroke-width:1.0;" width="10" x="600" y="554.4219"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="124.5313" style="stroke:#A80036;stroke-width:1.0;" width="10" x="600" y="831.8828"/><rect fill="#FFFFFF" filter="url(#fcir837wgsmny)" height="173.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="859" y="773.6172"/><polygon fill="#A80036" points="171,115.4297,181,119.4297,171,123.4297,175,119.4297" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="84" x2="177" y1="119.4297" y2="119.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="91" y="114.3638">Post Activity</text><polygon fill="#A80036" points="318,144.5625,328,148.5625,318,152.5625,322,148.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="324" y1="148.5625" y2="148.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="200" y="143.4966">Store Activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="235" y1="192.8281" y2="192.8281"/><line style="stroke:#A80036;stroke-width:1.0;" x1="235" x2="235" y1="192.8281" y2="205.8281"/><line style="stroke:#A80036;stroke-width:1.0;" x1="194" x2="235" y1="205.8281" y2="205.8281"/><polygon fill="#A80036" points="204,201.8281,194,205.8281,204,209.8281,200,205.8281" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="200" y="172.6294">Resolve URIs from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="200" y="187.7622">"to" field"</text><path d="M142.5,220.8281 L220.5,220.8281 L220.5,227.8281 L210.5,237.8281 L142.5,237.8281 L142.5,220.8281 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="75.3984" style="stroke:#000000;stroke-width:2.0;" width="365.5" x="142.5" y="220.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="157.5" y="233.895">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="92" x="235.5" y="233.0386">[For each URI]</text><polygon fill="#A80036" points="422,255.0938,432,259.0938,422,263.0938,426,259.0938" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="428" y1="259.0938" y2="259.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="200" y="254.0278">Activity message</text><polygon fill="#A80036" points="204,284.2266,194,288.2266,204,292.2266,200,288.2266" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="198" x2="433" y1="288.2266" y2="288.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="210" y="283.1606">ACK</text><polygon fill="#A80036" points="204,348.0586,194,352.0586,204,356.0586,200,352.0586" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198" x2="433" y1="352.0586" y2="352.0586"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="210" y="346.9927">Activity message</text><path d="M5,308.2266 L5,378.2266 L174,378.2266 L174,318.2266 L164,308.2266 L5,308.2266 " fill="#FBFB77" filter="url(#fcir837wgsmny)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M164,308.2266 L164,318.2266 L174,318.2266 L164,308.2266 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="11" y="325.2935">An Activity message is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="11" y="340.4263">processed for each URI</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="11" y="355.5591">in the "to" field of</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="11" y="370.6919">the Activity.</text><polygon fill="#A80036" points="520,434.8906,530,438.8906,520,442.8906,524,438.8906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="526" y1="438.8906" y2="438.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="200" y="433.8247">Sign request</text><polygon fill="#A80036" points="204,464.0234,194,468.0234,204,472.0234,200,468.0234" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="198" x2="536" y1="468.0234" y2="468.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="210" y="462.9575">signature</text><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="235" y1="512.2891" y2="512.2891"/><line style="stroke:#A80036;stroke-width:1.0;" x1="235" x2="235" y1="512.2891" y2="525.2891"/><line style="stroke:#A80036;stroke-width:1.0;" x1="194" x2="235" y1="525.2891" y2="525.2891"/><polygon fill="#A80036" points="204,521.2891,194,525.2891,204,529.2891,200,525.2891" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="200" y="492.0903">Add signature to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="200" y="507.2231">HTTP header</text><polygon fill="#A80036" points="588,550.4219,598,554.4219,588,558.4219,592,554.4219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="193" x2="594" y1="554.4219" y2="554.4219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="200" y="549.356">Activity</text><polygon fill="#A80036" points="204,609.8203,194,613.8203,204,617.8203,200,613.8203" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198" x2="599" y1="613.8203" y2="613.8203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="210" y="578.4888">Resolve actor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="210" y="593.6216">in activity</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="210" y="608.7544">using WebFinger</text><polygon fill="#A80036" points="588,638.9531,598,642.9531,588,646.9531,592,642.9531" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="193" x2="594" y1="642.9531" y2="642.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="200" y="637.8872">actor</text><line style="stroke:#A80036;stroke-width:1.0;" x1="610" x2="652" y1="702.3516" y2="702.3516"/><line style="stroke:#A80036;stroke-width:1.0;" x1="652" x2="652" y1="702.3516" y2="715.3516"/><line style="stroke:#A80036;stroke-width:1.0;" x1="611" x2="652" y1="715.3516" y2="715.3516"/><polygon fill="#A80036" points="621,711.3516,611,715.3516,621,719.3516,617,715.3516" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="617" y="667.02">Verify HTTP signature</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="617" y="682.1528">of request using</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="617" y="697.2856">public key of actor</text><polygon fill="#A80036" points="199,740.4844,189,744.4844,199,748.4844,195,744.4844" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="193" x2="599" y1="744.4844" y2="744.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="205" y="739.4185">OK</text><polygon fill="#A80036" points="847,769.6172,857,773.6172,847,777.6172,851,773.6172" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="610" x2="853" y1="773.6172" y2="773.6172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="617" y="768.5513">Activity message</text><polygon fill="#A80036" points="616,798.75,606,802.75,616,806.75,612,802.75" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="610" x2="858" y1="802.75" y2="802.75"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="622" y="797.6841">ACK</text><polygon fill="#A80036" points="621,827.8828,611,831.8828,621,835.8828,617,831.8828" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="615" x2="858" y1="831.8828" y2="831.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="627" y="826.8169">Activity message</text><polygon fill="#A80036" points="756,857.0156,766,861.0156,756,865.0156,760,861.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="610" x2="762" y1="861.0156" y2="861.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="617" y="855.9497">Store Activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="610" x2="652" y1="905.2813" y2="905.2813"/><line style="stroke:#A80036;stroke-width:1.0;" x1="652" x2="652" y1="905.2813" y2="918.2813"/><line style="stroke:#A80036;stroke-width:1.0;" x1="611" x2="652" y1="918.2813" y2="918.2813"/><polygon fill="#A80036" points="621,914.2813,611,918.2813,621,922.2813,617,918.2813" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="617" y="885.0825">Authorize and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="617" y="900.2153">Handle Activity</text><polygon fill="#A80036" points="852,943.4141,862,947.4141,852,951.4141,856,947.4141" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="610" x2="858" y1="947.4141" y2="947.4141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="617" y="942.3481">ACK</text><!--MD5=[1038c5cc96f96a4d0e5d42c16b5c29f7]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+actor Domain1Admin
+box Domain1 #White
+participant Outbox
+database OutboxDB
+queue OutboxQueue
+participant KMS1
+end box
+
+box DomainN
+participant Inbox
+database InboxDB
+queue InboxQueue
+end box
+
+Domain1Admin -> Outbox: Post Activity
+
+activate Outbox
+
+Outbox -> OutboxDB: Store Activity
+
+Outbox -> Outbox: Resolve URIs from\n"to" field"
+
+loop For each URI
+
+Outbox -> OutboxQueue: Activity message
+
+activate OutboxQueue
+
+OutboxQueue - -> Outbox: ACK
+
+end loop
+
+deactivate Outbox
+
+OutboxQueue -> Outbox: Activity message
+
+note left
+An Activity message is
+processed for each URI
+in the "to" field of
+the Activity.
+end note
+
+activate Outbox
+
+deactivate OutboxQueue
+
+Outbox -> KMS1: Sign request
+
+activate KMS1
+
+KMS1 - -> Outbox: signature
+
+deactivate KMS1
+
+Outbox -> Outbox: Add signature to\nHTTP header
+
+Outbox -> Inbox: Activity
+
+activate Inbox
+
+Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
+Outbox - -> Inbox: actor
+
+Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
+Inbox - -> Outbox: OK
+
+deactivate Outbox
+
+Inbox -> InboxQueue: Activity message
+
+activate InboxQueue
+
+InboxQueue - -> Inbox: ACK
+
+deactivate Inbox
+
+InboxQueue -> Inbox: Activity message
+
+activate Inbox
+
+Inbox -> InboxDB: Store Activity
+
+Inbox -> Inbox: Authorize and\nHandle Activity
+
+Inbox - -> InboxQueue: ACK
+
+deactivate InboxQueue
+@enduml
+
+@startuml
+
+
+actor Domain1Admin
+box Domain1 #White
+participant Outbox
+database OutboxDB
+queue OutboxQueue
+participant KMS1
+end box
+
+box DomainN
+participant Inbox
+database InboxDB
+queue InboxQueue
+end box
+
+Domain1Admin -> Outbox: Post Activity
+
+activate Outbox
+
+Outbox -> OutboxDB: Store Activity
+
+Outbox -> Outbox: Resolve URIs from\n"to" field"
+
+loop For each URI
+
+Outbox -> OutboxQueue: Activity message
+
+activate OutboxQueue
+
+OutboxQueue - -> Outbox: ACK
+
+end loop
+
+deactivate Outbox
+
+OutboxQueue -> Outbox: Activity message
+
+note left
+An Activity message is
+processed for each URI
+in the "to" field of
+the Activity.
+end note
+
+activate Outbox
+
+deactivate OutboxQueue
+
+Outbox -> KMS1: Sign request
+
+activate KMS1
+
+KMS1 - -> Outbox: signature
+
+deactivate KMS1
+
+Outbox -> Outbox: Add signature to\nHTTP header
+
+Outbox -> Inbox: Activity
+
+activate Inbox
+
+Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
+Outbox - -> Inbox: actor
+
+Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
+Inbox - -> Outbox: OK
+
+deactivate Outbox
+
+Inbox -> InboxQueue: Activity message
+
+activate InboxQueue
+
+InboxQueue - -> Inbox: ACK
+
+deactivate Inbox
+
+InboxQueue -> Inbox: Activity message
+
+activate Inbox
+
+Inbox -> InboxDB: Store Activity
+
+Inbox -> Inbox: Authorize and\nHandle Activity
+
+Inbox - -> InboxQueue: ACK
+
+deactivate InboxQueue
+@enduml
+
+PlantUML version 1.2022.1beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

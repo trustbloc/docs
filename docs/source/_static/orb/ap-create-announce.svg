@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1559px" preserveAspectRatio="none" style="width:1122px;height:1559px;background:#FFFFFF;" version="1.1" viewBox="0 0 1122 1559" width="1122px" zoomAndPan="magnify"><defs><filter height="300%" id="fw7ui1afn26l6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" height="1547.0313" style="stroke:#A80036;stroke-width:1.0;" width="383" x="14" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="170" y="18.0669">Domain1</text><rect fill="#DDDDDD" height="1547.0313" style="stroke:#A80036;stroke-width:1.0;" width="355.5" x="399" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="543.75" y="18.0669">Domain2</text><rect fill="#FFFFFF" height="1547.0313" style="stroke:#A80036;stroke-width:1.0;" width="360" x="756.5" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="65" x="901.5" y="18.0669">Domain3</text><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="286.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="118.5625"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="920.9453"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="1339.0703"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="307.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="228" y="97.4297"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="444.3906" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="220.0938"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="164.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="842.5469"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="1179.2734"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="457.6563" style="stroke:#A80036;stroke-width:1.0;" width="10" x="703.5" y="434.1563"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="179.9297" style="stroke:#A80036;stroke-width:1.0;" width="10" x="796.5" y="578.0859"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="324.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="796.5" y="1100.875"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="456.5234" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1065" y="693.6172"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="59" x2="59" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="233" x2="233" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="347" x2="347" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="443" x2="443" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="611.5" x2="611.5" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="708.5" x2="708.5" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="801.5" x2="801.5" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="969.5" x2="969.5" y1="87.4297" y2="1487.7344"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="1069.5" x2="1069.5" y1="87.4297" y2="1487.7344"/><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="18" y="52.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="25" y="72.1279">Domain1</text><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="18" y="1486.7344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="25" y="1506.7295">Domain1</text><path d="M179,61.1328 L287,61.1328 C292,61.1328 292,74.2813 292,74.2813 C292,74.2813 292,87.4297 287,87.4297 L179,87.4297 C174,87.4297 174,74.2813 174,74.2813 C174,74.2813 174,61.1328 179,61.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M287,61.1328 C282,61.1328 282,74.2813 282,74.2813 C282,87.4297 287,87.4297 287,87.4297 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="179" y="79.1279">anchor_event</text><path d="M179,1486.7344 L287,1486.7344 C292,1486.7344 292,1499.8828 292,1499.8828 C292,1499.8828 292,1513.0313 287,1513.0313 L179,1513.0313 C174,1513.0313 174,1499.8828 174,1499.8828 C174,1499.8828 174,1486.7344 179,1486.7344 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M287,1486.7344 C282,1486.7344 282,1499.8828 282,1499.8828 C282,1513.0313 287,1513.0313 287,1513.0313 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="179" y="1504.7295">anchor_event</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="302" y="84.1279">Domain1DB</text><path d="M329.5,35.1328 C329.5,25.1328 347.5,25.1328 347.5,25.1328 C347.5,25.1328 365.5,25.1328 365.5,35.1328 L365.5,61.1328 C365.5,71.1328 347.5,71.1328 347.5,71.1328 C347.5,71.1328 329.5,71.1328 329.5,61.1328 L329.5,35.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M329.5,35.1328 C329.5,45.1328 347.5,45.1328 347.5,45.1328 C347.5,45.1328 365.5,45.1328 365.5,35.1328 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="302" y="1499.7295">Domain1DB</text><path d="M329.5,1513.0313 C329.5,1503.0313 347.5,1503.0313 347.5,1503.0313 C347.5,1503.0313 365.5,1503.0313 365.5,1513.0313 L365.5,1539.0313 C365.5,1549.0313 347.5,1549.0313 347.5,1549.0313 C347.5,1549.0313 329.5,1549.0313 329.5,1539.0313 L329.5,1513.0313 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M329.5,1513.0313 C329.5,1523.0313 347.5,1523.0313 347.5,1523.0313 C347.5,1523.0313 365.5,1523.0313 365.5,1513.0313 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="77" x="403" y="52.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="410" y="72.1279">Domain2</text><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="77" x="403" y="1486.7344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="410" y="1506.7295">Domain2</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="566.5" y="84.1279">Domain2DB</text><path d="M593.5,35.1328 C593.5,25.1328 611.5,25.1328 611.5,25.1328 C611.5,25.1328 629.5,25.1328 629.5,35.1328 L629.5,61.1328 C629.5,71.1328 611.5,71.1328 611.5,71.1328 C611.5,71.1328 593.5,71.1328 593.5,61.1328 L593.5,35.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M593.5,35.1328 C593.5,45.1328 611.5,45.1328 611.5,45.1328 C611.5,45.1328 629.5,45.1328 629.5,35.1328 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="566.5" y="1499.7295">Domain2DB</text><path d="M593.5,1513.0313 C593.5,1503.0313 611.5,1503.0313 611.5,1503.0313 C611.5,1503.0313 629.5,1503.0313 629.5,1513.0313 L629.5,1539.0313 C629.5,1549.0313 611.5,1549.0313 611.5,1549.0313 C611.5,1549.0313 593.5,1549.0313 593.5,1539.0313 L593.5,1513.0313 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M593.5,1513.0313 C593.5,1523.0313 611.5,1523.0313 611.5,1523.0313 C611.5,1523.0313 629.5,1523.0313 629.5,1513.0313 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><path d="M671.5,61.1328 L745.5,61.1328 C750.5,61.1328 750.5,74.2813 750.5,74.2813 C750.5,74.2813 750.5,87.4297 745.5,87.4297 L671.5,87.4297 C666.5,87.4297 666.5,74.2813 666.5,74.2813 C666.5,74.2813 666.5,61.1328 671.5,61.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M745.5,61.1328 C740.5,61.1328 740.5,74.2813 740.5,74.2813 C740.5,87.4297 745.5,87.4297 745.5,87.4297 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="671.5" y="79.1279">anchor_2</text><path d="M671.5,1486.7344 L745.5,1486.7344 C750.5,1486.7344 750.5,1499.8828 750.5,1499.8828 C750.5,1499.8828 750.5,1513.0313 745.5,1513.0313 L671.5,1513.0313 C666.5,1513.0313 666.5,1499.8828 666.5,1499.8828 C666.5,1499.8828 666.5,1486.7344 671.5,1486.7344 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M745.5,1486.7344 C740.5,1486.7344 740.5,1499.8828 740.5,1499.8828 C740.5,1513.0313 745.5,1513.0313 745.5,1513.0313 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="671.5" y="1504.7295">anchor_2</text><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="760.5" y="52.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="767.5" y="72.1279">Domain3</text><rect fill="#FEFECE" filter="url(#fw7ui1afn26l6)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="78" x="760.5" y="1486.7344"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="767.5" y="1506.7295">Domain3</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="921.5" y="84.1279">Domain3_db</text><path d="M951.5,35.1328 C951.5,25.1328 969.5,25.1328 969.5,25.1328 C969.5,25.1328 987.5,25.1328 987.5,35.1328 L987.5,61.1328 C987.5,71.1328 969.5,71.1328 969.5,71.1328 C969.5,71.1328 951.5,71.1328 951.5,61.1328 L951.5,35.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M951.5,35.1328 C951.5,45.1328 969.5,45.1328 969.5,45.1328 C969.5,45.1328 987.5,45.1328 987.5,35.1328 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="921.5" y="1499.7295">Domain3_db</text><path d="M951.5,1513.0313 C951.5,1503.0313 969.5,1503.0313 969.5,1503.0313 C969.5,1503.0313 987.5,1503.0313 987.5,1513.0313 L987.5,1539.0313 C987.5,1549.0313 969.5,1549.0313 969.5,1549.0313 C969.5,1549.0313 951.5,1549.0313 951.5,1539.0313 L951.5,1513.0313 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#000000;stroke-width:1.5;"/><path d="M951.5,1513.0313 C951.5,1523.0313 969.5,1523.0313 969.5,1523.0313 C969.5,1523.0313 987.5,1523.0313 987.5,1513.0313 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><path d="M1032.5,61.1328 L1107.5,61.1328 C1112.5,61.1328 1112.5,74.2813 1112.5,74.2813 C1112.5,74.2813 1112.5,87.4297 1107.5,87.4297 L1032.5,87.4297 C1027.5,87.4297 1027.5,74.2813 1027.5,74.2813 C1027.5,74.2813 1027.5,61.1328 1032.5,61.1328 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M1107.5,61.1328 C1102.5,61.1328 1102.5,74.2813 1102.5,74.2813 C1102.5,87.4297 1107.5,87.4297 1107.5,87.4297 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1032.5" y="79.1279">anchor_3</text><path d="M1032.5,1486.7344 L1107.5,1486.7344 C1112.5,1486.7344 1112.5,1499.8828 1112.5,1499.8828 C1112.5,1499.8828 1112.5,1513.0313 1107.5,1513.0313 L1032.5,1513.0313 C1027.5,1513.0313 1027.5,1499.8828 1027.5,1499.8828 C1027.5,1499.8828 1027.5,1486.7344 1032.5,1486.7344 " fill="#FEFECE" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:2.0;"/><path d="M1107.5,1486.7344 C1102.5,1486.7344 1102.5,1499.8828 1102.5,1499.8828 C1102.5,1513.0313 1107.5,1513.0313 1107.5,1513.0313 " fill="none" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="1032.5" y="1504.7295">anchor_3</text><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="286.4609" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="118.5625"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="920.9453"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="54" y="1339.0703"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="307.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="228" y="97.4297"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="444.3906" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="220.0938"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="164.7969" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="842.5469"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="130.6641" style="stroke:#A80036;stroke-width:1.0;" width="10" x="438.5" y="1179.2734"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="457.6563" style="stroke:#A80036;stroke-width:1.0;" width="10" x="703.5" y="434.1563"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="179.9297" style="stroke:#A80036;stroke-width:1.0;" width="10" x="796.5" y="578.0859"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="324.5938" style="stroke:#A80036;stroke-width:1.0;" width="10" x="796.5" y="1100.875"/><rect fill="#FFFFFF" filter="url(#fw7ui1afn26l6)" height="456.5234" style="stroke:#A80036;stroke-width:1.0;" width="10" x="1065" y="693.6172"/><polygon fill="#A80036" points="75,114.5625,65,118.5625,75,122.5625,71,118.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="69" x2="227" y1="118.5625" y2="118.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="81" y="113.4966">AnchorEvent message</text><line style="stroke:#A80036;stroke-width:1.0;" x1="64" x2="106" y1="177.9609" y2="177.9609"/><line style="stroke:#A80036;stroke-width:1.0;" x1="106" x2="106" y1="177.9609" y2="190.9609"/><line style="stroke:#A80036;stroke-width:1.0;" x1="65" x2="106" y1="190.9609" y2="190.9609"/><polygon fill="#A80036" points="75,186.9609,65,190.9609,75,194.9609,71,190.9609" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="71" y="142.6294">Batch Writer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="65" x="71" y="157.7622">processes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="71" y="172.895">AnchorEvent</text><polygon fill="#A80036" points="426.5,216.0938,436.5,220.0938,426.5,224.0938,430.5,220.0938" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="64" x2="432.5" y1="220.0938" y2="220.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="71" y="215.0278">Create activity</text><path d="M5,233.0938 L5,288.0938 L110,288.0938 L110,243.0938 L100,233.0938 L5,233.0938 " fill="#FBFB77" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M100,233.0938 L100,243.0938 L110,243.0938 L100,233.0938 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="11" y="250.1606">Post Create</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="11" y="265.2935">to servers in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="11" y="280.4263">followers list.</text><line style="stroke:#A80036;stroke-width:1.0;" x1="448.5" x2="490.5" y1="333.7578" y2="333.7578"/><line style="stroke:#A80036;stroke-width:1.0;" x1="490.5" x2="490.5" y1="333.7578" y2="346.7578"/><line style="stroke:#A80036;stroke-width:1.0;" x1="449.5" x2="490.5" y1="346.7578" y2="346.7578"/><polygon fill="#A80036" points="459.5,342.7578,449.5,346.7578,459.5,350.7578,455.5,346.7578" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="455.5" y="313.5591">Authenticate Domain1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="455.5" y="328.6919">using HTTP signature</text><polygon fill="#A80036" points="75,371.8906,65,375.8906,75,379.8906,71,375.8906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="69" x2="437.5" y1="375.8906" y2="375.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="81" y="370.8247">OK</text><polygon fill="#A80036" points="221,401.0234,231,405.0234,221,409.0234,225,405.0234" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="59" x2="227" y1="405.0234" y2="405.0234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="66" y="399.9575">ACK</text><polygon fill="#A80036" points="691.5,430.1563,701.5,434.1563,691.5,438.1563,695.5,434.1563" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="448.5" x2="697.5" y1="434.1563" y2="434.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="455.5" y="429.0903">AnchorEvent</text><polygon fill="#A80036" points="459.5,502.1211,449.5,506.1211,459.5,510.1211,455.5,506.1211" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="453.5" x2="702.5" y1="506.1211" y2="506.1211"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="465.5" y="501.0552">ACK</text><path d="M283,447.1563 L283,547.1563 L429,547.1563 L429,457.1563 L419,447.1563 L283,447.1563 " fill="#FBFB77" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M419,447.1563 L419,457.1563 L429,457.1563 L419,447.1563 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="289" y="464.2231">The AnchorEvent in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119" x="289" y="479.356">the Create activity</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="289" y="494.4888">is posted to the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="289" y="509.6216">anchor queue to be</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="289" y="524.7544">processed by the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="289" y="539.8872">Observer.</text><polygon fill="#A80036" points="784.5,574.0859,794.5,578.0859,784.5,582.0859,788.5,578.0859" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="448.5" x2="790.5" y1="578.0859" y2="578.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="455.5" y="573.02">Announce activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="806.5" x2="848.5" y1="622.3516" y2="622.3516"/><line style="stroke:#A80036;stroke-width:1.0;" x1="848.5" x2="848.5" y1="622.3516" y2="635.3516"/><line style="stroke:#A80036;stroke-width:1.0;" x1="807.5" x2="848.5" y1="635.3516" y2="635.3516"/><polygon fill="#A80036" points="817.5,631.3516,807.5,635.3516,817.5,639.3516,813.5,635.3516" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="813.5" y="602.1528">Authenticate Domain2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="813.5" y="617.2856">using HTTP signature</text><polygon fill="#A80036" points="454.5,660.4844,444.5,664.4844,454.5,668.4844,450.5,664.4844" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="448.5" x2="795.5" y1="664.4844" y2="664.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="460.5" y="659.4185">OK</text><polygon fill="#A80036" points="1053,689.6172,1063,693.6172,1053,697.6172,1057,693.6172" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="806.5" x2="1059" y1="693.6172" y2="693.6172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="813.5" y="688.5513">AnchorEvent</text><polygon fill="#A80036" points="812.5,754.0156,802.5,758.0156,812.5,762.0156,808.5,758.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="806.5" x2="1064" y1="758.0156" y2="758.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="818.5" y="752.9497">ACK</text><path d="M599,706.6172 L599,791.6172 L787,791.6172 L787,716.6172 L777,706.6172 L599,706.6172 " fill="#FBFB77" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M777,706.6172 L777,716.6172 L787,716.6172 L777,706.6172 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="605" y="723.6841">The AnchorEvent in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="605" y="738.8169">the Announce activity</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="605" y="753.9497">is posted to the anchor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="605" y="769.0825">queue to be processed by</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="605" y="784.2153">the Observer.</text><polygon fill="#A80036" points="459.5,838.5469,449.5,842.5469,459.5,846.5469,455.5,842.5469" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="453.5" x2="702.5" y1="842.5469" y2="842.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="465.5" y="837.481">AnchorEvent</text><path d="M284,806.2813 L284,861.2813 L429,861.2813 L429,816.2813 L419,806.2813 L284,806.2813 " fill="#FBFB77" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M419,806.2813 L419,816.2813 L429,816.2813 L419,806.2813 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="290" y="823.3481">The AnchorEvent is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="290" y="838.481">processed by the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="290" y="853.6138">Observer.</text><polygon fill="#A80036" points="696.5,887.8125,706.5,891.8125,696.5,895.8125,700.5,891.8125" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="448.5" x2="702.5" y1="891.8125" y2="891.8125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="455.5" y="886.7466">ACK</text><polygon fill="#A80036" points="75,916.9453,65,920.9453,75,924.9453,71,920.9453" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="69" x2="437.5" y1="920.9453" y2="920.9453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="81" y="915.8794">Like activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="64" x2="106" y1="965.2109" y2="965.2109"/><line style="stroke:#A80036;stroke-width:1.0;" x1="106" x2="106" y1="965.2109" y2="978.2109"/><line style="stroke:#A80036;stroke-width:1.0;" x1="65" x2="106" y1="978.2109" y2="978.2109"/><polygon fill="#A80036" points="75,974.2109,65,978.2109,75,982.2109,71,978.2109" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="71" y="945.0122">Authenticate Domain2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="71" y="960.145">using HTTP signature</text><polygon fill="#A80036" points="431.5,1003.3438,441.5,1007.3438,431.5,1011.3438,435.5,1007.3438" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="437.5" y1="1007.3438" y2="1007.3438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="71" y="1002.2778">OK</text><polygon fill="#A80036" points="335.5,1047.6094,345.5,1051.6094,335.5,1055.6094,339.5,1051.6094" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="59" x2="341.5" y1="1051.6094" y2="1051.6094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="66" y="1031.4106">Add Domain2 to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="66" y="1046.5435">anchor links DB</text><polygon fill="#A80036" points="817.5,1096.875,807.5,1100.875,817.5,1104.875,813.5,1100.875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="811.5" x2="1064" y1="1100.875" y2="1100.875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="823.5" y="1095.8091">AnchorEvent</text><path d="M642,1064.6094 L642,1119.6094 L787,1119.6094 L787,1074.6094 L777,1064.6094 L642,1064.6094 " fill="#FBFB77" filter="url(#fw7ui1afn26l6)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M777,1064.6094 L777,1074.6094 L787,1074.6094 L777,1064.6094 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="648" y="1081.6763">The AnchorEvent is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="648" y="1096.8091">processed by the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="648" y="1111.9419">Observer.</text><polygon fill="#A80036" points="1058,1146.1406,1068,1150.1406,1058,1154.1406,1062,1150.1406" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="806.5" x2="1064" y1="1150.1406" y2="1150.1406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="813.5" y="1145.0747">ACK</text><polygon fill="#A80036" points="459.5,1175.2734,449.5,1179.2734,459.5,1183.2734,455.5,1179.2734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="453.5" x2="795.5" y1="1179.2734" y2="1179.2734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="465.5" y="1174.2075">Like activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="448.5" x2="490.5" y1="1223.5391" y2="1223.5391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="490.5" x2="490.5" y1="1223.5391" y2="1236.5391"/><line style="stroke:#A80036;stroke-width:1.0;" x1="449.5" x2="490.5" y1="1236.5391" y2="1236.5391"/><polygon fill="#A80036" points="459.5,1232.5391,449.5,1236.5391,459.5,1240.5391,455.5,1236.5391" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="455.5" y="1203.3403">Authenticate Domain3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="455.5" y="1218.4731">using HTTP signature</text><polygon fill="#A80036" points="784.5,1261.6719,794.5,1265.6719,784.5,1269.6719,788.5,1265.6719" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="448.5" x2="790.5" y1="1265.6719" y2="1265.6719"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="455.5" y="1260.606">OK</text><polygon fill="#A80036" points="599.5,1305.9375,609.5,1309.9375,599.5,1313.9375,603.5,1309.9375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="443.5" x2="605.5" y1="1309.9375" y2="1309.9375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="450.5" y="1289.7388">Add Domain3 to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="450.5" y="1304.8716">anchor links DB</text><polygon fill="#A80036" points="75,1335.0703,65,1339.0703,75,1343.0703,71,1339.0703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="69" x2="795.5" y1="1339.0703" y2="1339.0703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="81" y="1334.0044">Like activity</text><line style="stroke:#A80036;stroke-width:1.0;" x1="64" x2="106" y1="1383.3359" y2="1383.3359"/><line style="stroke:#A80036;stroke-width:1.0;" x1="106" x2="106" y1="1383.3359" y2="1396.3359"/><line style="stroke:#A80036;stroke-width:1.0;" x1="65" x2="106" y1="1396.3359" y2="1396.3359"/><polygon fill="#A80036" points="75,1392.3359,65,1396.3359,75,1400.3359,71,1396.3359" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="71" y="1363.1372">Authenticate Domain3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="71" y="1378.27">using HTTP signature</text><polygon fill="#A80036" points="789.5,1421.4688,799.5,1425.4688,789.5,1429.4688,793.5,1425.4688" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="64" x2="795.5" y1="1425.4688" y2="1425.4688"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="71" y="1420.4028">OK</text><polygon fill="#A80036" points="335.5,1465.7344,345.5,1469.7344,335.5,1473.7344,339.5,1469.7344" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="59" x2="341.5" y1="1469.7344" y2="1469.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87" x="66" y="1449.5356">Add Domain3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="115" x="66" y="1464.6685">to anchor links DB</text><!--MD5=[5abf0dcdaa6221e590558be38ce3a22f]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+box Domain1 #White
+participant Domain1
+queue anchor_event
+database Domain1DB
+end box
+
+box Domain2
+participant Domain2
+database Domain2DB
+queue anchor_2
+end box
+
+box Domain3 #White
+participant Domain3
+database Domain3_db
+queue anchor_3
+end box
+
+activate anchor_event
+anchor_event -> Domain1: AnchorEvent message
+
+activate Domain1
+Domain1 -> Domain1: Batch Writer\nprocesses\nAnchorEvent
+Domain1 -> Domain2: Create activity
+note over Domain1
+Post Create
+to servers in
+followers list.
+end note
+
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 - -> Domain1: OK
+
+Domain1 - -> anchor_event:ACK
+
+deactivate anchor_event
+
+deactivate Domain1
+
+Domain2 -> anchor_2: AnchorEvent
+
+activate anchor_2
+
+anchor_2 - -> Domain2: ACK
+
+note left
+The AnchorEvent in
+the Create activity
+is posted to the
+anchor queue to be
+processed by the
+Observer.
+end note
+
+Domain2 -> Domain3: Announce activity
+
+activate Domain3
+
+Domain3 -> Domain3: Authenticate Domain2\nusing HTTP signature
+Domain3 - -> Domain2: OK
+
+deactivate Domain2
+
+Domain3 -> anchor_3: AnchorEvent
+
+activate anchor_3
+anchor_3 - -> Domain3: ACK
+
+deactivate Domain3
+
+note left
+The AnchorEvent in
+the Announce activity
+is posted to the anchor
+queue to be processed by
+the Observer.
+end note
+
+anchor_2 -> Domain2: AnchorEvent
+
+note left
+The AnchorEvent is
+processed by the
+Observer.
+end note
+
+activate Domain2
+
+Domain2 - -> anchor_2: ACK
+
+deactivate anchor_2
+
+Domain2 -> Domain1: Like activity
+
+activate Domain1
+Domain1 -> Domain1: Authenticate Domain2\nusing HTTP signature
+Domain1 - -> Domain2: OK
+
+deactivate Domain2
+
+Domain1 -> Domain1DB: Add Domain2 to\nanchor links DB
+deactivate Domain1
+
+anchor_3 -> Domain3: AnchorEvent
+
+activate Domain3
+
+note left
+The AnchorEvent is
+processed by the
+Observer.
+end note
+
+Domain3 - -> anchor_3: ACK
+
+deactivate anchor_3
+
+Domain3 -> Domain2: Like activity
+
+activate Domain2
+
+Domain2 -> Domain2: Authenticate Domain3\nusing HTTP signature
+Domain2 - -> Domain3: OK
+
+Domain2 -> Domain2DB: Add Domain3 to\nanchor links DB
+
+deactivate Domain2
+
+Domain3 -> Domain1: Like activity
+
+activate Domain1
+Domain1 -> Domain1: Authenticate Domain3\nusing HTTP signature
+Domain1 - -> Domain3: OK
+
+deactivate Domain3
+
+Domain1 -> Domain1DB: Add Domain3\nto anchor links DB
+deactivate Domain1
+@enduml
+
+@startuml
+
+
+box Domain1 #White
+participant Domain1
+queue anchor_event
+database Domain1DB
+end box
+
+box Domain2
+participant Domain2
+database Domain2DB
+queue anchor_2
+end box
+
+box Domain3 #White
+participant Domain3
+database Domain3_db
+queue anchor_3
+end box
+
+activate anchor_event
+anchor_event -> Domain1: AnchorEvent message
+
+activate Domain1
+Domain1 -> Domain1: Batch Writer\nprocesses\nAnchorEvent
+Domain1 -> Domain2: Create activity
+note over Domain1
+Post Create
+to servers in
+followers list.
+end note
+
+activate Domain2
+Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
+Domain2 - -> Domain1: OK
+
+Domain1 - -> anchor_event:ACK
+
+deactivate anchor_event
+
+deactivate Domain1
+
+Domain2 -> anchor_2: AnchorEvent
+
+activate anchor_2
+
+anchor_2 - -> Domain2: ACK
+
+note left
+The AnchorEvent in
+the Create activity
+is posted to the
+anchor queue to be
+processed by the
+Observer.
+end note
+
+Domain2 -> Domain3: Announce activity
+
+activate Domain3
+
+Domain3 -> Domain3: Authenticate Domain2\nusing HTTP signature
+Domain3 - -> Domain2: OK
+
+deactivate Domain2
+
+Domain3 -> anchor_3: AnchorEvent
+
+activate anchor_3
+anchor_3 - -> Domain3: ACK
+
+deactivate Domain3
+
+note left
+The AnchorEvent in
+the Announce activity
+is posted to the anchor
+queue to be processed by
+the Observer.
+end note
+
+anchor_2 -> Domain2: AnchorEvent
+
+note left
+The AnchorEvent is
+processed by the
+Observer.
+end note
+
+activate Domain2
+
+Domain2 - -> anchor_2: ACK
+
+deactivate anchor_2
+
+Domain2 -> Domain1: Like activity
+
+activate Domain1
+Domain1 -> Domain1: Authenticate Domain2\nusing HTTP signature
+Domain1 - -> Domain2: OK
+
+deactivate Domain2
+
+Domain1 -> Domain1DB: Add Domain2 to\nanchor links DB
+deactivate Domain1
+
+anchor_3 -> Domain3: AnchorEvent
+
+activate Domain3
+
+note left
+The AnchorEvent is
+processed by the
+Observer.
+end note
+
+Domain3 - -> anchor_3: ACK
+
+deactivate anchor_3
+
+Domain3 -> Domain2: Like activity
+
+activate Domain2
+
+Domain2 -> Domain2: Authenticate Domain3\nusing HTTP signature
+Domain2 - -> Domain3: OK
+
+Domain2 -> Domain2DB: Add Domain3 to\nanchor links DB
+
+deactivate Domain2
+
+Domain3 -> Domain1: Like activity
+
+activate Domain1
+Domain1 -> Domain1: Authenticate Domain3\nusing HTTP signature
+Domain1 - -> Domain3: OK
+
+deactivate Domain3
+
+Domain1 -> Domain1DB: Add Domain3\nto anchor links DB
+deactivate Domain1
+@enduml
+
+PlantUML version 1.2022.1beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

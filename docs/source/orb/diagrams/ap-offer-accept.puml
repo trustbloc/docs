@@ -1,0 +1,108 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'autonumber
+
+box Domain1 #White
+participant Domain1
+queue anchor_event
+end box
+
+box Domain2
+participant Domain2
+participant VCT2
+end box
+
+box Domain3 #White
+participant Domain3
+participant VCT3
+end box
+
+activate Domain1
+Domain1 -> Domain2: Offer activity
+
+activate Domain2
+
+Domain2 -> Domain2: Authenticate\nDomain1\nusing HTTP signature
+Domain2 --> Domain1: OK
+Domain2 -> Domain2: Authorize\nDomain1
+
+note left
+Authorization successful
+since Domain1 is in the
+witnessing list.
+end note
+
+Domain1 -> Domain3: Offer activity
+
+activate Domain3
+
+Domain3 -> Domain3: Authenticate\nDomain1\nusing HTTP signature
+
+Domain3 --> Domain1: OK
+
+deactivate Domain1
+
+Domain2 -> VCT2: Add VCT
+activate VCT2
+VCT2 --> Domain2: OK
+deactivate VCT2
+Domain2 -> Domain1: Accept activity
+
+activate Domain1
+Domain1 -> Domain1: Authenticate\nDomain2\nusing HTTP signature
+
+Domain1 --> Domain2: OK
+
+deactivate Domain2
+
+
+Domain1 -> Domain1: Add proof from Domain3\nand check Witness Policy
+note left
+We don't have enough
+proofs (according to
+Witness Policy).
+end note
+
+deactivate Domain1
+
+Domain3 -> Domain3: Authorize\nDomain1
+
+note left
+Authorization successful since
+Domain1 is in the witnessing list.
+end note
+
+Domain3 -> VCT3: Add to VCT
+activate VCT3
+VCT3 --> Domain3: OK
+deactivate VCT3
+Domain3 -> Domain1: Accept activity
+
+activate Domain1
+
+Domain1 --> Domain3: OK
+
+deactivate Domain3
+
+Domain1 -> Domain1: Add proof from Domain3\nand check Witness Policy
+
+note left
+We have enough proofs
+according Witness Policy.
+end note
+
+Domain1 -> anchor_event: AnchorEvent message
+note left
+Construct AnchorEvent with
+proofs from Domain1 and
+Domain2 and post to
+anchor_event queue, which
+is consumed by Batch Writer.
+end note
+
+anchor_event --> Domain1: ACK
+
+deactivate Domain1
+
+@enduml
