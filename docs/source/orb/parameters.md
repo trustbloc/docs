@@ -336,3 +336,7 @@ The expiration time of an ActivityPub actor IRI cache.
 ## SERVER_IDLE_TIMEOUT
 
 The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout.
+
+## WITNESS_POLICY_CACHE_EXPIRATION
+
+The expiration time(period) of witness policy cache. Default value is 30s.

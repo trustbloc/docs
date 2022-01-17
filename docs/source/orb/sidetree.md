@@ -24,7 +24,7 @@ operations together and store them in Sidetree batch files as per
 
 Next, Sidetree batch file information will be stored into anchor index and anchor index will be witnessed 
 as per witness policy. Observer will process witnessed anchor index and Sidetree batches as per 
-[Sidetree transaction operation processing] (https://identity.foundation/sidetree/spec/#transaction-operation-processing) 
+[Sidetree transaction operation processing](https://identity.foundation/sidetree/spec/#transaction-operation-processing) 
 and store DID operations into operations store.  It will delete observed DID operation from unpublished operation store.
 DID will be resolved from stored DID operations.
 
