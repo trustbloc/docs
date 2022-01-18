@@ -1,6 +1,7 @@
 # Metrics
 
-An KMS server records performance metrics at each subsystem. A [Prometheus](https://prometheus.io/) server may be used to periodically read the metrics at the URL `KMS_METRICS_HOST/metrics`. Below are the metrics defined at each subsystem.
+KMS server records performance metrics at each subsystem. A [Prometheus](https://prometheus.io/) server may be used to
+periodically read the metrics at the URL `KMS_METRICS_HOST/metrics`. Below are the metrics defined at each subsystem.
 
 ## Crypto
 
