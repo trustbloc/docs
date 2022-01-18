@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="928px" preserveAspectRatio="none" style="width:1061px;height:928px;background:#FFFFFF;" version="1.1" viewBox="0 0 1061 928" width="1061px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ep9vqkwk1esn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[09cebf8940f732fa2133abd0579f057b]
+cluster Domain1--><rect fill="#FFFFFF" filter="url(#f1ep9vqkwk1esn)" height="909" style="stroke:#000000;stroke-width:1.5;" width="836" x="7" y="7"/><path d="M88,7 L88,16.2969 L78,26.2969 L7,26.2969 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="10" y="20.9951">Domain1</text><!--MD5=[d634f2550f9f84f8762d437d8439690d]
+entity casdb--><path d="M44.5,848 C44.5,838 76,838 76,838 C76,838 107.5,838 107.5,848 L107.5,889.5938 C107.5,899.5938 76,899.5938 76,899.5938 C76,899.5938 44.5,899.5938 44.5,889.5938 L44.5,848 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#000000;stroke-width:1.5;"/><path d="M44.5,848 C44.5,858 76,858 76,858 C76,858 107.5,858 107.5,848 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="54.5" y="874.9951">CAS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="54.5" y="891.292">(local)</text><!--MD5=[d73fd630ced0fe73a4ad473b74a33a42]
+entity ipfs--><path d="M143,848 C143,838 173,838 173,838 C173,838 203,838 203,848 L203,889.5938 C203,899.5938 173,899.5938 173,899.5938 C173,899.5938 143,899.5938 143,889.5938 L143,848 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#000000;stroke-width:1.5;"/><path d="M143,848 C143,858 173,858 173,858 C173,858 203,858 203,848 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="153" y="874.9951">CAS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="153" y="891.292">(IPFS)</text><!--MD5=[9b3a966946ebcb62708be9131288b6cf]
+entity opdb--><path d="M507,724 C507,714 557,714 557,714 C557,714 607,714 607,724 L607,749.2969 C607,759.2969 557,759.2969 557,759.2969 C557,759.2969 507,759.2969 507,749.2969 L507,724 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#000000;stroke-width:1.5;"/><path d="M507,724 C507,734 557,734 557,734 C557,734 607,734 607,724 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="517" y="750.9951">Operations</text><!--MD5=[9b91fbdfe12edcc9101cd9a7a04d0dad]
+entity txndb--><path d="M102.5,226.5 C102.5,216.5 129,216.5 129,216.5 C129,216.5 155.5,216.5 155.5,226.5 L155.5,268.0938 C155.5,278.0938 129,278.0938 129,278.0938 C129,278.0938 102.5,278.0938 102.5,268.0938 L102.5,226.5 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#000000;stroke-width:1.5;"/><path d="M102.5,226.5 C102.5,236.5 129,236.5 129,236.5 C129,236.5 155.5,236.5 155.5,226.5 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="112.5" y="253.4951">DID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="112.5" y="269.792">Txns</text><!--MD5=[31db30e5baccdfa6123806a4100c9f5b]
+entity apdb--><path d="M341,235 C341,225 385,225 385,225 C385,225 429,225 429,235 L429,260.2969 C429,270.2969 385,270.2969 385,270.2969 C385,270.2969 341,270.2969 341,260.2969 L341,235 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#000000;stroke-width:1.5;"/><path d="M341,235 C341,245 385,245 385,245 C385,245 429,245 429,235 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="351" y="261.9951">Activities</text><!--MD5=[3b28542fe38a78e3c99147f79f52076e]
+entity apoutbox--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="123" x="619.5" y="386"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="722.5" y="391"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="720.5" y="393"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="720.5" y="397"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="634.5" y="418.9951">ActivityPub</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="634.5" y="435.292">Outbox</text><!--MD5=[58d9bd7cb9f8a2e5fd76962552a117eb]
+entity apinbox--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="123" x="650.5" y="61"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="753.5" y="66"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="751.5" y="68"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="751.5" y="72"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="665.5" y="93.9951">ActivityPub</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="665.5" y="110.292">Inbox</text><!--MD5=[aca47b54c1c1bb37bcb57798aa7419aa]
+entity aphandler--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="123" x="550.5" y="216"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="653.5" y="221"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="651.5" y="223"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="651.5" y="227"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="565.5" y="248.9951">ActivityPub</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="565.5" y="265.292">Handler</text><!--MD5=[34ba27c2a177ac2890ff5d899318f8c6]
+entity apinbox_rest--><ellipse cx="818" cy="92.5" fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="795" y="122.4951">HTTPS</text><!--MD5=[993f000e49d2dd190541e7fe63ba4400]
+entity batch_writer--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="86" x="23" y="61"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="89" y="66"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="87" y="68"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="87" y="72"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="38" y="93.9951">Batch</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="38" y="110.292">Writer</text><!--MD5=[deaef409d8e87a93d0193a2bc5414cd6]
+entity anchor_writer--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="91" x="273.5" y="386"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="344.5" y="391"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="342.5" y="393"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="342.5" y="397"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="288.5" y="418.9951">Anchor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="288.5" y="435.292">Writer</text><!--MD5=[1379db5318089dbdfabb53cc9a236c51]
+entity observer--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="106" x="295" y="713.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="381" y="718.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="379" y="720.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="379" y="724.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="310" y="746.4951">Observer</text><!--MD5=[1703aff3b908b7f48e49671034c72a52]
+entity cas--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="69" x="107.5" y="713.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="156.5" y="718.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="154.5" y="720.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="154.5" y="724.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="122.5" y="746.4951">CAS</text><!--MD5=[f2fbfbe476ce02d5477f243163075997]
+entity vct--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="69" x="757.5" y="224.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="806.5" y="229.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="804.5" y="231.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="804.5" y="235.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="772.5" y="257.4951">VCT</text><!--MD5=[bb7d9cc4d175465c2339e28885ba1e3d]
+entity observer_queue--><path d="M310,566 L386,566 C391,566 391,587.2969 391,587.2969 C391,587.2969 391,608.5938 386,608.5938 L310,608.5938 C305,608.5938 305,587.2969 305,587.2969 C305,587.2969 305,566 310,566 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#A80036;stroke-width:1.5;"/><path d="M386,566 C381,566 381,587.2969 381,587.2969 C381,608.5938 386,608.5938 386,608.5938 " fill="none" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="310" y="583.9951">Observer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="310" y="600.292">Queue</text><!--MD5=[2f1867d4723f569b3fd3d711569e7e52]
+entity op_queue--><path d="M149.5,71 L232.5,71 C237.5,71 237.5,92.2969 237.5,92.2969 C237.5,92.2969 237.5,113.5938 232.5,113.5938 L149.5,113.5938 C144.5,113.5938 144.5,92.2969 144.5,92.2969 C144.5,92.2969 144.5,71 149.5,71 " fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" style="stroke:#A80036;stroke-width:1.5;"/><path d="M232.5,71 C227.5,71 227.5,92.2969 227.5,92.2969 C227.5,113.5938 232.5,113.5938 232.5,113.5938 " fill="none" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="149.5" y="88.9951">Operation</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="149.5" y="105.292">Queue</text><!--MD5=[56962a892b8ba6b23a0022412468165d]
+entity opwriter--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="113" x="342.5" y="61"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="435.5" y="66"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="433.5" y="68"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="433.5" y="72"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="357.5" y="93.9951">Operation</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="357.5" y="110.292">Writer</text><!--MD5=[2895277b7966f984a52569b0f63e34db]
+entity opwriter_rest--><ellipse cx="500" cy="92.5" fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="477" y="122.4951">HTTPS</text><!--MD5=[1ec31353849fe543383d7abfb5766f2f]
+entity didresolver--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="62.5938" style="stroke:#A80036;stroke-width:1.5;" width="102" x="506" y="556"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="588" y="561"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="586" y="563"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="586" y="567"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="521" y="588.9951">DID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="521" y="605.292">Resolver</text><!--MD5=[f6be0b179b4fb0d2fcf95d7defd92fd2]
+entity didresolver_rest--><ellipse cx="652" cy="587.5" fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="629" y="617.4951">HTTPS</text><!--MD5=[f141b8d23c47a078a0c2dc56c0ec508d]
+entity kms--><rect fill="#FEFECE" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#A80036;stroke-width:1.5;" width="71" x="544.5" y="69.5"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="595.5" y="74.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="76.5"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="593.5" y="80.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="559.5" y="102.4951">KMS</text><!--MD5=[e3af19b850eaaf61e7ec88da8daefc3f]
+entity domain1admin--><ellipse cx="916" cy="705.5" fill="#F0FFFF" filter="url(#f1ep9vqkwk1esn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M916,713.5 L916,740.5 M903,721.5 L929,721.5 M916,740.5 L903,755.5 M916,740.5 L929,755.5 " fill="none" filter="url(#f1ep9vqkwk1esn)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="859" y="773.9951">Domain1 Admin</text><!--MD5=[68ee199d46f3ce3c48339370f100a1e5]
+entity domain2--><rect fill="#F0FFFF" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#000000;stroke-width:1.5;" width="103" x="859.5" y="394.5"/><path d="M893.8333,394.5 L893.8333,399.5 L886.8333,406.5 L859.5,406.5 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="874.5" y="427.4951">Domain2</text><!--MD5=[de459b4515f3b440caf8e354e9d5f652]
+entity domain3--><rect fill="#F0FFFF" filter="url(#f1ep9vqkwk1esn)" height="46.2969" style="stroke:#000000;stroke-width:1.5;" width="104" x="945" y="564.5"/><path d="M979.6667,564.5 L979.6667,569.5 L972.6667,576.5 L945,576.5 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="960" y="597.4951">Domain3</text><!--MD5=[6a09cb472746656e7b1534ae629cf0a7]
+link apinbox to apinbox_rest--><path d="M773.751,92.5 C778.862,92.5 782.667,92.5 782.667,92.5 C782.667,92.5 798.248,92.5 808.717,92.5 " fill="none" id="apinbox-apinbox_rest" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[095d081c23bb39035f1a98549a1e4cac]
+link apinbox to aphandler--><path d="M698.792,124.044 C687.141,150.988 672,186 672,186 C672,186 659.662,198.44 646.176,212.039 " fill="none" id="apinbox-to-aphandler" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="642.352,215.896,651.53,212.3234,645.8732,212.3462,645.8504,206.6894,642.352,215.896" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f10bda5d257ed768a8b9681947c010c4]
+reverse link apdb to aphandler--><path d="M434.406,247.5 C468.491,247.5 514.05,247.5 550.489,247.5 " fill="none" id="apdb-backto-aphandler" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="429.037,247.5,438.037,251.5,434.037,247.5,438.037,243.5,429.037,247.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85" x="447.25" y="240.5669">Store activity</text><!--MD5=[f9817d5f8ce643ff21c6596a57071db4]
+link opwriter to opwriter_rest--><path d="M455.681,92.5 C461.599,92.5 466.333,92.5 466.333,92.5 C466.333,92.5 480.832,92.5 490.8,92.5 " fill="none" id="opwriter-opwriter_rest" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f52d3a17e6ec7f8ab241b47c3b49ea79]
+link didresolver to didresolver_rest--><path d="M608.181,587.5 C614.697,587.5 620.333,587.5 620.333,587.5 C620.333,587.5 633.329,587.5 642.67,587.5 " fill="none" id="didresolver-didresolver_rest" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1c316c3243f242c007775beb1eabc8c2]
+link didresolver to opdb--><path d="M557,619.316 C557,645.725 557,683.386 557,708.598 " fill="none" id="didresolver-to-opdb" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="557,713.78,561,704.78,557,708.78,553,704.78,557,713.78" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="558" y="662.0669">Read operations</text><!--MD5=[393e6ee0d45249774e0399039a877ffd]
+link observer_queue to observer--><path d="M348,609.25 C348,635.177 348,679.615 348,708.259 " fill="none" id="observer_queue-to-observer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="348,713.416,352,704.416,348,708.416,344,704.416,348,713.416" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6edeb1631270b7ed66066d87e6d8756f]
+link observer to cas--><path d="M294.659,736.5 C259.458,736.5 214.085,736.5 181.98,736.5 " fill="none" id="observer-to-cas" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="176.945,736.5,185.945,740.5,181.945,736.5,185.945,732.5,176.945,736.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="224.25" y="714.5669">Get</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="194.75" y="729.6997">AnchorEvent</text><!--MD5=[8de96e168a12e334814c1271ddca9612]
+link observer to opdb--><path d="M401.01,736.5 C431.762,736.5 470.446,736.5 501.597,736.5 " fill="none" id="observer-to-opdb" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="506.924,736.5,497.924,732.5,501.924,736.5,497.924,740.5,506.924,736.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="419.5" y="714.5669">Read/write</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="420" y="729.6997">operations</text><!--MD5=[6e9c6b85e98ef86c7c11faf7a91c20a4]
+link aphandler to apoutbox--><path d="M624.656,279.314 C636.473,308.087 654.1,351.004 666.484,381.156 " fill="none" id="aphandler-to-apoutbox" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="668.425,385.882,668.7081,376.0372,666.5265,381.2565,661.3073,379.0748,668.425,385.882" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[125fda4bf10aebad0b74f52c0235d9c8]
+link aphandler to observer_queue--><path d="M588.919,279.016 C558.28,319.524 508,386 508,386 C508,386 423,526 423,526 C423,526 398.835,545.493 377.938,562.35 " fill="none" id="aphandler-to-observer_queue" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="373.811,565.679,383.3276,563.1424,377.7029,562.54,378.3053,556.9154,373.811,565.679" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="517" y="414.5669">Post anchor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="92" x="509" y="429.6997">(from remote)</text><!--MD5=[8dcb029ca168caaa0a238f7ac8c926b2]
+reverse link kms to aphandler--><path d="M585.728,120.889 C591.305,147.554 599.767,188.009 605.571,215.761 " fill="none" id="kms-backto-aphandler" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="584.653,115.748,582.5814,125.3765,585.6772,120.642,590.4118,123.7378,584.653,115.748" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="599" y="167.0669">Sign HTTP</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="606.5" y="182.1997">request</text><!--MD5=[acd00ffce094b6e8a0754649f6ba0ef1]
+link aphandler to vct--><path d="M673.694,247.5 C699.713,247.5 729.246,247.5 752.296,247.5 " fill="none" id="aphandler-to-vct" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="757.41,247.5,748.41,243.5,752.41,247.5,748.41,251.5,757.41,247.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="692" y="240.5669">Add VC</text><!--MD5=[07eef0c75077e084592258f96412337c]
+link aphandler to anchor_writer--><path d="M550.309,261.109 C463.56,278.84 316,309 316,309 C316,309 316,356 316,356 C316,356 316.575,367.604 317.222,380.649 " fill="none" id="aphandler-to-anchor_writer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="317.482,385.896,321.0323,376.7093,317.2349,380.9021,313.0421,377.1047,317.482,385.896" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="317" y="329.5669">Handle</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="322" y="344.6997">proof</text><!--MD5=[316727b22bf97f8ac2bff47c9ef5d012]
+link anchor_writer to observer_queue--><path d="M324.319,449.314 C329.853,481.371 338.417,530.986 343.588,560.942 " fill="none" id="anchor_writer-to-observer_queue" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="344.45,565.937,346.8618,556.388,343.6,561.0098,338.9782,557.748,344.45,565.937" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="338" y="499.5669">Post anchor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="339" y="514.6997">(from local)</text><!--MD5=[dba075fa1a8ee532b66badc5ba3e53ae]
+reverse link txndb to anchor_writer--><path d="M130.323,284.06 C131.488,315.364 133,356 133,356 C133,356 218.434,383.789 273.499,401.7 " fill="none" id="txndb-backto-anchor_writer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="130.125,278.731,126.462,287.8733,130.3107,283.7276,134.4565,287.5762,130.125,278.731" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="134" y="322.0669">Store anchor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="148.5" y="337.1997">hash for</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="146" y="352.3325">each DID</text><!--MD5=[8a29c2d1181494abb70e4a7a6c998fbd]
+reverse link op_queue to opwriter--><path d="M242.855,92.5 C273.153,92.5 311.416,92.5 342.482,92.5 " fill="none" id="op_queue-backto-opwriter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="237.679,92.5,246.679,96.5,242.679,92.5,246.679,88.5,237.679,92.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="276" y="70.5669">Post</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="256" y="85.6997">operations</text><!--MD5=[084c96b54b7552d7d7d41d6ca05a8dc5]
+reverse link batch_writer to op_queue--><path d="M114.509,92.5 C122.9,92.5 136.92,92.5 144.354,92.5 " fill="none" id="batch_writer-backto-op_queue" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="109.053,92.5,118.053,96.5,114.053,92.5,118.053,88.5,109.053,92.5" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d35399ef57a6f597db49b48809049df7]
+link batch_writer to cas--><path d="M66,124.094 C66,168.743 66,246.5 66,246.5 C66,246.5 66,246.5 66,588.5 C66,588.5 106.421,666.683 128.306,709.014 " fill="none" id="batch_writer-to-cas" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="130.622,713.493,130.0403,703.6613,128.325,709.0519,122.9345,707.3365,130.622,713.493" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="94" x="67" y="414.5669">Write SideTree</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="81" y="429.6997">batch files</text><!--MD5=[7e651650182647b406e2b73221fab3b6]
+link batch_writer to anchor_writer--><path d="M92.725,124.096 C124.417,160.38 173,216 173,216 C173,216 251.729,324.118 293.561,381.565 " fill="none" id="batch_writer-to-anchor_writer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="296.507,385.611,294.4444,375.9806,293.5644,381.5686,287.9764,380.6886,296.507,385.611" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="219" y="252.0669">anchor\DIDs</text><!--MD5=[792a09d04bc966269cb9edc3bcf64202]
+link anchor_writer to cas--><path d="M293.256,449.016 C259.081,489.524 203,556 203,556 C203,556 168.2,658.404 151.169,708.518 " fill="none" id="anchor_writer-to-cas" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="149.48,713.49,156.1627,706.2553,151.0885,708.7558,148.588,703.6816,149.48,713.49" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="34" x="228" y="577.0669">Write</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="204" y="592.1997">AnchorEvent</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="209" y="607.3325">with proofs</text><!--MD5=[cc01b63cef6fb28a0317e33e0c3b074c]
+link anchor_writer to apoutbox--><path d="M337.701,385.598 C352.256,360.769 370,330.5 370,330.5 C370,330.5 484,330.5 484,330.5 C484,330.5 557.486,362.953 614.694,388.218 " fill="none" id="anchor_writer-to-apoutbox" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="619.478,390.331,612.8617,383.0355,614.9044,388.3107,609.6292,390.3533,619.478,390.331" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="112" x="371" y="329.5669">Post Offer/Create</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="403.5" y="344.6997">activity</text><!--MD5=[bdcf821bec015dc7a961b0e441927e1f]
+link cas to casdb--><path d="M130.804,759.638 C120.598,779.817 105.356,809.954 93.535,833.3276 " fill="none" id="cas-to-casdb" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="91.219,837.9071,98.8497,831.6804,93.4752,833.4451,91.7105,828.0705,91.219,837.9071" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b212032fbd47778cc5d8173f95fcad49]
+link cas to ipfs--><path d="M147.259,759.638 C152.032,779.733 159.152,809.703 164.694,833.0351 " fill="none" id="cas-to-ipfs" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="165.851,837.9071,167.6623,828.2262,164.6952,833.0425,159.8789,830.0755,165.851,837.9071" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8776a176a69fde75f7f58339da0cdace]
+link apoutbox to domain2--><path d="M742.636,417.5 C777.244,417.5 820.137,417.5 853.967,417.5 " fill="none" id="apoutbox-to-domain2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="859.316,417.5,850.316,413.5,854.316,417.5,850.316,421.5,859.316,417.5" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="787" y="380.5669">Post</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="761" y="395.6997">Offer/Create</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="777.5" y="410.8325">activity</text><!--MD5=[70b5166131c80c3b239c9291910c62ec]
+link apoutbox to domain3--><path d="M742.836,440 C792.848,457.39 855,479 855,479 C855,479 921.716,529.507 963.688,561.282 " fill="none" id="apoutbox-to-domain3" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="967.922,564.486,963.1589,555.8655,963.9349,561.4689,958.3315,562.2449,967.922,564.486" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="940" y="492.0669">Post</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="914" y="507.1997">Offer/Create</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="930.5" y="522.3325">activity</text><!--MD5=[6bdcfc5f31da711546058ab28a4db3d1]
+link domain2 to apinbox--><path d="M903.574,394.277 C886.13,342.074 844,216 844,216 C844,216 787.753,163.802 748.693,127.552 " fill="none" id="domain2-to-apinbox" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="744.969,124.096,748.8456,133.1498,748.6342,127.4969,754.2871,127.2855,744.969,124.096" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="865" y="244.5669">Accept/Like</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="878" y="259.6997">activity</text><!--MD5=[c2b6bbbd1cfeb3fa53848ef5479cef1c]
+reverse link apoutbox to domain1admin--><path d="M706.84,453.357 C750.913,512.809 840.339,633.438 886.681,695.95 " fill="none" id="apoutbox-backto-domain1admin" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="703.746,449.183,705.8911,458.7954,706.7231,453.2001,712.3184,454.0321,703.746,449.183" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="28" x="855.5" y="577.0669">Post</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="830" y="592.1997">Follow/Invite</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="846" y="607.3325">activity</text><!--MD5=[844cf4863cf9c5c545c7f07077b70c91]
+@startuml
+'https://plantuml.com/component-diagram
+
+'!theme materia
+
+skinparam linetype polyline
+
+frame Domain1 {
+  database "CAS\n(local)" as casdb
+  database "CAS\n(IPFS)" as ipfs
+  database "Operations" as opdb
+  database "DID\nTxns" as txndb
+  database "Activities" as apdb
+
+  component "ActivityPub\nOutbox" as apoutbox
+  component "ActivityPub\nInbox" as apinbox
+  component "ActivityPub\nHandler" as aphandler
+
+  interface "HTTPS" as apinbox_rest
+  apinbox - apinbox_rest
+  apinbox - -> aphandler
+
+  aphandler -left-> apdb : Store activity
+
+  component "Batch\nWriter" as batch_writer
+  component "Anchor\nWriter" as anchor_writer
+  component "Observer" as observer
+  component "CAS" as cas
+  component "VCT" as vct
+
+  queue "Observer\nQueue" as observer_queue
+  queue "Operation\nQueue" as op_queue
+
+  component "Operation\nWriter" as opwriter
+
+  interface "HTTPS" as opwriter_rest
+  opwriter -right- opwriter_rest
+
+  component "DID\nResolver" as didresolver
+
+  interface "HTTPS" as didresolver_rest
+  didresolver -right- didresolver_rest
+
+  didresolver - -> opdb : Read operations
+
+  component "KMS" as kms
+
+  observer_queue - -> observer
+  observer -> cas : Get\nAnchorEvent
+  observer -> opdb : Read/write\noperations
+
+  aphandler - -> apoutbox
+  aphandler - -> observer_queue : Post anchor\n(from remote)
+  aphandler -up-> kms : Sign HTTP\nrequest
+  aphandler -> vct : Add VC
+  aphandler - -> anchor_writer : Handle\nproof
+  anchor_writer - -> observer_queue : Post anchor\n(from local)
+  anchor_writer -up-> txndb : Store anchor\nhash for\neach DID
+
+  opwriter -left-> op_queue : Post\noperations
+
+  op_queue -left-> batch_writer
+  batch_writer - -> cas : Write SideTree\nbatch files
+  batch_writer - - -> anchor_writer : anchor\DIDs
+
+  anchor_writer -> cas : Write\nAnchorEvent\nwith proofs
+  anchor_writer -> apoutbox : Post Offer/Create\nactivity
+
+  cas ..> casdb
+  cas ..> ipfs
+}
+
+actor "Domain1 Admin" as domain1admin #Azure
+
+frame "Domain2" as domain2 #Azure
+frame "Domain3" as domain3 #Azure
+
+apoutbox -> domain2 : Post\nOffer/Create\nactivity
+apoutbox - -> domain3 : Post\nOffer/Create\nactivity
+domain2 - -> apinbox : Accept/Like\nactivity
+domain1admin -up- -> apoutbox : Post\nFollow/Invite\nactivity
+@enduml
+
+@startuml
+
+
+skinparam linetype polyline
+
+frame Domain1 {
+  database "CAS\n(local)" as casdb
+  database "CAS\n(IPFS)" as ipfs
+  database "Operations" as opdb
+  database "DID\nTxns" as txndb
+  database "Activities" as apdb
+
+  component "ActivityPub\nOutbox" as apoutbox
+  component "ActivityPub\nInbox" as apinbox
+  component "ActivityPub\nHandler" as aphandler
+
+  interface "HTTPS" as apinbox_rest
+  apinbox - apinbox_rest
+  apinbox - -> aphandler
+
+  aphandler -left-> apdb : Store activity
+
+  component "Batch\nWriter" as batch_writer
+  component "Anchor\nWriter" as anchor_writer
+  component "Observer" as observer
+  component "CAS" as cas
+  component "VCT" as vct
+
+  queue "Observer\nQueue" as observer_queue
+  queue "Operation\nQueue" as op_queue
+
+  component "Operation\nWriter" as opwriter
+
+  interface "HTTPS" as opwriter_rest
+  opwriter -right- opwriter_rest
+
+  component "DID\nResolver" as didresolver
+
+  interface "HTTPS" as didresolver_rest
+  didresolver -right- didresolver_rest
+
+  didresolver - -> opdb : Read operations
+
+  component "KMS" as kms
+
+  observer_queue - -> observer
+  observer -> cas : Get\nAnchorEvent
+  observer -> opdb : Read/write\noperations
+
+  aphandler - -> apoutbox
+  aphandler - -> observer_queue : Post anchor\n(from remote)
+  aphandler -up-> kms : Sign HTTP\nrequest
+  aphandler -> vct : Add VC
+  aphandler - -> anchor_writer : Handle\nproof
+  anchor_writer - -> observer_queue : Post anchor\n(from local)
+  anchor_writer -up-> txndb : Store anchor\nhash for\neach DID
+
+  opwriter -left-> op_queue : Post\noperations
+
+  op_queue -left-> batch_writer
+  batch_writer - -> cas : Write SideTree\nbatch files
+  batch_writer - - -> anchor_writer : anchor\DIDs
+
+  anchor_writer -> cas : Write\nAnchorEvent\nwith proofs
+  anchor_writer -> apoutbox : Post Offer/Create\nactivity
+
+  cas ..> casdb
+  cas ..> ipfs
+}
+
+actor "Domain1 Admin" as domain1admin #Azure
+
+frame "Domain2" as domain2 #Azure
+frame "Domain3" as domain3 #Azure
+
+apoutbox -> domain2 : Post\nOffer/Create\nactivity
+apoutbox - -> domain3 : Post\nOffer/Create\nactivity
+domain2 - -> apinbox : Accept/Like\nactivity
+domain1admin -up- -> apoutbox : Post\nFollow/Invite\nactivity
+@enduml
+
+PlantUML version 1.2022.1beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
