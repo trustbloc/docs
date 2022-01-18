@@ -1,8 +1,8 @@
 # ActivityPub
 
-Orb implements the ActivityPub spec for server to server communication. Communication is based on posting an
-activity (JSON document) to the server's local outbox which then gets delivered to one or more server inboxes.
-HTTP signatures are used for authentication.
+Orb implements the [ActivityPub](https://www.w3.org/TR/activitypub/) spec for server to server communication.
+Communication is based on posting an activity (JSON document) to the server's local outbox which then gets delivered
+to one or more server inboxes. HTTP signatures are used for authentication.
 
 ## Outbox/Inbox
 
@@ -11,9 +11,9 @@ posted to one or more recipients as specified in the Activity's "to" field. The 
 [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
 WebFinger (see [Discovery](discovery.html#Discovery)). The activity is then posted to the "inbox" URL that is specified
 in the service document. The post to each of the URLs is performed asynchronously using an AMQP message queue. The
-message is published to the _orb.activity.outbox_ queue and then one of the servers in the domain processes it by 
-sending the HTTP request. Before sending the request, an HTTP signature is added to the request header which may be 
-verified by the recipient using the [public key](https://trustbloc.github.io/activityanchors/#actor-discovery) of 
+message is published to the _orb.activity.outbox_ queue and then one of the servers in the domain processes it by
+sending the HTTP request. Before sending the request, an HTTP signature is added to the request header which may be
+verified by the recipient using the [public key](https://trustbloc.github.io/activityanchors/#actor-discovery) of
 the local service.
 
 The Inbox is a REST endpoint in Orb which accepts activities. When an activity is received, the HTTP signature in the
@@ -33,7 +33,7 @@ could have different authorization criteria which are explained in each of the a
 
 ### Follow
 
-A [Follow](https://trustbloc.github.io/activityanchors/#follow-activity) activity is posted by a server to other server
+A [Follow](https://trustbloc.github.io/activityanchors/#follow-activity) activity is posted by a server to another server
 so that activities may be synchronized between them. For example, domain1 posts a Follow activity to domain2 indicating
 that it wants notifications of objects created by domain2 (via the
 [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity). Domain1 is also notified of any objects
@@ -137,9 +137,9 @@ A [Create](https://trustbloc.github.io/activityanchors/#create-activity) activit
 
 When a server receives a [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity in its
 inbox the [Anchor Event](https://trustbloc.github.io/activityanchors/#anchorevent) which is embedded in the Create
-activity is posted to the *orb.anchor* queue so that it may be processed by the [Observer](observer.html#observer). 
+activity is posted to the *orb.anchor* queue so that it may be processed by the [Observer](observer.html#observer).
 After the Observer processes the AnchorEvent, it posts a [Like](https://trustbloc.github.io/activityanchors/#like-activity)
-activity back to the "actor" of the Create activity. The Create activity is also forwarded to the servers in the 
+activity back to the "actor" of the Create activity. The Create activity is also forwarded to the servers in the
 _followers_ collection using the [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity.
 
 When a server receives an [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity in its
@@ -175,7 +175,7 @@ activity is posted to the originating server.
 ### Follow Authorization Policy
 
 An authorization policy may be configured for the [Follow](#follow) activity using the configuration parameters,
-[FOLLOW_AUTH_POLICY](parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If 
+[FOLLOW_AUTH_POLICY](parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If
 accept-all
 is used then all Follow requests are accepted. If accept-list is used then the actor in the Follow activity must be in the
 [accept-list](#accept-list) database.

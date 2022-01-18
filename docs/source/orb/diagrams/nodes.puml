@@ -1,0 +1,67 @@
+@startuml
+'https://plantuml.com/component-diagram
+
+'!theme materia
+
+frame "Domain1" {
+  database "AWS DocumentDB\nMongoDB" as orbdb
+
+  component Orb as orb1
+
+  orb1 --> orbdb
+
+  interface "HTTPS" as rest1
+
+  orb1 - rest1
+
+  component "AMQP\nRabbitMQ" as amqp
+
+  orb1 --> amqp
+
+  component "IPFS" as ipfs
+
+  component "Aries Web KMS" as kms
+
+  kms --> orbdb
+
+  orb1 ---> kms
+
+  orb1 ..> ipfs
+
+  frame "VCT" {
+    component "VCT" as vct
+    component "VCT Log\nGoogle Trillian" as vct_log
+
+    component "VCT Signer\nGoogle Trillian" as vct_signer
+
+    database "PostgreSQL\nMySQL" as vctdb
+
+    interface "HTTPS" as vct_rest
+    vct - vct_rest
+
+    vct --> vct_log
+    vct --> vct_signer
+    vct_log --> vctdb
+    vct_signer --> vctdb
+  }
+
+  orb1 --> vct_rest
+}
+
+cloud "Domain2" as domain2
+
+interface "HTTPS" as rest2
+
+domain2 -left- rest2
+
+cloud Domain3 as domain3
+
+interface "HTTPS" as rest3
+
+domain3 -right- rest3
+
+orb1 ---> rest2
+domain2 --> rest1
+domain2 --> rest3
+
+@enduml

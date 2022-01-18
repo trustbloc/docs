@@ -1,0 +1,83 @@
+@startuml
+'https://plantuml.com/component-diagram
+
+'!theme materia
+
+skinparam linetype polyline
+
+frame Domain1 {
+  database "CAS\n(local)" as casdb
+  database "CAS\n(IPFS)" as ipfs
+  database "Operations" as opdb
+  database "DID\nTxns" as txndb
+  database "Activities" as apdb
+
+  component "ActivityPub\nOutbox" as apoutbox
+  component "ActivityPub\nInbox" as apinbox
+  component "ActivityPub\nHandler" as aphandler
+
+  interface "HTTPS" as apinbox_rest
+  apinbox - apinbox_rest
+  apinbox --> aphandler
+
+  aphandler -left-> apdb : Store activity
+
+  component "Batch\nWriter" as batch_writer
+  component "Anchor\nWriter" as anchor_writer
+  component "Observer" as observer
+  component "CAS" as cas
+  component "VCT" as vct
+
+  queue "Observer\nQueue" as observer_queue
+  queue "Operation\nQueue" as op_queue
+
+  component "Operation\nWriter" as opwriter
+
+  interface "HTTPS" as opwriter_rest
+  opwriter -right- opwriter_rest
+
+  component "DID\nResolver" as didresolver
+
+  interface "HTTPS" as didresolver_rest
+  didresolver -right- didresolver_rest
+
+  didresolver --> opdb : Read operations
+
+  component "KMS" as kms
+
+  observer_queue --> observer
+  observer -> cas : Get\nAnchorEvent
+  observer -> opdb : Read/write\noperations
+
+  aphandler --> apoutbox
+  aphandler --> observer_queue : Post anchor\n(from remote)
+  aphandler -up-> kms : Sign HTTP\nrequest
+  aphandler -> vct : Add VC
+  aphandler --> anchor_writer : Handle\nproof
+  anchor_writer --> observer_queue : Post anchor\n(from local)
+  anchor_writer -up-> txndb : Store anchor\nhash for\neach DID
+
+  opwriter -left-> op_queue : Post\noperations
+
+  op_queue -left-> batch_writer
+  batch_writer --> cas : Write SideTree\nbatch files
+  batch_writer ---> anchor_writer : anchor\DIDs
+
+  anchor_writer -> cas : Write\nAnchorEvent\nwith proofs
+  anchor_writer -> apoutbox : Post Offer/Create\nactivity
+
+  cas ..> casdb
+  cas ..> ipfs
+}
+
+actor "Domain1 Admin" as domain1admin #Azure
+
+frame "Domain2" as domain2 #Azure
+frame "Domain3" as domain3 #Azure
+
+apoutbox -> domain2 : Post\nOffer/Create\nactivity
+apoutbox --> domain3 : Post\nOffer/Create\nactivity
+domain2 --> apinbox : Accept/Like\nactivity
+domain1admin -up--> apoutbox : Post\nFollow/Invite\nactivity
+
+@enduml

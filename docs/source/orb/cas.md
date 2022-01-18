@@ -1,4 +1,4 @@
-# CAS
+# Content Addressable Storage (CAS)
 
 ## Local
 
