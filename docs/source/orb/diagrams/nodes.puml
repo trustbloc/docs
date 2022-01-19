@@ -3,6 +3,8 @@
 
 '!theme materia
 
+skinparam linetype polyline
+
 frame "Domain1" {
   database "AWS DocumentDB\nMongoDB" as orbdb
 
@@ -48,15 +50,15 @@ frame "Domain1" {
   orb1 --> vct_rest
 }
 
-cloud "Domain2" as domain2
+frame "Domain2" as domain2 #Azure
 
-interface "HTTPS" as rest2
+interface "HTTPS" as rest2 #Azure
 
 domain2 -left- rest2
 
-cloud Domain3 as domain3
+frame Domain3 as domain3 #Azure
 
-interface "HTTPS" as rest3
+interface "HTTPS" as rest3 #Azure
 
 domain3 -right- rest3
 

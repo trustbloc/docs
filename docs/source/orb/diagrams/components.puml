@@ -64,7 +64,8 @@ frame Domain1 {
   batch_writer ---> anchor_writer : anchor\DIDs
 
   anchor_writer -> cas : Write\nAnchorEvent\nwith proofs
-  anchor_writer -> apoutbox : Post Offer/Create\nactivity
+  anchor_writer -> vct : Add VC
+  anchor_writer --> apoutbox : Post Offer/Create\nactivity
 
   cas ..> casdb
   cas ..> ipfs
