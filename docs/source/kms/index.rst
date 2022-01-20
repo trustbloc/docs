@@ -1,5 +1,5 @@
 Key Management System (KMS)
-===============================================
+===========================
 
 .. toctree::
    :maxdepth: 1
@@ -9,4 +9,5 @@ Key Management System (KMS)
    rest_endpoints.md
    key_rotation.md
    metrics.md
+   caching.md
    onboard_recover.md
