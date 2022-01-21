@@ -41,13 +41,13 @@ KMS storage URL.
 
 Remote KMS URL.
 
-## ORB_KEY_ID
+## ORB_ACTIVE_KEY_ID
 
-Key ID (ED25519Type).
+Active Key ID (ED25519Type).
 
-## ORB_PRIVATE_KEY
+## ORB_PRIVATE_KEYS
 
-Private Key base64 (ED25519Type).
+Private Keys base64 (ED25519Type). For example,  key1=privatekeyBase64Value,key2=privatekeyBase64Value
 
 ## ORB_SECRET_LOCK_KEY_PATH
 
@@ -307,11 +307,11 @@ The type of authorization to use when a 'Invite' witness ActivityPub request is 
 
 ## HTTP_TIMEOUT
 
-The timeout for http requests. For example, '30s' for a 30 second timeout. Currently this setting only applies if you're using MongoDB.
+The timeout for http requests. For example, '30s' for a 30 second timeout.
 
 ## HTTP_DIAL_TIMEOUT
 
-The timeout for HTTP dial. For example, '30s' for a 30 second timeout. Currently this setting only applies if you're using MongoDB.
+The timeout for HTTP dial. For example, '30s' for a 30 second timeout.
 
 ## ANCHOR_EVENT_SYNC_INTERVAL
 
