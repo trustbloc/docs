@@ -12,7 +12,7 @@ A typical Orb domain consists of the following services:
 
 * [Orb](https://github.com/trustbloc/orb) instance (multiple instances may be running for redundancy scalability)
 * Document database (AWS [DocumentDB](https://aws.amazon.com/documentdb/) or [MongoDB](https://www.mongodb.com/))
-* AMQP message broker ([RabbitMQ](key-management-system-kms))
+* AMQP message broker ([RabbitMQ](https://www.rabbitmq.com))
 * [Key Management Service](../kms.html#key-management-system-kms) (Aries KMS)
 * Verifiable Credential Transparency (VCT) ([Google Trillian](https://github.com/google/trillian))
 * [IPFS](https://ipfs.io/) (optional)

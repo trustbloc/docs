@@ -10,6 +10,7 @@ TrustBloc : Interoperable Development Framework
 
    introduction.md
    architecture.md
+   orb/index.rst
    projects.md
    vcs.md
    kms/index.rst
@@ -20,8 +21,6 @@ TrustBloc : Interoperable Development Framework
    oauth2_priv.md
    contribution.md
    questions.md
-   orb/index.rst
-
 
 .. note:: If you have questions not addressed by this documentation, please visit the :doc:`questions`
           page for some tips on where to find additional help.
