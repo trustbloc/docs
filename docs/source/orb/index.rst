@@ -16,7 +16,7 @@ Orb
    discovery.md
    pubsub.md
    taskmanager.md
-   clients.md
+   cli.md
    metrics.md
    onboardrecover.md
    restendpoints.md

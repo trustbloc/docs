@@ -1,2 +1,0 @@
-The PlantUML files in this directory are the source for the generated files in _static. The .puml file needs to be 
-converted to an svg file. You can use the online converter for this at https://plantuml.com/.
