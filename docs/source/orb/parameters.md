@@ -197,13 +197,15 @@ Set to "true" to enable HTTP signatures in ActivityPub.
 
 Set to "true" to enable did discovery.
 
-## CREATE_DOCUMENT_STORE_ENABLED
+## UNPUBLISHED_OPERATION_STORE_ENABLED
 
-Set to "true" to enable create document store. Used for resolving unpublished created documents.
+Set to "true" to enable un-published operation store. Used to enable storing unpublished operations and including them when resolving documents.
 
-## UPDATE_DOCUMENT_STORE_ENABLED
+## UNPUBLISHED_OPERATION_STORE_OPERATION_TYPES
 
-Set to "true" to enable update document store. Used for resolving unpublished updates for documents.
+Comma-separated list of operation types. Used if unpublished operation store is enabled. 
+Default value is "create,update" which enables storing unpublished 'create' and 'update' operations into 
+unpublished store and using those unpublished 'create' and 'update' operations for resolving document.
 
 ## INCLUDE_UNPUBLISHED_OPERATIONS_IN_METADATA
 
