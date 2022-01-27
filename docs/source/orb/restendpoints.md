@@ -34,9 +34,14 @@ Following is a list of all REST endpoints exposed by Orb:
 
 /sidetree/v1/operations
 
+Issue DID operation as per [Sidetree DID Operations](sidetree.html#did-operations)
+
 ### identifiers
 
 /sidetree/v1/identifiers/[id]
+
+Resolve DID documents as per [Sidetree DID Resolution](sidetree.html#did-resolution)
+
 
 ## Services
 
@@ -96,9 +101,11 @@ Following is a list of all REST endpoints exposed by Orb:
 
 /cas/[cid]
 
-## Policy
+## Witness Policy
 
 /policy
+
+Configure witness policy as per [Witness Policy](witnesspolicy.html#witness-policy)
 
 ## VC
 
