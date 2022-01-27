@@ -17,6 +17,7 @@ Orb
    pubsub.md
    taskmanager.md
    cli.md
+   driver.md
    metrics.md
    onboardrecover.md
    restendpoints.md
