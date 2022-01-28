@@ -18,6 +18,7 @@ Orb
    taskmanager.md
    cli.md
    driver.md
+   vdr.md
    metrics.md
    onboardrecover.md
    restendpoints.md
