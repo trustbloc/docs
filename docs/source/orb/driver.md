@@ -35,3 +35,7 @@ Discovery endpoint domain.
 ### ORB_DRIVER_SIDETREE_TOKEN
 
 Authorization token for driver REST endpoints.
+
+### ORB_DRIVER_VERIFY_RESOLUTION_RESULT_TYPE
+
+verify resolution result type. Values [all, none, unpublished].
