@@ -90,6 +90,31 @@ did create --domain https://orb1.com --publickey-file ./publickeys.json --servic
 ]
 ```
 
+## Resolve
+This command used for resolving DID.
+
+### Usage
+```
+did resolve [flags]
+```
+
+### Flags
+* `domain` _[string]_ - URL to the Orb domain.
+* `sidetree-url-resolution` _[array|string]_ - Array of one or more Sidetree URLs resolution.
+* `auth-token` _[string]_ - The Auth token.
+* `tls-cacerts ` _[array|string]_ - Array of one or more CA cert paths.
+* `tls-systemcertpool ` _[boolean]_ - Flag whether to use system certificate pool.
+* `did-uri` _[string]_ - DID URI.
+* `verify-resolution-result-type` _[string]_ - Verify resolution result type. Values [all, none, unpublished].
+
+### Example
+
+#### resolve cmd
+```
+did resolve --domain https://orb1.com --did-uri did:orb:3XvwJ:EiDnJwbKHkHdaco4khFeBzvSL1hZ4eBGQq3q1Yjrpi5d4g  
+--verify-resolution-result-type all
+```
+
 ## Update
 This command used for updating DID.
 
