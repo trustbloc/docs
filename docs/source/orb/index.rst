@@ -21,5 +21,5 @@ Orb
    vdr.md
    metrics.md
    onboardrecover.md
-   restendpoints.md
+   restendpoints/index.rst
    parameters.md
