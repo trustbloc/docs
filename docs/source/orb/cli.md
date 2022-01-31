@@ -107,11 +107,21 @@ did resolve [flags]
 * `did-uri` _[string]_ - DID URI.
 * `verify-resolution-result-type` _[string]_ - Verify resolution result type. Values [all, none, unpublished].
 
+### Difference between domain and sidetree-url-resolution
+Domain will be used to discover Orb resolution endpoint if you have Orb DID without discovery information. sidetree-url-resolution 
+will not discover any endpoint and hit the resolution directly.
+
 ### Example
 
 #### resolve cmd
 ```
 did resolve --domain https://orb1.com --did-uri did:orb:3XvwJ:EiDnJwbKHkHdaco4khFeBzvSL1hZ4eBGQq3q1Yjrpi5d4g  
+--verify-resolution-result-type all
+```
+
+#### resolve cmd DID with discovery information
+```
+did resolve --did-uri did:orb:https:orb1.com:uAAA:EiAFqEsuKDpwbfFxHfqP-TLdFPjqSrFWwgj8_dU64GMcEQ  
 --verify-resolution-result-type all
 ```
 
