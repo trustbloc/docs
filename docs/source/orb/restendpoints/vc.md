@@ -1,0 +1,3 @@
+# VC Endpoints
+
+/vc/[id]

@@ -1,0 +1,3 @@
+# CAS Endpoints
+
+/cas/[cid]
