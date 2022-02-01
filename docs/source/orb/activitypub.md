@@ -194,4 +194,4 @@ two types of operations are _follow_ and _invite-witness_. If the actor URL is i
 Follow request from that server is authorized. If the actor URL is in the _invite-witness_ accept list then an Invite
 witness request from that server is authorized.
 
-The accept-list is managed via the REST endpoint [/services/orb/acceptlist](restendpoints.html#accept-list)
+The accept-list is managed via the REST endpoint [/services/orb/acceptlist](restendpoints/activitypub.html#accept-list)
