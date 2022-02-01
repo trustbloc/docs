@@ -946,7 +946,8 @@ An [accept list](../activitypub.html#accept-list) is a database of server URLs t
 
 ### POST
 
-The accept-list is updated using a POST request to this endpoint.
+The accept-list is updated using a POST request to this endpoint. Services may
+be added and removed from the accept-list for _Follow_ and _Invite_ witness activities.
 
 **Example**
 
@@ -961,6 +962,12 @@ Accept-Encoding: gzip, deflate
     "add": [
       "https://orb.domain2.com/services/orb",
       "https://orb.domain3.com/services/orb"
+    ],
+    "type": "follow"
+  },
+  {
+    "remove": [
+      "https://orb.domain4.com/services/orb",
     ],
     "type": "follow"
   },
