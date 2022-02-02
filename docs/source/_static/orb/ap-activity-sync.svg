@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1024px" preserveAspectRatio="none" style="width:560px;height:1024px;background:#FFFFFF;" version="1.1" viewBox="0 0 560 1024" width="560px" zoomAndPan="magnify"><defs><filter height="300%" id="f8bnkgxncn09b" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" height="1012.8438" style="stroke:#A80036;stroke-width:1.0;" width="390" x="1" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="160.5" y="18.0669">Domain1</text><rect fill="#DDDDDD" height="1012.8438" style="stroke:#A80036;stroke-width:1.0;" width="147" x="393" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="68" x="432.5" y="18.0669">DomainN</text><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="783.9844" style="stroke:#A80036;stroke-width:1.0;" width="10" x="188.5" y="139.5625"/><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="279.5938" style="stroke:#000000;stroke-width:2.0;" width="417.5" x="99" y="212.8281"/><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="86.5313" style="stroke:#000000;stroke-width:2.0;" width="397.5" x="109" y="398.8906"/><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="321.7266" style="stroke:#000000;stroke-width:2.0;" width="447" x="99" y="564.6875"/><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="71.3984" style="stroke:#000000;stroke-width:2.0;" width="412.5" x="109" y="808.0156"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="57" x2="57" y1="108.4297" y2="932.5469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="193" x2="193" y1="108.4297" y2="932.5469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="342" x2="342" y1="108.4297" y2="932.5469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="426" x2="426" y1="108.4297" y2="932.5469"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="500" x2="500" y1="108.4297" y2="932.5469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="5" y="105.1279">Task Manager</text><ellipse cx="57" cy="35.1328" fill="#FEFECE" filter="url(#f8bnkgxncn09b)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M57,43.1328 L57,70.1328 M44,51.1328 L70,51.1328 M57,70.1328 L44,85.1328 M57,70.1328 L70,85.1328 " fill="none" filter="url(#f8bnkgxncn09b)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="5" y="944.542">Task Manager</text><ellipse cx="57" cy="957.8438" fill="#FEFECE" filter="url(#f8bnkgxncn09b)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M57,965.8438 L57,992.8438 M44,973.8438 L70,973.8438 M57,992.8438 L44,1007.8438 M57,992.8438 L70,1007.8438 " fill="none" filter="url(#f8bnkgxncn09b)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="145" x="119" y="73.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="126" y="93.1279">Activity Sync Task</text><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="145" x="119" y="931.5469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="126" y="951.542">Activity Sync Task</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="298" y="105.1279">ActivityPub</text><path d="M324.5,56.1328 C324.5,46.1328 342.5,46.1328 342.5,46.1328 C342.5,46.1328 360.5,46.1328 360.5,56.1328 L360.5,82.1328 C360.5,92.1328 342.5,92.1328 342.5,92.1328 C342.5,92.1328 324.5,92.1328 324.5,82.1328 L324.5,56.1328 " fill="#FEFECE" filter="url(#f8bnkgxncn09b)" style="stroke:#000000;stroke-width:1.5;"/><path d="M324.5,56.1328 C324.5,66.1328 342.5,66.1328 342.5,66.1328 C342.5,66.1328 360.5,66.1328 360.5,56.1328 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="298" y="944.542">ActivityPub</text><path d="M324.5,957.8438 C324.5,947.8438 342.5,947.8438 342.5,947.8438 C342.5,947.8438 360.5,947.8438 360.5,957.8438 L360.5,983.8438 C360.5,993.8438 342.5,993.8438 342.5,993.8438 C342.5,993.8438 324.5,993.8438 324.5,983.8438 L324.5,957.8438 " fill="#FEFECE" filter="url(#f8bnkgxncn09b)" style="stroke:#000000;stroke-width:1.5;"/><path d="M324.5,957.8438 C324.5,967.8438 342.5,967.8438 342.5,967.8438 C342.5,967.8438 360.5,967.8438 360.5,957.8438 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="397" y="73.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="404" y="93.1279">Inbox</text><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="54" x="397" y="931.5469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="404" y="951.542">Inbox</text><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="67" x="465" y="73.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="472" y="93.1279">Outbox</text><rect fill="#FEFECE" filter="url(#f8bnkgxncn09b)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="67" x="465" y="931.5469"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="472" y="951.542">Outbox</text><rect fill="#FFFFFF" filter="url(#f8bnkgxncn09b)" height="783.9844" style="stroke:#A80036;stroke-width:1.0;" width="10" x="188.5" y="139.5625"/><polygon fill="#A80036" points="176.5,135.5625,186.5,139.5625,176.5,143.5625,180.5,139.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="57" x2="182.5" y1="139.5625" y2="139.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="64" y="134.4966">activity sync</text><polygon fill="#A80036" points="330.5,164.6953,340.5,168.6953,330.5,172.6953,334.5,168.6953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="336.5" y1="168.6953" y2="168.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85" x="205.5" y="163.6294">Get followers</text><polygon fill="#A80036" points="209.5,193.8281,199.5,197.8281,209.5,201.8281,205.5,197.8281" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="341.5" y1="197.8281" y2="197.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="215.5" y="192.7622">followers</text><path d="M99,212.8281 L177,212.8281 L177,219.8281 L167,229.8281 L99,229.8281 L99,212.8281 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="279.5938" style="stroke:#000000;stroke-width:2.0;" width="417.5" x="99" y="212.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="114" y="225.895">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="151" x="192" y="225.0386">[For each follower (N)]</text><polygon fill="#A80036" points="330.5,277.3594,340.5,281.3594,330.5,285.3594,334.5,281.3594" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="336.5" y1="281.3594" y2="281.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="205.5" y="246.0278">Get last processed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="205.5" y="261.1606">page/index from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="205.5" y="276.2935">DomainN Inbox</text><polygon fill="#A80036" points="209.5,306.4922,199.5,310.4922,209.5,314.4922,205.5,310.4922" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="341.5" y1="310.4922" y2="310.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="215.5" y="305.4263">page/index</text><polygon fill="#A80036" points="414,350.7578,424,354.7578,414,358.7578,418,354.7578" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="420" y1="354.7578" y2="354.7578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="205.5" y="334.5591">Get activities starting</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="205.5" y="349.6919">at page/index</text><polygon fill="#A80036" points="209.5,379.8906,199.5,383.8906,209.5,387.8906,205.5,383.8906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="425" y1="383.8906" y2="383.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="215.5" y="378.8247">activities</text><path d="M109,398.8906 L187,398.8906 L187,405.8906 L177,415.8906 L109,415.8906 L109,398.8906 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="86.5313" style="stroke:#000000;stroke-width:2.0;" width="397.5" x="109" y="398.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="124" y="411.9575">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="122" x="202" y="411.1011">[For each activity]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="240.5" y1="450.7891" y2="450.7891"/><line style="stroke:#A80036;stroke-width:1.0;" x1="240.5" x2="240.5" y1="450.7891" y2="463.7891"/><line style="stroke:#A80036;stroke-width:1.0;" x1="199.5" x2="240.5" y1="463.7891" y2="463.7891"/><polygon fill="#A80036" points="209.5,459.7891,199.5,463.7891,209.5,467.7891,205.5,463.7891" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="205.5" y="445.7231">process activity</text><path d="M318,421.0234 L318,476.0234 L482,476.0234 L482,431.0234 L472,421.0234 L318,421.0234 " fill="#FBFB77" filter="url(#f8bnkgxncn09b)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M472,421.0234 L472,431.0234 L482,431.0234 L472,421.0234 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="324" y="438.0903">Only process Create</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="123" x="324" y="453.2231">activities that were</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="324" y="468.356">published by Domain1</text><polygon fill="#A80036" points="330.5,516.5547,340.5,520.5547,330.5,524.5547,334.5,520.5547" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="336.5" y1="520.5547" y2="520.5547"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="205.5" y="515.4888">Get following</text><polygon fill="#A80036" points="209.5,545.6875,199.5,549.6875,209.5,553.6875,205.5,549.6875" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="341.5" y1="549.6875" y2="549.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="215.5" y="544.6216">following</text><path d="M99,564.6875 L177,564.6875 L177,571.6875 L167,581.6875 L99,581.6875 L99,564.6875 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="321.7266" style="stroke:#000000;stroke-width:2.0;" width="447" x="99" y="564.6875"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="114" y="577.7544">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="157" x="192" y="576.8979">[For each following (N)]</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="198.5" x2="240.5" y1="618.0859" y2="618.0859"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="240.5" x2="240.5" y1="618.0859" y2="631.0859"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="199.5" x2="240.5" y1="631.0859" y2="631.0859"/><polygon fill="#A80036" points="209.5,627.0859,199.5,631.0859,209.5,635.0859,205.5,631.0859" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="205.5" y="597.8872">Sync Outbox from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="205.5" y="613.02">DomainN</text><polygon fill="#A80036" points="330.5,686.4844,340.5,690.4844,330.5,694.4844,334.5,690.4844" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="336.5" y1="690.4844" y2="690.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="205.5" y="655.1528">Get last processed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="205.5" y="670.2856">page/index from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="205.5" y="685.4185">DomainN Outbox</text><polygon fill="#A80036" points="209.5,715.6172,199.5,719.6172,209.5,723.6172,205.5,719.6172" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="341.5" y1="719.6172" y2="719.6172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="215.5" y="714.5513">page/index</text><polygon fill="#A80036" points="488.5,759.8828,498.5,763.8828,488.5,767.8828,492.5,763.8828" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="494.5" y1="763.8828" y2="763.8828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="205.5" y="743.6841">Get activities starting</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="205.5" y="758.8169">at page/index</text><polygon fill="#A80036" points="209.5,789.0156,199.5,793.0156,209.5,797.0156,205.5,793.0156" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="203.5" x2="499.5" y1="793.0156" y2="793.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="215.5" y="787.9497">activities</text><path d="M109,808.0156 L187,808.0156 L187,815.0156 L177,825.0156 L109,825.0156 L109,808.0156 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="71.3984" style="stroke:#000000;stroke-width:2.0;" width="412.5" x="109" y="808.0156"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="124" y="821.0825">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="122" x="202" y="820.2261">[For each activity]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="198.5" x2="240.5" y1="852.3477" y2="852.3477"/><line style="stroke:#A80036;stroke-width:1.0;" x1="240.5" x2="240.5" y1="852.3477" y2="865.3477"/><line style="stroke:#A80036;stroke-width:1.0;" x1="199.5" x2="240.5" y1="865.3477" y2="865.3477"/><polygon fill="#A80036" points="209.5,861.3477,199.5,865.3477,209.5,869.3477,205.5,865.3477" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="205.5" y="847.2817">process activity</text><path d="M318,830.1484 L318,870.1484 L497,870.1484 L497,840.1484 L487,830.1484 L318,830.1484 " fill="#FBFB77" filter="url(#f8bnkgxncn09b)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M487,830.1484 L487,840.1484 L497,840.1484 L487,830.1484 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="324" y="847.2153">Only process Create and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="324" y="862.3481">Announce activities</text><polygon fill="#A80036" points="68,910.5469,58,914.5469,68,918.5469,64,914.5469" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="62" x2="187.5" y1="914.5469" y2="914.5469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="74" y="909.481">OK</text><!--MD5=[878eda204bf143cfb8da74414202ead0]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+box Domain1 #White
+actor "Task Manager" as taskManager
+participant "Activity Sync Task" as activitySyncTask
+database "ActivityPub" as activityPubDB
+end box
+
+box DomainN
+participant "Inbox" as domainNInbox
+participant "Outbox" as domainNOutbox
+end box
+
+taskManager -> activitySyncTask: activity sync
+
+activate activitySyncTask
+
+activitySyncTask -> activityPubDB: Get followers
+activityPubDB - -> activitySyncTask: followers
+
+loop For each follower (N)
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Inbox
+activityPubDB - -> activitySyncTask: page/index
+
+activitySyncTask -> domainNInbox: Get activities starting\nat page/index
+domainNInbox - -> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create
+activities that were
+published by Domain1
+end note
+end loop
+
+end loop
+
+activitySyncTask -> activityPubDB: Get following
+activityPubDB - -> activitySyncTask: following
+
+loop For each following (N)
+
+activitySyncTask - -> activitySyncTask: Sync Outbox from\nDomainN
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Outbox
+activityPubDB - -> activitySyncTask: page/index
+
+activitySyncTask -> domainNOutbox: Get activities starting\nat page/index
+domainNOutbox - -> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create and
+Announce activities
+end note
+end loop
+
+end loop
+
+activitySyncTask - -> taskManager: OK
+@enduml
+
+@startuml
+
+box Domain1 #White
+actor "Task Manager" as taskManager
+participant "Activity Sync Task" as activitySyncTask
+database "ActivityPub" as activityPubDB
+end box
+
+box DomainN
+participant "Inbox" as domainNInbox
+participant "Outbox" as domainNOutbox
+end box
+
+taskManager -> activitySyncTask: activity sync
+
+activate activitySyncTask
+
+activitySyncTask -> activityPubDB: Get followers
+activityPubDB - -> activitySyncTask: followers
+
+loop For each follower (N)
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Inbox
+activityPubDB - -> activitySyncTask: page/index
+
+activitySyncTask -> domainNInbox: Get activities starting\nat page/index
+domainNInbox - -> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create
+activities that were
+published by Domain1
+end note
+end loop
+
+end loop
+
+activitySyncTask -> activityPubDB: Get following
+activityPubDB - -> activitySyncTask: following
+
+loop For each following (N)
+
+activitySyncTask - -> activitySyncTask: Sync Outbox from\nDomainN
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Outbox
+activityPubDB - -> activitySyncTask: page/index
+
+activitySyncTask -> domainNOutbox: Get activities starting\nat page/index
+domainNOutbox - -> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create and
+Announce activities
+end note
+end loop
+
+end loop
+
+activitySyncTask - -> taskManager: OK
+@enduml
+
+PlantUML version 1.2022.1(Tue Feb 01 18:19:58 UTC 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

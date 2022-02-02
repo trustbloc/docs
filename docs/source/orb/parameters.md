@@ -319,6 +319,11 @@ The timeout for HTTP dial. For example, '30s' for a 30 second timeout.
 
 The interval in which anchor events are synchronized with other services that this service is following. Defaults to 1m if not set.
 
+## ANCHOR_EVENT_SYNC_MIN_ACTIVITY_AGE
+
+The minimum age of an anchor activity to be synchronized. The activity will be processed only if its age is
+greater than this value. Defaults to 1m if not set.
+
 ## ACTIVITYPUB_CLIENT_CACHE_SIZE
 
 The maximum size of an ActivityPub service and public key cache.
