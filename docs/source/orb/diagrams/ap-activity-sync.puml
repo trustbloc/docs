@@ -1,0 +1,66 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+box Domain1 #White
+actor "Task Manager" as taskManager
+participant "Activity Sync Task" as activitySyncTask
+database "ActivityPub" as activityPubDB
+end box
+
+box DomainN
+participant "Inbox" as domainNInbox
+participant "Outbox" as domainNOutbox
+end box
+
+taskManager -> activitySyncTask: activity sync
+
+activate activitySyncTask
+
+activitySyncTask -> activityPubDB: Get followers
+activityPubDB --> activitySyncTask: followers
+
+loop For each follower (N)
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Inbox
+activityPubDB --> activitySyncTask: page/index
+
+activitySyncTask -> domainNInbox: Get activities starting\nat page/index
+domainNInbox --> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create
+activities that were
+published by Domain1
+end note
+end loop
+
+end loop
+
+activitySyncTask -> activityPubDB: Get following
+activityPubDB --> activitySyncTask: following
+
+loop For each following (N)
+
+activitySyncTask --> activitySyncTask: Sync Outbox from\nDomainN
+
+activitySyncTask -> activityPubDB: Get last processed\npage/index from\nDomainN Outbox
+activityPubDB --> activitySyncTask: page/index
+
+activitySyncTask -> domainNOutbox: Get activities starting\nat page/index
+domainNOutbox --> activitySyncTask: activities
+
+loop For each activity
+activitySyncTask -> activitySyncTask: process activity
+note right
+Only process Create and
+Announce activities
+end note
+end loop
+
+end loop
+
+activitySyncTask --> taskManager: OK
+
+@enduml
