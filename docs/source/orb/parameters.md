@@ -91,7 +91,7 @@ Anchor credential signature suite (required).
 
 ## Optional Parameters
 
-Below are the required parameters for an Orb server. If not specified then the default value is used.
+Below are the optional parameters for an Orb server. If not specified then the default value is used.
 
 ### ORB_HOST_METRICS_URL
 
