@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="887px" preserveAspectRatio="none" style="width:508px;height:887px;background:#FFFFFF;" version="1.1" viewBox="0 0 508 887" width="508px" zoomAndPan="magnify"><defs><filter height="300%" id="f1p6hk9m264p7u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="570.3984" style="stroke:#A80036;stroke-width:1.0;" width="10" x="131" y="119.4297"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="59.3984" style="stroke:#A80036;stroke-width:1.0;" width="10" x="131" y="718.9609"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="398.4688" style="stroke:#A80036;stroke-width:1.0;" width="10" x="428.5" y="395.8906"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="593.6641" style="stroke:#000000;stroke-width:2.0;" width="484" x="10" y="192.6953"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="387.6016" style="stroke:#000000;stroke-width:2.0;" width="426" x="58" y="274.0938"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="164.7344" style="stroke:#000000;stroke-width:2.0;" width="406" x="68" y="298.2266"/><rect fill="#FFFFFF" height="59.0703" style="stroke:none;stroke-width:1.0;" width="406" x="68" y="403.8906"/><rect fill="#FFFFFF" height="191.7344" style="stroke:none;stroke-width:1.0;" width="426" x="58" y="469.9609"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="120.7969" style="stroke:#000000;stroke-width:2.0;" width="406" x="68" y="533.8984"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="44" x2="44" y1="88.2969" y2="803.3594"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="136" x2="136" y1="88.2969" y2="803.3594"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="353" x2="353" y1="88.2969" y2="803.3594"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="433" x2="433" y1="88.2969" y2="803.3594"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="20" y="84.9951">Timer</text><ellipse cx="44" cy="15" fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M44,23 L44,50 M31,31 L57,31 M44,50 L31,65 M44,50 L57,65 " fill="none" filter="url(#f1p6hk9m264p7u)" style="stroke:#A80036;stroke-width:2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="20" y="815.3545">Timer</text><ellipse cx="44" cy="828.6563" fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" rx="8" ry="8" style="stroke:#A80036;stroke-width:2.0;"/><path d="M44,836.6563 L44,863.6563 M31,844.6563 L57,844.6563 M44,863.6563 L31,878.6563 M44,863.6563 L57,878.6563 " fill="none" filter="url(#f1p6hk9m264p7u)" style="stroke:#A80036;stroke-width:2.0;"/><rect fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="112" x="78" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="85" y="72.9951">Task Manager</text><rect fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="112" x="78" y="802.3594"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="85" y="822.3545">Task Manager</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="313" y="84.9951">Permit DB</text><path d="M335,36 C335,26 353,26 353,26 C353,26 371,26 371,36 L371,62 C371,72 353,72 353,72 C353,72 335,72 335,62 L335,36 " fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" style="stroke:#000000;stroke-width:1.5;"/><path d="M335,36 C335,46 353,46 353,46 C353,46 371,46 371,36 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="313" y="815.3545">Permit DB</text><path d="M335,828.6563 C335,818.6563 353,818.6563 353,818.6563 C353,818.6563 371,818.6563 371,828.6563 L371,854.6563 C371,864.6563 353,864.6563 353,864.6563 C353,864.6563 335,864.6563 335,854.6563 L335,828.6563 " fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" style="stroke:#000000;stroke-width:1.5;"/><path d="M335,828.6563 C335,838.6563 353,838.6563 353,838.6563 C353,838.6563 371,838.6563 371,828.6563 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><rect fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="57" x="403" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="410" y="72.9951">TaskN</text><rect fill="#FEFECE" filter="url(#f1p6hk9m264p7u)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="57" x="403" y="802.3594"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="410" y="822.3545">TaskN</text><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="570.3984" style="stroke:#A80036;stroke-width:1.0;" width="10" x="131" y="119.4297"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="59.3984" style="stroke:#A80036;stroke-width:1.0;" width="10" x="131" y="718.9609"/><rect fill="#FFFFFF" filter="url(#f1p6hk9m264p7u)" height="398.4688" style="stroke:#A80036;stroke-width:1.0;" width="10" x="428.5" y="395.8906"/><polygon fill="#A80036" points="119,115.4297,129,119.4297,119,123.4297,123,119.4297" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="44" x2="125" y1="119.4297" y2="119.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="51" y="114.3638">check</text><polygon fill="#A80036" points="341,144.5625,351,148.5625,341,152.5625,345,148.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="347" y1="148.5625" y2="148.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="148" y="143.4966">Get permits</text><polygon fill="#A80036" points="152,173.6953,142,177.6953,152,181.6953,148,177.6953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="146" x2="352" y1="177.6953" y2="177.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="158" y="172.6294">permits</text><path d="M10,192.6953 L88,192.6953 L88,199.6953 L78,209.6953 L10,209.6953 L10,192.6953 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="593.6641" style="stroke:#000000;stroke-width:2.0;" width="484" x="10" y="192.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="25" y="205.7622">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="139" x="103" y="204.9058">[For each permit (N)]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="183" y1="246.0938" y2="246.0938"/><line style="stroke:#A80036;stroke-width:1.0;" x1="183" x2="183" y1="246.0938" y2="259.0938"/><line style="stroke:#A80036;stroke-width:1.0;" x1="142" x2="183" y1="259.0938" y2="259.0938"/><polygon fill="#A80036" points="152,255.0938,142,259.0938,152,263.0938,148,259.0938" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="148" y="225.895">Am I the permit holder</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="148" y="241.0278">for TaskN?</text><path d="M58,274.0938 L124,274.0938 L124,281.0938 L114,291.0938 L58,291.0938 L58,274.0938 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="387.6016" style="stroke:#000000;stroke-width:2.0;" width="426" x="58" y="274.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="73" y="287.1606">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="161" x="139" y="286.3042">[I am the permit holder]</text><path d="M68,298.2266 L134,298.2266 L134,305.2266 L124,315.2266 L68,315.2266 L68,298.2266 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="164.7344" style="stroke:#000000;stroke-width:2.0;" width="406" x="68" y="298.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="83" y="311.2935">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="104" x="149" y="310.437">[Status is 'idle']</text><polygon fill="#A80036" points="341,362.7578,351,366.7578,341,370.7578,345,366.7578" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="347" y1="366.7578" y2="366.7578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="148" y="331.4263">Update permit for TaskN:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="148" y="346.5591">Set Status to 'running'</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="148" y="361.6919">and Update Time to now</text><polygon fill="#A80036" points="416.5,391.8906,426.5,395.8906,416.5,399.8906,420.5,395.8906" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="422.5" y1="395.8906" y2="395.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="148" y="390.8247">run</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="68" x2="474" y1="404.8906" y2="404.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="130" x="73" y="415.1011">[Status is 'running']</text><polygon fill="#A80036" points="341,450.9609,351,454.9609,341,458.9609,345,454.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="347" y1="454.9609" y2="454.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="148" y="434.7622">Update permit for TaskN:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="148" y="449.895">Set Update Time to now</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58" x2="484" y1="470.9609" y2="470.9609"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="189" x="63" y="481.1714">[I am not the permit holder]</text><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="183" y1="505.8984" y2="505.8984"/><line style="stroke:#A80036;stroke-width:1.0;" x1="183" x2="183" y1="505.8984" y2="518.8984"/><line style="stroke:#A80036;stroke-width:1.0;" x1="142" x2="183" y1="518.8984" y2="518.8984"/><polygon fill="#A80036" points="152,514.8984,142,518.8984,152,522.8984,148,518.8984" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="148" y="500.8325">Check permit holder aliveness</text><path d="M68,533.8984 L134,533.8984 L134,540.8984 L124,550.8984 L68,550.8984 L68,533.8984 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="120.7969" style="stroke:#000000;stroke-width:2.0;" width="406" x="68" y="533.8984"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="83" y="546.9653">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="236" x="149" y="546.1089">[Current permit holder is not alive]</text><polygon fill="#A80036" points="341,613.5625,351,617.5625,341,621.5625,345,617.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="347" y1="617.5625" y2="617.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="148" y="567.0981">Update permit for TaskN:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181" x="148" y="582.231">Set Permit Holder to myself,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="148" y="597.3638">Status to 'running' and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="148" y="612.4966">Update Time to now</text><polygon fill="#A80036" points="416.5,642.6953,426.5,646.6953,416.5,650.6953,420.5,646.6953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="141" x2="422.5" y1="646.6953" y2="646.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="148" y="641.6294">run</text><polygon fill="#A80036" points="55,685.8281,45,689.8281,55,693.8281,51,689.8281" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="49" x2="135" y1="689.8281" y2="689.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="61" y="684.7622">done</text><polygon fill="#A80036" points="152,714.9609,142,718.9609,152,722.9609,148,718.9609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="146" x2="427.5" y1="718.9609" y2="718.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="158" y="713.895">done</text><polygon fill="#A80036" points="341,774.3594,351,778.3594,341,782.3594,345,778.3594" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="136" x2="347" y1="778.3594" y2="778.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162" x="143" y="743.0278">Update permit for TaskN:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="143" y="758.1606">Set Status to 'idle' and</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="143" y="773.2935">Update Time to now</text><!--MD5=[7486ef7338709585f2a535c6b7e48aa1]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Timer" as timer
+participant "Task Manager" as taskMgr
+database "Permit DB" as taskDB
+participant "TaskN" as task
+
+timer -> taskMgr: check
+
+activate taskMgr
+
+taskMgr -> taskDB: Get permits
+taskDB - -> taskMgr: permits
+
+loop For each permit (N)
+
+taskMgr -> taskMgr: Am I the permit holder\nfor TaskN?
+
+alt I am the permit holder
+  alt Status is 'idle'
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'running'\nand Update Time to now
+    taskMgr -> task: run
+    activate task
+  else Status is 'running'
+      taskMgr -> taskDB: Update permit for TaskN:\nSet Update Time to now
+  end
+else I am not the permit holder
+  taskMgr -> taskMgr: Check permit holder aliveness
+
+  alt Current permit holder is not alive
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Permit Holder to myself,\nStatus to 'running' and\nUpdate Time to now
+    taskMgr -> task: run
+  end
+end
+
+timer <- - taskMgr: done
+
+deactivate taskMgr
+
+task - -> taskMgr: done
+
+activate taskMgr
+  taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'idle' and\nUpdate Time to now
+deactivate taskMgr
+
+end loop
+@enduml
+
+@startuml
+
+actor "Timer" as timer
+participant "Task Manager" as taskMgr
+database "Permit DB" as taskDB
+participant "TaskN" as task
+
+timer -> taskMgr: check
+
+activate taskMgr
+
+taskMgr -> taskDB: Get permits
+taskDB - -> taskMgr: permits
+
+loop For each permit (N)
+
+taskMgr -> taskMgr: Am I the permit holder\nfor TaskN?
+
+alt I am the permit holder
+  alt Status is 'idle'
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'running'\nand Update Time to now
+    taskMgr -> task: run
+    activate task
+  else Status is 'running'
+      taskMgr -> taskDB: Update permit for TaskN:\nSet Update Time to now
+  end
+else I am not the permit holder
+  taskMgr -> taskMgr: Check permit holder aliveness
+
+  alt Current permit holder is not alive
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Permit Holder to myself,\nStatus to 'running' and\nUpdate Time to now
+    taskMgr -> task: run
+  end
+end
+
+timer <- - taskMgr: done
+
+deactivate taskMgr
+
+task - -> taskMgr: done
+
+activate taskMgr
+  taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'idle' and\nUpdate Time to now
+deactivate taskMgr
+
+end loop
+@enduml
+
+PlantUML version 1.2022.2beta1(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

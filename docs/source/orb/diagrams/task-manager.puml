@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Timer" as timer
+participant "Task Manager" as taskMgr
+database "Permit DB" as taskDB
+participant "TaskN" as task
+
+timer -> taskMgr: check
+
+activate taskMgr
+
+taskMgr -> taskDB: Get permits
+taskDB --> taskMgr: permits
+
+loop For each permit (N)
+
+taskMgr -> taskMgr: Am I the permit holder\nfor TaskN?
+
+alt I am the permit holder
+  alt Status is 'idle'
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'running'\nand Update Time to now
+    taskMgr -> task: run
+    activate task
+  else Status is 'running'
+      taskMgr -> taskDB: Update permit for TaskN:\nSet Update Time to now
+  end
+else I am not the permit holder
+  taskMgr -> taskMgr: Check permit holder aliveness
+
+  alt Current permit holder is not alive
+    taskMgr -> taskDB: Update permit for TaskN:\nSet Permit Holder to myself,\nStatus to 'running' and\nUpdate Time to now
+    taskMgr -> task: run
+  end
+end
+
+timer <-- taskMgr: done
+
+deactivate taskMgr
+
+task --> taskMgr: done
+
+activate taskMgr
+  taskMgr -> taskDB: Update permit for TaskN:\nSet Status to 'idle' and\nUpdate Time to now
+deactivate taskMgr
+
+end loop
+
+@enduml
