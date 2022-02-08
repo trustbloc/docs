@@ -1,0 +1,39 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Publisher\nClient" as client
+
+queue "App Queue" as queue1
+
+participant "Orb\nInstance 2" as service1
+participant "Orb\nInstance 2" as service2
+
+service1 -> queue1: subscribe
+activate queue1
+  queue1 --> service1: ok
+deactivate queue1
+
+service2 -> queue1: subscribe
+activate queue1
+  queue1 --> service2: ok
+deactivate queue1
+
+client -> queue1: publish(msg)
+activate queue1
+  queue1 --> client: ok
+deactivate queue1
+
+queue1 -> service1: msg
+
+activate service1
+service1 --> queue1: ok
+service1 -> service1: process(msg)
+
+service1 -> queue1: Ack
+activate queue1
+queue1 --> service1: ok
+deactivate service1
+
+deactivate queue1
+
+@enduml

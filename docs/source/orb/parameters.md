@@ -238,6 +238,14 @@ If enabled, writes to the local CAS will also be replicated in IPFS. This settin
 
 The URL of the message broker. If not specified then an in-memory message queue is used.
 
+### MQ_CONNECT_MAX_RETRIES
+
+| Arg                      | Env                    | Default |
+|--------------------------|------------------------|---------|
+| --mq-connect-max-retries | MQ_CONNECT_MAX_RETRIES | 25      |
+
+The maximum number of retries to connect to an AMQP service, after which the server will panic.
+
 ### MQ_OP_POOL
 
 | Arg          | Env         | Default  |
@@ -269,6 +277,39 @@ The maximum number of subscriptions per connection.
 | --mq-publisher-channel-pool-size | MQ_PUBLISHER_POOL | 25      |
 
 The size of a channel pool for an AMQP publisher (default is 25). If set to 0 then a channel pool is not used and a new channel is opened/closed for every publish to a queue.
+
+### MQ_REDELIVERY_MAX_ATTEMPTS
+
+| Arg                               | Env                    | Default |
+|-----------------------------------|------------------------|---------|
+| --mq-redelivery-max-attempts  | MQ_REDELIVERY_MAX_ATTEMPTS | 10      |
+
+The maximum number of redelivery attempts for a failed message.
+
+### MQ_REDELIVERY_INITIAL_INTERVAL
+
+| Arg                                | Env                            | Default |
+|------------------------------------|--------------------------------|---------|
+| --mq-redelivery-initial-interval   | MQ_REDELIVERY_INITIAL_INTERVAL | 2s      |
+
+The delay for the initial redelivery attempt.
+
+### MQ_REDELIVERY_MULTIPLIER
+
+| Arg                        | Env                      | Default |
+|----------------------------|--------------------------|---------|
+| --mq-redelivery-multiplier | MQ_REDELIVERY_MULTIPLIER | 1.5     |
+
+The multiplier for a redelivery attempt. For example, if set to 1.5 and the previous
+redelivery interval was 2s then the next redelivery interval is set 3s.
+
+### MQ_REDELIVERY_MAX_INTERVAL
+
+| Arg                          | Env                        | Default |
+|------------------------------|----------------------------|---------|
+| --mq-redelivery-max-interval | MQ_REDELIVERY_MAX_INTERVAL | 30s     |
+
+The maximum delay for a redelivery.
 
 ### CID_VERSION
 
