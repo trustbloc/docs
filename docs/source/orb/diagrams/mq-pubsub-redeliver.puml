@@ -1,0 +1,160 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Publisher\nClient" as client
+
+queue "App Queue" as queue1
+queue "Redelivery\nQueue" as redeliveryQueue
+
+participant "Orb\nInstance 1" as service1
+participant "Orb\nInstance 2" as service2
+
+queue "Wait\nQueue" as waitQueue
+
+service1 -> queue1: subscribe
+activate queue1
+  queue1 --> service1: ok
+deactivate queue1
+
+service1 -> redeliveryQueue: subscribe
+activate redeliveryQueue
+  redeliveryQueue --> service1: ok
+deactivate redeliveryQueue
+
+service2 -> queue1: subscribe
+activate queue1
+  queue1 --> service2: ok
+deactivate queue1
+
+service2 -> redeliveryQueue: subscribe
+activate redeliveryQueue
+  redeliveryQueue --> service2: ok
+deactivate redeliveryQueue
+
+client -> queue1: publish(msg)
+activate queue1
+  queue1 --> client: ok
+deactivate queue1
+
+queue1 -> service1: msg
+
+activate service1
+service1 --> queue1: ok
+service1 -> service1: process(msg)
+
+service1 -> queue1: Nack
+activate queue1
+queue1 --> service1: ok
+deactivate queue1
+deactivate service1
+
+queue1 -> redeliveryQueue: msg
+activate redeliveryQueue
+redeliveryQueue --> queue1: ok
+deactivate redeliveryQueue
+
+redeliveryQueue -> service1: msg(reason=rejected)
+activate service1
+
+service1 --> redeliveryQueue: ok
+
+alt Redelivery count == 0
+  service1 -> queue1: msg(redeliveryCount=1)
+
+  note over service1
+  Increment the redelivery
+  count in the message's
+  metadata and re-post
+  immediately
+  end note
+
+  activate queue1
+  queue1 --> service1: ok
+  deactivate queue1
+
+  service1 -> redeliveryQueue: Ack
+  activate redeliveryQueue
+  redeliveryQueue --> service1: ok
+  deactivate redeliveryQueue
+  deactivate service1
+
+  queue1 -> service2: msg(redeliveryCount=1)
+
+  activate service2
+  service2 --> queue1: ok
+  service2 -> service2: process(msg)
+
+  service2 -> queue1: Ack
+  activate queue1
+  queue1 --> service2: ok
+  deactivate queue1
+  deactivate service2
+else Redelivery count > 0
+  activate service1
+  service1 -> waitQueue: msg(redeliverCount=1;\nexpiration=2s)
+
+  note over service1
+    Send the message to the
+    wait queue with 'expiration'
+    header so that the message
+    expires
+  end note
+
+  activate waitQueue
+  waitQueue --> service1: ok
+  deactivate waitQueue
+  deactivate service1
+
+  waitQueue -> redeliveryQueue: msg(reason=expired;\nredeliveryCount=1)
+
+  note over waitQueue
+  The message expires (after the
+  time specified in the 'expiration'
+  header) and is automatically
+  sent to the redelivery queue
+  end note
+
+  activate redeliveryQueue
+  redeliveryQueue --> waitQueue: ok
+  deactivate redeliveryQueue
+
+  redeliveryQueue -> service2: msg(reason=expired;\nredeliverCount=1)
+  activate service2
+  service2 --> redeliveryQueue: ok
+
+  service2 -> queue1: msg(redeliveryCount=2)
+
+  note over service2
+  Increment the redelivery
+  count and re-post
+  the message
+  end note
+
+  activate queue1
+  queue1 --> service2: ok
+  deactivate queue1
+  service2 -> redeliveryQueue: Ack
+  redeliveryQueue --> service2: ok
+  deactivate service2
+
+  queue1 -> service2: msg(redeliveryCount=2)
+
+  activate service2
+  service2 --> queue1: ok
+  service2 -> service2: process(msg)
+
+  service2 -> queue1: Ack
+  activate queue1
+  queue1 --> service2: ok
+  deactivate queue1
+  deactivate service2
+else Redelivery count > max redelivery attempts
+  activate service1
+  service1 -> service1: Log warning
+  note over service1: Abandon the message
+  deactivate service1
+end
+
+deactivate service1
+
+@enduml
