@@ -3,7 +3,7 @@
 
 actor "Publisher\nClient" as client
 
-queue "App Queue" as queue1
+queue "App\nQueue" as queue1
 queue "Redelivery\nQueue" as redeliveryQueue
 
 participant "Orb\nInstance 1" as service1

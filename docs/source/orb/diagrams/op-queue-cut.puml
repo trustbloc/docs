@@ -1,0 +1,86 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor timer
+
+participant "sidetree-core-go" as client
+
+participant "Operation Queue" as handler
+
+database "op-queue\nDB" as opQueueDB
+queue "AMQP\nop-queue" as opQueue
+
+timer -> client: BatchCut(N)
+
+activate client
+
+client -> handler: Remove(N)
+
+activate handler
+  handler -> handler: remove up to N\noperations from\nin-memory queue
+  handler --> client: operations, ack and\nnack functions
+
+  client -> client: process(ops)
+
+alt Process operations successful
+  client -> handler: ack
+
+  handler -> opQueueDB: Delete(ops)
+  activate opQueueDB
+
+  note right
+    Delete the removed
+    operations from the
+    database
+  end note
+
+  opQueueDB --> handler: ok
+  deactivate opQueueDB
+  handler --> client: ok
+else Process operations failed
+  client -> handler: nack
+
+  note right
+    Repost the operations
+    to the AMQP queue so
+    that they are redelivered
+  end note
+
+  loop For each op in ops
+    handler -> handler: Check retries
+
+    note right
+      If retries has reached the
+      retry limit then discard the
+      operation, otherwise, increment
+      the retry count and repost it
+    end note
+
+    handler -> opQueue: Publish(op)
+    activate opQueue
+    opQueue --> handler: ok
+    deactivate opQueue
+  end loop
+
+  handler -> opQueueDB: Delete(ops)
+  activate opQueueDB
+
+  note right
+    Delete the failed
+    operations from the
+    database
+  end note
+
+  opQueueDB --> handler: ok
+  deactivate opQueueDB
+
+  handler --> client: ok
+end
+
+deactivate handler
+
+client --> timer: ok
+
+deactivate client
+
+@enduml

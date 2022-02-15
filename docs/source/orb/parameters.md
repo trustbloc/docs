@@ -246,14 +246,6 @@ The URL of the message broker. If not specified then an in-memory message queue 
 
 The maximum number of retries to connect to an AMQP service, after which the server will panic.
 
-### MQ_OP_POOL
-
-| Arg          | Env         | Default  |
-|--------------|-------------|----------|
-| --mq-op-pool | MQ_OP_POOL  | 5        |
-
-The size of the operation queue subscriber pool. If <=1 then a pool will not be created.
-
 ### MQ_OBSERVER_POOL
 
 | Arg                | Env              | Default |
@@ -310,6 +302,40 @@ redelivery interval was 2s then the next redelivery interval is set 3s.
 | --mq-redelivery-max-interval | MQ_REDELIVERY_MAX_INTERVAL | 30s     |
 
 The maximum delay for a redelivery.
+
+### OP_QUEUE_POOL
+
+| Arg             | Env           | Default  |
+|-----------------|---------------|----------|
+| --op-queue-pool | OP_QUEUE_POOL | 5        |
+
+The size of the operation queue subscriber pool. If <=1 then a pool will not be created.
+
+### OP_QUEUE_TASK_MONITOR_INTERVAL
+
+| Arg                              | Env                            | Default |
+|----------------------------------|--------------------------------|---------|
+| --op-queue-task-monitor-interval | OP_QUEUE_TASK_MONITOR_INTERVAL | 10s     |
+
+The interval (period) in which operation queue tasks from other server instances are monitored.
+
+### OP_QUEUE_TASK_EXPIRATION
+
+| Arg                        | Env                      | Default |
+|----------------------------|--------------------------|---------|
+| --op-queue-task-expiration | OP_QUEUE_TASK_EXPIRATION | 30s     |
+
+The maximum time that an operation queue task can exist in the database before it is considered to have expired.
+Once expired, any other server instance may delete the task and repost operations associated with the task
+to the queue, so that they will be processed by another Orb instance.
+
+### OP_QUEUE_MAX_REPOSTS
+
+| Arg                    | Env                  | Default |
+|------------------------|----------------------|---------|
+| --op-queue-max-reposts | OP_QUEUE_MAX_REPOSTS | 10     |
+
+The maximum number of times an operation may be reposted to the queue after having failed.
 
 ### CID_VERSION
 

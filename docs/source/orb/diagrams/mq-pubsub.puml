@@ -5,7 +5,7 @@ actor "Publisher\nClient" as client
 
 queue "App Queue" as queue1
 
-participant "Orb\nInstance 2" as service1
+participant "Orb\nInstance 1" as service1
 participant "Orb\nInstance 2" as service2
 
 service1 -> queue1: subscribe

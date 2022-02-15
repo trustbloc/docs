@@ -1,0 +1,73 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "sidetree-core-go" as client
+
+box Instance 1
+participant "Operation\nQueue" as handler1
+end box
+
+queue "AMQP\nop-queue" as opQueue
+database "op-queue\nDB" as opQueueDB
+
+box Instance 2
+participant "Operation\nQueue" as handler2
+end box
+
+handler1 -> opQueue: Subscribe
+activate opQueue
+  opQueue --> handler1: ok
+deactivate opQueue
+
+handler2 -> opQueue: Subscribe
+activate opQueue
+  opQueue --> handler2: ok
+deactivate opQueue
+
+client -> handler1: Add(op1)
+activate handler1
+  handler1 -> opQueue: Publish(op1)
+  activate opQueue
+  opQueue --> handler1: ok
+  deactivate opQueue
+  handler1 --> client: ok
+deactivate handler1
+
+client -> handler2: Add(op2)
+activate handler2
+  handler2 -> opQueue: Publish(op2)
+  activate opQueue
+  opQueue --> handler2: ok
+  deactivate opQueue
+  handler2 --> client: ok
+deactivate handler2
+
+opQueue -> handler1: op2
+
+activate handler1
+  handler1 --> opQueue: ok
+  handler1 -> opQueueDB: Put(op2,handler1ID,expiry)
+  activate opQueueDB
+  opQueueDB --> handler1: ok
+  deactivate opQueueDB
+  handler1 -> opQueue: Ack(op2)
+  activate opQueue
+  opQueue --> handler1: ok
+  deactivate opQueue
+deactivate handler1
+
+opQueue -> handler2: op1
+
+activate handler2
+  handler2 --> opQueue: ok
+  handler2 -> opQueueDB: Put(op1,handler2ID,expiry)
+  activate opQueueDB
+  opQueueDB --> handler2: ok
+  deactivate opQueueDB
+  handler2 -> opQueue: Ack(op1)
+  activate opQueue
+  opQueue --> handler2: ok
+  deactivate opQueue
+deactivate handler2
+
+@enduml

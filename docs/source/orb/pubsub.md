@@ -31,9 +31,9 @@ with a _nack_. In this case the message is sent to a _redelivery_ queue so that 
 The _redelivery_ queue is configured as the _dead-letter-queue_ for all queues in Orb.
 When a message is rejected (_nacked_) by a subscriber, it is automatically sent to the _redelivery_
 queue. The first time a message is rejected, the redelivery handler immediately redelivers
-the message to the original destination queue. If the message is rejected again, it is
-posted to a _wait_ queue and sets an _expiration_ header value that is calculated by a backoff
-algorithm using the following config parameters:
+the message to the original destination queue. If the message is rejected again, an _expiration_
+header value is set on the message, and the message is posted to a _wait_ queue. The expiration value is
+calculated by a backoff algorithm using the following parameters:
 
 - [Initial redelivery interval](parameters.html#mq-redelivery-initial-interval)
 - [Redelivery multiplier](parameters.html#mq-redelivery-multiplier)
@@ -71,7 +71,7 @@ parameter [mq-publisher-channel-pool-size](parameters.html#mq-publisher-pool) is
 Each AMQP subscription is handled synchronously. If the handler takes a long time then subsequent messages in the queue
 need to wait until the previous message is processed. A subscriber pool may be configured for a given queue such that
 multiple subscribers concurrently process messages from the same queue. This setting is available for the following queues:
-- [mq-op-pool](parameters.html#mq-op-pool)
+- [op-queue-pool](parameters.html#op-queue-pool)
 - [mq-observer-pool](parameters.html#mq-observer-pool)
 
 Typically, all subscriber channels are created on the same AMQP connection, although an AMQP server may
