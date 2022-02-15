@@ -1,8 +1,6 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-'autonumber
-
 actor Domain1Admin
 participant Domain1
 participant Domain2

@@ -1,8 +1,6 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-'autonumber
-
 actor Domain1Admin
 box Domain1 #White
 participant Outbox
