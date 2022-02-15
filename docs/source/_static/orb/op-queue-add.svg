@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="897px" preserveAspectRatio="none" style="width:642px;height:897px;" version="1.1" viewBox="0 0 642 897" width="642px" zoomAndPan="magnify"><defs><style type="text/css"><![CDATA[*.f_dddddd_222222 {fill:#dddddd;}*.s_181818_e7e7e7 {stroke:#181818;}*.f_000000_ffffff {fill:#000000;}*.f_ffffff_000000 {fill:#ffffff;}*.f_181818_e7e7e7 {fill:#181818;}@media (prefers-color-scheme:dark) {*.f_dddddd_222222 {fill:#222222;}*.s_181818_e7e7e7 {stroke:#e7e7e7;}*.f_000000_ffffff {fill:#ffffff;}*.f_ffffff_000000 {fill:#000000;}*.f_181818_e7e7e7 {fill:#e7e7e7;}}]]></style></defs><g><rect class="f_dddddd_222222 s_181818_e7e7e7" height="878.375" style="stroke-width:0.5;" width="95" x="139" y="6"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="79" x="147" y="18.0669">Instance 1</text><rect class="f_dddddd_222222 s_181818_e7e7e7" height="878.375" style="stroke-width:0.5;" width="95" x="541" y="6"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="79" x="549" y="18.0669">Instance 2</text><rect class="f_ffffff_000000 s_181818_e7e7e7" height="87.3984" style="stroke-width:1.0;" width="10" x="181.5" y="231.2578"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="145.6641" style="stroke-width:1.0;" width="10" x="181.5" y="464.3203"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="114.7266"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="172.9922"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="260.3906"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="376.9219"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="580.8516"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="755.6484"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="382.5" y="522.5859"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="382.5" y="697.3828"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="87.3984" style="stroke-width:1.0;" width="10" x="583.5" y="347.7891"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="145.6641" style="stroke-width:1.0;" width="10" x="583.5" y="639.1172"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="69" x2="69" y1="83.5938" y2="802.7813"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="186" x2="186" y1="83.5938" y2="802.7813"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="294.5" x2="294.5" y1="83.5938" y2="802.7813"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="387.5" x2="387.5" y1="83.5938" y2="802.7813"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="588" x2="588" y1="83.5938" y2="802.7813"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="5" y="80.292">sidetree-core-go</text><ellipse class="s_181818_e7e7e7" cx="69" cy="15.7969" fill="#E2E2F0" rx="8" ry="8" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M69,23.7969 L69,50.7969 M56,31.7969 L82,31.7969 M69,50.7969 L56,65.7969 M69,50.7969 L82,65.7969 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="5" y="814.7764">sidetree-core-go</text><ellipse class="s_181818_e7e7e7" cx="69" cy="826.5781" fill="#E2E2F0" rx="8" ry="8" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M69,834.5781 L69,861.5781 M56,842.5781 L82,842.5781 M69,861.5781 L56,876.5781 M69,861.5781 L82,876.5781 " fill="none" style="stroke-width:0.5;"/><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="87" x="143" y="36"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="150" y="55.9951">Operation</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="164" y="72.292">Queue</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="87" x="143" y="801.7813"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="150" y="821.7764">Operation</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="164" y="838.0732">Queue</text><path class="s_181818_e7e7e7" d="M255.5,41 L333.5,41 C338.5,41 338.5,62.2969 338.5,62.2969 C338.5,62.2969 338.5,83.5938 333.5,83.5938 L255.5,83.5938 C250.5,83.5938 250.5,62.2969 250.5,62.2969 C250.5,62.2969 250.5,41 255.5,41 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M333.5,41 C328.5,41 328.5,62.2969 328.5,62.2969 C328.5,83.5938 333.5,83.5938 333.5,83.5938 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="268.5" y="58.9951">AMQP</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="255.5" y="75.292">op-queue</text><path class="s_181818_e7e7e7" d="M255.5,801.7813 L333.5,801.7813 C338.5,801.7813 338.5,823.0781 338.5,823.0781 C338.5,823.0781 338.5,844.375 333.5,844.375 L255.5,844.375 C250.5,844.375 250.5,823.0781 250.5,823.0781 C250.5,823.0781 250.5,801.7813 255.5,801.7813 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M333.5,801.7813 C328.5,801.7813 328.5,823.0781 328.5,823.0781 C328.5,844.375 333.5,844.375 333.5,844.375 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="268.5" y="819.7764">AMQP</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="255.5" y="836.0732">op-queue</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="350.5" y="63.9951">op-queue</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="374" y="80.292">DB</text><path class="s_181818_e7e7e7" d="M369.5,15 C369.5,5 387.5,5 387.5,5 C387.5,5 405.5,5 405.5,15 L405.5,41 C405.5,51 387.5,51 387.5,51 C387.5,51 369.5,51 369.5,41 L369.5,15 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M369.5,15 C369.5,25 387.5,25 387.5,25 C387.5,25 405.5,25 405.5,15 " fill="none" style="stroke-width:1.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="350.5" y="814.7764">op-queue</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="374" y="831.0732">DB</text><path class="s_181818_e7e7e7" d="M369.5,844.375 C369.5,834.375 387.5,834.375 387.5,834.375 C387.5,834.375 405.5,834.375 405.5,844.375 L405.5,870.375 C405.5,880.375 387.5,880.375 387.5,880.375 C387.5,880.375 369.5,880.375 369.5,870.375 L369.5,844.375 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M369.5,844.375 C369.5,854.375 387.5,854.375 387.5,854.375 C387.5,854.375 405.5,854.375 405.5,844.375 " fill="none" style="stroke-width:1.5;"/><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="87" x="545" y="36"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="552" y="55.9951">Operation</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="566" y="72.292">Queue</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="87" x="545" y="801.7813"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="552" y="821.7764">Operation</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="566" y="838.0732">Queue</text><rect class="f_ffffff_000000 s_181818_e7e7e7" height="87.3984" style="stroke-width:1.0;" width="10" x="181.5" y="231.2578"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="145.6641" style="stroke-width:1.0;" width="10" x="181.5" y="464.3203"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="114.7266"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="172.9922"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="260.3906"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="376.9219"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="580.8516"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="289.5" y="755.6484"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="382.5" y="522.5859"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="382.5" y="697.3828"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="87.3984" style="stroke-width:1.0;" width="10" x="583.5" y="347.7891"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="145.6641" style="stroke-width:1.0;" width="10" x="583.5" y="639.1172"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="277.5,110.7266,287.5,114.7266,277.5,118.7266,281.5,114.7266" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="186.5" x2="283.5" y1="114.7266" y2="114.7266"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="193.5" y="109.6606">Subscribe</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="197.5,139.8594,187.5,143.8594,197.5,147.8594,193.5,143.8594" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="191.5" x2="293.5" y1="143.8594" y2="143.8594"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="203.5" y="138.7935">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="310.5,168.9922,300.5,172.9922,310.5,176.9922,306.5,172.9922" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="304.5" x2="587.5" y1="172.9922" y2="172.9922"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="316.5" y="167.9263">Subscribe</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="576.5,198.125,586.5,202.125,576.5,206.125,580.5,202.125" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="294.5" x2="582.5" y1="202.125" y2="202.125"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="301.5" y="197.0591">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="169.5,227.2578,179.5,231.2578,169.5,235.2578,173.5,231.2578" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="69" x2="175.5" y1="231.2578" y2="231.2578"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="76" y="226.1919">Add(op1)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="277.5,256.3906,287.5,260.3906,277.5,264.3906,281.5,260.3906" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="191.5" x2="283.5" y1="260.3906" y2="260.3906"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="198.5" y="255.3247">Publish(op1)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="202.5,285.5234,192.5,289.5234,202.5,293.5234,198.5,289.5234" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="196.5" x2="293.5" y1="289.5234" y2="289.5234"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="208.5" y="284.4575">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="80,314.6563,70,318.6563,80,322.6563,76,318.6563" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="185.5" y1="318.6563" y2="318.6563"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="86" y="313.5903">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="571.5,343.7891,581.5,347.7891,571.5,351.7891,575.5,347.7891" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="69" x2="577.5" y1="347.7891" y2="347.7891"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="76" y="342.7231">Add(op2)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="310.5,372.9219,300.5,376.9219,310.5,380.9219,306.5,376.9219" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="304.5" x2="582.5" y1="376.9219" y2="376.9219"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="316.5" y="371.856">Publish(op2)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="571.5,402.0547,581.5,406.0547,571.5,410.0547,575.5,406.0547" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="294.5" x2="577.5" y1="406.0547" y2="406.0547"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="301.5" y="400.9888">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="80,431.1875,70,435.1875,80,439.1875,76,435.1875" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="74" x2="587.5" y1="435.1875" y2="435.1875"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="86" y="430.1216">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="202.5,460.3203,192.5,464.3203,202.5,468.3203,198.5,464.3203" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="196.5" x2="293.5" y1="464.3203" y2="464.3203"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="208.5" y="459.2544">op2</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="282.5,489.4531,292.5,493.4531,282.5,497.4531,286.5,493.4531" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="191.5" x2="288.5" y1="493.4531" y2="493.4531"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="198.5" y="488.3872">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="370.5,518.5859,380.5,522.5859,370.5,526.5859,374.5,522.5859" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="191.5" x2="376.5" y1="522.5859" y2="522.5859"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="198.5" y="517.52">Put(op2,handler1ID,expiry)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="202.5,547.7188,192.5,551.7188,202.5,555.7188,198.5,551.7188" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="196.5" x2="386.5" y1="551.7188" y2="551.7188"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="208.5" y="546.6528">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="277.5,576.8516,287.5,580.8516,277.5,584.8516,281.5,580.8516" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="191.5" x2="283.5" y1="580.8516" y2="580.8516"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="198.5" y="575.7856">Ack(op2)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="197.5,605.9844,187.5,609.9844,197.5,613.9844,193.5,609.9844" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="191.5" x2="293.5" y1="609.9844" y2="609.9844"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="203.5" y="604.9185">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="571.5,635.1172,581.5,639.1172,571.5,643.1172,575.5,639.1172" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="294.5" x2="577.5" y1="639.1172" y2="639.1172"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="301.5" y="634.0513">op1</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="305.5,664.25,295.5,668.25,305.5,672.25,301.5,668.25" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="582.5" y1="668.25" y2="668.25"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="311.5" y="663.1841">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="403.5,693.3828,393.5,697.3828,403.5,701.3828,399.5,697.3828" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="397.5" x2="582.5" y1="697.3828" y2="697.3828"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="409.5" y="692.3169">Put(op1,handler2ID,expiry)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="571.5,722.5156,581.5,726.5156,571.5,730.5156,575.5,726.5156" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="387.5" x2="577.5" y1="726.5156" y2="726.5156"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="394.5" y="721.4497">ok</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="310.5,751.6484,300.5,755.6484,310.5,759.6484,306.5,755.6484" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="304.5" x2="582.5" y1="755.6484" y2="755.6484"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="316.5" y="750.5825">Ack(op1)</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="576.5,780.7813,586.5,784.7813,576.5,788.7813,580.5,784.7813" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="294.5" x2="582.5" y1="784.7813" y2="784.7813"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="301.5" y="779.7153">ok</text><!--MD5=[577144f2d0d37de71c1765f664f3f34e]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "sidetree-core-go" as client
+
+box Instance 1
+participant "Operation\nQueue" as handler1
+end box
+
+queue "AMQP\nop-queue" as opQueue
+database "op-queue\nDB" as opQueueDB
+
+box Instance 2
+participant "Operation\nQueue" as handler2
+end box
+
+handler1 -> opQueue: Subscribe
+activate opQueue
+  opQueue - -> handler1: ok
+deactivate opQueue
+
+handler2 -> opQueue: Subscribe
+activate opQueue
+  opQueue - -> handler2: ok
+deactivate opQueue
+
+client -> handler1: Add(op1)
+activate handler1
+  handler1 -> opQueue: Publish(op1)
+  activate opQueue
+  opQueue - -> handler1: ok
+  deactivate opQueue
+  handler1 - -> client: ok
+deactivate handler1
+
+client -> handler2: Add(op2)
+activate handler2
+  handler2 -> opQueue: Publish(op2)
+  activate opQueue
+  opQueue - -> handler2: ok
+  deactivate opQueue
+  handler2 - -> client: ok
+deactivate handler2
+
+opQueue -> handler1: op2
+
+activate handler1
+  handler1 - -> opQueue: ok
+  handler1 -> opQueueDB: Put(op2,handler1ID,expiry)
+  activate opQueueDB
+  opQueueDB - -> handler1: ok
+  deactivate opQueueDB
+  handler1 -> opQueue: Ack(op2)
+  activate opQueue
+  opQueue - -> handler1: ok
+  deactivate opQueue
+deactivate handler1
+
+opQueue -> handler2: op1
+
+activate handler2
+  handler2 - -> opQueue: ok
+  handler2 -> opQueueDB: Put(op1,handler2ID,expiry)
+  activate opQueueDB
+  opQueueDB - -> handler2: ok
+  deactivate opQueueDB
+  handler2 -> opQueue: Ack(op1)
+  activate opQueue
+  opQueue - -> handler2: ok
+  deactivate opQueue
+deactivate handler2
+@enduml
+
+@startuml
+
+actor "sidetree-core-go" as client
+
+box Instance 1
+participant "Operation\nQueue" as handler1
+end box
+
+queue "AMQP\nop-queue" as opQueue
+database "op-queue\nDB" as opQueueDB
+
+box Instance 2
+participant "Operation\nQueue" as handler2
+end box
+
+handler1 -> opQueue: Subscribe
+activate opQueue
+  opQueue - -> handler1: ok
+deactivate opQueue
+
+handler2 -> opQueue: Subscribe
+activate opQueue
+  opQueue - -> handler2: ok
+deactivate opQueue
+
+client -> handler1: Add(op1)
+activate handler1
+  handler1 -> opQueue: Publish(op1)
+  activate opQueue
+  opQueue - -> handler1: ok
+  deactivate opQueue
+  handler1 - -> client: ok
+deactivate handler1
+
+client -> handler2: Add(op2)
+activate handler2
+  handler2 -> opQueue: Publish(op2)
+  activate opQueue
+  opQueue - -> handler2: ok
+  deactivate opQueue
+  handler2 - -> client: ok
+deactivate handler2
+
+opQueue -> handler1: op2
+
+activate handler1
+  handler1 - -> opQueue: ok
+  handler1 -> opQueueDB: Put(op2,handler1ID,expiry)
+  activate opQueueDB
+  opQueueDB - -> handler1: ok
+  deactivate opQueueDB
+  handler1 -> opQueue: Ack(op2)
+  activate opQueue
+  opQueue - -> handler1: ok
+  deactivate opQueue
+deactivate handler1
+
+opQueue -> handler2: op1
+
+activate handler2
+  handler2 - -> opQueue: ok
+  handler2 -> opQueueDB: Put(op1,handler2ID,expiry)
+  activate opQueueDB
+  opQueueDB - -> handler2: ok
+  deactivate opQueueDB
+  handler2 -> opQueue: Ack(op1)
+  activate opQueue
+  opQueue - -> handler2: ok
+  deactivate opQueue
+deactivate handler2
+@enduml
+
+PlantUML version 1.2022.2beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

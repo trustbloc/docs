@@ -88,6 +88,7 @@ for this task is set with parameter,
 
 ### Operation Queue Monitor
 
-This [task](operationqueue.html#operation-queue-monitor-task) monitors the operation queue to ensure that if a server
-instance goes down then another instance processes the queued operations. The scheduled period is set
+The operation queue monitor task monitors the operation queue to ensure that if a server
+instance goes down then another instance processes the queued operations
+(see the [operation queue recovery](batchwriter.html#recovery) page for details). The scheduled period is set
 with parameter, [task-manager-check-interval](parameters.html#task-manager-check-interval).

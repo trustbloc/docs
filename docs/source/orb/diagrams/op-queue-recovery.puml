@@ -1,0 +1,77 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+box Instance 1
+participant "Task\nManager" as taskMgr1
+participant "Operation\nQueue" as handler1
+participant "op-queue-monitor\nTask" as task1
+end box
+
+database "op-queue\nDB" as opQueueDB
+
+queue "AMQP\nop-queue" as opQueue
+
+handler1 -> taskMgr1: RegisterTask\n(op-queue-monitor)
+
+activate taskMgr1
+taskMgr1 --> handler1: ok
+deactivate taskMgr1
+
+handler1 -> opQueueDB: Put(taskID=uniqueInstanceID,\nupdatedTime=now)
+activate opQueueDB
+
+  note over opQueueDB
+    Add a task entry to
+    the database with the
+    unique ID of the instance
+    and the current time
+  end note
+
+  opQueueDB --> handler1: ok
+deactivate opQueueDB
+
+activate taskMgr1
+taskMgr1 -> task1: run
+activate task1
+task1 --> taskMgr1: ok
+deactivate taskMgr1
+
+task1 -> opQueueDB: Query tasks for\nother instances
+activate opQueueDB
+task1 <-- opQueueDB: tasks
+deactivate opQueueDB
+
+loop For each taskN in tasks
+  alt TaskN has expired
+    task1 -> opQueueDB: Query operations\nassociated with taskN
+    activate opQueueDB
+      opQueueDB --> task1: ops
+    deactivate opQueueDB
+
+    loop For each op in ops
+      task1 -> opQueue: Publish(op)
+      activate opQueue
+      opQueue --> task1: ok
+      deactivate opQueue
+    end loop
+
+    task1 -> opQueueDB: Delete(ops)
+    activate opQueueDB
+    opQueueDB --> task1: ok
+    deactivate opQueueDB
+
+    task1 -> opQueueDB: Delete(taskN)
+    activate opQueueDB
+    opQueueDB --> task1: ok
+    deactivate opQueueDB
+  end alt
+end loop
+
+task1 -> taskMgr1: done
+activate taskMgr1
+taskMgr1 --> task1: ok
+deactivate taskMgr1
+
+deactivate task1
+
+@enduml
