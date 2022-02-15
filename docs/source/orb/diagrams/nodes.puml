@@ -1,8 +1,6 @@
 @startuml
 'https://plantuml.com/component-diagram
 
-'!theme materia
-
 skinparam linetype polyline
 
 frame "Domain1" {
