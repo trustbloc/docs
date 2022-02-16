@@ -71,7 +71,7 @@ the _followers_ list.
 An Invite activity is posted to another server in order to invite that server to be a witness of
 [Anchor Events](https://trustbloc.github.io/activityanchors/#anchorevent). For example, domain1 posts an Invite activity
 to domain2 indicating that it wants domain2 to be a witness of Anchor Events produced by domain1 (using the
-[Offer](#Offer) activity).
+[Offer](#offer) activity).
 
 When a server receives an Invite witness activity in its inbox, it authorizes the actor (which is the originating
 server) in the Invite request using an [Invite Witness Authorization Policy](#invite-witness-authorization-policy). If
@@ -144,7 +144,7 @@ _followers_ collection using the [Announce](https://trustbloc.github.io/activity
 
 When a server receives an [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity in its
 inbox the [Anchor Event](https://trustbloc.github.io/activityanchors/anchorevent) which is embedded in the
-Announce activity is posted to the *orb.anchor* queue so that it may be processed by the [Observer](observer.htmlobserver).
+Announce activity is posted to the *orb.anchor* queue so that it may be processed by the [Observer](observer.html#observer).
 After the Observer processes the AnchorEvent, it posts a [Like](https://trustbloc.github.io/activityanchors/#like-activity)
 activity back to the "actor" of the Announce activity as well as to the originator of the AnchorEvent (which is determined
 from the "attributed-to" field of the [AnchorEvent](https://trustbloc.github.io/activityanchors/#anchorevent)).

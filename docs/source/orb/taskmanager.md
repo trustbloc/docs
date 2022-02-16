@@ -80,7 +80,7 @@ parameter, [anchor-status-monitoring-interval](parameters.html#anchor-status-mon
 
 ### VCT Monitor
 
-The [VCT](vct.html) monitor task checks if a proof that was returned by a witness
+The [VCT](vct.html#vct) monitor task checks if a proof that was returned by a witness
 (in an [Accept](https://trustbloc.github.io/activityanchors/#accept-anchor-activity)
 activity) was actually added to the witness's ledger. The scheduled period
 for this task is set with parameter,
