@@ -80,7 +80,7 @@ The _signature_ field contains the base64-encoded signature of the headers that 
 ### Signature Verification
 
 On receiving a request, the Orb server retrieves the URI specified in the value of the [keyId](#keyid) field from
-the [Signature](l#signature-header) header and then sends a request to this URI. The response of the request is in
+the [Signature](#signature-header) header and then sends a request to this URI. The response of the request is in
 the following format:
 
 ```json

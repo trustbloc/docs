@@ -2,7 +2,8 @@
 
 Orb implements the [ActivityPub](https://www.w3.org/TR/activitypub/) spec for server to server communication.
 Communication is based on posting an activity (JSON document) to the server's local outbox which then gets delivered
-to one or more server inboxes. HTTP signatures are used for authentication.
+to one or more server inboxes. [HTTP signatures](authorization.html#http-signatures) are used for authentication
+and authorization.
 
 ## Outbox/Inbox
 
@@ -12,12 +13,12 @@ posted to one or more recipients as specified in the Activity's "to" field. The 
 WebFinger (see [Discovery](discovery.html#Discovery)). The activity is then posted to the "inbox" URL that is specified
 in the service document. The post to each of the URLs is performed asynchronously using an AMQP message queue. The
 message is published to the _orb.activity.outbox_ queue and then one of the servers in the domain processes it by
-sending the HTTP request. Before sending the request, an HTTP signature is added to the request header which may be
-verified by the recipient using the [public key](https://trustbloc.github.io/activityanchors/#actor-discovery) of
-the local service.
+sending the HTTP request. Before sending the request, an [HTTP signature](authorization.html#headers)
+is added to the request header which may be verified by the recipient using the
+[public key](https://trustbloc.github.io/activityanchors/#actor-discovery) of the local service.
 
 The Inbox is a REST endpoint in Orb which accepts activities. When an activity is received, the HTTP signature in the
-header of the request is verified using the public key of the
+header of the request is [verified](authorization.html#signature-verification) using the public key of the
 [actor](https://trustbloc.github.io/activityanchors/#actor-discovery) that sent the activity. After the actor is
 authenticated, a message is posted to the _orb.activity.inbox_ queue and is processed by one of the server instances in
 the domain.
