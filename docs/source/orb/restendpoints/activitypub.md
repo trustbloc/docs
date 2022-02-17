@@ -178,7 +178,7 @@ Accept-Encoding: gzip, deflate
 
 A GET request to the outbox endpoint returns the activities that were posted to a service's Outbox.
 This endpoint is restricted by authorization rules, i.e. the requester must have a valid
-authentication bearer token or must be verified using HTTP signatures and also must be in the
+authorization bearer token or must be verified using HTTP signatures and also must be in the
 _following_ or _witnesses_ collection. Although, any activity sent to a [public](https://www.w3.org/TR/activitypub/#public-addressing) URI,
 is returned without authorization.
 
@@ -368,7 +368,7 @@ Accept-Encoding: gzip, deflate
 
 A POST request to the outbox endpoint adds the activity contained in the request to the service's Outbox,
 which will be processed by the ActivityPub [Outbox](../activitypub.html#outbox-inbox). This endpoint is restricted by
-authorization rules, i.e. the requester must have a valid authentication bearer token,
+authorization rules, i.e. the requester must have a valid authorization bearer token,
 which is usually an administrator token.
 
 **Example**

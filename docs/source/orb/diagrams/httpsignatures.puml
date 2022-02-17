@@ -1,0 +1,78 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+box Domain1 #White
+actor "Orb\nService" as service1
+participant "HTTP\nClient" as client1
+participant "HTTP\nServer" as apService1
+participant "KMS" as kms1
+end box
+
+box Domain2
+participant "HTTP\nServer" as server2
+participant "REST\nHandler" as handler2
+end box
+
+service1 -> client1: send(req)
+
+activate client1
+
+client1 -> kms1: sign(headers)
+activate kms1
+kms1 --> client1: signature
+deactivate kms1
+
+client1 -> client1: add headers to request
+
+client1 -> server2: POST(request)
+
+activate server2
+
+server2 -> apService1: GET(keyID)
+activate apService1
+apService1 --> server2: publicKey
+deactivate apService1
+
+server2 -> server2: Verify(Signature)
+
+alt Invalid signature
+  server2 --> client1: HTTP 401
+  client1 --> service1: HTTP 401
+else Valid signature
+  server2 -> apService1: GET(publicKey.owner)
+
+  activate apService1
+  apService1 --> server2: ActivityPub Service (actor)
+  deactivate apService1
+
+  server2 -> server2: Validate actor
+
+  note over server2
+    Verify that the public
+    key ID in the actor (Service)
+    matches the ID of the public
+    key used for verification
+  end note
+
+  alt Invalid actor
+    server2 --> client1: HTTP 401
+    client1 --> service1: HTTP 401
+  else Valid actor
+    server2 -> handler2: Handle(req,actor)
+
+    activate handler2
+    handler2 --> server2: response
+    deactivate handler2
+
+    server2 --> client1: response
+    client1 --> service1: response
+  end alt
+end alt
+
+
+deactivate server2
+
+deactivate client1
+
+@enduml

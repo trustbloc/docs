@@ -1,0 +1,48 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+actor Client as client
+
+box Orb Node
+participant "HTTP\nServer" as server
+participant "REST\nHandler" as handler
+end box
+
+client -> server: POST(request)
+
+activate server
+
+server -> server: Get defined\ntoken(s)
+
+alt Token not required
+    server -> handler: Handle(request)
+    handler --> server: response
+    server --> client: response
+else Token required
+  server -> server: check bearer token\nin request header
+
+  alt Matches
+    server -> handler: Handle(request)
+    handler --> server: response
+    server --> client: response
+  else Does not match
+    server -> server: Authorize with\nHTTP Signature
+    activate server
+
+    note right
+     No token was provided
+     or the token did not
+     match the expected value.
+     Perform authentication and
+     authorization with HTTP
+     signatures.
+    end note
+    server --> client: response
+    deactivate server
+  end alt
+end alt
+
+deactivate server
+
+@enduml
