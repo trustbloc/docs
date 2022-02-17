@@ -35,14 +35,14 @@ the message to the original destination queue. If the message is rejected again,
 header value is set on the message, and the message is posted to a _wait_ queue. The expiration value is
 calculated by a backoff algorithm using the following parameters:
 
-- [Initial redelivery interval](parameters.html#mq-redelivery-initial-interval)
-- [Redelivery multiplier](parameters.html#mq-redelivery-multiplier)
-- [Maximum redelivery interval](parameters.html#mq-redelivery-max-interval)
+1) [mq-redelivery-initial-interval](parameters.html#mq-redelivery-initial-interval)
+2) [mq-redelivery-multiplier](parameters.html#mq-redelivery-multiplier)
+3) [mq-redelivery-max-interval](parameters.html#mq-redelivery-max-interval)
 
 The backoff algorithm increases the expiration with each redelivery attempt. For example, if the initial interval
 is set to 2s and the multiplier is set to 1.5 then the expiration is set 3s. The next time a redelivery of the
 message occurs, the expiration will be set to 4.5s. Expiration time is limited by parameter
-[Maximum redelivery interval](parameters.html#mq-redelivery-max-interval).
+[mq-redelivery-max-interval](parameters.html#mq-redelivery-max-interval).
 
 The _wait_ queue has no subscribers, so the message sits there until it expires. The _redelivery_ queue is also
 configured as the _dead-letter-queue_ for the _wait_ queue, so when the message expires it is automatically sent
@@ -64,18 +64,18 @@ The Publisher publishes messages over an AMQP channel to an AMQP server. There m
 over a single connection and (for performance reasons) it is advisable to use multiple channels to publish
 messages concurrently. Also, channels should be reused and not recreated each time (since there is also a performance
 penalty for creating and closing channels). A publisher channel pool is created when the startup
-parameter [mq-publisher-channel-pool-size](parameters.html#mq-publisher-pool) is greater than zero.
+parameter [mq-publisher-channel-pool-size](parameters.html#mq-publisher-channel-pool-size) is greater than zero.
 
 ## Subscriber Pool
 
 Each AMQP subscription is handled synchronously. If the handler takes a long time then subsequent messages in the queue
 need to wait until the previous message is processed. A subscriber pool may be configured for a given queue such that
 multiple subscribers concurrently process messages from the same queue. This setting is available for the following queues:
-- [op-queue-pool](parameters.html#op-queue-pool)
-- [mq-observer-pool](parameters.html#mq-observer-pool)
+1) [op-queue-pool](parameters.html#op-queue-pool)
+2) [mq-observer-pool](parameters.html#mq-observer-pool)
 
 Typically, all subscriber channels are created on the same AMQP connection, although an AMQP server may
 have a limit to the number of channels that can be opened for a single connection. Therefore, the limit for the number
 of subscriber channels for a single connection is specified by parameter
-[mq-max-connection-subscription](parameters.html#mq-max-connection-subscriptions). If the size of the subscriber pool
+[mq-max-connection-subscriptions](parameters.html#mq-max-connection-subscriptions). If the size of the subscriber pool
 reaches this limit then a new connection is automatically opened for any new subscriber channel.

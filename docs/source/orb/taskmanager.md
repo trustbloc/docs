@@ -4,10 +4,10 @@ The Task Manager is an Orb service that periodically runs tasks on one Orb insta
 in the domain. A task is registered on startup with a unique ID, a run interval,
 and a function to invoke at the registered interval. The Task Manager stores a _permit_ for
 each task in the _orb-config_ database. The permit contains:
-- **Task ID**: The unique ID of the task
-- **Permit Holder**: The unique ID of the Orb instance that is currently responsible for running the task (a GUID that's generated on startup)
-- **Status**: Either _idle_ or _running_
-- **Update Time**: The last time the permit was updated (used to check the last time the task was run and the _aliveness_ of the permit holder)
+1) **Task ID**: The unique ID of the task
+2) **Permit Holder**: The unique ID of the Orb instance that is currently responsible for running the task (a GUID that's generated on startup)
+3) **Status**: Either _idle_ or _running_
+4) **Update Time**: The last time the permit was updated (used to check the last time the task was run and the _aliveness_ of the permit holder)
 
 The Task Manager on each Orb instance [periodically](parameters.html#task-manager-check-interval)
 checks the permit for each task. Different actions are taken depending on whether the Orb instance
@@ -69,7 +69,7 @@ parameter [data-expiry-check-interval](parameters.html#data-expiry-check-interva
 
 The [Activity Sync](onboardrecover.html#activity-sync-task) task periodically synchronizes anchor activities from the
 inboxes and outboxes of its followers and the domains that it's following. The scheduled period is set
-with the startup parameter [sync-interval](parameters.html#anchor-event-sync-interval).
+with the startup parameter [sync-interval](parameters.html#sync-interval).
 
 ### Anchor Status Monitor
 

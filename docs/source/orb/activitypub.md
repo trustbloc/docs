@@ -176,7 +176,7 @@ activity is posted to the originating server.
 ### Follow Authorization Policy
 
 An authorization policy may be configured for the [Follow](#follow) activity using the configuration parameters,
-[FOLLOW_AUTH_POLICY](parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If
+[follow-auth-policy](parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If
 accept-all
 is used then all Follow requests are accepted. If accept-list is used then the actor in the Follow activity must be in the
 [accept-list](#accept-list) database.
@@ -184,7 +184,7 @@ is used then all Follow requests are accepted. If accept-list is used then the a
 ### Invite Witness Authorization Policy
 
 An authorization policy may be configured for the [Invite Witness](#invite-witness) activity using the configuration
-parameters, [INVITE_WITNESS_AUTH_POLICY](parameters.html#invite-witness-auth-policy). The possible values are  _accept-all_
+parameters, [invite-witness-auth-policy](parameters.html#invite-witness-auth-policy). The possible values are  _accept-all_
 and _accept-list_. If accept-all is used then all Invite witness requests are accepted. If accept-list is used then the
 actor in the Invite activity must be in the [accept-list](#accept-list) database.
 
