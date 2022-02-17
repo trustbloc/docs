@@ -9,7 +9,7 @@ default value if not specified.
 
 Following are the required parameters for an Orb server.
 
-### ORB_HOST_URL
+### host-url
 
 | Arg        | Env           |
 |------------|---------------|
@@ -17,7 +17,7 @@ Following are the required parameters for an Orb server.
 
 URL to run the orb-server instance on. Format: HostName:Port.
 
-### ORB_EXTERNAL_ENDPOINT
+### external-endpoint
 
 | Arg                 | Env                    |
 |---------------------|------------------------|
@@ -25,7 +25,7 @@ URL to run the orb-server instance on. Format: HostName:Port.
 
 External endpoint that clients use to invoke services. This endpoint is used to generate IDs of anchor credentials and ActivityPub objects and should be resolvable by external clients. Format: HostName[:Port].
 
-### DATABASE_TYPE
+### database-type
 
 | Arg             | Env            |
 |-----------------|----------------|
@@ -33,7 +33,7 @@ External endpoint that clients use to invoke services. This endpoint is used to 
 
 The type of database to use for everything except key storage. Supported options: mem, couchdb, mongodb.
 
-### ORB_PRIVATE_KEYS
+### private-keys
 
 | Arg            | Env              |
 |----------------|------------------|
@@ -41,7 +41,7 @@ The type of database to use for everything except key storage. Supported options
 
 Private Keys base64 (ED25519Type). For example,  key1=privatekeyBase64Value,key2=privatekeyBase64Value
 
-### ORB_ACTIVE_KEY_ID
+### active-key-id
 
 | Arg             | Env              - |
 |-----------------|--------------------|
@@ -49,7 +49,7 @@ Private Keys base64 (ED25519Type). For example,  key1=privatekeyBase64Value,key2
 
 Active Key ID (ED25519Type).
 
-### DID_NAMESPACE
+### did-namespace
 
 | Arg             | Env            |
 |-----------------|----------------|
@@ -57,7 +57,7 @@ Active Key ID (ED25519Type).
 
 DID Namespace.
 
-### CAS_TYPE
+### cas-type
 
 | Arg        | Env       |
 |------------|-----------|
@@ -65,7 +65,7 @@ DID Namespace.
 
 The type of the Content Addressable Storage (CAS). Supported options: local, ipfs.
 
-### ANCHOR_CREDENTIAL_ISSUER
+### anchor-credential-issuer
 
 | Arg                        | Env                      |
 |----------------------------|--------------------------|
@@ -73,7 +73,7 @@ The type of the Content Addressable Storage (CAS). Supported options: local, ipf
 
 Anchor credential issuer (required).
 
-### ANCHOR_CREDENTIAL_URL
+### anchor-credential-url
 
 | Arg                     | Env                    |
 |-------------------------|------------------------|
@@ -81,7 +81,7 @@ Anchor credential issuer (required).
 
 Anchor credential url (required).
 
-### ANCHOR_CREDENTIAL_SIGNATURE_SUITE
+### anchor-credential-signature-suite
 
 | Arg                                 | Env                                 |
 |-------------------------------------|-------------------------------------|
@@ -93,7 +93,7 @@ Anchor credential signature suite (required).
 
 Below are the optional parameters for an Orb server. If not specified then the default value is used.
 
-### ORB_HOST_METRICS_URL
+### host-metrics-url
 
 | Arg                | Env                  | Default |
 |--------------------|----------------------|---------|
@@ -101,7 +101,7 @@ Below are the optional parameters for an Orb server. If not specified then the d
 
 URL that exposes the metrics endpoint. Format: HostName:Port.
 
-### ORB_SYNC_TIMEOUT
+### sync-timeout
 
 | Arg            | Env              | Default |
 |----------------|------------------|---------|
@@ -109,7 +109,7 @@ URL that exposes the metrics endpoint. Format: HostName:Port.
 
 Total time in seconds to resolve config values.
 
-### ORB_VCT_URL
+### vct-url
 
 | Arg       | Env          | Default  |
 |-----------|--------------|----------|
@@ -117,7 +117,7 @@ Total time in seconds to resolve config values.
 
 Verifiable credential transparency URL.
 
-### VCT_MONITORING_INTERVAL
+### vct-monitoring-interval
 
 | Arg                       | Env                     | Default |
 |---------------------------|-------------------------|---------|
@@ -125,7 +125,7 @@ Verifiable credential transparency URL.
 
 The interval in which VCTs are monitored to ensure that proofs are anchored.
 
-### ANCHOR_STATUS_MONITORING_INTERVAL
+### anchor-status-monitoring-interval
 
 | Arg                                 | Env                               | Default |
 |-------------------------------------|-----------------------------------|---------|
@@ -134,7 +134,7 @@ The interval in which VCTs are monitored to ensure that proofs are anchored.
 The interval in which 'in-process' anchors are monitored to ensure that they will be witnessed(completed) as per
 policy.
 
-### ANCHOR_STATUS_IN_PROCESS_GRACE_PERIOD
+### anchor-status-in-process-grace-period
 
 | Arg                                     | Env                                   | Default |
 |-----------------------------------------|---------------------------------------|---------|
@@ -142,7 +142,7 @@ policy.
 
 The period in which witnesses will not be re-selected for 'in-process' anchors.
 
-### ORB_KMS_STORE_ENDPOINT
+### kms-store-endpoint
 
 | Arg                  | Env                     | Default |
 |----------------------|-------------------------|---------|
@@ -150,7 +150,7 @@ The period in which witnesses will not be re-selected for 'in-process' anchors.
 
 KMS storage URL. If this parameter is not set then ORB_KMS_ENDPOINT needs to be set.
 
-### ORB_KMS_ENDPOINT
+### kms-endpoint
 
 | Arg            | Env               | Default |
 |----------------|-------------------|---------|
@@ -158,7 +158,7 @@ KMS storage URL. If this parameter is not set then ORB_KMS_ENDPOINT needs to be 
 
 Remote KMS URL. If this parameter is not set then ORB_KMS_STORE_ENDPOINT needs to be set.
 
-### ORB_SECRET_LOCK_KEY_PATH
+### secret-lock-key-path
 
 | Arg                    | Env                       | Default |
 |------------------------|---------------------------|---------|
@@ -166,7 +166,7 @@ Remote KMS URL. If this parameter is not set then ORB_KMS_STORE_ENDPOINT needs t
 
 The path to the file with key to be used by local secret lock. If missing noop service lock is used.
 
-### ORB_DISCOVERY_DOMAIN
+### discovery-domain
 
 | Arg                | Env                   | Default |
 |--------------------|-----------------------|---------|
@@ -174,7 +174,7 @@ The path to the file with key to be used by local secret lock. If missing noop s
 
 Discovery domain for this domain. Format: HostName
 
-### ORB_TLS_SYSTEMCERTPOOL
+### tls-systemcertpool
 
 | Arg                  | Env                     | Default |
 |----------------------|-------------------------|---------|
@@ -182,7 +182,7 @@ Discovery domain for this domain. Format: HostName
 
 Use system certificate pool. Possible values true and false. Defaults to false if not set.
 
-### ORB_TLS_CACERTS
+### tls-cacerts
 
 | Arg           | Env              | Default |
 |---------------|------------------|---------|
@@ -190,7 +190,7 @@ Use system certificate pool. Possible values true and false. Defaults to false i
 
 Comma-Separated list of ca certs path.
 
-### ORB_TLS_CERTIFICATE
+### tls-certificate
 
 | Arg               | Env                  | Default |
 |-------------------|----------------------|---------|
@@ -198,7 +198,7 @@ Comma-Separated list of ca certs path.
 
 TLS certificate for ORB server.
 
-### ORB_TLS_KEY
+### tls-key
 
 | Arg       | Env          | Default |
 |-----------|--------------|---------|
@@ -206,7 +206,7 @@ TLS certificate for ORB server.
 
 TLS key for ORB server.
 
-### DID_ALIASES
+### did-aliases
 
 | Arg           | Env          | Default |
 |---------------|--------------|---------|
@@ -214,7 +214,7 @@ TLS key for ORB server.
 
 Aliases for this did method.
 
-### IPFS_URL
+### ipfs-url
 
 | Arg        | Env       | Default |
 |------------|-----------|---------|
@@ -222,7 +222,7 @@ Aliases for this did method.
 
 Enables IPFS support. If set, this Orb server will use the node at the given URL. To use the public ipfs.io node, set this to https://ipfs.io (or http://ipfs.io). If using ipfs.io, then the CAS type flag must be set to local since the ipfs.io node is read-only. If the URL doesn't include a scheme, then HTTP will be used by default.
 
-### REPLICATE_LOCAL_CAS_WRITES_IN_IPFS
+### replicate-local-cas-writes-in-ipfs
 
 | Arg                                   | Env                                | Default |
 |---------------------------------------|------------------------------------|---------|
@@ -230,7 +230,7 @@ Enables IPFS support. If set, this Orb server will use the node at the given URL
 
 If enabled, writes to the local CAS will also be replicated in IPFS. This setting only takes effect if this server has both a local CAS and IPFS enabled. If the IPFS node is set to ipfs.io, then this setting will be disabled since ipfs.io does not support writes. Supported options: false, true. Defaults to false if not set.
 
-### MQ_URL
+### mq-url
 
 | Arg      | Env     | Default |
 |----------|---------|---------|
@@ -238,7 +238,7 @@ If enabled, writes to the local CAS will also be replicated in IPFS. This settin
 
 The URL of the message broker. If not specified then an in-memory message queue is used.
 
-### MQ_CONNECT_MAX_RETRIES
+### mq-connect-max-retries
 
 | Arg                      | Env                    | Default |
 |--------------------------|------------------------|---------|
@@ -246,7 +246,7 @@ The URL of the message broker. If not specified then an in-memory message queue 
 
 The maximum number of retries to connect to an AMQP service, after which the server will panic.
 
-### MQ_OBSERVER_POOL
+### mq-observer-pool
 
 | Arg                | Env              | Default |
 |--------------------|------------------|---------|
@@ -254,15 +254,15 @@ The maximum number of retries to connect to an AMQP service, after which the ser
 
 The size of the observer queue subscriber pool. If not specified then the default size will be used.
 
-### MQ_MAX_CONNECTION_SUBSCRIPTIONS
+### mq-max-connection-subscriptions
 
 | Arg                               | Env                             | Default  |
 |-----------------------------------|---------------------------------|----------|
-| --mq-max-connection-subscription  | MQ_MAX_CONNECTION_SUBSCRIPTIONS | 1000     |
+| --mq-max-connection-subscriptions | MQ_MAX_CONNECTION_SUBSCRIPTIONS | 1000     |
 
 The maximum number of subscriptions per connection.
 
-### MQ_PUBLISHER_POOL
+### mq-publisher-channel-pool-size
 
 | Arg                              | Env               | Default |
 |----------------------------------|-------------------|---------|
@@ -270,7 +270,7 @@ The maximum number of subscriptions per connection.
 
 The size of a channel pool for an AMQP publisher (default is 25). If set to 0 then a channel pool is not used and a new channel is opened/closed for every publish to a queue.
 
-### MQ_REDELIVERY_MAX_ATTEMPTS
+### mq-redelivery-max-attempts
 
 | Arg                               | Env                    | Default |
 |-----------------------------------|------------------------|---------|
@@ -278,7 +278,7 @@ The size of a channel pool for an AMQP publisher (default is 25). If set to 0 th
 
 The maximum number of redelivery attempts for a failed message.
 
-### MQ_REDELIVERY_INITIAL_INTERVAL
+### mq-redelivery-initial-interval
 
 | Arg                                | Env                            | Default |
 |------------------------------------|--------------------------------|---------|
@@ -286,7 +286,7 @@ The maximum number of redelivery attempts for a failed message.
 
 The delay for the initial redelivery attempt.
 
-### MQ_REDELIVERY_MULTIPLIER
+### mq-redelivery-multiplier
 
 | Arg                        | Env                      | Default |
 |----------------------------|--------------------------|---------|
@@ -295,7 +295,7 @@ The delay for the initial redelivery attempt.
 The multiplier for a redelivery attempt. For example, if set to 1.5 and the previous
 redelivery interval was 2s then the next redelivery interval is set 3s.
 
-### MQ_REDELIVERY_MAX_INTERVAL
+### mq-redelivery-max-interval
 
 | Arg                          | Env                        | Default |
 |------------------------------|----------------------------|---------|
@@ -303,7 +303,7 @@ redelivery interval was 2s then the next redelivery interval is set 3s.
 
 The maximum delay for a redelivery.
 
-### OP_QUEUE_POOL
+### op-queue-pool
 
 | Arg             | Env           | Default  |
 |-----------------|---------------|----------|
@@ -311,7 +311,7 @@ The maximum delay for a redelivery.
 
 The size of the operation queue subscriber pool. If <=1 then a pool will not be created.
 
-### OP_QUEUE_TASK_MONITOR_INTERVAL
+### op-queue-task-monitor-interval
 
 | Arg                              | Env                            | Default |
 |----------------------------------|--------------------------------|---------|
@@ -319,7 +319,7 @@ The size of the operation queue subscriber pool. If <=1 then a pool will not be 
 
 The interval (period) in which operation queue tasks from other server instances are monitored.
 
-### OP_QUEUE_TASK_EXPIRATION
+### op-queue-task-expiration
 
 | Arg                        | Env                      | Default |
 |----------------------------|--------------------------|---------|
@@ -329,7 +329,7 @@ The maximum time that an operation queue task can exist in the database before i
 Once expired, any other server instance may delete the task and repost operations associated with the task
 to the queue, so that they will be processed by another Orb instance.
 
-### OP_QUEUE_MAX_REPOSTS
+### op-queue-max-reposts
 
 | Arg                    | Env                  | Default |
 |------------------------|----------------------|---------|
@@ -337,7 +337,7 @@ to the queue, so that they will be processed by another Orb instance.
 
 The maximum number of times an operation may be reposted to the queue after having failed.
 
-### CID_VERSION
+### cid-version
 
 | Arg           | Env          | Default |
 |---------------|--------------|---------|
@@ -345,7 +345,7 @@ The maximum number of times an operation may be reposted to the queue after havi
 
 The version of the CID format to use for generating CIDs. Supported options: 0, 1. If not set, defaults to 1.
 
-### BATCH_WRITER_TIMEOUT
+### batch-writer-timeout
 
 | Arg                    | Env                   | Default |
 |------------------------|-----------------------|---------|
@@ -353,7 +353,7 @@ The version of the CID format to use for generating CIDs. Supported options: 0, 
 
 Maximum time (in millisecond) in-between cutting batches.
 
-### DATABASE_URL
+### database-url
 
 | Arg            | Env           | Default  |
 |----------------|---------------|----------|
@@ -361,7 +361,7 @@ Maximum time (in millisecond) in-between cutting batches.
 
 The URL (or connection string) of the database. Not needed if using memstore. For CouchDB, include the username:password@ text if required.
 
-### DATABASE_PREFIX
+### database-prefix
 
 | Arg               | Env              | Default |
 |-------------------|------------------|---------|
@@ -370,7 +370,7 @@ The URL (or connection string) of the database. Not needed if using memstore. Fo
 An optional prefix to be used when creating and retrieving underlying databases. This allows
 a database to be shared by multiple Orb domains. (Mainly used in development environments.)
 
-### KMSSECRETS_DATABASE_TYPE
+### kms-secrets-database-type
 
 | Arg                         | Env                       | Default  |
 |-----------------------------|---------------------------|----------|
@@ -378,7 +378,7 @@ a database to be shared by multiple Orb domains. (Mainly used in development env
 
 The type of database to use for storage of KMS secrets. Supported options: mem, couchdb, mongodb.
 
-### KMSSECRETS_DATABASE_URL
+### kms-secrets-database-url
 
 | Arg                        | Env                      | Default |
 |----------------------------|--------------------------|---------|
@@ -386,7 +386,7 @@ The type of database to use for storage of KMS secrets. Supported options: mem, 
 
 The URL (or connection string) of the database. Not needed if using memstore. For CouchDB, include the username:password@ text if required.
 
-### KMSSECRETS_DATABASE_PREFIX
+### kms-secrets-database-prefix
 
 | Arg                           | Env                         | Default |
 |-------------------------------|-----------------------------|---------|
@@ -395,14 +395,15 @@ The URL (or connection string) of the database. Not needed if using memstore. Fo
 An optional prefix to be used when creating and retrieving the underlying KMS secrets database.
 This allows a database to be shared by multiple Orb domains. (Mainly used in development environments.)
 
-### DATABASE_TIMEOUT
+### database-timeout
 
 | Arg                | Env               | Default |
 |--------------------|-------------------|---------|
 | --database-timeout | DATABASE_TIMEOUT  | 10s     |
 
 The timeout for database requests. For example, '30s' for a 30 second timeout. Currently this setting only applies if you're using MongoDB.
-### ANCHOR_CREDENTIAL_DOMAIN
+
+### anchor-credential-domain
 
 | Arg                        | Env                       | Default               |
 |----------------------------|---------------------------|-----------------------|
@@ -410,7 +411,7 @@ The timeout for database requests. For example, '30s' for a 30 second timeout. C
 
 Anchor credential domain.
 
-### ALLOWED_ORIGINS
+### allowed-origins
 
 | Arg               | Env              | Default |
 |-------------------|------------------|---------|
@@ -418,7 +419,7 @@ Anchor credential domain.
 
 Allowed origins for this did method.
 
-### MAX_WITNESS_DELAY
+### max-witness-delay
 
 | Arg                 | Env                | Default |
 |---------------------|--------------------|---------|
@@ -426,7 +427,7 @@ Allowed origins for this did method.
 
 Maximum witness response time.
 
-### SIGN_WITH_LOCAL_WITNESS
+### sign-with-local-witness
 
 | Arg                       | Env                      | Default |
 |---------------------------|--------------------------|---------|
@@ -434,7 +435,7 @@ Maximum witness response time.
 
 Always sign with local witness flag (default true).
 
-### DISCOVERY_DOMAINS
+### discovery-domains
 
 | Arg                 | Env                | Default |
 |---------------------|--------------------|---------|
@@ -442,7 +443,7 @@ Always sign with local witness flag (default true).
 
 Discovery domains.
 
-### DISCOVERY_VCT_DOMAINS
+### discovery-vct-domains
 
 | Arg                     | Env                    | Default |
 |-------------------------|------------------------|---------|
@@ -450,7 +451,7 @@ Discovery domains.
 
 Discovery VCT domains.
 
-### DISCOVERY_MINIMUM_RESOLVERS
+### discovery-minimum-resolvers
 
 | Arg                           | Env                          | Default |
 |-------------------------------|------------------------------|---------|
@@ -458,7 +459,7 @@ Discovery VCT domains.
 
 Discovery minimum resolvers number.
 
-### HTTP_SIGNATURES_ENABLED
+### enable-http-signatures
 
 | Arg                      | Env                      | Default |
 |--------------------------|--------------------------|---------|
@@ -466,7 +467,7 @@ Discovery minimum resolvers number.
 
 Set to "true" to enable HTTP signatures in ActivityPub.
 
-### DID_DISCOVERY_ENABLED
+### enable-did-discovery
 
 | Arg                    | Env                    | Default |
 |------------------------|------------------------|---------|
@@ -474,7 +475,7 @@ Set to "true" to enable HTTP signatures in ActivityPub.
 
 Set to "true" to enable did discovery.
 
-### UNPUBLISHED_OPERATION_STORE_ENABLED
+### enable-unpublished-operation-store
 
 | Arg                                  | Env                                 | Default |
 |--------------------------------------|-------------------------------------|---------|
@@ -482,7 +483,7 @@ Set to "true" to enable did discovery.
 
 Set to "true" to enable un-published operation store. Used to enable storing unpublished operations and including them when resolving documents.
 
-### UNPUBLISHED_OPERATION_STORE_OPERATION_TYPES
+### unpublished-operation-store-operation-types
 
 | Arg                                           | Env                                          | Default        |
 |-----------------------------------------------|----------------------------------------------|----------------|
@@ -492,7 +493,7 @@ Comma-separated list of operation types. Used if unpublished operation store is 
 Default value is "create,update" which enables storing unpublished 'create' and 'update' operations into
 unpublished store and using those unpublished 'create' and 'update' operations for resolving document.
 
-### INCLUDE_UNPUBLISHED_OPERATIONS_IN_METADATA
+### include-unpublished-operations-in-metadata
 
 | Arg                                          | Env                                         | Default |
 |----------------------------------------------|---------------------------------------------|---------|
@@ -500,7 +501,7 @@ unpublished store and using those unpublished 'create' and 'update' operations f
 
 Set to "true" to include unpublished operations in metadata.
 
-### INCLUDE_PUBLISHED_OPERATIONS_IN_METADATA
+### include-published-operations-in-metadata
 
 | Arg                                        | Env                                       | Default |
 |--------------------------------------------|-------------------------------------------|---------|
@@ -508,7 +509,7 @@ Set to "true" to include unpublished operations in metadata.
 
 Set to "true" to include published operations in metadata.
 
-### RESOLVE_FROM_ANCHOR_ORIGIN
+### resolve-from-anchor-origin
 
 | Arg                          | Env                         | Default |
 |------------------------------|-----------------------------|---------|
@@ -516,7 +517,7 @@ Set to "true" to include published operations in metadata.
 
 Set to "true" to resolve from anchor origin.
 
-### VERIFY_LATEST_FROM_ANCHOR_ORIGIN
+### verify-latest-from-anchor-origin
 
 | Arg                                | Env                               | Default |
 |------------------------------------|-----------------------------------|---------|
@@ -524,7 +525,7 @@ Set to "true" to resolve from anchor origin.
 
 Set to "true" to verify latest operations against anchor origin.
 
-### ORB_AUTH_TOKENS_DEF
+### auth-tokens-def
 
 | Arg                 | Env                                | Default |
 |---------------------|------------------------------------|---------|
@@ -554,7 +555,7 @@ ORB_AUTH_TOKENS_DEF=/services/orb/outbox|admin&read|admin,/services/orb/.*|read&
 - The client requires an 'admin' token in order to post to the outbox
 - The client requires a 'read' or 'admin' token in order to perform a GET on any endpoint starting with /services/orb/
 
-### ORB_AUTH_TOKENS
+### auth-tokens
 
 | Arg           | Env              | Default |
 |---------------|------------------|---------|
@@ -566,7 +567,7 @@ Specifies the actual values of the tokens defined in ORB_AUTH_TOKENS_DEF.
 
 admin=ADMIN_PASSWORD,read=READ_PASSWORD
 
-### ORB_CLIENT_AUTH_TOKENS_DEF
+### client-auth-tokens-def
 
 | Arg                      | Env                         | Default             |
 |--------------------------|-----------------------------|---------------------|
@@ -576,7 +577,7 @@ Follows the same rules as ORB_AUTH_TOKENS_DEF but is used by the Orb client tran
 determine whether an HTTP signature is required for an outbound HTTP request. If not specified then it is assumed
 to be the same as ORB_AUTH_TOKENS_DEF.
 
-### ORB_CLIENT_AUTH_TOKENS
+### client-auth-tokens
 
 | Arg                  | Env                     | Default         |
 |----------------------|-------------------------|-----------------|
@@ -584,7 +585,7 @@ to be the same as ORB_AUTH_TOKENS_DEF.
 
 Specifies the actual values of the tokens defined in ORB_CLIENT_AUTH_TOKENS_DEF. If not specified then it is assumed to be the same as ORB_AUTH_TOKENS.
 
-### ACTIVITYPUB_PAGE_SIZE
+### activitypub-page-size
 
 | Arg                     | Env                    | Default |
 |-------------------------|------------------------|---------|
@@ -592,7 +593,7 @@ Specifies the actual values of the tokens defined in ORB_CLIENT_AUTH_TOKENS_DEF.
 
 The maximum page size for an ActivityPub collection or ordered collection.
 
-### DEV_MODE_ENABLED
+### enable-dev-mode
 
 | Arg               | Env               | Default |
 |-------------------|-------------------|---------|
@@ -600,7 +601,7 @@ The maximum page size for an ActivityPub collection or ordered collection.
 
 Set to "true" to enable dev mode. When dev mode is enabled, no TLS is used.
 
-### NODEINFO_REFRESH_INTERVAL
+### nodeinfo-refresh-interval
 
 | Arg                         | Env                        | Default |
 |-----------------------------|----------------------------|---------|
@@ -608,7 +609,7 @@ Set to "true" to enable dev mode. When dev mode is enabled, no TLS is used.
 
 The interval for refreshing NodeInfo data. For example, '30s' for a 30 second interval.
 
-### IPFS_TIMEOUT
+### ipfs-timeout
 
 | Arg            | Env           | Default |
 |----------------|---------------|---------|
@@ -616,7 +617,7 @@ The interval for refreshing NodeInfo data. For example, '30s' for a 30 second in
 
 The timeout for IPFS requests. For example, '30s' for a 30 second timeout.
 
-### ORB_CONTEXT_PROVIDER_URL
+### context-provider-url
 
 | Arg                    | Env                       | Default |
 |------------------------|---------------------------|---------|
@@ -624,7 +625,7 @@ The timeout for IPFS requests. For example, '30s' for a 30 second timeout.
 
 Comma-separated list of remote context provider URLs to get JSON-LD contexts from."
 
-### UNPUBLISHED_OPERATION_LIFETIME
+### unpublished-operation-lifetime
 
 | Arg                              | Env                             | Default |
 |----------------------------------|---------------------------------|---------|
@@ -632,7 +633,7 @@ Comma-separated list of remote context provider URLs to get JSON-LD contexts fro
 
 How long unpublished operations remain stored before expiring (and thus, being deleted some time later). For example, '1m' for a 1 minute lifespan. Defaults to 1 minute if not set.
 
-### TASK_MANAGER_CHECK_INTERVAL
+### task-manager-check-interval
 
 | Arg                           | Env                          | Default |
 |-------------------------------|------------------------------|---------|
@@ -640,7 +641,7 @@ How long unpublished operations remain stored before expiring (and thus, being d
 
 How frequently to check for scheduled tasks. For example, a setting of '10s' will cause the task manager to check for outstanding tasks every 10s. Defaults to 10 seconds if not set.
 
-### DATA_EXPIRY_CHECK_INTERVAL
+### data-expiry-check-interval
 
 | Arg                          | Env                         | Default |
 |------------------------------|-----------------------------|---------|
@@ -648,7 +649,7 @@ How frequently to check for scheduled tasks. For example, a setting of '10s' wil
 
 How frequently to check for (and delete) any expired data. For example, a setting of '1m' will cause the expiry service to run a check every 1 minute. Defaults to 1 minute if not set.
 
-### FOLLOW_AUTH_POLICY
+### follow-auth-policy
 
 | Arg                  | Env                 | Default    |
 |----------------------|---------------------|------------|
@@ -656,7 +657,7 @@ How frequently to check for (and delete) any expired data. For example, a settin
 
 The type of authorization to use when a 'Follow' ActivityPub request is received. Possible values are: 'accept-all' and 'accept-list'. The value, 'accept-all', indicates that this server will accept any 'Follow' request. The value, 'accept-list', indicates that the service sending the 'Follow' request must be included in an 'accept list'. Defaults to 'accept-all' if not set.
 
-### INVITE_WITNESS_AUTH_POLICY
+### invite-witness-auth-policy
 
 | Arg                          | Env                         | Default    |
 |------------------------------|-----------------------------|------------|
@@ -664,7 +665,7 @@ The type of authorization to use when a 'Follow' ActivityPub request is received
 
 The type of authorization to use when a 'Invite' witness ActivityPub request is received. Possible values are: 'accept-all' and 'accept-list'. The value, 'accept-all', indicates that this server will accept any 'Invite' request for a witness. The value, 'accept-list', indicates that the service sending the 'Invite' witness request must be included in an 'accept list'. Defaults to 'accept-all' if not set.
 
-### HTTP_TIMEOUT
+### http-timeout
 
 | Arg            | Env           | Default |
 |----------------|---------------|----------|
@@ -672,7 +673,7 @@ The type of authorization to use when a 'Invite' witness ActivityPub request is 
 
 The timeout for http requests. For example, '30s' for a 30 second timeout.
 
-### HTTP_DIAL_TIMEOUT
+### http-dial-timeout
 
 | Arg                 | Env                | Default |
 |---------------------|--------------------|---------|
@@ -680,7 +681,7 @@ The timeout for http requests. For example, '30s' for a 30 second timeout.
 
 The timeout for HTTP dial. For example, '30s' for a 30 second timeout.
 
-### ANCHOR_EVENT_SYNC_INTERVAL
+### sync-interval
 
 | Arg             | Env                         | Default |
 |-----------------|-----------------------------|---------|
@@ -688,7 +689,7 @@ The timeout for HTTP dial. For example, '30s' for a 30 second timeout.
 
 The interval in which anchor events are synchronized with other services that this service is following. Defaults to 1m if not set.
 
-### ANCHOR_EVENT_SYNC_MIN_ACTIVITY_AGE
+### sync-min-activity-age
 
 | Arg                     | Env                                 | Default |
 |-------------------------|-------------------------------------|---------|
@@ -697,7 +698,7 @@ The interval in which anchor events are synchronized with other services that th
 The minimum age of an anchor activity to be synchronized. The activity will be processed only if its age is
 greater than this value. Defaults to 1m if not set.
 
-### ACTIVITYPUB_CLIENT_CACHE_SIZE
+### apclient-cache-size
 
 | Arg                   | Env                            | Default |
 |-----------------------|--------------------------------|---------|
@@ -705,7 +706,7 @@ greater than this value. Defaults to 1m if not set.
 
 The maximum size of an ActivityPub service and public key cache.
 
-### ACTIVITYPUB_CLIENT_CACHE_EXPIRATION
+### apclient-cache-Expiration
 
 | Arg                         | Env                                  | Default |
 |-----------------------------|--------------------------------------|---------|
@@ -713,7 +714,7 @@ The maximum size of an ActivityPub service and public key cache.
 
 The expiration time of an ActivityPub service and public key cache.
 
-### ACTIVITYPUB_IRI_CACHE_SIZE
+### apiri-cache-size
 
 | Arg                | Env                         | Default |
 |--------------------|-----------------------------|---------|
@@ -721,7 +722,7 @@ The expiration time of an ActivityPub service and public key cache.
 
 The maximum size of an ActivityPub actor IRI cache.
 
-### ACTIVITYPUB_IRI_CACHE_EXPIRATION
+### apiri-cache-Expiration
 
 | Arg                      | Env                               | Default |
 |--------------------------|-----------------------------------|---------|
@@ -729,7 +730,7 @@ The maximum size of an ActivityPub actor IRI cache.
 
 The expiration time of an ActivityPub actor IRI cache.
 
-### SERVER_IDLE_TIMEOUT
+### server-idle-timeout
 
 | Arg                   | Env                  | Default |
 |-----------------------|----------------------|---------|
@@ -737,7 +738,7 @@ The expiration time of an ActivityPub actor IRI cache.
 
 The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout.
 
-### WITNESS_POLICY_CACHE_EXPIRATION
+### witness-policy-cache-expiration
 
 | Arg                               | Env                              | Default |
 |-----------------------------------|----------------------------------|---------|

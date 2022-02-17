@@ -13,7 +13,7 @@ following.
 ## Activity Sync Task
 
 When an Orb server starts up, an _activity sync_ task is registered with the
-[Task Manager](taskmanager.html#task-manager). This task [periodically](parameters.html#anchor-event-sync-interval)
+[Task Manager](taskmanager.html#task-manager). This task [periodically](parameters.html#sync-interval)
 synchronizes anchor activities ([Create](https://trustbloc.github.io/activityanchors/#create-activity)
 and [Announce](https://trustbloc.github.io/activityanchors/#announce-activity)) with the
 domains that the local domain is following and also processes any missing anchor
@@ -30,7 +30,7 @@ Announce activities.
 
 When processing an activity, the timestamp of when the activity was published is used to determine
 the _age_ of the activity. The activity is not processed unless its age has reached the configured
-[minimum activity age](parameters.html#anchor-event-sync-min-activity-age). This is done to minimize
+[minimum activity age](parameters.html#sync-min-activity-age). This is done to minimize
 the possibility of both the [Inbox](activitypub.html#outbox-inbox) and the activity sync task concurrently
 processing the anchor event. (Even though the system is tolerant of this situation, it still has an impact
 on performance.)

@@ -15,7 +15,7 @@ Authorization:[Bearer mytoken]
 
 The server matches the bearer token in the request header against the required token(s) for the particular endpoint.
 Each REST endpoint may be
-[configured](parameters.html#orb-auth-tokens-def) to require tokens for both read (GET) and write (POST)
+[configured](parameters.html#auth-tokens-def) to require tokens for both read (GET) and write (POST)
 requests. If no token is defined for an endpoint then no authorization is performed. Multiple tokens may be defined
 for read and write requests. If more than one token is defined then authorization succeeds if any of the tokens is found
 in the request header. If a token for the request is required but not found in the request header then
@@ -27,7 +27,7 @@ in the request header. If a token for the request is required but not found in t
 ## HTTP Signatures
 
 A common HTTP client within Orb is used for all server-to-server communications. If HTTP signatures are
-[enabled](parameters.html#http-signatures-enabled) then the HTTP client sets additional headers on the HTTP
+[enabled](parameters.html#enable-http-signatures) then the HTTP client sets additional headers on the HTTP
 request.
 
 ### Headers
@@ -130,5 +130,5 @@ appropriate handler. (The actor may be used by the handler to perform authorizat
 
 ```
 
-Note that public keys and actors are cached (with an [expiry](parameters.html#activitypub-client-cache-expiration))
+Note that public keys and actors are cached (with an [expiry](parameters.html#apclient-cache-expiration))
 so that remote calls aren't required each time a signature verification is performed.
