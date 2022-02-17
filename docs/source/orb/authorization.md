@@ -27,21 +27,12 @@ in the request header. If a token for the request is required but not found in t
 ## HTTP Signatures
 
 A common HTTP client within Orb is used for all server-to-server communications. If HTTP signatures are
-[enabled](parameters.html#http-signatures-enabled) then the HTTP client adds the following headers to the request
-before it is sent:
+[enabled](parameters.html#http-signatures-enabled) then the HTTP client sets additional headers on the HTTP
+request.
 
-1) **Date** - The current date/time.
-2) **Digest** - The hash of the request body, prepended by the algorithm (if a body was not included in the request then _Digest_ will be empty).
-3) **Signature** - A string containing:
-   1) _keyId_ - A resolvable URI of the public key that is used to verify the signature.
-   2) _algorithm_ - The algorithm used to sign the request. (Orb uses [KMS](../kms/index.html#key-management-system-kms) to sign the request with the _Ed25519_ algorithm.)
-   3) _headers_ - Declares the set of headers that should be signed. This set includes:
-      1) (request target) - Includes the request method (GET, POST) and the request URI. For example: POST https://orb.domain1.com.
-      2) Date - Points to the _Date_ header.
-      3) Digest - Points to the _Digest_ header (this value is not included if the _Digest_ header is empty).
-      4) _signature_ - The base64-encoded signature of the headers that are declared in the _headers_ field.
+### Headers
 
-**Sample Request Headers:**
+The following headers are added to the request before it is sent: _Date_, _Digest_, and _Signature_. For example:
 
 ```
 Date:[Thu, 17 Feb 2022 14:29:24 GMT]
@@ -49,9 +40,48 @@ Digest:[SHA-512=vXXy/lk6D+XE8fYRTL7OS7izBUn6ntk60Rn97/gOSnbSxHZuaPvPTw1FW427qLqY
 Signature:[keyId="https://orb.domain1.com/services/orb/keys/main-key",algorithm="Ed25519",headers="(request-target) Date Digest",signature="8AGVZi+xaDQ2kgD4sZUd4e2c2oOIkxzou2MoSSvQv72QJeSsoLa8+qJ1A+w2xkTDHNDfBTG8T/mNmtmYouv9Ag=="]
 ```
 
-On receiving the request, the Orb server retrieves the value of the _keyId_ field from the _Signature_ header and then sends
-a request to the URI specified by the _keyId_ value. (Note that the value of _keyId_ must be resolvable via HTTP or other
-protocol.) The response of the request is in the following format:
+#### Date Header
+
+The _Date_ header is set to the current date/time.
+
+#### Digest Header
+
+The _Digest_ header contains the hash of the request body, prepended by the algorithm. If a body was not included
+in the request then _Digest_ will be empty.
+
+#### Signature Header
+
+The _Signature_ header contains a comma-separated string of field-values (i.e. field1=value1,field2=value2,...)
+where the fields are defined as follows:
+
+##### keyId
+
+The value of the _keyId_ field is the URI of the public key that may be used to verify the signature.
+The value of _keyId_ must be resolvable via HTTP or another protocol.
+
+##### algorithm
+
+The _algorithm_ field contains the algorithm used to sign the request. Orb uses
+[KMS](../kms/index.html#key-management-system-kms) to sign the request using the _Ed25519_ algorithm.
+
+##### headers
+
+The _headers_ field declares the set of headers that should be signed. The value of this field is a space-separated
+string that contains the following set of fields:
+1) **(request target)** - Includes the request method (GET, POST) and the request URI. For example: POST https://orb.domain1.com.
+2) **Date** - Points to the [Date](#date-header) header.
+3) **Digest** - Points to the [Digest](#digest-header) header (this value is not included if the _Digest_ header is empty).
+
+##### signature
+
+The _signature_ field contains the base64-encoded signature of the headers that are declared in the
+[headers](#headers) field.
+
+### Signature Verification
+
+On receiving a request, the Orb server retrieves the URI specified in the value of the [keyId](#keyid) field from
+the [Signature](l#signature-header) header and then sends a request to this URI. The response of the request is in
+the following format:
 
 ```json
 {
@@ -61,7 +91,7 @@ protocol.) The response of the request is in the following format:
 }
 ```
 
-The _Signature_ header is then verified using the public key. If not valid then an _HTTP 401 Unauthorized_ response is sent
+The value in the [signature](#signature) field is then verified using the public key. If not valid then an _HTTP 401 Unauthorized_ response is sent
 to the client. If valid, the _owner_ of the key is retrieved. (The owner is an ActivityPub
 [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor)). Following is a sample response:
 
