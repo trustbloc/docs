@@ -29,7 +29,17 @@ This cache is especially useful when the key store uses EDV. The keys' materials
 
 ## Secret lock keys cache
 
-TBD...
+In the case of using AWS KMS as a secret lock for server kms, encrypt and decrypt operations can become expensive.
+To decrease the number of calls to AWS KMS, decrypted keys can be cached. Caching is enabled by default and default ttl is 10m.
+To disable caching set KMS_KMS_CACHE_TTL=0s.
+An appropriate ttl can be set using the same KMS_KMS_CACHE_TTL variable.
+
+## Shamir secret cache
+
+Shamir secrets fetched from Auth Server are cached by default. 
+Default ttl for Shamir secrets is 10m.
+To disable caching set KMS_SHAMIR_SECRET_CACHE_TTL=0s.
+An appropriate ttl can be set using the same KMS_SHAMIR_SECRET_CACHE_TTL variable.
 
 
 [ristretto]: https://github.com/dgraph-io/ristretto
