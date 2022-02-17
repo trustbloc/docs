@@ -6,7 +6,7 @@ Orb
 
    introduction.md
    activitypub.md
-   authentication.md
+   authorization.md
    batchwriter.md
    observer.md
    sidetree.md
