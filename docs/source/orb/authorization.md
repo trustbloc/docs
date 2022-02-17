@@ -30,16 +30,16 @@ A common HTTP client within Orb is used for all server-to-server communications.
 [enabled](parameters.html#http-signatures-enabled) then the HTTP client adds the following headers to the request
 before it is sent:
 
-- **Date** - The current date/time.
-- **Digest** - The hash of the request body, prepended by the algorithm (if a body was not included in the request then _Digest_ will be empty).
-- **Signature** - A string containing:
-  - _keyId_ - A resolvable URI of the public key that is used to verify the signature.
-  - _algorithm_ - The algorithm used to sign the request. (Orb uses [KMS](../kms/index.html#key-management-system-kms) to sign the request with the _Ed25519_ algorithm.)
-  - _headers_ - Declares the set of headers that should be signed. This set includes:
-    * (request target) - Includes the request method (GET, POST) and the request URI. For example: POST https://orb.domain1.com.
-    * Date - Points to the _Date_ header.
-    * Digest - Points to the _Digest_ header (this value is not included if the _Digest_ header is empty).
-  - _signature_ - The base64-encoded signature of the headers that are declared in the _headers_ field.
+1) **Date** - The current date/time.
+2) **Digest** - The hash of the request body, prepended by the algorithm (if a body was not included in the request then _Digest_ will be empty).
+3) **Signature** - A string containing:
+   1) _keyId_ - A resolvable URI of the public key that is used to verify the signature.
+   2) _algorithm_ - The algorithm used to sign the request. (Orb uses [KMS](../kms/index.html#key-management-system-kms) to sign the request with the _Ed25519_ algorithm.)
+   3) _headers_ - Declares the set of headers that should be signed. This set includes:
+      1) (request target) - Includes the request method (GET, POST) and the request URI. For example: POST https://orb.domain1.com.
+      2) Date - Points to the _Date_ header.
+      3) Digest - Points to the _Digest_ header (this value is not included if the _Digest_ header is empty).
+      4) _signature_ - The base64-encoded signature of the headers that are declared in the _headers_ field.
 
 **Sample Request Headers:**
 
