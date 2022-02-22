@@ -1,5 +1,19 @@
 # Witness Policy Endpoints
 
-/policy
+**Endpoint:** /policy
 
-Configure witness policy as per [Witness Policy](witnesspolicy.html#witness-policy)
+### POST
+
+Configures the witness policy as per [Witness Policy](../witnesspolicy.html#witness-policy)
+
+**Example**
+
+Request:
+
+```
+POST /policy HTTP/1.1
+Host: orb.domain1.com
+Content-Type: text/plain
+
+MinPercent(100,batch) AND MinPercent(50,system)
+```
