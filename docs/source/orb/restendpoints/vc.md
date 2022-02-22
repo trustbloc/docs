@@ -1,3 +1,3 @@
 # VC Endpoints
 
-/vc/[id]
+**Endpoint:** /vc/[id]

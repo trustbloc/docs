@@ -7,10 +7,14 @@ The [ActivityAnchors](https://trustbloc.github.io/activityanchors/#actor-discove
 
 **Endpoint:** /services/orb
 
+### GET
+
 The Orb service is retrieved using the */services/orb* endpoint. The returned data is a JSON document
 that contains REST endpoints that may be queried to return additional information.
 
 **Example**
+
+Request:
 
 ```
 GET /services/orb HTTP/1.1
@@ -18,6 +22,8 @@ Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains the [service](https://trustbloc.github.io/activityanchors/#actor-discovery):
 
 ```json
 {
@@ -49,9 +55,13 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/keys/[id]
 
+### GET
+
 The public key of an Orb service is retrieved using this endpoint.
 
 **Example**
+
+Request:
 
 ```
 GET /services/orb/keys/main-key HTTP/1.1
@@ -59,6 +69,8 @@ Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains the public key of the service:
 
 ```json
 {
@@ -72,6 +84,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/followers
 
+### GET
+
 The followers of this Orb service are returned via this endpoint. If no paging parameters are specified in the
 URL then the response contains information about the collection, i.e. the links to the first and last page, as
 well as the total number of items in the collection. A subsequent request may be made using parameters
@@ -79,12 +93,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/followers HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -97,12 +115,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/followers?page=true&page-num=0 HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items in the first page:
 
 ```json
 {
@@ -123,6 +145,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/following
 
+### GET
+
 The services following this Orb service are returned via this endpoint. If no paging parameters are specified
 in the URL then the response contains information about the collection, i.e. the links to the first and last page, as
 well as the total number of items in the collection. A subsequent request may be made using parameters
@@ -130,12 +154,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request:
+
 ```
 GET /services/orb/following HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -148,12 +176,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/following?page=true&page-num=0 HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -188,12 +220,16 @@ using parameters that include a specified page number in order to retrieve the a
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/outbox HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -206,12 +242,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request page 41:
+
 ```
 GET /services/orb/outbox?page=true&page-num=41 HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from page 41:
 
 ```json
 {
@@ -373,9 +413,11 @@ which is usually an administrator token.
 
 **Example**
 
+Post a _Follow_ activity:
+
 ```
 POST /services/orb/outbox HTTP/1.1
-Host: orb.domain1.com
+Host: orb.domain2.com
 Content-Type: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 
@@ -393,6 +435,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/inbox
 
+### GET
+
 The activities posted to the inbox of this service are returned via this endpoint. If no paging parameters are specified
 in the URL then the response contains information about the inbox collection, i.e. the links to the first and last page, as
 well as the total number of items in the inbox. A subsequent request may be made using parameters
@@ -400,12 +444,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/inbox HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -418,12 +466,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/inbox?page=true HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -508,9 +560,43 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+### POST
+
+A POST request to the inbox endpoint adds the activity contained in the request to the service's Inbox,
+which will be processed by the ActivityPub [Inbox](../activitypub.html#outbox-inbox). This endpoint is restricted by
+authorization rules, i.e. the requester must sign the HTTP request. Some activities also have authorization rules
+such that the actor must be in the destination server's [followers](#followers) and/or [witnessing](#witnessing)
+collection.
+
+**Example**
+
+Post an _Invite_ activity:
+
+```
+POST /services/orb/inbox HTTP/1.1
+Host: orb.domain2.com
+Content-Type: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
+Accept-Encoding: gzip, deflate
+
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/activityanchors/v1"
+  ],
+  "actor": "https://orb.domain1.com/services/orb",
+  "id": "https://orb.domain1.com/services/orb/activities/34e67f25-4832-4c62-a199-5614ec3e5582",
+  "object": "https://w3id.org/activityanchors#AnchorWitness",
+  "target": "https://orb.domain2.com/services/orb",
+  "to": "https://orb.domain2.com/services/orb",
+  "type": "Invite"
+}
+```
+
 ## Witnesses
 
 **Endpoint:** /services/orb/witnesses
+
+### GET
 
 The witnesses of this service are returned via this endpoint. If no paging parameters are specified
 in the URL then the response contains information about the _witnesses_ collection, i.e. the links to the first and last page, as
@@ -519,12 +605,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/witnesses HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -537,12 +627,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request page 4:
+
 ```
 GET /services/orb/witnesses??page=true&page-num=4 HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from page 4:
 
 ```json
 {
@@ -562,6 +656,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/witnessing
 
+### GET
+
 The services that are witnessing anchor events for this service are returned via this endpoint. If no paging parameters are specified
 in the URL then the response contains information about the collection, i.e. the links to the first and last page, as
 well as the total number of items in the collection. A subsequent request may be made using parameters
@@ -569,12 +665,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/witnessing HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -587,12 +687,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/witnessing?page=true HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -613,6 +717,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/liked
 
+### GET
+
 The anchor events that are _liked_ are returned via this endpoint. (Liked means that the
 anchors in the response were all added to the ledger.) If no paging parameters are specified in the URL then the response
 contains information about the collection, i.e. the links to the first and last page, as well as the total number of
@@ -621,12 +727,16 @@ to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/liked HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -639,12 +749,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/liked?page=true HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -667,6 +781,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/likes/[id]
 
+### GET
+
 This endpoint returns a collection of _Like_ activities for a given anchor. If no paging parameters are specified
 in the URL then the response contains information about the collection, i.e. the links to the first and last page, as
 well as the total number of items in the collection. A subsequent request may be made using parameters
@@ -674,12 +790,16 @@ that include a specified page number in order to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/likes/hl%3AuEiAkSqfSi_HWPU4boZeeCPvpCnNU3VM2vSsbIcNfQWWRQg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQWtTcWZTaV9IV1BVNGJvWmVlQ1B2cENuTlUzVk0ydlNzYkljTmZRV1dSUWc HTTP/1.1
 Host: orb.domain2.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -692,12 +812,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/likes/hl%3AuEiAkSqfSi_HWPU4boZeeCPvpCnNU3VM2vSsbIcNfQWWRQg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQWtTcWZTaV9IV1BVNGJvWmVlQ1B2cENuTlUzVk0ydlNzYkljTmZRV1dSUWc?page=true&page-num=0 HTTP/1.1
 Host: orb.domain2.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -736,6 +860,8 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/shares/[id]
 
+### GET
+
 The _Create_ activities that were _Announced_ are returned via this endpoint. If no paging parameters are specified in the URL
 then the response contains information about the collection, i.e. the links to the first and last page, as well as the total number of
 items in the collection. A subsequent request may be made using parameters that include a specified page number in order
@@ -743,12 +869,16 @@ to retrieve the actual items.
 
 **Example**
 
+Request page information:
+
 ```
 GET /services/orb/shares/hl%3AuEiA-wMFlsv-OGRDiSgxqc_TmJzuRpTRcm7s2FOXkH-oJRg%3AuoQ-BeEJpcGZzOi8vYmFma3JlaWI2eWRhd2xteDdyeW1yYnlza2JydmhoNWhnZTQ1emRqanVsc24zd25xdTR4c2I3MnFqaXk HTTP/1.1
 Host: orb.domain3.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains page information:
 
 ```json
 {
@@ -761,12 +891,16 @@ Accept-Encoding: gzip, deflate
 }
 ```
 
+Request first page:
+
 ```
 GET /services/orb/shares/hl%3AuEiA-wMFlsv-OGRDiSgxqc_TmJzuRpTRcm7s2FOXkH-oJRg%3AuoQ-BeEJpcGZzOi8vYmFma3JlaWI2eWRhd2xteDdyeW1yYnlza2JydmhoNWhnZTQ1emRqanVsc24zd25xdTR4c2I3MnFqaXk?page=true HTTP/1.1
 Host: orb.domain3.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains items from the first page:
 
 ```json
 {
@@ -869,9 +1003,13 @@ Accept-Encoding: gzip, deflate
 
 **Endpoint:** /services/orb/activities/[id]
 
+### GET
+
 This endpoint returns an activity for the specified ID.
 
 **Example**
+
+Request:
 
 ```
 GET /services/orb/activities/91dbb2e2-1040-4fd5-bd2e-1bcd67bdda8a HTTP/1.1
@@ -879,6 +1017,8 @@ Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
+
+Response contains the activity:
 
 ````json
 {
@@ -904,12 +1044,51 @@ Accept-Encoding: gzip, deflate
 
 An [accept list](../activitypub.html#accept-list) is a database of server URLs that are authorized for a particular type of operation.
 
+### GET
+
+The accept-list is retrieved using a GET request to this endpoint.
+
+**Example**
+
+Request:
+
+```
+GET /services/orb/acceptlist HTTP/1.1
+Host: orb.domain1.com
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate
+```
+
+Response contains the accept-list for both _follow_ and _invite-witness_:
+
+```json
+[
+  {
+    "type": "follow",
+    "url": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ]
+  },
+  {
+    "type": "invite-witness",
+    "url": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ]
+  }
+]
+```
+
 ### POST
 
 The accept-list is updated using a POST request to this endpoint. Services may
 be added and removed from the accept-list for _Follow_ and _Invite_ witness activities.
 
 **Example**
+
+Request to add domain2 and domain3 to the _follow_ and _invite-witness_ accept-list as well as remove domain4
+from the _follow_ accept-list:
 
 ```
 POST /services/orb/acceptlist HTTP/1.1
@@ -934,38 +1113,6 @@ Accept-Encoding: gzip, deflate
       "https://orb.domain3.com/services/orb"
     ],
     "type": "invite-witness"
-  }
-]
-```
-
-### GET
-
-The accept-list is retrieved using a GET request to this endpoint.
-
-**Example**
-
-```
-GET /services/orb/acceptlist HTTP/1.1
-Host: orb.domain1.com
-Accept: application/ld+json
-Accept-Encoding: gzip, deflate
-```
-
-```json
-[
-  {
-    "type": "follow",
-    "url": [
-      "https://orb.domain2.com/services/orb",
-      "https://orb.domain3.com/services/orb"
-    ]
-  },
-  {
-    "type": "invite-witness",
-    "url": [
-      "https://orb.domain2.com/services/orb",
-      "https://orb.domain3.com/services/orb"
-    ]
   }
 ]
 ```

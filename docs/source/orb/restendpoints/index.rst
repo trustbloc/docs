@@ -11,5 +11,4 @@ REST Endpoints
    witness-policy.md
    ld-context.md
    vc.md
-   nodeinfo.md
-   metrics.md
+   system.md
