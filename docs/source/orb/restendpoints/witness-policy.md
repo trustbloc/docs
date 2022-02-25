@@ -1,4 +1,4 @@
-# Witness Policy Endpoints
+# Witness Policy Endpoint
 
 **Endpoint:** /policy
 
