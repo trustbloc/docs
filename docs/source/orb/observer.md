@@ -8,7 +8,7 @@ Observer listens to witnessed anchor index events. Upon receiving an anchor inde
 
 3) Retrieve Sidetree batch files from CAS
 
-4) Validate Sidetee batch files
+4) Validate Sidetree batch files
 
 *   Verify the number of operations does not exceed the maximum allowed limit.
 *   Verify size of each operation does not exceed the maximum allowed limit.

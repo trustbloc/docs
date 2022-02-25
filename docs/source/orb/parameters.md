@@ -745,3 +745,30 @@ The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout
 | --witness-policy-cache-expiration | WITNESS_POLICY_CACHE_EXPIRATION  | 30s     |
 
 The expiration time(period) of witness policy cache. Default value is 30s.
+
+### anchor-attachment-media-type
+
+| Arg                            | Env                          | Default          |
+|--------------------------------|------------------------------|------------------|
+| --anchor-attachment-media-type | ANCHOR_ATTACHMENT_MEDIA_TYPE | application/json |
+
+The media type for attachments in an AnchorEvent. Possible values are 'application/json' and
+'application/gzip'. If 'application/json' is specified then the content of the attachments in the
+AnchorEvent are encoded as an escaped JSON string. If 'application/gzip' is specified then the
+content is compressed with gzip and base64 encoded.
+
+### sidetree-protocol-versions
+
+| Arg                          | Env                        | Default |
+|------------------------------|----------------------------|---------|
+| --sidetree-protocol-versions | SIDETREE_PROTOCOL_VERSIONS | 1.0     |
+
+Comma-separated list of Sidetree protocol versions.
+
+### current-sidetree-protocol-version
+
+| Arg                                 | Env                               | Default |
+|-------------------------------------|-----------------------------------|---------|
+| --current-sidetree-protocol-version | CURRENT_SIDETREE_PROTOCOL_VERSION |         |
+
+One of available Sidetree protocol versions. Defaults to latest Sidetree protocol version.
