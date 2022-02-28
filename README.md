@@ -2,25 +2,19 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/trustbloc/bloc-docs/master/LICENSE-APACHE2)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://raw.githubusercontent.com/trustbloc/bloc-docs/master/LICENSE)
 
-# bloc-docs
+# TrustBloc Docs
 
-This repository contains the assets and template files for documentation of [TrustBloc](https://github.com/trustbloc) projects.
+This repository contains the documentation source for [TrustBloc](https://github.com/trustbloc) projects. 
+
+High level folder structure:
+- [Soure](./readthedocs/) for [TrustBloc readthedocs](https://trustbloc.readthedocs.io/) site
+- [Templates](./templates/) to development
+
 
 ## Contributing
 
 We welcome contributions from anyone in the community. Follow our [community guidelines](https://github.com/trustbloc/community/blob/master/CONTRIBUTING.md) to learn how to contribute to this repository.
 
-## Build locally
-```
-brew install python@3.9
-pip3 install sphinx
-pip3 install sphinx_rtd_theme
-pip3 install myst-parser
-cd docs
-# this command will create build folder inside it html files click index.html
-make html
-
-```
 
 ## License
 The TrustBloc community repositories are licensed under [Apache License, Version 2.0 (Apache-2.0)](LICENSE-APACHE2).
