@@ -19,8 +19,8 @@ New key material is used to encrypt new data.
 To decrypt data at first the new key material is used. If decryption fails, old key material is used.
 This allows decrypting data that were encrypted before rotation.
 
-Key material - is actually key cryptographic data that is used to encrypt, decrypt operations.
-Key - is a set of key material ordered by data, from newest to oldest.
+Key material - cryptographic data used for encrypt/decrypt operations.
+Key - set of key material ordered by date, from the newest to oldest.
 
 Key rotation is implemented using LocalKMS.Rotate from aries-framework-go.
 

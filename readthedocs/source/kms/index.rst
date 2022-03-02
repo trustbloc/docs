@@ -7,6 +7,7 @@ Key Management System (KMS)
    introduction.md
    parameters.md
    rest_endpoints.md
+   keys.md
    key_rotation.md
    metrics.md
    caching.md
