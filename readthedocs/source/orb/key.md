@@ -37,7 +37,7 @@ ORB_ACTIVE_KEY_ID=orbkey1
 ```
 
 ## Storing
-The key will be managed and stored in KMS please refer to this [doc](../kms/keys.md) for more details.
+The key will be managed and stored in KMS please refer to this [doc](../kms/keys.html) for more details.
 Orb is using Scenario 1 in kms doc.
 
 ## Rotation
