@@ -37,7 +37,8 @@ ORB_ACTIVE_KEY_ID=orbkey1
 ```
 
 ## Storing
-The key will be managed and stored in KMS please refer to this doc for more details.
+The key will be managed and stored in KMS please refer to this [doc](../kms/keys.md) for more details.
+Orb is using Scenario 1 in kms doc.
 
 ## Rotation
 There is two ways to rotate orb key.
@@ -73,7 +74,8 @@ ORB_ACTIVE_KEY_ID=orbkey2
 ```
 
 ## Distribute
-The key will be managed and stored in KMS please refer to this doc for more details.
+The key will be managed and stored in KMS please refer to this [doc](../kms/keys.md) for more details.
+Orb is using Scenario 1 in kms doc.
 
 ### Impact of loss
 - Http signatures it's short-lived no impact of loss.
