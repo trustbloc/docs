@@ -1,14 +1,13 @@
 # Key
-Orb use one crypto key to do the following operations.
-
-- Sign http requests between orb servers.
-- Sign VC.
+Orb uses one crypto key to do perform the following operations:
+ - Sign http requests between orb servers,
+ - Sign VCs.
 
 ## Creation
-There is two ways to create orb key.
+There are two ways to create orb key.
 
 ### Private key
-When Orb server start will import the private key and id into KMS sever.
+When Orb server starts, it will import the private key and id into KMS sever.
 
 ### Steps to create key
 - Create ed25519 private key.
@@ -22,7 +21,7 @@ ORB_ACTIVE_KEY_ID=orbkey1
 ```
 
 ### KMS key id
-Key need to be created in KMS before orb server starting.
+Key need to be created in KMS before starting orb server.
 
 #### Steps to create key
 - Create KMS keystore using KMS cli.
