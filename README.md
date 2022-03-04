@@ -9,6 +9,7 @@ This repository contains the documentation source for [TrustBloc](https://github
 High level folder structure:
 - [Soure](./readthedocs/) for [TrustBloc readthedocs](https://trustbloc.readthedocs.io/) site
 - [Templates](./templates/) to development
+- TrustBloc Component/Integration [Designs](./designs/) 
 
 
 ## Contributing
