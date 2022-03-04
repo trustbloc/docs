@@ -9,6 +9,7 @@ Key Management System (KMS)
    rest_endpoints.md
    keys.md
    key_rotation.md
+   cli.md
    metrics.md
    caching.md
    onboard_recover.md
