@@ -194,3 +194,35 @@ Response contains the DID document:
   }
 }
 ```
+
+### DID Parameters
+
+Orb supports the following DID query parameters:
+
+#### versionId	
+Identifies a specific version of a DID document to be resolved. 
+In orb the version ID specifies anchor hash that includes relevant DID operation. 
+If present, the associated value MUST be an ASCII string.
+
+```
+GET /sidetree/v1/identifiers/did:orb:uEiBwYoY8R0tXjX6G-YmuZR5pluT44aoZ7WWjf0XxeS34bQ:EiAzXL_RbZx3RCM4aThZ0-QeP0L9x7eoYwJBK2n_a0Um5Q?versionId=uEiCRI0FqR6cFVQ8rOPOsD-muNo8k_m7mYU_RPTYLPxdBvg HTTP/1.1
+Host: orb.domain2.com
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate
+```
+
+#### versionTime	
+Identifies a certain version timestamp of a DID document to be resolved. 
+That is, the DID document that was valid for a DID at a certain time. 
+If present, the associated value MUST be an ASCII string which is a valid XML datetime value. 
+This datetime value MUST be normalized to UTC 00:00:00 and without sub-second decimal precision. 
+For example: 2020-12-20T19:17:47Z. 
+
+```
+GET /sidetree/v1/identifiers/did:orb:uEiBwYoY8R0tXjX6G-YmuZR5pluT44aoZ7WWjf0XxeS34bQ:EiAzXL_RbZx3RCM4aThZ0-QeP0L9x7eoYwJBK2n_a0Um5Q?versionTime=2022-03-04T17:40:59Z HTTP/1.1
+Host: orb.domain2.com
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate
+```
+
+For more details about versionId and versionTime queries see [DID Parameters](https://www.w3.org/TR/did-core/#did-parameters)
