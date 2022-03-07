@@ -33,21 +33,45 @@ External endpoint that clients use to invoke services. This endpoint is used to 
 
 The type of database to use for everything except key storage. Supported options: mem, couchdb, mongodb.
 
-### private-keys
+### vc-sign-private-keys
 
 | Arg            | Env              |
 |----------------|------------------|
-| --private-keys | ORB_PRIVATE_KEYS |
+| --vc-sign-private-keys | ORB_VC_SIGN_PRIVATE_KEYS |
 
-Private Keys base64 (ED25519Type). For example,  key1=privatekeyBase64Value,key2=privatekeyBase64Value
+VC Sign Private Keys base64 (ED25519Type). For example,  key1=privatekeyBase64Value,key2=privatekeyBase64Value
 
-### active-key-id
+### vc-sign-active-key-id
 
 | Arg             | Env              - |
 |-----------------|--------------------|
-| --active-key-id | ORB_ACTIVE_KEY_ID  |
+| --vc-sign-active-key-id | ORB_VC_SIGN_ACTIVE_KEY_ID  |
 
-Active Key ID (ED25519Type).
+VC Sign Active Key ID (ED25519Type).
+
+### vc-sign-keys-id
+
+| Arg             | Env              - |
+|-----------------|--------------------|
+| --vc-sign-keys-id | ORB_VC_SIGN_KEYS_ID  |
+
+VC Sign Keys id in kms (ED25519Type).
+
+### http-sign-private-key
+
+| Arg            | Env              |
+|----------------|------------------|
+| --http-sign-private-key | ORB_HTTP_SIGN_PRIVATE_KEY |
+
+HTTP Sign Private Key base64 (ED25519Type). For example,  key1=privatekeyBase64Value
+
+### http-sign-active-key-id
+
+| Arg             | Env              - |
+|-----------------|--------------------|
+| --http-sign-active-key-id | ORB_HTTP_SIGN_ACTIVE_KEY_ID  |
+
+HTTP Sign Active Key ID (ED25519Type).
 
 ### did-namespace
 
