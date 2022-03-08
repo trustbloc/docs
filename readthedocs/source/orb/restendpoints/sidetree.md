@@ -243,6 +243,9 @@ and use either canonicalId or cryptographic hyperlink from equivalentId list.
 Post an _update_ operation to add new service:
 
 ```json
+POST /sidetree/v1/operations HTTP/1.1
+Host: orb.domain1.com
+Content-Type: application/ld+json
 {
   "delta": {
     "patches": [
@@ -267,6 +270,8 @@ Post an _update_ operation to add new service:
 ```
 
 Resolution response from Orb server upon successful anchoring of update operation:
+sidetree/v1/identifiers/did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ
+server
 
 ```json
 {
@@ -343,6 +348,199 @@ Resolution response from Orb server upon successful anchoring of update operatio
 Note that versionId specifies anchor-hash that contains update operation. You can use versionId to 
 resolve document at specific version.
 
+**Example**
+
+Post a _recover_ operation:
+
+```json
+POST /sidetree/v1/operations HTTP/1.1
+Host: orb.domain1.com
+Content-Type: application/ld+json
+{
+  "delta": {
+    "patches": [
+      {
+        "action": "add-public-keys",
+        "publicKeys": [
+          {
+            "id": "recoveryKey",
+            "publicKeyJwk": {
+              "crv": "P-256",
+              "kty": "EC",
+              "x": "-IRdzsImjgsrto6r_MzU9LjecdeBg153ixNSyUYSiwI",
+              "y": "q5g_WtYdCxjXyey4ASH9N7rg9CIwY9guVoD269mTq4k"
+            },
+            "purposes": [
+              "authentication"
+            ],
+            "type": "JsonWebKey2020"
+          },
+          {
+            "id": "auth",
+            "publicKeyJwk": {
+              "crv": "Ed25519",
+              "kty": "OKP",
+              "x": "6fEptoI2zIVlR9YQHar_xUyWlhnYH6WjJoI-tTIwopY",
+              "y": ""
+            },
+            "purposes": [
+              "assertionMethod"
+            ],
+            "type": "Ed25519VerificationKey2018"
+          }
+        ]
+      },
+      {
+        "action": "add-services",
+        "services": [
+          {
+            "id": "didcomm",
+            "priority": 0,
+            "recipientKeys": [
+              "EvwVTTeLzVRNxX9vETVv8xRSsqfUGi2r3a6DzrhSMTGc"
+            ],
+            "routingKeys": [
+              "EaMUBZMAYZU8CWcioQBxT6dLjhDvbRjDyVisttixAzpc"
+            ],
+            "serviceEndpoint": "https://hub.example.com/.identity/did:example:0123456789abcdef/",
+            "type": "did-communication"
+          }
+        ]
+      }
+    ],
+    "updateCommitment": "EiCZDsrREJOpB49QfIPCU-74VXM760gTJGlkhvQAgwdcMQ"
+  },
+  "didSuffix": "EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+  "revealValue": "EiAkLgBNtJVpSHGzuWceujPdw0A3p_tK3cXhDndQG3JjPQ",
+  "signedData": "eyJhbGciOiJFUzI1NiJ9.eyJhbmNob3JGcm9tIjoxNjQ2Njg0MDI4LCJhbmNob3JPcmlnaW4iOiJodHRwczovL29yYi5kb21haW4xLmNvbSIsImFuY2hvclVudGlsIjoxNjQ2Njg0MzI4LCJkZWx0YUhhc2giOiJFaURJZnVuZXBNbEFSeGFNT2RkcEdxWXIxVkFDVm5VNV8yRkxhYm1FcEdqcXRnIiwicmVjb3ZlcnlDb21taXRtZW50IjoiRWlEY0x1eUNLN2pWVHQ0d0JWM09pSFhiX2E4WmNkMG5NMEtnTXlLTnJlWkZ3dyIsInJlY292ZXJ5S2V5Ijp7ImNydiI6IlAtMjU2Iiwia3R5IjoiRUMiLCJ4IjoiQnF2anpEMDdWNnRwYjVfVHNVRzNDRWJENHVJSkh3TmlvTzFOc0VGWVpRUSIsInkiOiJmbGktSVJRcnhHXzhESGJLMlJtMVEtN1hKay14VEtHQjIwRk5WdFFTSTJZIn19.EBbqSNSe6vZHOJMsxXkv7tRk1g6k28qzOWwhqAP8XIB_4mpzJEhoVaVSKT14LIOTQBAaQXad-PV52WnwoyBWvg",
+  "type": "recover"
+}
+```
+
+Upon successful anchoring of recover operation the Orb server will return the following resolution response
+for the following request:
+sidetree/v1/identifiers/did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ
+
+```json
+{
+  "@context": "https://w3id.org/did-resolution/v1",
+  "didDocument": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      "https://w3id.org/security/suites/jws-2020/v1",
+      "https://w3id.org/security/suites/ed25519-2018/v1"
+    ],
+    "assertionMethod": [
+      "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ#auth"
+    ],
+    "authentication": [
+      "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ#recoveryKey"
+    ],
+    "id": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+    "service": [
+      {
+        "id": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ#didcomm",
+        "priority": 0,
+        "recipientKeys": [
+          "EvwVTTeLzVRNxX9vETVv8xRSsqfUGi2r3a6DzrhSMTGc"
+        ],
+        "routingKeys": [
+          "EaMUBZMAYZU8CWcioQBxT6dLjhDvbRjDyVisttixAzpc"
+        ],
+        "serviceEndpoint": "https://hub.example.com/.identity/did:example:0123456789abcdef/",
+        "type": "did-communication"
+      }
+    ],
+    "verificationMethod": [
+      {
+        "controller": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+        "id": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ#recoveryKey",
+        "publicKeyJwk": {
+          "crv": "P-256",
+          "kty": "EC",
+          "x": "-IRdzsImjgsrto6r_MzU9LjecdeBg153ixNSyUYSiwI",
+          "y": "q5g_WtYdCxjXyey4ASH9N7rg9CIwY9guVoD269mTq4k"
+        },
+        "type": "JsonWebKey2020"
+      },
+      {
+        "controller": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+        "id": "did:orb:uEiDaJGNkFJSMlSeKjEFAIvjBxbybr7VWjLpxplhXPx8FCw:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ#auth",
+        "publicKeyBase58": "GkDHCaxe2yyD5SHRZPWTd61rzsrx66aimzJAV1SNYPpH",
+        "type": "Ed25519VerificationKey2018"
+      }
+    ]
+  },
+  "didDocumentMetadata": {
+    "canonicalId": "did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+    "equivalentId": [
+      "did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+      "did:orb:hl:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFU1MmViUE9SU2pPV3MyTGg1cFRPQkZWbGlvUE55VmRPZnNyTDJmZUg1UGd4QmlwZnM6Ly9iYWZrcmVpZ3U0NXR6d3BoZWtrZ29sbGd5eGI0MmttNGJjdm13ZmlodG9qazVoaDVzd2wzaDN5cHpoeQ:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+     ],
+    "method": {
+      "anchorOrigin": "https://orb.domain1.com",
+      "published": true,
+      "recoveryCommitment": "EiDcLuyCK7jVTt4wBV3OiHXb_a8Zcd0nM0KgMyKNreZFww",
+      "updateCommitment": "EiCZDsrREJOpB49QfIPCU-74VXM760gTJGlkhvQAgwdcMQ"
+    },
+    "versionId": "uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg"
+  }
+}
+```
+
+Note that canonicalId has changed - it includes anchor-hash that contains recover operation. At this point the client 
+should discontinue using old canonicalId and use new canonicalId.
+
+For more details about canonicalId see [Canonical IDs](https://trustbloc.github.io/did-method-orb/#propagation-delay-and-canonical-ids)
+
+**Example**
+
+Post a _deactivate_ operation:
+
+```json
+POST /sidetree/v1/operations HTTP/1.1
+Host: orb.domain1.com
+Content-Type: application/ld+json
+{
+  "didSuffix": "EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+  "revealValue": "EiDdHkE3GeAfTcPQdrVi8ET2_4NbRl9emFigCKdx9hp1yQ",
+  "signedData": "eyJhbGciOiJFUzI1NiJ9.eyJhbmNob3JGcm9tIjoxNjQ2Njg0MDM4LCJkaWRTdWZmaXgiOiJFaURJRnU4QmV2LW5Kc3E4dXcyeEdIS3RMS3I2YUxuY0ZNbk9sU1E5cGZQNFZRIiwicmVjb3ZlcnlLZXkiOnsiY3J2IjoiUC0yNTYiLCJrdHkiOiJFQyIsIngiOiJsWDYxUXlFWkVwaWh3N1dmMGt1bXlYMW1WX19heHRObkczM0VPNUZVRmhZIiwieSI6ImZUdWlURkJsZmo3OFIwUzVvbXRJNTZmamdOVlU5MFhMTzdkWEx0X21TbW8ifSwicmV2ZWFsVmFsdWUiOiIifQ.8lC5SPQO6FsvXCOCly5WNt33muD5SEAHC3iOLG1pGc0pWyct7R5MCOMD80xZwB_KnJManW6eMuVY4lZI6UmuTw",
+  "type": "deactivate"
+}
+```
+
+Upon successful anchoring of deactivate operation the Orb server will return the following resolution response
+for the following request:
+sidetree/v1/identifiers/did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ
+
+```json
+{
+  "@context": "https://w3id.org/did-resolution/v1",
+  "didDocument": {
+    "@context": [
+      "https://www.w3.org/ns/did/v1"
+    ],
+    "id": "did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ"
+  },
+  "didDocumentMetadata": {
+    "canonicalId": "did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+    "deactivated": true,
+    "equivalentId": [
+      "did:orb:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+      "did:orb:hl:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFU1MmViUE9SU2pPV3MyTGg1cFRPQkZWbGlvUE55VmRPZnNyTDJmZUg1UGd4QmlwZnM6Ly9iYWZrcmVpZ3U0NXR6d3BoZWtrZ29sbGd5eGI0MmttNGJjdm13ZmlodG9qazVoaDVzd2wzaDN5cHpoeQ:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ",
+      "did:orb:https:shared.domain.com:uEiDU52ebPORSjOWs2Lh5pTOBFVlioPNyVdOfsrL2feH5Pg:EiDIFu8Bev-nJsq8uw2xGHKtLKr6aLncFMnOlSQ9pfP4VQ"
+    ],
+    "method": {
+      "anchorOrigin": "https://orb.domain1.com",
+      "published": true
+    },
+    "versionId": "uEiB7tOd2S0lyQxQYaR0PcgbEQHhSS1PNplvlP5Qtfu-kjw"
+  }
+}
+```
+
+Note that deactivated flag in the document metadata has been set to true and that DID document is an empty document 
+that contains only id. Once DID document has been deactivated it is no longer possible to recover or modify DID document. 
 
 ## Identifiers
 
