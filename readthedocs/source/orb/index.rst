@@ -19,7 +19,7 @@ Orb
    cli.md
    driver.md
    vdr.md
-   key.md
+   keys.md
    metrics.md
    onboardrecover.md
    restendpoints/index.rst
