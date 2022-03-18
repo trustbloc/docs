@@ -24,3 +24,4 @@ Orb
    onboardrecover.md
    restendpoints/index.rst
    parameters.md
+   database.md

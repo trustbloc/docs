@@ -17,9 +17,9 @@ frame "Domain1" {
 
   component "AMQP\nRabbitMQ" as amqp
   component "AWS KMS" as aws_kms
-  component "Aries Web KMS" as aries_kms
+  component "Aries KMS" as aries_kms
 
-  orb1 ..> aws_kms
+  orb1 --> aws_kms
   orb1 ..> aries_kms
   orb1 ---> amqp
 
