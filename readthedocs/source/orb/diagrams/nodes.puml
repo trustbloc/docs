@@ -4,29 +4,28 @@
 skinparam linetype polyline
 
 frame "Domain1" {
-  database "AWS DocumentDB\nMongoDB" as orbdb
+  database "AWS\nDocumentDB\nor MongoDB" as orbdb
 
+  component "IPFS" as ipfs
   component Orb as orb1
 
   orb1 --> orbdb
 
   interface "HTTPS" as rest1
 
-  orb1 - rest1
+  orb1 -left- rest1
 
   component "AMQP\nRabbitMQ" as amqp
+  component "AWS KMS" as aws_kms
+  component "Aries Web KMS" as aries_kms
 
-  orb1 --> amqp
+  orb1 ..> aws_kms
+  orb1 ..> aries_kms
+  orb1 ---> amqp
 
-  component "IPFS" as ipfs
+  aries_kms --> orbdb
 
-  component "Aries Web KMS" as kms
-
-  kms --> orbdb
-
-  orb1 ---> kms
-
-  orb1 ..> ipfs
+  orb1 .> ipfs
 
   frame "VCT" {
     component "VCT" as vct
@@ -34,13 +33,14 @@ frame "Domain1" {
 
     component "VCT Signer\nGoogle Trillian" as vct_signer
 
-    database "PostgreSQL\nMySQL" as vctdb
+    database "PostgreSQL\nor MySQL" as vctdb
 
     interface "HTTPS" as vct_rest
-    vct - vct_rest
+    vct -left- vct_rest
 
     vct --> vct_log
-    vct --> vct_signer
+    vct -> vct_signer
+    vct -> vctdb
     vct_log --> vctdb
     vct_signer --> vctdb
   }
@@ -58,10 +58,12 @@ frame Domain3 as domain3 #Azure
 
 interface "HTTPS" as rest3 #Azure
 
-domain3 -right- rest3
+domain3 -left- rest3
 
 orb1 ---> rest2
 domain2 --> rest1
 domain2 --> rest3
+
+domain3 -> vct_rest
 
 @enduml

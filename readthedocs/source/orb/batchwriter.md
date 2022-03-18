@@ -59,7 +59,7 @@ This value is set to (_current time_) + ([batch writer timeout](parameters.html#
 
 The [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go) library queries the _Operation Queue_ to see if there are
 enough operations to cut a batch (according to the Sidetree protocol parameter
-[MAX_OPERATION_HASH_LENGTH](https://identity.foundation/sidetree/spec/#:~:text=10%2C000%20ops-,MAX_OPERATION_HASH_LENGTH,-Maximum%20length%20of)),
+[MAX_OPERATION_COUNT](https://identity.foundation/sidetree/spec/#:~:text=1%2C000%20bytes-,MAX_OPERATION_COUNT,-Maximum%20number%20of),
 or if the batch has timed out (according to startup parameter [batch-writer-timeout](parameters.html#batch-writer-timeout)).
 When the batch is cut then the sidetree-core-go library calls the _Remove_ function on the _Operation Queue_ to remove up
 to N operations from the queue. The _Remove_ function is quasi-transactional such that it returns an _Ack_ and a _Nack_ function

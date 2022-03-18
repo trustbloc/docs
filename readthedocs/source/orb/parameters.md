@@ -770,16 +770,16 @@ The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout
 
 The expiration time(period) of witness policy cache. Default value is 30s.
 
-### anchor-attachment-media-type
+### anchor-data-uri-media-type
 
-| Arg                            | Env                          | Default          |
-|--------------------------------|------------------------------|------------------|
-| --anchor-attachment-media-type | ANCHOR_ATTACHMENT_MEDIA_TYPE | application/json |
+| Arg                          | Env                        | Default          |
+|------------------------------|----------------------------|------------------|
+| --anchor-data-uri-media-type | ANCHOR_DATA_URI_MEDIA_TYPE | application/json |
 
-The media type for attachments in an AnchorEvent. Possible values are 'application/json' and
-'application/gzip'. If 'application/json' is specified then the content of the attachments in the
-AnchorEvent are encoded as an escaped JSON string. If 'application/gzip' is specified then the
-content is compressed with gzip and base64 encoded.
+The media type for data URIs in an anchor Linkset. Possible values are 'application/json' and
+'application/gzip;base64'. If 'application/json' is specified then the content of the data URIs
+in the anchor Linkset are encoded as an escaped JSON string. If 'application/gzip;base64' is
+specified then the content is compressed with gzip and base64 encoded.
 
 ### sidetree-protocol-versions
 
