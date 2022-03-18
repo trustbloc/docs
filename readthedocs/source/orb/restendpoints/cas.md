@@ -9,51 +9,43 @@ Returns content stored in the Content Addressable Storage (CAS). The ID is eithe
 
 **Example**
 
-Request an [AnchorEvent](https://trustbloc.github.io/activityanchors/#anchorevent) using its hash as the ID:
+Request an [Anchor Linkset](https://trustbloc.github.io/activityanchors/#anchorlinkset) using its hash as the ID:
 
 ```
-GET /cas/uEiD6mDyC3YodyjfNfmIE3jYzGSDalDqj8Syj-wY4IAC8yA HTTP/1.1
+GET /cas/uEiBJQHYkD30RGKVlJ205wghkNQ_RTaZPxJkeGr5DDyaLIQ HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
 
-Response contains the [AnchorEvent](https://trustbloc.github.io/activityanchors/#anchorevent):
+Response contains the Anchor Linkset:
 
 ```json
 {
-  "@context": [
-    "https://www.w3.org/ns/activitystreams",
-    "https://w3id.org/activityanchors/v1"
-  ],
-  "attachment": [
+  "linkset": [
     {
-      "content": "{\"properties\":{\"https://w3id.org/activityanchors#generator\":\"https://w3id.org/orb#v0\",\"https://w3id.org/activityanchors#resources\":[{\"id\":\"did:orb:uAAA:EiBfWqeAJfENeHLABsYIYmsIqtk-bsmvJmoR6IgISd6ZcA\"},{\"id\":\"did:orb:uAAA:EiAdTRM3nwkp6lsn2n17_T-t7j4xT4IJxSXgfBCB3exZ2g\"},{\"id\":\"did:orb:uAAA:EiDllWjlTcoNyL5roXFRzdnWvygPT5FHbISVjwDNAD98tA\"},{\"id\":\"did:orb:uAAA:EiC6Sjz56-iawx_CUl3xoIykVG1iKtvh78zRl93WHFkQdA\"},{\"id\":\"did:orb:uAAA:EiADvRR2cTIv8si57Tl2puoqpIWK41L9rb9aVF2gdrKhyg\"}]},\"subject\":\"hl:uEiCVVS-n0wx0OfeEXBM9jcGNOcMEArYYWPIxk5D_l96ySg:uoQ-BeEJpcGZzOi8vYmFma3JlaWV2a3V4MnB1eW1vcTQ3cGJjNGNtNnkzcW1uaGhicWlhdndkYm1wZW1tdHNkN3pweHZzamk\"}",
-      "generator": "https://w3id.org/orb#v0",
-      "mediaType": "application/json",
-      "tag": [
+      "anchor": "hl:uEiBY85v7gtFoJ_K0iIONZcxGas3Kg0FrKidJdvEIt8h4Pg",
+      "author": "https://orb.domain2.com/services/orb",
+      "original": [
         {
-          "href": "hl:uEiDSkSE5Oxl6Z6Tr6wGMW1dnlC6HaZrcGURNo6dSeQ2jzA",
-          "rel": [
-            "witness"
-          ],
-          "type": "Link"
+          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiDkZV2rw2XKdqPoGKy6Vg0HEk36HfsxyWfnY3jp3Q2K-g%22%2C%22author%22%3A%22https%3A%2F%2Forb.domain2.com%2Fservices%2Forb%22%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBTRfNkzKwW3ZVDl6WwXsYhre6HPE8jQ7e9l3m6pii-iw%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCUt537plK2HuI0k2rQNP3MgDtq1T5Wj_LZ7yQOJY2gcA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDpy0--tFbSNGG-UNce9_yXfRBFQ9kkme8SREFLUiaK6g%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiAmF0h5uxCI14AEPUfkgNzGbodfJtUlQVf0V7IWzPrPGg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiAeNcjw65SIWS9qPm7MlFF-rYu-lKhKq16obJ-6LqOpaQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDlaV0jjvy8JlBJ-Ugge47QOqBA0KxnAhHghcWKwLvWwQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDIo4o6dD0oGBPtdYITyXWoXqNJ3OC74dgw2oocdz7AOA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDZ5gEl8ZiENuuQ5dw0ozfmesntsUne37vHKMkO0e9qHw%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDL3vGRVNQw98-TJjVWfJX9cAPZTB2YlYSE2VLTktkUbA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiAVOBVLnwIgF6f83JfJUi82mhfAQ2oVKpsZCfkt5tX2aQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiASpBh5wHkd2avGkUvsGku0NfqUreNU6oJtaRjrF2B3Iw%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCPO-Xfxe4PblukhJSDpN87v-fGKX74eiUmcDm_lj_7Qg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDd0lK5lHAn1JxHFQXbcYoQubWSNNHKDpSPg6jEpfkAhQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiB9sRB7EfxBBRY7JxGdRKnbkE_b2Q9UYlZ6fY5jk8_CUw%22%7D%5D%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D",
+          "type": "application/linkset+json"
         }
       ],
-      "type": "AnchorObject",
-      "url": "hl:uEiD96Zjp10atu2DPV1VbSxZmMvk5r5iAvSlnXXAfpkpY9g"
-    },
-    {
-      "content": "{\"@context\":[\"https://www.w3.org/2018/credentials/v1\"],\"credentialSubject\":\"hl:uEiD96Zjp10atu2DPV1VbSxZmMvk5r5iAvSlnXXAfpkpY9g\",\"id\":\"https://orb.domain2.com/vc/afeead95-8507-460b-a73c-cf9b4853b4a9\",\"issuanceDate\":\"2022-02-22T15:45:41.6601759Z\",\"issuer\":\"https://orb.domain2.com\",\"proof\":[{\"created\":\"2022-02-22T15:45:41.6613096Z\",\"domain\":\"https://orb.domain2.com\",\"jws\":\"eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..2Sp1wXzI69pontDt-x26KwEBFhEzif33io9lIEHEEBRHgiLAFr4D6XDDVyjMmSCXWWuYBMZUFWwwHJkpPi08Dg\",\"proofPurpose\":\"assertionMethod\",\"type\":\"Ed25519Signature2018\",\"verificationMethod\":\"did:web:orb.domain2.com#orb2key\"},{\"created\":\"2022-02-22T15:45:42.664Z\",\"domain\":\"http://orb.vct:8077/maple2020\",\"jws\":\"eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19.._vShdZ5z_YKjWfKPt5zgTJpUoYx1pMfjETiFVHHVsZrUlAM9CXLSjrRAzGicT4uqTVFqurrpsQstPAABpm_DDQ\",\"proofPurpose\":\"assertionMethod\",\"type\":\"Ed25519Signature2018\",\"verificationMethod\":\"did:web:orb.domain1.com#orb1key2\"}],\"type\":\"VerifiableCredential\"}",
-      "generator": "https://w3id.org/orb#v0",
-      "mediaType": "application/json",
-      "type": "AnchorObject",
-      "url": "hl:uEiDSkSE5Oxl6Z6Tr6wGMW1dnlC6HaZrcGURNo6dSeQ2jzA"
+      "profile": "https://w3id.org/orb#v0",
+      "related": [
+        {
+          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBY85v7gtFoJ_K0iIONZcxGas3Kg0FrKidJdvEIt8h4Pg%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiDkZV2rw2XKdqPoGKy6Vg0HEk36HfsxyWfnY3jp3Q2K-g%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpRGtaVjJydzJYS2RxUG9HS3k2VmcwSEVrMzZIZnN4eVdmblkzanAzUTJLLWc%22%7D%5D%7D%5D%7D",
+          "type": "application/linkset+json"
+        }
+      ],
+      "replies": [
+        {
+          "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%22hl%3AuEiBY85v7gtFoJ_K0iIONZcxGas3Kg0FrKidJdvEIt8h4Pg%22%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2Fc8355893-0630-47a9-9135-b120149b3f9f%22%2C%22issuanceDate%22%3A%222022-03-18T14%3A39%3A00.2770898Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-03-18T14%3A39%3A00.2776418Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22rgdMdUcfEB58YUTbRrJJHbDTlisgbW6qCEI4nU-DKxswZthLlZuvSQO_NRScedk4bLVh3UTgyY3ZP2QOb4K0Cw%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23HmSDhi2uFacLdbmBpzuns2vZ8fIUZ30qaz2GMRzyhHs%22%7D%2C%7B%22created%22%3A%222022-03-18T14%3A39%3A00.558Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22UKcectK_atESBKdt1B7zH5E_j2CkIyd0g2MoKVPY91APZdh-73qjv8ySPtdomveKoD0njOf14C3e9-tBeBITBg%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23_pmWt-9hg6jjE5E_Ph22D3nDcJMIX-i9okW0tYJ3cy4%22%7D%5D%2C%22type%22%3A%22VerifiableCredential%22%7D",
+          "type": "application/ld+json"
+        }
+      ]
     }
-  ],
-  "attributedTo": "https://orb.domain2.com/services/orb",
-  "index": "hl:uEiD96Zjp10atu2DPV1VbSxZmMvk5r5iAvSlnXXAfpkpY9g",
-  "published": "2022-02-22T15:45:41.6437395Z",
-  "type": "AnchorEvent"
+  ]
 }
 ```
