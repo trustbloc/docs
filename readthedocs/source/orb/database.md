@@ -82,6 +82,12 @@ The status is either _in-process_ or _completed_. After a sufficient number of p
 received for the anchor (according to [witness policy](witnesspolicy.html#witness-policy)) the
 anchor entry is deleted.
 
+### activity-sync
+
+The _activity-sync_ database stores the page number and index of the last activity
+that was synchronized for each of the domains that are followed. This information is used by the
+[Activity Sync task](onboardrecover.html#activity-sync-task).
+
 ### monitoring
 
 The _monitoring_ database keeps track of the proofs that were received by other domains and ensures
