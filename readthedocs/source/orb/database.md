@@ -48,6 +48,10 @@ The _did-anchor_ database stores the latest anchor hash of a DID suffix.
 
 The _ldcontexts_ database stores JSON linked-data (JSON-LD) contexts.
 
+### log-monitor
+
+The _log-monitor_ database is used to manage the list of logs that domain is following.  
+
 ### operation
 
 The _operation_ database stores Sidetree operations.
