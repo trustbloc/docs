@@ -1,4 +1,4 @@
 # TrustBloc Component/Integration Designs
 
-- [Authorization](./auth.md)
+- [Authorization](auth.md)
 
