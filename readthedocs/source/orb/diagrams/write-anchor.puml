@@ -1,0 +1,56 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "sidetree-core-go" as client
+
+box Domain1 #White
+    participant "Anchor\nWriter" as anchorWriter
+    participant "Outbox" as outbox
+    database "DID Anchor\nDB" as didAnchorDB
+    database "Anchor Link\nDB" as anchorLinkDB
+    database "Witness\nDB" as witnessDB
+end box
+
+box Domain2
+    participant Inbox as inbox2
+end box
+
+box Domain3
+    participant Inbox as inbox3
+end box
+
+client -> anchorWriter: WriteAnchor(anchor)
+activate anchorWriter
+  anchorWriter -> didAnchorDB: Get previous anchors
+  activate didAnchorDB
+  didAnchorDB --> anchorWriter: anchors
+  deactivate didAnchorDB
+  anchorWriter -> anchorWriter: Resolve witnesses
+  anchorWriter -> anchorWriter: BuildAnchorLink
+  anchorWriter -> anchorLinkDB: Put(anchorLink)
+  activate anchorLinkDB
+  anchorLinkDB --> anchorWriter: ok
+  deactivate anchorLinkDB
+  anchorWriter -> anchorWriter: BuildOffer(anchorLink)
+  anchorWriter -> outbox: Post(Offer, witnesses)
+  activate outbox
+  outbox --> anchorWriter: ok
+
+  anchorWriter -> witnessDB: Put(witnesses)
+  activate witnessDB
+  witnessDB --> anchorWriter: ok
+  deactivate witnessDB
+
+  anchorWriter --> client: ok
+deactivate anchorWriter
+
+outbox -> inbox2: Offer
+    activate inbox2
+    inbox2 --> outbox: ok
+
+outbox -> inbox3: Offer
+    activate inbox3
+    inbox3 --> outbox: ok
+deactivate outbox
+
+@enduml

@@ -1,22 +1,20 @@
 # Batch Writer
 
-Orb node will validate each supported Sidetree operation(Create, Update, Recover and Deactivate) 
-as per [Sidetree DID Operations](sidetree.html#did-operations) and then add valid operation to the batch writer queue.
+A Sidetree operation (Create, Update, Recover and Deactivate) is posted by a client over the [operations](sidetree.html#did-operations)
+REST endpoint. The operation is validated according to [Sidetree DID Operations](sidetree.html#did-operations) and added to
+the [Operation Queue](#operation-queue).
 
-Batch writer will:
+The Batch Writer:
 
-1) Drain operations from the operations queue (see [Operation Queue](#operation-queue) below).
-
-2) Batch multiple Sidetree operations together into Sidetree batch files 
+1) Drains operations from the Operation Queue
+2) Batches multiple Sidetree operations together into Sidetree batch files 
 as per [Sidetree file structure spec](https://identity.foundation/sidetree/spec/#file-structures)
+3) Stores the Sidetree batch files into [Content Addressable Storage (CAS)](cas.html#content-addressable-storage-cas)
+4) Anchors a reference to the main Sidetree batch file (core index file) on the anchoring system as a Sidetree transaction
 
-3) Store the Sidetree batch files into content addressable storage (CAS)
-
-4) Anchor a reference to the main Sidetree batch file (core index file) on the anchoring system as a Sidetree transaction
-
-The number of operations that can be stored in the Sidetree batch files is limited  by
+The number of operations that can be stored in the Sidetree batch files is limited by
 Sidetree protocol parameter [MAX_OPERATION_COUNT](https://identity.foundation/sidetree/spec/#:~:text=1%2C000%20bytes-,MAX_OPERATION_COUNT,-Maximum%20number%20of).
-The Batch Writer will cut Sidetree batches if the number of operations in the batch writer queue reaches MAX_OPERATION_COUNT
+The Batch Writer cuts Sidetree batches if the number of operations in the batch writer queue reaches MAX_OPERATION_COUNT
 or if the batch writer reaches the batch writer timeout [batch-writer-timeout](parameters.html#batch-writer-timeout).
 
 ## Operation Queue
@@ -109,3 +107,49 @@ it will generate a new task ID.)
 
 ```
 
+## Anchor Writer
+
+When a batch of operations is cut from the [operation queue](#operation-queue), the sidetree-core-go
+library creates a Sidetree anchor object and invokes _WriteAnchor_. The Orb implementation of
+_WriteAnchor_ performs the following steps:
+
+1) Retrieves previous anchors for all DIDs in the batch
+2) Resolves the witnesses for the batch
+3) Creates an [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) containing the operations
+4) Posts an [Offer](activitypub.html#offer) activity (containing the anchor linkset) to each of the witnesses
+
+```{image} ../_static/orb/write-anchor.svg
+
+```
+
+## Witness Proof Handler
+
+A witness accepts an [Offer](https://trustbloc.github.io/activityanchors/#offer-activity)
+of an anchor linkset by posting an [Accept](https://trustbloc.github.io/activityanchors/#accept-anchor-activity)
+activity to the inbox. The proof is extracted from the anchor linkset and the proof handler is invoked.
+
+The current status of the anchor is retrieved from the _anchor status_ database. If the status of the
+anchor is still not _complete_ then the provided proof from the Accept activity is added to the existing
+set of proofs. The [witness policy](witnesspolicy.html#witness-policy) is then evaluated in order to determine
+if the anchor has a sufficient number of proofs. If the witness policy is not satisfied then nothing
+else is done, otherwise:
+1) The status of the anchor is marked as _complete_
+2) The anchor linkset is updated with all witness proofs
+3) The anchor linkset is published to the _anchor linkset_ queue so that it may be processed by the [Anchor Linkset Handler](#anchor-linkset-handler)
+
+```{image} ../_static/orb/proof-handler.svg
+
+```
+
+## Anchor Linkset Handler
+
+On startup, the Anchor Linkset Handler subscribes to the _anchor linkset_ queue in order to receive
+witnessed anchor linksets. Upon receiving an anchor linkset from the queue:
+1) The verifiable credential is extracted from the anchor linkset and saved to the verifiable credential database
+2) The anchor linkset is saved to the [Content Addressable Storage (CAS)](cas.html#content-addressable-storage-cas)
+3) The anchor linkset is published to the _anchor_ queue so that it may be processed by the [Observer](observer.html#observer)
+4) A [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity (containing the anchor linkset) is posted to all followers
+
+```{image} ../_static/orb/anchor-linkset-handler.svg
+
+```

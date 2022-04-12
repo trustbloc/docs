@@ -1,0 +1,78 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+queue "Anchor\nLinkset" as anchorLinksetQueue
+
+participant "Anchor Linkset\nHandler" as anchorLinksetHandler
+queue "Anchor" as anchorQueue
+
+database "Verifiable\nCredential\nDB" as vcDB
+database "CAS" as cas
+database "Witness\nDB" as witnessDB
+database "Anchor Link\nDB" as anchorLinkDB
+
+participant "Outbox" as outbox
+
+anchorLinksetHandler -> anchorLinksetQueue: Subscribe
+note over anchorLinksetHandler
+  On startup the handler
+  subscribes to the anchor
+  linkset queue to receive
+  linksets.
+end note
+activate anchorLinksetQueue
+  anchorLinksetQueue --> anchorLinksetHandler: ok
+deactivate anchorLinksetQueue
+
+anchorLinksetQueue -> anchorLinksetHandler: anchorLinkset
+
+activate anchorLinksetHandler
+  anchorLinksetHandler -> anchorLinksetHandler: Get VC from anchorLinkset
+
+  anchorLinksetHandler -> vcDB: Put(vc)
+  activate vcDB
+  vcDB --> anchorLinksetHandler: ok
+  deactivate vcDB
+
+  anchorLinksetHandler -> cas: Add(anchorLinkset)
+  activate cas
+    cas --> anchorLinksetHandler: ok
+  deactivate cas
+
+  anchorLinksetHandler -> anchorQueue: Publish(anchorLinkset)
+  activate anchorQueue
+    anchorQueue --> anchorLinksetHandler: ok
+  deactivate anchorQueue
+
+  note over anchorLinksetHandler
+     Delete transient data
+     i.e. witnesses and anchor links
+     associated with the anchor
+  end note
+
+  anchorLinksetHandler -> witnessDB: Delete(anchor)
+  activate witnessDB
+    witnessDB --> anchorLinksetHandler: ok
+  deactivate witnessDB
+
+  anchorLinksetHandler -> anchorLinkDB: Delete(anchor)
+  activate anchorLinkDB
+    anchorLinkDB --> anchorLinksetHandler: ok
+  deactivate anchorLinkDB
+
+  anchorLinksetHandler -> outbox: Post(Create)
+
+  activate outbox
+  note over outbox
+     Post a Create activity
+     (containing the anchor
+     linkset) to our followers
+  end note
+
+  outbox --> anchorLinksetHandler: ok
+  deactivate outbox
+
+  anchorLinksetHandler --> anchorLinksetQueue: Ack
+deactivate anchorLinksetHandler
+
+@enduml
