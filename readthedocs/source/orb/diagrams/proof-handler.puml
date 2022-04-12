@@ -1,0 +1,88 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Witness" as witness
+participant "Inbox" as inbox
+
+participant "Proof\nHandler" as proofHandler
+participant "VCT" as vct
+
+database "Anchor Status\nDB" as anchorStatusDB
+database "Anchor Link\nDB" as anchorLinkDB
+database "Witness\nDB" as witnessDB
+queue "Anchor\nLinkset" as anchorLinksetQueue
+
+witness -> inbox: Post(Accept offer)
+note over inbox
+  A witness accepts an
+  Offer by posting an Accept
+  activity (containing a proof)
+  to the inbox.
+end note
+
+activate inbox
+inbox --> witness: ok
+
+inbox -> proofHandler: HandleProof(anchorID,\nproof)
+
+activate proofHandler
+  proofHandler -> anchorStatusDB: GetStatus(anchorID)
+  activate anchorStatusDB
+  anchorStatusDB --> proofHandler: status
+  deactivate anchorStatusDB
+
+  alt Anchor Completed
+    proofHandler --> inbox: ok
+  else Anchor Not Completed
+    proofHandler -> anchorLinkDB: GetAnchorLink(anchorID)
+    activate anchorLinkDB
+    anchorLinkDB --> proofHandler: anchorLink
+    deactivate anchorLinkDB
+
+    proofHandler -> witnessDB: AddProof(anchorLink,\nwitness, proof)
+    activate witnessDB
+    witnessDB --> proofHandler: ok
+    deactivate witnessDB
+
+    proofHandler -> vct: Monitor(anchorLink)
+    activate vct
+    vct --> proofHandler: ok
+    deactivate vct
+
+    proofHandler -> proofHandler: IsWitnessPolicySatisfied\n(anchorLink)
+
+    activate proofHandler
+        proofHandler -> witnessDB: GetProofs(anchorLink)
+        activate witnessDB
+        witnessDB --> proofHandler: proofs
+        deactivate witnessDB
+        proofHandler -> proofHandler: EvaluatePolicy(proofs)
+    deactivate proofHandler
+
+    alt Witness Policy\nNot Satisfied
+        proofHandler --> inbox: ok
+    else Witness Policy\nSatisfied
+        note over proofHandler
+          Create a linkset with the
+          anchorLink (which includes all
+          proofs) and publish the linkset
+          to the anchor linkset queue
+        end note
+
+        proofHandler -> anchorLinksetQueue: Publish(anchorLinkset)
+        activate anchorLinksetQueue
+        anchorLinksetQueue --> proofHandler: ok
+        deactivate anchorLinksetQueue
+
+        proofHandler -> anchorStatusDB: PutStatus(anchorID,\ncompleted)
+        activate anchorStatusDB
+        anchorStatusDB --> proofHandler: ok
+        deactivate anchorStatusDB
+
+        proofHandler --> inbox: ok
+    end
+  end alt
+deactivate proofHandler
+deactivate inbox
+
+@enduml

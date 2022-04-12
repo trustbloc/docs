@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1182px" preserveAspectRatio="none" style="width:881px;height:1182px;background:#FFFFFF;" version="1.1" viewBox="0 0 881 1182" width="881px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="35.5" y="114.7266"/><rect fill="#FFFFFF" height="816.3828" style="stroke:#181818;stroke-width:1.0;" width="10" x="148.5" y="253.5234"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="316.5" y="282.6563"/><rect fill="#FFFFFF" height="321.8594" style="stroke:#181818;stroke-width:1.0;" width="10" x="393.5" y="398.1875"/><rect fill="#FFFFFF" height="94.5313" style="stroke:#181818;stroke-width:1.0;" width="10" x="481" y="749.1797"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="560" y="872.8438"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="650" y="522.9844"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="746.5" y="581.25"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="837" y="931.1094"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="40" x2="40" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="153.5" x2="153.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="321.5" x2="321.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="398.5" x2="398.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="485.5" x2="485.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="564.5" x2="564.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="654.5" x2="654.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="751.5" x2="751.5" y1="83.5938" y2="1087.9063"/><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="841.5" x2="841.5" y1="83.5938" y2="1087.9063"/><path d="M10,57.2969 L71,57.2969 C76,57.2969 76,70.4453 76,70.4453 C76,70.4453 76,83.5938 71,83.5938 L10,83.5938 C5,83.5938 5,70.4453 5,70.4453 C5,70.4453 5,57.2969 10,57.2969 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M71,57.2969 C66,57.2969 66,70.4453 66,70.4453 C66,83.5938 71,83.5938 71,83.5938 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="10" y="75.292">Anchor</text><path d="M10,1086.9063 L71,1086.9063 C76,1086.9063 76,1100.0547 76,1100.0547 C76,1100.0547 76,1113.2031 71,1113.2031 L10,1113.2031 C5,1113.2031 5,1100.0547 5,1100.0547 C5,1100.0547 5,1086.9063 10,1086.9063 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M71,1086.9063 C66,1086.9063 66,1100.0547 66,1100.0547 C66,1113.2031 71,1113.2031 71,1113.2031 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="10" y="1104.9014">Anchor</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="113.5" y="52.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="120.5" y="72.292">Observer</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="113.5" y="1086.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="120.5" y="1106.9014">Observer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="304" y="80.292">CAS</text><path d="M303.5,31.2969 C303.5,21.2969 321.5,21.2969 321.5,21.2969 C321.5,21.2969 339.5,21.2969 339.5,31.2969 L339.5,57.2969 C339.5,67.2969 321.5,67.2969 321.5,67.2969 C321.5,67.2969 303.5,67.2969 303.5,57.2969 L303.5,31.2969 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M303.5,31.2969 C303.5,41.2969 321.5,41.2969 321.5,41.2969 C321.5,41.2969 339.5,41.2969 339.5,31.2969 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="304" y="1099.9014">CAS</text><path d="M303.5,1113.2031 C303.5,1103.2031 321.5,1103.2031 321.5,1103.2031 C321.5,1103.2031 339.5,1103.2031 339.5,1113.2031 L339.5,1139.2031 C339.5,1149.2031 321.5,1149.2031 321.5,1149.2031 C321.5,1149.2031 303.5,1149.2031 303.5,1139.2031 L303.5,1113.2031 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M303.5,1113.2031 C303.5,1123.2031 321.5,1123.2031 321.5,1123.2031 C321.5,1123.2031 339.5,1123.2031 339.5,1113.2031 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="349.5" y="36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="356.5" y="55.9951">Transaction</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="363.5" y="72.292">Processor</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="349.5" y="1086.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="356.5" y="1106.9014">Transaction</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="363.5" y="1123.1982">Processor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="470" y="63.9951">DID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="457.5" y="80.292">Anchor</text><path d="M468,15 C468,5 486,5 486,5 C486,5 504,5 504,15 L504,41 C504,51 486,51 486,51 C486,51 468,51 468,41 L468,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M468,15 C468,25 486,25 486,25 C486,25 504,25 504,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="470" y="1099.9014">DID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="457.5" y="1116.1982">Anchor</text><path d="M468,1129.5 C468,1119.5 486,1119.5 486,1119.5 C486,1119.5 504,1119.5 504,1129.5 L504,1155.5 C504,1165.5 486,1165.5 486,1165.5 C486,1165.5 468,1165.5 468,1155.5 L468,1129.5 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M468,1129.5 C468,1139.5 486,1139.5 486,1139.5 C486,1139.5 504,1139.5 504,1129.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="536.5" y="63.9951">Anchor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="524.5" y="80.292">Reference</text><path d="M547,15 C547,5 565,5 565,5 C565,5 583,5 583,15 L583,41 C583,51 565,51 565,51 C565,51 547,51 547,41 L547,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M547,15 C547,25 565,25 565,25 C565,25 583,25 583,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="536.5" y="1099.9014">Anchor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="524.5" y="1116.1982">Reference</text><path d="M547,1129.5 C547,1119.5 565,1119.5 565,1119.5 C565,1119.5 583,1119.5 583,1129.5 L583,1155.5 C583,1165.5 565,1165.5 565,1165.5 C565,1165.5 547,1165.5 547,1155.5 L547,1129.5 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M547,1129.5 C547,1139.5 565,1139.5 565,1139.5 C565,1139.5 583,1139.5 583,1129.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="615.5" y="80.292">Operation</text><path d="M637,31.2969 C637,21.2969 655,21.2969 655,21.2969 C655,21.2969 673,21.2969 673,31.2969 L673,57.2969 C673,67.2969 655,67.2969 655,67.2969 C655,67.2969 637,67.2969 637,57.2969 L637,31.2969 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M637,31.2969 C637,41.2969 655,41.2969 655,41.2969 C655,41.2969 673,41.2969 673,31.2969 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="615.5" y="1099.9014">Operation</text><path d="M637,1113.2031 C637,1103.2031 655,1103.2031 655,1103.2031 C655,1103.2031 673,1103.2031 673,1113.2031 L673,1139.2031 C673,1149.2031 655,1149.2031 655,1149.2031 C655,1149.2031 637,1149.2031 637,1139.2031 L637,1113.2031 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M637,1113.2031 C637,1123.2031 655,1123.2031 655,1123.2031 C655,1123.2031 673,1123.2031 673,1113.2031 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="704.5" y="63.9951">Unpublished</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="712" y="80.292">Operation</text><path d="M733.5,15 C733.5,5 751.5,5 751.5,5 C751.5,5 769.5,5 769.5,15 L769.5,41 C769.5,51 751.5,51 751.5,51 C751.5,51 733.5,51 733.5,41 L733.5,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M733.5,15 C733.5,25 751.5,25 751.5,25 C751.5,25 769.5,25 769.5,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="704.5" y="1099.9014">Unpublished</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="712" y="1116.1982">Operation</text><path d="M733.5,1129.5 C733.5,1119.5 751.5,1119.5 751.5,1119.5 C751.5,1119.5 769.5,1119.5 769.5,1129.5 L769.5,1155.5 C769.5,1165.5 751.5,1165.5 751.5,1165.5 C751.5,1165.5 733.5,1165.5 733.5,1155.5 L733.5,1129.5 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M733.5,1129.5 C733.5,1139.5 751.5,1139.5 751.5,1139.5 C751.5,1139.5 769.5,1139.5 769.5,1129.5 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="808.5" y="52.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="815.5" y="72.292">Outbox</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="808.5" y="1086.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="815.5" y="1106.9014">Outbox</text><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="35.5" y="114.7266"/><rect fill="#FFFFFF" height="816.3828" style="stroke:#181818;stroke-width:1.0;" width="10" x="148.5" y="253.5234"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="316.5" y="282.6563"/><rect fill="#FFFFFF" height="321.8594" style="stroke:#181818;stroke-width:1.0;" width="10" x="393.5" y="398.1875"/><rect fill="#FFFFFF" height="94.5313" style="stroke:#181818;stroke-width:1.0;" width="10" x="481" y="749.1797"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="560" y="872.8438"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="650" y="522.9844"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="746.5" y="581.25"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="837" y="931.1094"/><polygon fill="#181818" points="56.5,110.7266,46.5,114.7266,56.5,118.7266,52.5,114.7266" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="50.5" x2="152.5" y1="114.7266" y2="114.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="62.5" y="109.6606">Subscribe</text><path d="M54,127.7266 L54,197.7266 L252,197.7266 L252,137.7266 L242,127.7266 L54,127.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M242,127.7266 L242,137.7266 L252,137.7266 L242,127.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="60" y="144.7935">On startup the Observer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="60" y="159.9263">subscribes to the anchor</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="60" y="175.0591">queue to receive witnessed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="60" y="190.1919">anchor linksets.</text><polygon fill="#181818" points="141.5,220.3906,151.5,224.3906,141.5,228.3906,145.5,224.3906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="40.5" x2="147.5" y1="224.3906" y2="224.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="47.5" y="219.3247">ok</text><polygon fill="#181818" points="136.5,249.5234,146.5,253.5234,136.5,257.5234,140.5,253.5234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="40.5" x2="142.5" y1="253.5234" y2="253.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="47.5" y="248.4575">anchorLinkset</text><polygon fill="#181818" points="304.5,278.6563,314.5,282.6563,304.5,286.6563,308.5,282.6563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="310.5" y1="282.6563" y2="282.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87" x="165.5" y="277.5903">Read(anchor)</text><polygon fill="#181818" points="169.5,307.7891,159.5,311.7891,169.5,315.7891,165.5,311.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="163.5" x2="320.5" y1="311.7891" y2="311.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="175.5" y="306.7231">anchorLinkset</text><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="200.5" y1="356.0547" y2="356.0547"/><line style="stroke:#181818;stroke-width:1.0;" x1="200.5" x2="200.5" y1="356.0547" y2="369.0547"/><line style="stroke:#181818;stroke-width:1.0;" x1="159.5" x2="200.5" y1="369.0547" y2="369.0547"/><polygon fill="#181818" points="169.5,365.0547,159.5,369.0547,169.5,373.0547,165.5,369.0547" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="165.5" y="335.856">Convert anchorLinkset</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="165.5" y="350.9888">to Sidetree Txn</text><polygon fill="#181818" points="381.5,394.1875,391.5,398.1875,381.5,402.1875,385.5,398.1875" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="387.5" y1="398.1875" y2="398.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="165.5" y="393.1216">Process(Sidetree Txn)</text><path d="M305,411.1875 L305,496.1875 L491,496.1875 L491,421.1875 L481,411.1875 L305,411.1875 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M481,411.1875 L481,421.1875 L491,421.1875 L481,411.1875 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="311" y="428.2544">Validate and convert</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="311" y="443.3872">the Sidetree transaction</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="311" y="458.52">into operation documents</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="311" y="473.6528">and store them in the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="311" y="488.7856">operation database.</text><polygon fill="#181818" points="638,518.9844,648,522.9844,638,526.9844,642,522.9844" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="403.5" x2="644" y1="522.9844" y2="522.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="410.5" y="517.9185">Put(operations)</text><polygon fill="#181818" points="414.5,548.1172,404.5,552.1172,414.5,556.1172,410.5,552.1172" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="408.5" x2="654" y1="552.1172" y2="552.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="420.5" y="547.0513">ok</text><polygon fill="#181818" points="734.5,577.25,744.5,581.25,734.5,585.25,738.5,581.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="403.5" x2="740.5" y1="581.25" y2="581.25"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="410.5" y="576.1841">DeleteAll(operations)</text><path d="M305,594.25 L305,664.25 L491,664.25 L491,604.25 L481,594.25 L305,594.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M481,594.25 L481,604.25 L491,604.25 L481,594.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="311" y="611.3169">Delete the operations</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="311" y="626.4497">from the 'unpublished</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="311" y="641.5825">operation' database since</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="311" y="656.7153">they are now published.</text><polygon fill="#181818" points="414.5,686.9141,404.5,690.9141,414.5,694.9141,410.5,690.9141" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="408.5" x2="750.5" y1="690.9141" y2="690.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="420.5" y="685.8481">ok</text><polygon fill="#181818" points="169.5,716.0469,159.5,720.0469,169.5,724.0469,165.5,720.0469" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="163.5" x2="397.5" y1="720.0469" y2="720.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="175.5" y="714.981">ok</text><polygon fill="#181818" points="469,745.1797,479,749.1797,469,753.1797,473,749.1797" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="475" y1="749.1797" y2="749.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="165.5" y="744.1138">PutBulk(suffixes,anchor)</text><path d="M51,762.1797 L51,817.1797 L255,817.1797 L255,772.1797 L245,762.1797 L51,762.1797 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M245,762.1797 L245,772.1797 L255,772.1797 L245,762.1797 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="57" y="779.2466">Add an entry for each DID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="57" y="794.3794">suffix in the anchor linkset</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="183" x="57" y="809.5122">to reference the new anchor</text><polygon fill="#181818" points="169.5,839.7109,159.5,843.7109,169.5,847.7109,165.5,843.7109" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="163.5" x2="485" y1="843.7109" y2="843.7109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="175.5" y="838.645">ok</text><polygon fill="#181818" points="548,868.8438,558,872.8438,548,876.8438,552,872.8438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="554" y1="872.8438" y2="872.8438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="165.5" y="867.7778">Put(anchor hashlink)</text><polygon fill="#181818" points="169.5,897.9766,159.5,901.9766,169.5,905.9766,165.5,901.9766" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="163.5" x2="564" y1="901.9766" y2="901.9766"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="175.5" y="896.9106">ok</text><polygon fill="#181818" points="825,927.1094,835,931.1094,825,935.1094,829,931.1094" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="158.5" x2="831" y1="931.1094" y2="931.1094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="165.5" y="926.0435">Post(Like)</text><path d="M43,944.1094 L43,1014.1094 L263,1014.1094 L263,954.1094 L253,944.1094 L43,944.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M253,944.1094 L253,954.1094 L263,954.1094 L253,944.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="174" x="49" y="961.1763">A 'Like' activity is posted to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="49" y="976.3091">the anchor origin to indicate</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="49" y="991.4419">that this domain has replicated</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="49" y="1006.5747">the anchor linkset.</text><polygon fill="#181818" points="169.5,1036.7734,159.5,1040.7734,169.5,1044.7734,165.5,1040.7734" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="163.5" x2="841" y1="1040.7734" y2="1040.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="175.5" y="1035.7075">ok</text><polygon fill="#181818" points="51.5,1065.9063,41.5,1069.9063,51.5,1073.9063,47.5,1069.9063" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="45.5" x2="152.5" y1="1069.9063" y2="1069.9063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="57.5" y="1064.8403">Ack</text><!--MD5=[5f33cc1105c0d5a250ee17722752f0d1]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+queue "Anchor" as anchorQueue
+
+participant "Observer" as observer
+
+database "CAS" as cas
+participant "Transaction\nProcessor" as txnProcessor
+database "DID\nAnchor" as didAnchorDB
+database "Anchor\nReference" as anchorRefDB
+database "Operation" as operationDB
+database "Unpublished\nOperation" as unpublishedOperationDB
+
+participant "Outbox" as outbox
+
+observer -> anchorQueue: Subscribe
+note over observer
+  On startup the Observer
+  subscribes to the anchor
+  queue to receive witnessed
+  anchor linksets.
+end note
+activate anchorQueue
+  anchorQueue - -> observer: ok
+deactivate anchorQueue
+
+anchorQueue -> observer: anchorLinkset
+
+activate observer
+  observer -> cas: Read(anchor)
+  activate cas
+    cas - -> observer: anchorLinkset
+  deactivate cas
+
+  observer -> observer: Convert anchorLinkset\nto Sidetree Txn
+
+  observer -> txnProcessor: Process(Sidetree Txn)
+  activate txnProcessor
+    note over txnProcessor
+      Validate and convert
+      the Sidetree transaction
+      into operation documents
+      and store them in the
+      operation database.
+    end note
+
+    txnProcessor -> operationDB: Put(operations)
+    activate operationDB
+      operationDB - -> txnProcessor: ok
+    deactivate operationDB
+
+    txnProcessor -> unpublishedOperationDB: DeleteAll(operations)
+    note over txnProcessor
+      Delete the operations
+      from the 'unpublished
+      operation' database since
+      they are now published.
+    end note
+    activate unpublishedOperationDB
+      unpublishedOperationDB - -> txnProcessor: ok
+    deactivate unpublishedOperationDB
+
+    txnProcessor - -> observer: ok
+  deactivate txnProcessor
+
+  observer -> didAnchorDB: PutBulk(suffixes,anchor)
+  activate didAnchorDB
+    note over observer
+      Add an entry for each DID
+      suffix in the anchor linkset
+      to reference the new anchor
+    end note
+    didAnchorDB - -> observer: ok
+  deactivate didAnchorDB
+
+  observer -> anchorRefDB: Put(anchor hashlink)
+  activate anchorRefDB
+    anchorRefDB - -> observer: ok
+  deactivate anchorRefDB
+
+  observer -> outbox: Post(Like)
+  activate outbox
+    note over observer
+      A 'Like' activity is posted to
+      the anchor origin to indicate
+      that this domain has replicated
+      the anchor linkset.
+    end note
+    outbox - -> observer: ok
+  deactivate outbox
+
+  observer - -> anchorQueue: Ack
+deactivate observer
+@enduml
+
+@startuml
+
+queue "Anchor" as anchorQueue
+
+participant "Observer" as observer
+
+database "CAS" as cas
+participant "Transaction\nProcessor" as txnProcessor
+database "DID\nAnchor" as didAnchorDB
+database "Anchor\nReference" as anchorRefDB
+database "Operation" as operationDB
+database "Unpublished\nOperation" as unpublishedOperationDB
+
+participant "Outbox" as outbox
+
+observer -> anchorQueue: Subscribe
+note over observer
+  On startup the Observer
+  subscribes to the anchor
+  queue to receive witnessed
+  anchor linksets.
+end note
+activate anchorQueue
+  anchorQueue - -> observer: ok
+deactivate anchorQueue
+
+anchorQueue -> observer: anchorLinkset
+
+activate observer
+  observer -> cas: Read(anchor)
+  activate cas
+    cas - -> observer: anchorLinkset
+  deactivate cas
+
+  observer -> observer: Convert anchorLinkset\nto Sidetree Txn
+
+  observer -> txnProcessor: Process(Sidetree Txn)
+  activate txnProcessor
+    note over txnProcessor
+      Validate and convert
+      the Sidetree transaction
+      into operation documents
+      and store them in the
+      operation database.
+    end note
+
+    txnProcessor -> operationDB: Put(operations)
+    activate operationDB
+      operationDB - -> txnProcessor: ok
+    deactivate operationDB
+
+    txnProcessor -> unpublishedOperationDB: DeleteAll(operations)
+    note over txnProcessor
+      Delete the operations
+      from the 'unpublished
+      operation' database since
+      they are now published.
+    end note
+    activate unpublishedOperationDB
+      unpublishedOperationDB - -> txnProcessor: ok
+    deactivate unpublishedOperationDB
+
+    txnProcessor - -> observer: ok
+  deactivate txnProcessor
+
+  observer -> didAnchorDB: PutBulk(suffixes,anchor)
+  activate didAnchorDB
+    note over observer
+      Add an entry for each DID
+      suffix in the anchor linkset
+      to reference the new anchor
+    end note
+    didAnchorDB - -> observer: ok
+  deactivate didAnchorDB
+
+  observer -> anchorRefDB: Put(anchor hashlink)
+  activate anchorRefDB
+    anchorRefDB - -> observer: ok
+  deactivate anchorRefDB
+
+  observer -> outbox: Post(Like)
+  activate outbox
+    note over observer
+      A 'Like' activity is posted to
+      the anchor origin to indicate
+      that this domain has replicated
+      the anchor linkset.
+    end note
+    outbox - -> observer: ok
+  deactivate outbox
+
+  observer - -> anchorQueue: Ack
+deactivate observer
+@enduml
+
+PlantUML version 1.2022.4beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

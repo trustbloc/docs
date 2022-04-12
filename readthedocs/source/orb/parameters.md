@@ -276,7 +276,17 @@ The maximum number of retries to connect to an AMQP service, after which the ser
 |--------------------|------------------|---------|
 | --mq-observer-pool | MQ_OBSERVER_POOL | 5       |
 
-The size of the observer queue subscriber pool. If not specified then the default size will be used.
+The size of the Observer queue subscriber pool. When a message is posted to the Observer queue, it is
+handled by a pool of subscribers. If not specified then the default size will be used.
+
+### mq-outbox-pool
+
+| Arg              | Env            | Default |
+|------------------|----------------|---------|
+| --mq-outbox-pool | MQ_OUTBOX_POOL | 5       |
+
+The size of the Outbox queue subscriber pool. When a message is posted to the Outbox queue, it is
+handled by a pool of subscribers. If not specified then the default size will be used.
 
 ### mq-max-connection-subscriptions
 

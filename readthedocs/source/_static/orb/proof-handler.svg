@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1201px" preserveAspectRatio="none" style="width:950px;height:1201px;background:#FFFFFF;" version="1.1" viewBox="0 0 950 1201" width="950px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="982.6719" style="stroke:#181818;stroke-width:1.0;" width="10" x="172.5" y="114.7266"/><rect fill="#FFFFFF" height="828.7422" style="stroke:#181818;stroke-width:1.0;" width="10" x="345.5" y="268.6563"/><rect fill="#FFFFFF" height="98.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="350.5" y="637.1875"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="522.5" y="555.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="607.5" y="297.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="607.5" y="1017.1328"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="716.5" y="424.125"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="803.5" y="497.5234"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="803.5" y="671.3203"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="881.5" y="943.7344"/><rect height="748.4766" style="stroke:#000000;stroke-width:1.5;fill:none;" width="812.5" x="130.5" y="341.9219"/><rect height="325.8125" style="stroke:#000000;stroke-width:1.5;fill:none;" width="792.5" x="140.5" y="757.5859"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="36" x2="36" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="177.5" x2="177.5" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="350" x2="350" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="527" x2="527" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="612" x2="612" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="721" x2="721" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="808" x2="808" y1="83.5938" y2="1107.3984"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="886" x2="886" y1="83.5938" y2="1107.3984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="5" y="80.292">Witness</text><ellipse cx="36.5" cy="15.7969" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M36.5,23.7969 L36.5,50.7969 M23.5,31.7969 L49.5,31.7969 M36.5,50.7969 L23.5,65.7969 M36.5,50.7969 L49.5,65.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="5" y="1119.3936">Witness</text><ellipse cx="36.5" cy="1131.1953" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M36.5,1139.1953 L36.5,1166.1953 M23.5,1147.1953 L49.5,1147.1953 M36.5,1166.1953 L23.5,1181.1953 M36.5,1166.1953 L49.5,1181.1953 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="150.5" y="52.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="157.5" y="72.292">Inbox</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="150.5" y="1106.3984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="157.5" y="1126.3936">Inbox</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69" x="316" y="36"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="331" y="55.9951">Proof</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="323" y="72.292">Handler</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69" x="316" y="1106.3984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="331" y="1126.3936">Proof</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="323" y="1142.6904">Handler</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="506" y="52.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="513" y="72.292">VCT</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="43" x="506" y="1106.3984"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="513" y="1126.3936">VCT</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="559" y="63.9951">Anchor Status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="599" y="80.292">DB</text><path d="M594.5,15 C594.5,5 612.5,5 612.5,5 C612.5,5 630.5,5 630.5,15 L630.5,41 C630.5,51 612.5,51 612.5,51 C612.5,51 594.5,51 594.5,41 L594.5,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M594.5,15 C594.5,25 612.5,25 612.5,25 C612.5,25 630.5,25 630.5,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="559" y="1119.3936">Anchor Status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="599" y="1135.6904">DB</text><path d="M594.5,1148.9922 C594.5,1138.9922 612.5,1138.9922 612.5,1138.9922 C612.5,1138.9922 630.5,1138.9922 630.5,1148.9922 L630.5,1174.9922 C630.5,1184.9922 612.5,1184.9922 612.5,1184.9922 C612.5,1184.9922 594.5,1184.9922 594.5,1174.9922 L594.5,1148.9922 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M594.5,1148.9922 C594.5,1158.9922 612.5,1158.9922 612.5,1158.9922 C612.5,1158.9922 630.5,1158.9922 630.5,1148.9922 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="676" y="63.9951">Anchor Link</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="708" y="80.292">DB</text><path d="M703.5,15 C703.5,5 721.5,5 721.5,5 C721.5,5 739.5,5 739.5,15 L739.5,41 C739.5,51 721.5,51 721.5,51 C721.5,51 703.5,51 703.5,41 L703.5,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M703.5,15 C703.5,25 721.5,25 721.5,25 C721.5,25 739.5,25 739.5,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="676" y="1119.3936">Anchor Link</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="708" y="1135.6904">DB</text><path d="M703.5,1148.9922 C703.5,1138.9922 721.5,1138.9922 721.5,1138.9922 C721.5,1138.9922 739.5,1138.9922 739.5,1148.9922 L739.5,1174.9922 C739.5,1184.9922 721.5,1184.9922 721.5,1184.9922 C721.5,1184.9922 703.5,1184.9922 703.5,1174.9922 L703.5,1148.9922 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M703.5,1148.9922 C703.5,1158.9922 721.5,1158.9922 721.5,1158.9922 C721.5,1158.9922 739.5,1158.9922 739.5,1148.9922 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="777" y="63.9951">Witness</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="795" y="80.292">DB</text><path d="M790.5,15 C790.5,5 808.5,5 808.5,5 C808.5,5 826.5,5 826.5,15 L826.5,41 C826.5,51 808.5,51 808.5,51 C808.5,51 790.5,51 790.5,41 L790.5,15 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M790.5,15 C790.5,25 808.5,25 808.5,25 C808.5,25 826.5,25 826.5,15 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="777" y="1119.3936">Witness</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="795" y="1135.6904">DB</text><path d="M790.5,1148.9922 C790.5,1138.9922 808.5,1138.9922 808.5,1138.9922 C808.5,1138.9922 826.5,1138.9922 826.5,1148.9922 L826.5,1174.9922 C826.5,1184.9922 808.5,1184.9922 808.5,1184.9922 C808.5,1184.9922 790.5,1184.9922 790.5,1174.9922 L790.5,1148.9922 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M790.5,1148.9922 C790.5,1158.9922 808.5,1158.9922 808.5,1158.9922 C808.5,1158.9922 826.5,1158.9922 826.5,1148.9922 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><path d="M855,41 L918,41 C923,41 923,62.2969 923,62.2969 C923,62.2969 923,83.5938 918,83.5938 L855,83.5938 C850,83.5938 850,62.2969 850,62.2969 C850,62.2969 850,41 855,41 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M918,41 C913,41 913,62.2969 913,62.2969 C913,83.5938 918,83.5938 918,83.5938 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="856" y="58.9951">Anchor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="855" y="75.292">Linkset</text><path d="M855,1106.3984 L918,1106.3984 C923,1106.3984 923,1127.6953 923,1127.6953 C923,1127.6953 923,1148.9922 918,1148.9922 L855,1148.9922 C850,1148.9922 850,1127.6953 850,1127.6953 C850,1127.6953 850,1106.3984 855,1106.3984 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M918,1106.3984 C913,1106.3984 913,1127.6953 913,1127.6953 C913,1148.9922 918,1148.9922 918,1148.9922 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="856" y="1124.3936">Anchor</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="855" y="1140.6904">Linkset</text><rect fill="#FFFFFF" height="982.6719" style="stroke:#181818;stroke-width:1.0;" width="10" x="172.5" y="114.7266"/><rect fill="#FFFFFF" height="828.7422" style="stroke:#181818;stroke-width:1.0;" width="10" x="345.5" y="268.6563"/><rect fill="#FFFFFF" height="98.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="350.5" y="637.1875"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="522.5" y="555.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="607.5" y="297.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="607.5" y="1017.1328"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="716.5" y="424.125"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="803.5" y="497.5234"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="803.5" y="671.3203"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="881.5" y="943.7344"/><polygon fill="#181818" points="160.5,110.7266,170.5,114.7266,160.5,118.7266,164.5,114.7266" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="36.5" x2="166.5" y1="114.7266" y2="114.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="43.5" y="109.6606">Post(Accept offer)</text><path d="M78,127.7266 L78,197.7266 L276,197.7266 L276,137.7266 L266,127.7266 L78,127.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M266,127.7266 L266,137.7266 L276,137.7266 L266,127.7266 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="136" x="84" y="144.7935">A witness accepts an</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="84" y="159.9263">Offer by posting an Accept</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="84" y="175.0591">activity (containing a proof)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81" x="84" y="190.1919">to the inbox.</text><polygon fill="#181818" points="47.5,220.3906,37.5,224.3906,47.5,228.3906,43.5,224.3906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="41.5" x2="171.5" y1="224.3906" y2="224.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="53.5" y="219.3247">ok</text><polygon fill="#181818" points="333.5,264.6563,343.5,268.6563,333.5,272.6563,337.5,268.6563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="182.5" x2="339.5" y1="268.6563" y2="268.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="189.5" y="248.4575">HandleProof(anchorID,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="189.5" y="263.5903">proof)</text><polygon fill="#181818" points="595.5,293.7891,605.5,297.7891,595.5,301.7891,599.5,297.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="601.5" y1="297.7891" y2="297.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="362.5" y="292.7231">GetStatus(anchorID)</text><polygon fill="#181818" points="366.5,322.9219,356.5,326.9219,366.5,330.9219,362.5,326.9219" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="611.5" y1="326.9219" y2="326.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="372.5" y="321.856">status</text><path d="M130.5,341.9219 L196.5,341.9219 L196.5,349.0547 L186.5,359.0547 L130.5,359.0547 L130.5,341.9219 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="748.4766" style="stroke:#000000;stroke-width:1.5;" width="812.5" x="130.5" y="341.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="145.5" y="354.9888">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="134" x="211.5" y="354.1323">[Anchor Completed]</text><polygon fill="#181818" points="193.5,376.1875,183.5,380.1875,193.5,384.1875,189.5,380.1875" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="187.5" x2="344.5" y1="380.1875" y2="380.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="199.5" y="375.1216">ok</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="130.5" x2="943" y1="389.1875" y2="389.1875"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="163" x="135.5" y="399.3979">[Anchor Not Completed]</text><polygon fill="#181818" points="704.5,420.125,714.5,424.125,704.5,428.125,708.5,424.125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="710.5" y1="424.125" y2="424.125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="362.5" y="419.0591">GetAnchorLink(anchorID)</text><polygon fill="#181818" points="366.5,449.2578,356.5,453.2578,366.5,457.2578,362.5,453.2578" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="720.5" y1="453.2578" y2="453.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="69" x="372.5" y="448.1919">anchorLink</text><polygon fill="#181818" points="791.5,493.5234,801.5,497.5234,791.5,501.5234,795.5,497.5234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="797.5" y1="497.5234" y2="497.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="362.5" y="477.3247">AddProof(anchorLink,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="362.5" y="492.4575">witness, proof)</text><polygon fill="#181818" points="366.5,522.6563,356.5,526.6563,366.5,530.6563,362.5,526.6563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="807.5" y1="526.6563" y2="526.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="372.5" y="521.5903">ok</text><polygon fill="#181818" points="510.5,551.7891,520.5,555.7891,510.5,559.7891,514.5,555.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="516.5" y1="555.7891" y2="555.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="362.5" y="550.7231">Monitor(anchorLink)</text><polygon fill="#181818" points="366.5,580.9219,356.5,584.9219,366.5,588.9219,362.5,584.9219" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="526.5" y1="584.9219" y2="584.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="372.5" y="579.856">ok</text><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="402.5" y1="624.1875" y2="624.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="402.5" x2="402.5" y1="624.1875" y2="637.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="361.5" x2="402.5" y1="637.1875" y2="637.1875"/><polygon fill="#181818" points="371.5,633.1875,361.5,637.1875,371.5,641.1875,367.5,637.1875" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="153" x="367.5" y="603.9888">IsWitnessPolicySatisfied</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="367.5" y="619.1216">(anchorLink)</text><polygon fill="#181818" points="791.5,667.3203,801.5,671.3203,791.5,675.3203,795.5,671.3203" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="360.5" x2="797.5" y1="671.3203" y2="671.3203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="367.5" y="666.2544">GetProofs(anchorLink)</text><polygon fill="#181818" points="371.5,696.4531,361.5,700.4531,371.5,704.4531,367.5,700.4531" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="365.5" x2="807.5" y1="700.4531" y2="700.4531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="377.5" y="695.3872">proofs</text><line style="stroke:#181818;stroke-width:1.0;" x1="360.5" x2="402.5" y1="734.5859" y2="734.5859"/><line style="stroke:#181818;stroke-width:1.0;" x1="402.5" x2="402.5" y1="734.5859" y2="747.5859"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="402.5" y1="747.5859" y2="747.5859"/><polygon fill="#181818" points="365.5,743.5859,355.5,747.5859,365.5,751.5859,361.5,747.5859" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="367.5" y="729.52">EvaluatePolicy(proofs)</text><path d="M140.5,757.5859 L206.5,757.5859 L206.5,764.7188 L196.5,774.7188 L140.5,774.7188 L140.5,757.5859 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="325.8125" style="stroke:#000000;stroke-width:1.5;" width="792.5" x="140.5" y="757.5859"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="155.5" y="770.6528">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="102" x="221.5" y="769.7964">[Witness Policy</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="95" x="221.5" y="782.6011">Not Satisfied]</text><polygon fill="#181818" points="193.5,802.4609,183.5,806.4609,193.5,810.4609,189.5,806.4609" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="187.5" x2="344.5" y1="806.4609" y2="806.4609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="199.5" y="801.395">ok</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="140.5" x2="933" y1="815.4609" y2="815.4609"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="102" x="145.5" y="825.6714">[Witness Policy</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="66" x="145.5" y="838.4761">Satisfied]</text><path d="M243,847.0703 L243,917.0703 L457,917.0703 L457,857.0703 L447,847.0703 L243,847.0703 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M447,847.0703 L447,857.0703 L457,857.0703 L447,847.0703 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156" x="249" y="864.1372">Create a linkset with the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="189" x="249" y="879.27">anchorLink (which includes all</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="249" y="894.4028">proofs) and publish the linkset</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="249" y="909.5356">to the anchor linkset queue</text><polygon fill="#181818" points="869.5,939.7344,879.5,943.7344,869.5,947.7344,873.5,943.7344" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="875.5" y1="943.7344" y2="943.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="362.5" y="938.6685">Publish(anchorLinkset)</text><polygon fill="#181818" points="366.5,968.8672,356.5,972.8672,366.5,976.8672,362.5,972.8672" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="885.5" y1="972.8672" y2="972.8672"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="372.5" y="967.8013">ok</text><polygon fill="#181818" points="595.5,1013.1328,605.5,1017.1328,595.5,1021.1328,599.5,1017.1328" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="355.5" x2="601.5" y1="1017.1328" y2="1017.1328"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="362.5" y="996.9341">PutStatus(anchorID,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="362.5" y="1012.0669">completed)</text><polygon fill="#181818" points="366.5,1042.2656,356.5,1046.2656,366.5,1050.2656,362.5,1046.2656" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="360.5" x2="611.5" y1="1046.2656" y2="1046.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="372.5" y="1041.1997">ok</text><polygon fill="#181818" points="193.5,1071.3984,183.5,1075.3984,193.5,1079.3984,189.5,1075.3984" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="187.5" x2="344.5" y1="1075.3984" y2="1075.3984"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="199.5" y="1070.3325">ok</text><!--MD5=[2ccf606b4e6242c015f11f04bf834f9b]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+actor "Witness" as witness
+participant "Inbox" as inbox
+
+participant "Proof\nHandler" as proofHandler
+participant "VCT" as vct
+
+database "Anchor Status\nDB" as anchorStatusDB
+database "Anchor Link\nDB" as anchorLinkDB
+database "Witness\nDB" as witnessDB
+queue "Anchor\nLinkset" as anchorLinksetQueue
+
+witness -> inbox: Post(Accept offer)
+note over inbox
+  A witness accepts an
+  Offer by posting an Accept
+  activity (containing a proof)
+  to the inbox.
+end note
+
+activate inbox
+inbox - -> witness: ok
+
+inbox -> proofHandler: HandleProof(anchorID,\nproof)
+
+activate proofHandler
+  proofHandler -> anchorStatusDB: GetStatus(anchorID)
+  activate anchorStatusDB
+  anchorStatusDB - -> proofHandler: status
+  deactivate anchorStatusDB
+
+  alt Anchor Completed
+    proofHandler - -> inbox: ok
+  else Anchor Not Completed
+    proofHandler -> anchorLinkDB: GetAnchorLink(anchorID)
+    activate anchorLinkDB
+    anchorLinkDB - -> proofHandler: anchorLink
+    deactivate anchorLinkDB
+
+    proofHandler -> witnessDB: AddProof(anchorLink,\nwitness, proof)
+    activate witnessDB
+    witnessDB - -> proofHandler: ok
+    deactivate witnessDB
+
+    proofHandler -> vct: Monitor(anchorLink)
+    activate vct
+    vct - -> proofHandler: ok
+    deactivate vct
+
+    proofHandler -> proofHandler: IsWitnessPolicySatisfied\n(anchorLink)
+
+    activate proofHandler
+        proofHandler -> witnessDB: GetProofs(anchorLink)
+        activate witnessDB
+        witnessDB - -> proofHandler: proofs
+        deactivate witnessDB
+        proofHandler -> proofHandler: EvaluatePolicy(proofs)
+    deactivate proofHandler
+
+    alt Witness Policy\nNot Satisfied
+        proofHandler - -> inbox: ok
+    else Witness Policy\nSatisfied
+        note over proofHandler
+          Create a linkset with the
+          anchorLink (which includes all
+          proofs) and publish the linkset
+          to the anchor linkset queue
+        end note
+
+        proofHandler -> anchorLinksetQueue: Publish(anchorLinkset)
+        activate anchorLinksetQueue
+        anchorLinksetQueue - -> proofHandler: ok
+        deactivate anchorLinksetQueue
+
+        proofHandler -> anchorStatusDB: PutStatus(anchorID,\ncompleted)
+        activate anchorStatusDB
+        anchorStatusDB - -> proofHandler: ok
+        deactivate anchorStatusDB
+
+        proofHandler - -> inbox: ok
+    end
+  end alt
+deactivate proofHandler
+deactivate inbox
+@enduml
+
+@startuml
+
+actor "Witness" as witness
+participant "Inbox" as inbox
+
+participant "Proof\nHandler" as proofHandler
+participant "VCT" as vct
+
+database "Anchor Status\nDB" as anchorStatusDB
+database "Anchor Link\nDB" as anchorLinkDB
+database "Witness\nDB" as witnessDB
+queue "Anchor\nLinkset" as anchorLinksetQueue
+
+witness -> inbox: Post(Accept offer)
+note over inbox
+  A witness accepts an
+  Offer by posting an Accept
+  activity (containing a proof)
+  to the inbox.
+end note
+
+activate inbox
+inbox - -> witness: ok
+
+inbox -> proofHandler: HandleProof(anchorID,\nproof)
+
+activate proofHandler
+  proofHandler -> anchorStatusDB: GetStatus(anchorID)
+  activate anchorStatusDB
+  anchorStatusDB - -> proofHandler: status
+  deactivate anchorStatusDB
+
+  alt Anchor Completed
+    proofHandler - -> inbox: ok
+  else Anchor Not Completed
+    proofHandler -> anchorLinkDB: GetAnchorLink(anchorID)
+    activate anchorLinkDB
+    anchorLinkDB - -> proofHandler: anchorLink
+    deactivate anchorLinkDB
+
+    proofHandler -> witnessDB: AddProof(anchorLink,\nwitness, proof)
+    activate witnessDB
+    witnessDB - -> proofHandler: ok
+    deactivate witnessDB
+
+    proofHandler -> vct: Monitor(anchorLink)
+    activate vct
+    vct - -> proofHandler: ok
+    deactivate vct
+
+    proofHandler -> proofHandler: IsWitnessPolicySatisfied\n(anchorLink)
+
+    activate proofHandler
+        proofHandler -> witnessDB: GetProofs(anchorLink)
+        activate witnessDB
+        witnessDB - -> proofHandler: proofs
+        deactivate witnessDB
+        proofHandler -> proofHandler: EvaluatePolicy(proofs)
+    deactivate proofHandler
+
+    alt Witness Policy\nNot Satisfied
+        proofHandler - -> inbox: ok
+    else Witness Policy\nSatisfied
+        note over proofHandler
+          Create a linkset with the
+          anchorLink (which includes all
+          proofs) and publish the linkset
+          to the anchor linkset queue
+        end note
+
+        proofHandler -> anchorLinksetQueue: Publish(anchorLinkset)
+        activate anchorLinksetQueue
+        anchorLinksetQueue - -> proofHandler: ok
+        deactivate anchorLinksetQueue
+
+        proofHandler -> anchorStatusDB: PutStatus(anchorID,\ncompleted)
+        activate anchorStatusDB
+        anchorStatusDB - -> proofHandler: ok
+        deactivate anchorStatusDB
+
+        proofHandler - -> inbox: ok
+    end
+  end alt
+deactivate proofHandler
+deactivate inbox
+@enduml
+
+PlantUML version 1.2022.4beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

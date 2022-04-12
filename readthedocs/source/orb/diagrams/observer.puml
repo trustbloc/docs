@@ -1,0 +1,96 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+queue "Anchor" as anchorQueue
+
+participant "Observer" as observer
+
+database "CAS" as cas
+participant "Transaction\nProcessor" as txnProcessor
+database "DID\nAnchor" as didAnchorDB
+database "Anchor\nReference" as anchorRefDB
+database "Operation" as operationDB
+database "Unpublished\nOperation" as unpublishedOperationDB
+
+participant "Outbox" as outbox
+
+observer -> anchorQueue: Subscribe
+note over observer
+  On startup the Observer
+  subscribes to the anchor
+  queue to receive witnessed
+  anchor linksets.
+end note
+activate anchorQueue
+  anchorQueue --> observer: ok
+deactivate anchorQueue
+
+anchorQueue -> observer: anchorLinkset
+
+activate observer
+  observer -> cas: Read(anchor)
+  activate cas
+    cas --> observer: anchorLinkset
+  deactivate cas
+
+  observer -> observer: Convert anchorLinkset\nto Sidetree Txn
+
+  observer -> txnProcessor: Process(Sidetree Txn)
+  activate txnProcessor
+    note over txnProcessor
+      Validate and convert
+      the Sidetree transaction
+      into operation documents
+      and store them in the
+      operation database.
+    end note
+
+    txnProcessor -> operationDB: Put(operations)
+    activate operationDB
+      operationDB --> txnProcessor: ok
+    deactivate operationDB
+
+    txnProcessor -> unpublishedOperationDB: DeleteAll(operations)
+    note over txnProcessor
+      Delete the operations
+      from the 'unpublished
+      operation' database since
+      they are now published.
+    end note
+    activate unpublishedOperationDB
+      unpublishedOperationDB --> txnProcessor: ok
+    deactivate unpublishedOperationDB
+
+    txnProcessor --> observer: ok
+  deactivate txnProcessor
+
+  observer -> didAnchorDB: PutBulk(suffixes,anchor)
+  activate didAnchorDB
+    note over observer
+      Add an entry for each DID
+      suffix in the anchor linkset
+      to reference the new anchor
+    end note
+    didAnchorDB --> observer: ok
+  deactivate didAnchorDB
+
+  observer -> anchorRefDB: Put(anchor hashlink)
+  activate anchorRefDB
+    anchorRefDB --> observer: ok
+  deactivate anchorRefDB
+
+  observer -> outbox: Post(Like)
+  activate outbox
+    note over observer
+      A 'Like' activity is posted to
+      the anchor origin to indicate
+      that this domain has replicated
+      the anchor linkset.
+    end note
+    outbox --> observer: ok
+  deactivate outbox
+
+  observer --> anchorQueue: Ack
+deactivate observer
+
+@enduml

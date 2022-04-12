@@ -3,52 +3,38 @@
 
 box Domain1 #White
 participant Domain1
-queue anchor_event
-database Domain1DB
+database "Anchor\nReference" as Domain1DB
 end box
 
 box Domain2
 participant Domain2
-database Domain2DB
-queue anchor_2
+database "Anchor\nReference" as Domain2DB
+queue "Anchor" as anchor_2
 end box
 
 box Domain3 #White
 participant Domain3
-database Domain3_db
-queue anchor_3
+queue "Anchor" as anchor_3
 end box
 
-activate anchor_event
-anchor_event -> Domain1: AnchorEvent message
-
 activate Domain1
-Domain1 -> Domain1: Batch Writer\nprocesses\nAnchorEvent
-Domain1 -> Domain2: Create activity
+Domain1 -> Domain2: Post(Create)
 note over Domain1
-Post Create
-to servers in
-followers list.
+Post Create (containing
+an anchor linkset) to
+servers in followers list.
 end note
 
 activate Domain2
 Domain2 -> Domain2: Authenticate Domain1\nusing HTTP signature
 Domain2 --> Domain1: OK
 
-Domain1 --> anchor_event:ACK
-
-deactivate anchor_event
-
 deactivate Domain1
 
-Domain2 -> anchor_2: AnchorEvent
+Domain2 -> anchor_2: Publish(anchorLinkset)
 
-activate anchor_2
-
-anchor_2 --> Domain2: ACK
-
-note left
-The AnchorEvent in
+note over anchor_2
+The anchor linkset in
 the Create activity
 is posted to the
 anchor queue to be
@@ -56,7 +42,11 @@ processed by the
 Observer.
 end note
 
-Domain2 -> Domain3: Announce activity
+activate anchor_2
+
+anchor_2 --> Domain2: OK
+
+Domain2 -> Domain3: Post(Announce)
 
 activate Domain3
 
@@ -65,34 +55,30 @@ Domain3 --> Domain2: OK
 
 deactivate Domain2
 
-Domain3 -> anchor_3: AnchorEvent
+Domain3 -> anchor_3: Publish(anchorLinkset)
 
 activate anchor_3
-anchor_3 --> Domain3: ACK
 
-deactivate Domain3
-
-note left
-The AnchorEvent in
+note over anchor_3
+The anchor linkset in
 the Announce activity
 is posted to the anchor
 queue to be processed by
 the Observer.
 end note
+anchor_3 --> Domain3: OK
 
-anchor_2 -> Domain2: AnchorEvent
+deactivate Domain3
+
+anchor_2 -> Domain2: anchorLinkset
 
 note left
-The AnchorEvent is
-processed by the
+The anchor linkset
+is processed by the
 Observer.
 end note
 
 activate Domain2
-
-Domain2 --> anchor_2: ACK
-
-deactivate anchor_2
 
 Domain2 -> Domain1: Like activity
 
@@ -100,12 +86,19 @@ activate Domain1
 Domain1 -> Domain1: Authenticate Domain2\nusing HTTP signature
 Domain1 --> Domain2: OK
 
+Domain2 --> anchor_2: ACK
+
+deactivate anchor_2
+
 deactivate Domain2
 
-Domain1 -> Domain1DB: Add Domain2 to\nanchor links DB
+Domain1 -> Domain1DB: Add Domain2 to\nanchor reference DB
+activate Domain1DB
+Domain1DB --> Domain1: OK
+deactivate Domain1DB
 deactivate Domain1
 
-anchor_3 -> Domain3: AnchorEvent
+anchor_3 -> Domain3: anchorLinkset
 
 activate Domain3
 
@@ -115,10 +108,6 @@ processed by the
 Observer.
 end note
 
-Domain3 --> anchor_3: ACK
-
-deactivate anchor_3
-
 Domain3 -> Domain2: Like activity
 
 activate Domain2
@@ -126,8 +115,14 @@ activate Domain2
 Domain2 -> Domain2: Authenticate Domain3\nusing HTTP signature
 Domain2 --> Domain3: OK
 
-Domain2 -> Domain2DB: Add Domain3 to\nanchor links DB
+Domain3 --> anchor_3: ACK
 
+deactivate anchor_3
+
+Domain2 -> Domain2DB: Add Domain3 to\nanchor reference DB
+activate Domain2DB
+Domain2DB --> Domain2: OK
+deactivate Domain2DB
 deactivate Domain2
 
 Domain3 -> Domain1: Like activity
@@ -138,7 +133,10 @@ Domain1 --> Domain3: OK
 
 deactivate Domain3
 
-Domain1 -> Domain1DB: Add Domain3\nto anchor links DB
+Domain1 -> Domain1DB: Add Domain3\nto anchor reference DB
+activate Domain1DB
+Domain1DB --> Domain1: OK
+deactivate Domain1DB
 deactivate Domain1
 
 @enduml
