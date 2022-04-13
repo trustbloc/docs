@@ -141,13 +141,39 @@ Total time in seconds to resolve config values.
 
 Verifiable credential transparency URL.
 
-### vct-monitoring-interval
+### vct-proof-monitoring-interval
 
-| Arg                       | Env                     | Default |
-|---------------------------|-------------------------|---------|
-| --vct-monitoring-interval | VCT_MONITORING_INTERVAL | 10s     |
+| Arg                             | Env                           | Default |
+|---------------------------------|-------------------------------|---------|
+| --vct-proof-monitoring-interval | VCT_PROOF_MONITORING_INTERVAL | 10s     |
 
 The interval in which VCTs are monitored to ensure that proofs are anchored.
+
+### vct-log-monitoring-interval
+
+| Arg                           | Env                         | Default |
+|-------------------------------|-----------------------------|---------|
+| --vct-log-monitoring-interval | VCT_LOG_MONITORING_INTERVAL | 10s     |
+
+The interval in which VCT logs are monitored to ensure that they are consistent.
+
+
+### vct-log-monitoring-max-tree-size
+
+| Arg                                | Env                              | Default |
+|------------------------------------|----------------------------------|---------|
+| --vct-log-monitoring-max-tree-size | VCT_LOG_MONITORING_MAX_TREE_SIZE | 50000   |
+
+The maximum tree size for which new VCT logs will be re-constructed in order to verify signed tree head.
+
+### vct-log-monitoring-get-entries-range
+
+| Arg                                    | Env                                  | Default |
+|----------------------------------------|--------------------------------------|---------|
+| --vct-log-monitoring-get-entries-range | VCT_LOG_MONITORING_GET_ENTRIES_RANGE | 1000    |
+
+The maximum number of entries to be retrieved from VCT log in one attempt. Has to be less or equal than 1000 due to VCT limitation.
+
 
 ### anchor-status-monitoring-interval
 
