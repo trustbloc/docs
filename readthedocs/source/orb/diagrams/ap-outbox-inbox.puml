@@ -82,36 +82,6 @@ deactivate Outbox
 
 deactivate Outbox
 
-outboxQueue -> Outbox: ("deliver",uriN,activity)
-
-activate Outbox
-
-Outbox -> Inbox: HTTP Post(uriN,activity)
-
-activate Inbox
-
-Inbox -> inboxQueue: Publish(activity)
-
-activate inboxQueue
-
-inboxQueue --> Inbox: ok
-
-Inbox --> Outbox: ok
-
-note over Outbox
- If the HTTP response from
- the target URI is not OK
- then a NACK is sent back to
- the queue and the target will
- be retried.
-end note
-
-deactivate Inbox
-
-Outbox --> outboxQueue: ACK
-
-deactivate Outbox
-
 outboxQueue -> Outbox: ("resolve-and-deliver",uriN,activity)
 
 activate Outbox
@@ -143,6 +113,36 @@ loop For resultN in results
     Outbox --> outboxQueue: NACK
   end alt
 end loop
+
+deactivate Outbox
+
+outboxQueue -> Outbox: ("deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> Inbox: HTTP Post(uriN,activity)
+
+activate Inbox
+
+Inbox -> inboxQueue: Publish(activity)
+
+activate inboxQueue
+
+inboxQueue --> Inbox: ok
+
+Inbox --> Outbox: ok
+
+note over Outbox
+ If the HTTP response from
+ the target URI is not OK
+ then a NACK is sent back to
+ the queue and the target will
+ be retried.
+end note
+
+deactivate Inbox
+
+Outbox --> outboxQueue: ACK
 
 deactivate Outbox
 
