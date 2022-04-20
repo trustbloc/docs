@@ -1,190 +1,350 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1045px" preserveAspectRatio="none" style="width:916px;height:1045px;" version="1.1" viewBox="0 0 916 1045" width="916px" zoomAndPan="magnify"><defs><style type="text/css"><![CDATA[*.s_181818_e7e7e7 {stroke:#181818;}*.f_000000_ffffff {fill:#000000;}*.f_dddddd_222222 {fill:#dddddd;}*.f_ffffff_000000 {fill:#ffffff;}*.s_000000_ffffff {stroke:#000000;}*.f_181818_e7e7e7 {fill:#181818;}*.f_eeeeee_555555 {fill:#eeeeee;}*.f_feffdd_333333 {fill:#feffdd;}@media (prefers-color-scheme:dark) {*.s_181818_e7e7e7 {stroke:#e7e7e7;}*.f_000000_ffffff {fill:#ffffff;}*.f_dddddd_222222 {fill:#222222;}*.f_ffffff_000000 {fill:#000000;}*.s_000000_ffffff {stroke:#ffffff;}*.f_181818_e7e7e7 {fill:#e7e7e7;}*.f_eeeeee_555555 {fill:#555555;}*.f_feffdd_333333 {fill:#333333;}}]]></style></defs><g><rect class="s_181818_e7e7e7" fill="#FFFFFF" height="1033.8438" style="stroke-width:0.5;" width="415.5" x="146.5" y="6"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="318.75" y="18.0669">Domain1</text><rect class="f_dddddd_222222 s_181818_e7e7e7" height="1033.8438" style="stroke-width:0.5;" width="346.5" x="564" y="6"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="68" x="703.25" y="18.0669">DomainN</text><rect class="f_ffffff_000000 s_181818_e7e7e7" height="183.7969" style="stroke-width:1.0;" width="10" x="179" y="118.5625"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="390.4258" style="stroke-width:1.0;" width="10" x="179" y="349.1914"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="120.9648" style="stroke-width:1.0;" width="10" x="430" y="258.2266"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="526" y="434.0234"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="248.3281" style="stroke-width:1.0;" width="10" x="590" y="549.5547"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="124.5313" style="stroke-width:1.0;" width="10" x="590" y="827.0156"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="173.7969" style="stroke-width:1.0;" width="10" x="849" y="768.75"/><rect class="s_000000_ffffff" height="75.3984" style="stroke-width:1.5;fill:none;" width="363.5" x="140.5" y="219.9609"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="80" x2="80" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="183.5" x2="183.5" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="326" x2="326" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="435" x2="435" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="531" x2="531" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="595" x2="595" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="757.5" x2="757.5" y1="87.4297" y2="960.5469"/><line class="s_181818_e7e7e7" style="stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="853.5" x2="853.5" y1="87.4297" y2="960.5469"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="22" y="84.1279">Domain1Admin</text><ellipse class="s_181818_e7e7e7" cx="80" cy="19.6328" fill="#E2E2F0" rx="8" ry="8" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M80,27.6328 L80,54.6328 M67,35.6328 L93,35.6328 M80,54.6328 L67,69.6328 M80,54.6328 L93,69.6328 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="22" y="972.542">Domain1Admin</text><ellipse class="s_181818_e7e7e7" cx="80" cy="984.3438" fill="#E2E2F0" rx="8" ry="8" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M80,992.3438 L80,1019.3438 M67,1000.3438 L93,1000.3438 M80,1019.3438 L67,1034.3438 M80,1019.3438 L93,1034.3438 " fill="none" style="stroke-width:0.5;"/><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="67" x="150.5" y="56.1328"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="157.5" y="76.1279">Outbox</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="67" x="150.5" y="959.5469"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="157.5" y="979.542">Outbox</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="286" y="84.1279">OutboxDB</text><path class="s_181818_e7e7e7" d="M308,35.1328 C308,25.1328 326,25.1328 326,25.1328 C326,25.1328 344,25.1328 344,35.1328 L344,61.1328 C344,71.1328 326,71.1328 326,71.1328 C326,71.1328 308,71.1328 308,61.1328 L308,35.1328 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M308,35.1328 C308,45.1328 326,45.1328 326,45.1328 C326,45.1328 344,45.1328 344,35.1328 " fill="none" style="stroke-width:1.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="286" y="972.542">OutboxDB</text><path class="s_181818_e7e7e7" d="M308,985.8438 C308,975.8438 326,975.8438 326,975.8438 C326,975.8438 344,975.8438 344,985.8438 L344,1011.8438 C344,1021.8438 326,1021.8438 326,1021.8438 C326,1021.8438 308,1021.8438 308,1011.8438 L308,985.8438 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M308,985.8438 C308,995.8438 326,995.8438 326,995.8438 C326,995.8438 344,995.8438 344,985.8438 " fill="none" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M381,61.1328 L489,61.1328 C494,61.1328 494,74.2813 494,74.2813 C494,74.2813 494,87.4297 489,87.4297 L381,87.4297 C376,87.4297 376,74.2813 376,74.2813 C376,74.2813 376,61.1328 381,61.1328 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M489,61.1328 C484,61.1328 484,74.2813 484,74.2813 C484,87.4297 489,87.4297 489,87.4297 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="381" y="79.1279">OutboxQueue</text><path class="s_181818_e7e7e7" d="M381,959.5469 L489,959.5469 C494,959.5469 494,972.6953 494,972.6953 C494,972.6953 494,985.8438 489,985.8438 L381,985.8438 C376,985.8438 376,972.6953 376,972.6953 C376,972.6953 376,959.5469 381,959.5469 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M489,959.5469 C484,959.5469 484,972.6953 484,972.6953 C484,985.8438 489,985.8438 489,985.8438 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="381" y="977.542">OutboxQueue</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="54" x="504" y="56.1328"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="511" y="76.1279">KMS1</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="54" x="504" y="959.5469"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="511" y="979.542">KMS1</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="54" x="568" y="56.1328"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="575" y="76.1279">Inbox</text><rect class="s_181818_e7e7e7" fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke-width:0.5;" width="54" x="568" y="959.5469"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="575" y="979.542">Inbox</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="724.5" y="84.1279">InboxDB</text><path class="s_181818_e7e7e7" d="M740,35.1328 C740,25.1328 758,25.1328 758,25.1328 C758,25.1328 776,25.1328 776,35.1328 L776,61.1328 C776,71.1328 758,71.1328 758,71.1328 C758,71.1328 740,71.1328 740,61.1328 L740,35.1328 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M740,35.1328 C740,45.1328 758,45.1328 758,45.1328 C758,45.1328 776,45.1328 776,35.1328 " fill="none" style="stroke-width:1.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="724.5" y="972.542">InboxDB</text><path class="s_181818_e7e7e7" d="M740,985.8438 C740,975.8438 758,975.8438 758,975.8438 C758,975.8438 776,975.8438 776,985.8438 L776,1011.8438 C776,1021.8438 758,1021.8438 758,1021.8438 C758,1021.8438 740,1021.8438 740,1011.8438 L740,985.8438 " fill="#E2E2F0" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M740,985.8438 C740,995.8438 758,995.8438 758,995.8438 C758,995.8438 776,995.8438 776,985.8438 " fill="none" style="stroke-width:1.5;"/><path class="s_181818_e7e7e7" d="M806.5,61.1328 L901.5,61.1328 C906.5,61.1328 906.5,74.2813 906.5,74.2813 C906.5,74.2813 906.5,87.4297 901.5,87.4297 L806.5,87.4297 C801.5,87.4297 801.5,74.2813 801.5,74.2813 C801.5,74.2813 801.5,61.1328 806.5,61.1328 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M901.5,61.1328 C896.5,61.1328 896.5,74.2813 896.5,74.2813 C896.5,87.4297 901.5,87.4297 901.5,87.4297 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="806.5" y="79.1279">InboxQueue</text><path class="s_181818_e7e7e7" d="M806.5,959.5469 L901.5,959.5469 C906.5,959.5469 906.5,972.6953 906.5,972.6953 C906.5,972.6953 906.5,985.8438 901.5,985.8438 L806.5,985.8438 C801.5,985.8438 801.5,972.6953 801.5,972.6953 C801.5,972.6953 801.5,959.5469 806.5,959.5469 " fill="#E2E2F0" style="stroke-width:0.5;"/><path class="s_181818_e7e7e7" d="M901.5,959.5469 C896.5,959.5469 896.5,972.6953 896.5,972.6953 C896.5,985.8438 901.5,985.8438 901.5,985.8438 " fill="none" style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="806.5" y="977.542">InboxQueue</text><rect class="f_ffffff_000000 s_181818_e7e7e7" height="183.7969" style="stroke-width:1.0;" width="10" x="179" y="118.5625"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="390.4258" style="stroke-width:1.0;" width="10" x="179" y="349.1914"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="120.9648" style="stroke-width:1.0;" width="10" x="430" y="258.2266"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="29.1328" style="stroke-width:1.0;" width="10" x="526" y="434.0234"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="248.3281" style="stroke-width:1.0;" width="10" x="590" y="549.5547"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="124.5313" style="stroke-width:1.0;" width="10" x="590" y="827.0156"/><rect class="f_ffffff_000000 s_181818_e7e7e7" height="173.7969" style="stroke-width:1.0;" width="10" x="849" y="768.75"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="167,114.5625,177,118.5625,167,122.5625,171,118.5625" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="80" x2="173" y1="118.5625" y2="118.5625"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="87" y="113.4966">Post Activity</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="314,143.6953,324,147.6953,314,151.6953,318,147.6953" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="320" y1="147.6953" y2="147.6953"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="196" y="142.6294">Store Activity</text><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="231" y1="191.9609" y2="191.9609"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="231" x2="231" y1="191.9609" y2="204.9609"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="190" x2="231" y1="204.9609" y2="204.9609"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,200.9609,190,204.9609,200,208.9609,196,204.9609" style="stroke-width:1.0;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="196" y="171.7622">Resolve URIs from</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="196" y="186.895">"to" field"</text><path class="f_eeeeee_555555 s_000000_ffffff" d="M140.5,219.9609 L218.5,219.9609 L218.5,227.0938 L208.5,237.0938 L140.5,237.0938 L140.5,219.9609 " style="stroke-width:1.5;"/><rect class="s_000000_ffffff" fill="none" height="75.3984" style="stroke-width:1.5;" width="363.5" x="140.5" y="219.9609"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="155.5" y="233.0278">loop</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="92" x="233.5" y="232.1714">[For each URI]</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="418,254.2266,428,258.2266,418,262.2266,422,258.2266" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="424" y1="258.2266" y2="258.2266"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="196" y="253.1606">Activity message</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,283.3594,190,287.3594,200,291.3594,196,287.3594" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="194" x2="429" y1="287.3594" y2="287.3594"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="206" y="282.2935">ACK</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,345.1914,190,349.1914,200,353.1914,196,349.1914" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="194" x2="429" y1="349.1914" y2="349.1914"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="206" y="344.1255">Activity message</text><path class="f_feffdd_333333 s_181818_e7e7e7" d="M5,307.3594 L5,377.3594 L174,377.3594 L174,317.3594 L164,307.3594 L5,307.3594 " style="stroke-width:0.5;"/><path class="f_feffdd_333333 s_181818_e7e7e7" d="M164,307.3594 L164,317.3594 L174,317.3594 L164,307.3594 " style="stroke-width:0.5;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="11" y="324.4263">An Activity message is</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="11" y="339.5591">processed for each URI</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="11" y="354.6919">in the "to" field of</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="11" y="369.8247">the Activity.</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="514,430.0234,524,434.0234,514,438.0234,518,434.0234" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="520" y1="434.0234" y2="434.0234"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="196" y="428.9575">Sign request</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,459.1563,190,463.1563,200,467.1563,196,463.1563" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="194" x2="530" y1="463.1563" y2="463.1563"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="206" y="458.0903">signature</text><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="231" y1="507.4219" y2="507.4219"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="231" x2="231" y1="507.4219" y2="520.4219"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="190" x2="231" y1="520.4219" y2="520.4219"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,516.4219,190,520.4219,200,524.4219,196,520.4219" style="stroke-width:1.0;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="196" y="487.2231">Add signature to</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="196" y="502.356">HTTP header</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="578,545.5547,588,549.5547,578,553.5547,582,549.5547" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="189" x2="584" y1="549.5547" y2="549.5547"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="196" y="544.4888">Activity</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="200,604.9531,190,608.9531,200,612.9531,196,608.9531" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="194" x2="589" y1="608.9531" y2="608.9531"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="206" y="573.6216">Resolve actor</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="206" y="588.7544">in activity</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="206" y="603.8872">using WebFinger</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="578,634.0859,588,638.0859,578,642.0859,582,638.0859" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="189" x2="584" y1="638.0859" y2="638.0859"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="33" x="196" y="633.02">actor</text><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="600" x2="642" y1="697.4844" y2="697.4844"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="642" x2="642" y1="697.4844" y2="710.4844"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="601" x2="642" y1="710.4844" y2="710.4844"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="611,706.4844,601,710.4844,611,714.4844,607,710.4844" style="stroke-width:1.0;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="139" x="607" y="662.1528">Verify HTTP signature</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="607" y="677.2856">of request using</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="607" y="692.4185">public key of actor</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="195,735.6172,185,739.6172,195,743.6172,191,739.6172" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="189" x2="589" y1="739.6172" y2="739.6172"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="201" y="734.5513">OK</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="837,764.75,847,768.75,837,772.75,841,768.75" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="600" x2="843" y1="768.75" y2="768.75"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="607" y="763.6841">Activity message</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="606,793.8828,596,797.8828,606,801.8828,602,797.8828" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="600" x2="848" y1="797.8828" y2="797.8828"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="612" y="792.8169">ACK</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="611,823.0156,601,827.0156,611,831.0156,607,827.0156" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="605" x2="848" y1="827.0156" y2="827.0156"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="617" y="821.9497">Activity message</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="746,852.1484,756,856.1484,746,860.1484,750,856.1484" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="600" x2="752" y1="856.1484" y2="856.1484"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="607" y="851.0825">Store Activity</text><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="600" x2="642" y1="900.4141" y2="900.4141"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="642" x2="642" y1="900.4141" y2="913.4141"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;" x1="601" x2="642" y1="913.4141" y2="913.4141"/><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="611,909.4141,601,913.4141,611,917.4141,607,913.4141" style="stroke-width:1.0;"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="89" x="607" y="880.2153">Authorize and</text><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="607" y="895.3481">Handle Activity</text><polygon class="f_181818_e7e7e7 s_181818_e7e7e7" points="842,938.5469,852,942.5469,842,946.5469,846,942.5469" style="stroke-width:1.0;"/><line class="s_181818_e7e7e7" style="stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="600" x2="848" y1="942.5469" y2="942.5469"/><text class="f_000000_ffffff" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="607" y="937.481">ACK</text><!--MD5=[4f815b65266f12881fd4a8e500d627db]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2072px" preserveAspectRatio="none" style="width:962px;height:2072px;background:#FFFFFF;" version="1.1" viewBox="0 0 962 2072" width="962px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="2060.1641" style="stroke:#181818;stroke-width:0.5;" width="608" x="1" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="66" x="269.5" y="18.0669">Domain1</text><rect fill="#DDDDDD" height="2060.1641" style="stroke:#181818;stroke-width:0.5;" width="345.5" x="611" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="68" x="749.75" y="18.0669">DomainN</text><rect fill="#FFFFFF" height="100.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="148.8594"/><rect fill="#FFFFFF" height="729.5938" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="278.3906"/><rect fill="#FFFFFF" height="241.3281" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="1037.1172"/><rect fill="#FFFFFF" height="436.0625" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="1307.5781"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5" y="534.8516"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5" y="1336.7109"/><rect fill="#FFFFFF" height="1523.5156" style="stroke:#181818;stroke-width:1.0;" width="10" x="414.5" y="220.125"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="490.5" y="307.5234"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="565" y="365.7891"/><rect fill="#FFFFFF" height="87.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="637" y="1066.25"/><rect fill="#FFFFFF" height="196.7969" style="stroke:#181818;stroke-width:1.0;" width="10" x="637" y="1764.7734"/><rect fill="#FFFFFF" height="857.1875" style="stroke:#181818;stroke-width:1.0;" width="10" x="779" y="1095.3828"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="844.5" y="1793.9063"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="912.5" y="1894.3047"/><rect height="400.8672" style="stroke:#000000;stroke-width:1.5;fill:none;" width="458" x="104" y="578.9844"/><rect height="369.7344" style="stroke:#000000;stroke-width:1.5;fill:none;" width="438" x="114" y="603.1172"/><rect height="355.7969" style="stroke:#000000;stroke-width:1.5;fill:none;" width="474" x="104" y="1380.8438"/><rect height="324.6641" style="stroke:#000000;stroke-width:1.5;fill:none;" width="454" x="114" y="1404.9766"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="48" x2="48" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="157" x2="157" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="289.5" x2="289.5" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="419" x2="419" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="495" x2="495" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="570" x2="570" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="642" x2="642" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="783.5" x2="783.5" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="849.5" x2="849.5" y1="117.7266" y2="1970.5703"/><line style="stroke:#181818;stroke-width:0.5;fill:none;stroke-dasharray:5.0,5.0;" x1="917.5" x2="917.5" y1="117.7266" y2="1970.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="9.5" y="98.1279">Service or</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="5" y="114.4248">Admin User</text><ellipse cx="48.5" cy="33.6328" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M48.5,41.6328 L48.5,68.6328 M35.5,49.6328 L61.5,49.6328 M48.5,68.6328 L35.5,83.6328 M48.5,68.6328 L61.5,83.6328 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="9.5" y="1982.5654">Service or</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="5" y="1998.8623">Admin User</text><ellipse cx="48.5" cy="2010.6641" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M48.5,2018.6641 L48.5,2045.6641 M35.5,2026.6641 L61.5,2026.6641 M48.5,2045.6641 L35.5,2060.6641 M48.5,2045.6641 L61.5,2060.6641 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="124" y="86.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="131" y="106.4248">Outbox</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="67" x="124" y="1969.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="131" y="1989.5654">Outbox</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="251.5" y="70.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="269.5" y="90.1279">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="258.5" y="106.4248">Resolver</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="251.5" y="1969.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="269.5" y="1989.5654">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="258.5" y="2005.8623">Resolver</text><path d="M388,75.1328 L451,75.1328 C456,75.1328 456,96.4297 456,96.4297 C456,96.4297 456,117.7266 451,117.7266 L388,117.7266 C383,117.7266 383,96.4297 383,96.4297 C383,96.4297 383,75.1328 388,75.1328 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M451,75.1328 C446,75.1328 446,96.4297 446,96.4297 C446,117.7266 451,117.7266 451,117.7266 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="388" y="93.1279">Outbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="392" y="109.4248">Queue</text><path d="M388,1969.5703 L451,1969.5703 C456,1969.5703 456,1990.8672 456,1990.8672 C456,1990.8672 456,2012.1641 451,2012.1641 L388,2012.1641 C383,2012.1641 383,1990.8672 383,1990.8672 C383,1990.8672 383,1969.5703 388,1969.5703 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M451,1969.5703 C446,1969.5703 446,1990.8672 446,1990.8672 C446,2012.1641 451,2012.1641 451,2012.1641 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="388" y="1987.5654">Outbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="392" y="2003.8623">Queue</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="466" y="98.1279">Outbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="482" y="114.4248">DB</text><path d="M477.5,49.1328 C477.5,39.1328 495.5,39.1328 495.5,39.1328 C495.5,39.1328 513.5,39.1328 513.5,49.1328 L513.5,75.1328 C513.5,85.1328 495.5,85.1328 495.5,85.1328 C495.5,85.1328 477.5,85.1328 477.5,75.1328 L477.5,49.1328 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M477.5,49.1328 C477.5,59.1328 495.5,59.1328 495.5,59.1328 C495.5,59.1328 513.5,59.1328 513.5,49.1328 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="466" y="1982.5654">Outbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="482" y="1998.8623">DB</text><path d="M477.5,2012.1641 C477.5,2002.1641 495.5,2002.1641 495.5,2002.1641 C495.5,2002.1641 513.5,2002.1641 513.5,2012.1641 L513.5,2038.1641 C513.5,2048.1641 495.5,2048.1641 495.5,2048.1641 C495.5,2048.1641 477.5,2048.1641 477.5,2038.1641 L477.5,2012.1641 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M477.5,2012.1641 C477.5,2022.1641 495.5,2022.1641 495.5,2022.1641 C495.5,2022.1641 513.5,2022.1641 513.5,2012.1641 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="535" y="70.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="542" y="90.1279">Activity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="542.5" y="106.4248">Handler</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="535" y="1969.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="542" y="1989.5654">Activity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="542.5" y="2005.8623">Handler</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="615" y="86.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="622" y="106.4248">Inbox</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="615" y="1969.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="622" y="1989.5654">Inbox</text><path d="M756.5,75.1328 L811.5,75.1328 C816.5,75.1328 816.5,96.4297 816.5,96.4297 C816.5,96.4297 816.5,117.7266 811.5,117.7266 L756.5,117.7266 C751.5,117.7266 751.5,96.4297 751.5,96.4297 C751.5,96.4297 751.5,75.1328 756.5,75.1328 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M811.5,75.1328 C806.5,75.1328 806.5,96.4297 806.5,96.4297 C806.5,117.7266 811.5,117.7266 811.5,117.7266 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="759" y="93.1279">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="756.5" y="109.4248">Queue</text><path d="M756.5,1969.5703 L811.5,1969.5703 C816.5,1969.5703 816.5,1990.8672 816.5,1990.8672 C816.5,1990.8672 816.5,2012.1641 811.5,2012.1641 L756.5,2012.1641 C751.5,2012.1641 751.5,1990.8672 751.5,1990.8672 C751.5,1990.8672 751.5,1969.5703 756.5,1969.5703 " fill="#E2E2F0" style="stroke:#181818;stroke-width:0.5;"/><path d="M811.5,1969.5703 C806.5,1969.5703 806.5,1990.8672 806.5,1990.8672 C806.5,2012.1641 811.5,2012.1641 811.5,2012.1641 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="759" y="1987.5654">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="756.5" y="2003.8623">Queue</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="826.5" y="98.1279">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="836" y="114.4248">DB</text><path d="M831.5,49.1328 C831.5,39.1328 849.5,39.1328 849.5,39.1328 C849.5,39.1328 867.5,39.1328 867.5,49.1328 L867.5,75.1328 C867.5,85.1328 849.5,85.1328 849.5,85.1328 C849.5,85.1328 831.5,85.1328 831.5,75.1328 L831.5,49.1328 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M831.5,49.1328 C831.5,59.1328 849.5,59.1328 849.5,59.1328 C849.5,59.1328 867.5,59.1328 867.5,49.1328 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="826.5" y="1982.5654">Inbox</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="836" y="1998.8623">DB</text><path d="M831.5,2012.1641 C831.5,2002.1641 849.5,2002.1641 849.5,2002.1641 C849.5,2002.1641 867.5,2002.1641 867.5,2012.1641 L867.5,2038.1641 C867.5,2048.1641 849.5,2048.1641 849.5,2048.1641 C849.5,2048.1641 831.5,2048.1641 831.5,2038.1641 L831.5,2012.1641 " fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/><path d="M831.5,2012.1641 C831.5,2022.1641 849.5,2022.1641 849.5,2022.1641 C849.5,2022.1641 867.5,2022.1641 867.5,2012.1641 " fill="none" style="stroke:#181818;stroke-width:1.5;"/><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="882.5" y="70.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="889.5" y="90.1279">Activity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="890" y="106.4248">Handler</text><rect fill="#E2E2F0" height="46.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="882.5" y="1969.5703"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="889.5" y="1989.5654">Activity</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="890" y="2005.8623">Handler</text><rect fill="#FFFFFF" height="100.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="148.8594"/><rect fill="#FFFFFF" height="729.5938" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="278.3906"/><rect fill="#FFFFFF" height="241.3281" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="1037.1172"/><rect fill="#FFFFFF" height="436.0625" style="stroke:#181818;stroke-width:1.0;" width="10" x="152.5" y="1307.5781"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5" y="534.8516"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5" y="1336.7109"/><rect fill="#FFFFFF" height="1523.5156" style="stroke:#181818;stroke-width:1.0;" width="10" x="414.5" y="220.125"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="490.5" y="307.5234"/><rect fill="#FFFFFF" height="109.6641" style="stroke:#181818;stroke-width:1.0;" width="10" x="565" y="365.7891"/><rect fill="#FFFFFF" height="87.3984" style="stroke:#181818;stroke-width:1.0;" width="10" x="637" y="1066.25"/><rect fill="#FFFFFF" height="196.7969" style="stroke:#181818;stroke-width:1.0;" width="10" x="637" y="1764.7734"/><rect fill="#FFFFFF" height="857.1875" style="stroke:#181818;stroke-width:1.0;" width="10" x="779" y="1095.3828"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="844.5" y="1793.9063"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#181818;stroke-width:1.0;" width="10" x="912.5" y="1894.3047"/><polygon fill="#181818" points="140.5,144.8594,150.5,148.8594,140.5,152.8594,144.5,148.8594" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="48.5" x2="146.5" y1="148.8594" y2="148.8594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="85" x="55.5" y="143.7935">Post(activity)</text><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="204.5" y1="177.9922" y2="177.9922"/><line style="stroke:#181818;stroke-width:1.0;" x1="204.5" x2="204.5" y1="177.9922" y2="190.9922"/><line style="stroke:#181818;stroke-width:1.0;" x1="163.5" x2="204.5" y1="190.9922" y2="190.9922"/><polygon fill="#181818" points="173.5,186.9922,163.5,190.9922,173.5,194.9922,169.5,190.9922" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108" x="169.5" y="172.9263">validate(activity)</text><polygon fill="#181818" points="402.5,216.125,412.5,220.125,402.5,224.125,406.5,220.125" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="408.5" y1="220.125" y2="220.125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="169.5" y="215.0591">Publish("broadcast",activity)</text><polygon fill="#181818" points="168.5,245.2578,158.5,249.2578,168.5,253.2578,164.5,249.2578" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="162.5" x2="413.5" y1="249.2578" y2="249.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="174.5" y="244.1919">ok</text><polygon fill="#181818" points="173.5,274.3906,163.5,278.3906,173.5,282.3906,169.5,278.3906" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="167.5" x2="413.5" y1="278.3906" y2="278.3906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135" x="179.5" y="273.3247">("broadcast",activity)</text><polygon fill="#181818" points="478.5,303.5234,488.5,307.5234,478.5,311.5234,482.5,307.5234" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="484.5" y1="307.5234" y2="307.5234"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="169.5" y="302.4575">Put(activity)</text><polygon fill="#181818" points="173.5,332.6563,163.5,336.6563,173.5,340.6563,169.5,336.6563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="494.5" y1="336.6563" y2="336.6563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="331.5903">ok</text><polygon fill="#181818" points="553,361.7891,563,365.7891,553,369.7891,557,365.7891" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="559" y1="365.7891" y2="365.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="169.5" y="360.7231">activity</text><path d="M482,378.7891 L482,448.7891 L658,448.7891 L658,388.7891 L648,378.7891 L482,378.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M648,378.7891 L648,388.7891 L658,388.7891 L648,378.7891 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="488" y="395.856">The outbox handler</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="488" y="410.9888">may perform additional</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="488" y="426.1216">steps, depending on the</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="84" x="488" y="441.2544">activity type.</text><polygon fill="#181818" points="173.5,471.4531,163.5,475.4531,173.5,479.4531,169.5,475.4531" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="569" y1="475.4531" y2="475.4531"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="470.3872">ok</text><polygon fill="#181818" points="272.5,530.8516,282.5,534.8516,272.5,538.8516,276.5,534.8516" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="278.5" y1="534.8516" y2="534.8516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="169.5" y="499.52">Resolve URI's</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="169.5" y="514.6528">in activity's</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="169.5" y="529.7856">"to" field</text><polygon fill="#181818" points="173.5,559.9844,163.5,563.9844,173.5,567.9844,169.5,563.9844" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="288.5" y1="563.9844" y2="563.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="179.5" y="558.9185">results</text><path d="M104,578.9844 L182,578.9844 L182,586.1172 L172,596.1172 L104,596.1172 L104,578.9844 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="400.8672" style="stroke:#000000;stroke-width:1.5;" width="458" x="104" y="578.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="119" y="592.0513">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="152" x="197" y="591.1948">[For resultN in results]</text><path d="M114,603.1172 L180,603.1172 L180,610.25 L170,620.25 L114,620.25 L114,603.1172 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="369.7344" style="stroke:#000000;stroke-width:1.5;" width="438" x="114" y="603.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="129" y="616.1841">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="136" x="195" y="615.3276">[No error in resultN]</text><path d="M305,625.25 L305,680.25 L534,680.25 L534,635.25 L524,625.25 L305,625.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M524,625.25 L524,635.25 L534,635.25 L524,625.25 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="311" y="642.3169">A "deliver" message is published</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="311" y="657.4497">to the queue in order to deliver</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="311" y="672.5825">the activity to the target URI.</text><polygon fill="#181818" points="402.5,702.7813,412.5,706.7813,402.5,710.7813,406.5,706.7813" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="408.5" y1="706.7813" y2="706.7813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="228" x="169.5" y="701.7153">Publish("deliver",resultN.uri,activity)</text><polygon fill="#181818" points="173.5,731.9141,163.5,735.9141,173.5,739.9141,169.5,735.9141" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="413.5" y1="735.9141" y2="735.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="730.8481">ok</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="114" x2="552" y1="744.9141" y2="744.9141"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="183" x="119" y="755.1245">[Transient error in resultN]</text><path d="M297,763.7188 L297,878.7188 L542,878.7188 L542,773.7188 L532,763.7188 L297,763.7188 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M532,763.7188 L532,773.7188 L542,773.7188 L532,763.7188 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="165" x="303" y="780.7856">A transient error occurred</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="303" y="795.9185">while attempting to resolve</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="174" x="303" y="811.0513">the inbox of the target URI.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="224" x="303" y="826.1841">A "resolve-and-deliver" message is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="196" x="303" y="841.3169">published to the queue so that</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="303" y="856.4497">the resolve of the URI may</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="303" y="871.5825">be retried.</text><polygon fill="#181818" points="402.5,916.9141,412.5,920.9141,402.5,924.9141,406.5,920.9141" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="408.5" y1="920.9141" y2="920.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="188" x="169.5" y="900.7153">Publish("resolve-and-deliver",</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121" x="169.5" y="915.8481">resultN.uri,activity)</text><polygon fill="#181818" points="173.5,946.0469,163.5,950.0469,173.5,954.0469,169.5,950.0469" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="413.5" y1="950.0469" y2="950.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="944.981">ok</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="114" x2="552" y1="959.0469" y2="959.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="351" x="119" y="969.2573">[Persistent error in resultN. The URI will be skipped.]</text><polygon fill="#181818" points="402.5,1003.9844,412.5,1007.9844,402.5,1011.9844,406.5,1007.9844" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="157.5" x2="408.5" y1="1007.9844" y2="1007.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="164.5" y="1002.9185">ACK</text><polygon fill="#181818" points="173.5,1033.1172,163.5,1037.1172,173.5,1041.1172,169.5,1037.1172" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="167.5" x2="413.5" y1="1037.1172" y2="1037.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="179.5" y="1032.0513">("deliver",uriN,activity)</text><polygon fill="#181818" points="625,1062.25,635,1066.25,625,1070.25,629,1066.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="631" y1="1066.25" y2="1066.25"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="151" x="169.5" y="1061.1841">HTTP Post(uriN,activity)</text><polygon fill="#181818" points="767,1091.3828,777,1095.3828,767,1099.3828,771,1095.3828" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="647" x2="773" y1="1095.3828" y2="1095.3828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="654" y="1090.3169">Publish(activity)</text><polygon fill="#181818" points="658,1120.5156,648,1124.5156,658,1128.5156,654,1124.5156" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="652" x2="778" y1="1124.5156" y2="1124.5156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="664" y="1119.4497">ok</text><polygon fill="#181818" points="173.5,1149.6484,163.5,1153.6484,173.5,1157.6484,169.5,1153.6484" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="641" y1="1153.6484" y2="1153.6484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="1148.5825">ok</text><path d="M54,1166.6484 L54,1251.6484 L260,1251.6484 L260,1176.6484 L250,1166.6484 L54,1166.6484 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M250,1166.6484 L250,1176.6484 L260,1176.6484 L250,1166.6484 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="60" y="1183.7153">If the HTTP response from</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="150" x="60" y="1198.8481">the target URI is not OK</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177" x="60" y="1213.981">then a NACK is sent back to</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="185" x="60" y="1229.1138">the queue and the target will</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66" x="60" y="1244.2466">be retried.</text><polygon fill="#181818" points="402.5,1274.4453,412.5,1278.4453,402.5,1282.4453,406.5,1278.4453" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="157.5" x2="408.5" y1="1278.4453" y2="1278.4453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="164.5" y="1273.3794">ACK</text><polygon fill="#181818" points="173.5,1303.5781,163.5,1307.5781,173.5,1311.5781,169.5,1307.5781" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="167.5" x2="413.5" y1="1307.5781" y2="1307.5781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="224" x="179.5" y="1302.5122">("resolve-and-deliver",uriN,activity)</text><polygon fill="#181818" points="272.5,1332.7109,282.5,1336.7109,272.5,1340.7109,276.5,1336.7109" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="278.5" y1="1336.7109" y2="1336.7109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="169.5" y="1331.645">Resolve uriN</text><polygon fill="#181818" points="173.5,1361.8438,163.5,1365.8438,173.5,1369.8438,169.5,1365.8438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="288.5" y1="1365.8438" y2="1365.8438"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="179.5" y="1360.7778">results</text><path d="M104,1380.8438 L182,1380.8438 L182,1387.9766 L172,1397.9766 L104,1397.9766 L104,1380.8438 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="355.7969" style="stroke:#000000;stroke-width:1.5;" width="474" x="104" y="1380.8438"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="33" x="119" y="1393.9106">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="152" x="197" y="1393.0542">[For resultN in results]</text><path d="M114,1404.9766 L180,1404.9766 L180,1412.1094 L170,1422.1094 L114,1422.1094 L114,1404.9766 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;"/><rect fill="none" height="324.6641" style="stroke:#000000;stroke-width:1.5;" width="454" x="114" y="1404.9766"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="21" x="129" y="1418.0435">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="136" x="195" y="1417.187">[No error in resultN]</text><path d="M305,1427.1094 L305,1482.1094 L534,1482.1094 L534,1437.1094 L524,1427.1094 L305,1427.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M524,1427.1094 L524,1437.1094 L534,1437.1094 L524,1427.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="311" y="1444.1763">A "deliver" message is published</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="311" y="1459.3091">to the queue in order to deliver</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="311" y="1474.4419">the activity to the target URI.</text><polygon fill="#181818" points="402.5,1504.6406,412.5,1508.6406,402.5,1512.6406,406.5,1508.6406" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="162.5" x2="408.5" y1="1508.6406" y2="1508.6406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="228" x="169.5" y="1503.5747">Publish("deliver",resultN.uri,activity)</text><polygon fill="#181818" points="173.5,1533.7734,163.5,1537.7734,173.5,1541.7734,169.5,1537.7734" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="167.5" x2="413.5" y1="1537.7734" y2="1537.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="179.5" y="1532.7075">ok</text><polygon fill="#181818" points="402.5,1562.9063,412.5,1566.9063,402.5,1570.9063,406.5,1566.9063" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="162.5" x2="408.5" y1="1566.9063" y2="1566.9063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="169.5" y="1561.8403">ACK</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="114" x2="568" y1="1575.9063" y2="1575.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="113" x="119" y="1586.1167">[Error in resultN]</text><path d="M280,1594.7109 L280,1694.7109 L558,1694.7109 L558,1604.7109 L548,1594.7109 L280,1594.7109 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M548,1594.7109 L548,1604.7109 L558,1604.7109 L548,1594.7109 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="224" x="286" y="1611.7778">An error occurred while attempting</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="238" x="286" y="1626.9106">to resolve the inbox(es) of the target</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="243" x="286" y="1642.0435">URI. A NACK is sent back to the queue</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="232" x="286" y="1657.1763">so that the message may be retried</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="257" x="286" y="1672.3091">according to the backoff and retry limits</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="193" x="286" y="1687.4419">of the Pub/Sub sub-sysystem.</text><polygon fill="#181818" points="402.5,1717.6406,412.5,1721.6406,402.5,1725.6406,406.5,1721.6406" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="162.5" x2="408.5" y1="1721.6406" y2="1721.6406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="169.5" y="1716.5747">NACK</text><polygon fill="#181818" points="658,1760.7734,648,1764.7734,658,1768.7734,654,1764.7734" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="652" x2="778" y1="1764.7734" y2="1764.7734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="47" x="664" y="1759.7075">activity</text><polygon fill="#181818" points="832.5,1789.9063,842.5,1793.9063,832.5,1797.9063,836.5,1793.9063" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="647" x2="838.5" y1="1793.9063" y2="1793.9063"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="654" y="1788.8403">Put(activity)</text><polygon fill="#181818" points="658,1819.0391,648,1823.0391,658,1827.0391,654,1823.0391" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="652" x2="848.5" y1="1823.0391" y2="1823.0391"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="664" y="1817.9731">ok</text><line style="stroke:#181818;stroke-width:1.0;" x1="647" x2="689" y1="1852.1719" y2="1852.1719"/><line style="stroke:#181818;stroke-width:1.0;" x1="689" x2="689" y1="1852.1719" y2="1865.1719"/><line style="stroke:#181818;stroke-width:1.0;" x1="648" x2="689" y1="1865.1719" y2="1865.1719"/><polygon fill="#181818" points="658,1861.1719,648,1865.1719,658,1869.1719,654,1865.1719" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="118" x="654" y="1847.106">Authorize(activity)</text><polygon fill="#181818" points="900.5,1890.3047,910.5,1894.3047,900.5,1898.3047,904.5,1894.3047" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="647" x2="906.5" y1="1894.3047" y2="1894.3047"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="101" x="654" y="1889.2388">Handle(activity)</text><polygon fill="#181818" points="658,1919.4375,648,1923.4375,658,1927.4375,654,1923.4375" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="652" x2="916.5" y1="1923.4375" y2="1923.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="15" x="664" y="1918.3716">ok</text><polygon fill="#181818" points="772,1948.5703,782,1952.5703,772,1956.5703,776,1952.5703" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="647" x2="778" y1="1952.5703" y2="1952.5703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="26" x="654" y="1947.5044">ACK</text><!--MD5=[3667bdef7aa642886f05e295e79350f5]
 @startuml
 'https://plantuml.com/sequence-diagram
 
-actor Domain1Admin
 box Domain1 #White
+actor "Service or\nAdmin User" as adminUser
 participant Outbox
-database OutboxDB
-queue OutboxQueue
-participant KMS1
+participant "Inbox\nResolver" as resolver
+queue "Outbox\nQueue" as outboxQueue
+database "Outbox\nDB" as outboxDB
+participant "Activity\nHandler" as outboxHandler
 end box
 
 box DomainN
 participant Inbox
-database InboxDB
-queue InboxQueue
+queue "Inbox\nQueue" as inboxQueue
+database "Inbox\nDB" as inboxDB
+participant "Activity\nHandler" as inboxHandler
 end box
 
-Domain1Admin -> Outbox: Post Activity
+adminUser -> Outbox: Post(activity)
+
+activate Outbox
+  Outbox -> Outbox: validate(activity)
+  Outbox -> outboxQueue: Publish("broadcast",activity)
+  activate outboxQueue
+    outboxQueue - -> Outbox: ok
+deactivate Outbox
+
+outboxQueue -> Outbox: ("broadcast",activity)
 
 activate Outbox
 
-Outbox -> OutboxDB: Store Activity
+Outbox -> outboxDB: Put(activity)
+activate outboxDB
+  outboxDB - -> Outbox: ok
+deactivate outboxDB
 
-Outbox -> Outbox: Resolve URIs from\n"to" field"
+Outbox -> outboxHandler: activity
+activate outboxHandler
+  note over outboxHandler
+    The outbox handler
+    may perform additional
+    steps, depending on the
+    activity type.
+  end note
+  outboxHandler - -> Outbox: ok
+deactivate outboxHandler
 
-loop For each URI
+Outbox -> resolver: Resolve URI's\nin activity's\n"to" field
+activate resolver
+resolver - -> Outbox: results
+deactivate resolver
 
-Outbox -> OutboxQueue: Activity message
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+  else Transient error in resultN
+    note over outboxQueue
+      A transient error occurred
+      while attempting to resolve
+      the inbox of the target URI.
+      A "resolve-and-deliver" message is
+      published to the queue so that
+      the resolve of the URI may
+      be retried.
+    end note
+    Outbox -> outboxQueue: Publish("resolve-and-deliver",\nresultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+  else Persistent error in resultN. The URI will be skipped.
+  end alt
+end loop
 
-activate OutboxQueue
+Outbox - -> outboxQueue: ACK
 
-OutboxQueue - -> Outbox: ACK
+deactivate Outbox
 
+deactivate Outbox
+
+outboxQueue -> Outbox: ("deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> Inbox: HTTP Post(uriN,activity)
+
+activate Inbox
+
+Inbox -> inboxQueue: Publish(activity)
+
+activate inboxQueue
+
+inboxQueue - -> Inbox: ok
+
+Inbox - -> Outbox: ok
+
+note over Outbox
+ If the HTTP response from
+ the target URI is not OK
+ then a NACK is sent back to
+ the queue and the target will
+ be retried.
+end note
+
+deactivate Inbox
+
+Outbox - -> outboxQueue: ACK
+
+deactivate Outbox
+
+outboxQueue -> Outbox: ("resolve-and-deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> resolver: Resolve uriN
+activate resolver
+resolver - -> Outbox: results
+deactivate resolver
+
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+    Outbox - -> outboxQueue: ACK
+  else Error in resultN
+    note over outboxQueue
+      An error occurred while attempting
+      to resolve the inbox(es) of the target
+      URI. A NACK is sent back to the queue
+      so that the message may be retried
+      according to the backoff and retry limits
+      of the Pub/Sub sub-sysystem.
+    end note
+    Outbox - -> outboxQueue: NACK
+  end alt
 end loop
 
 deactivate Outbox
 
-OutboxQueue -> Outbox: Activity message
+deactivate outboxQueue
 
-note left
-An Activity message is
-processed for each URI
-in the "to" field of
-the Activity.
-end note
-
-activate Outbox
-
-deactivate OutboxQueue
-
-Outbox -> KMS1: Sign request
-
-activate KMS1
-
-KMS1 - -> Outbox: signature
-
-deactivate KMS1
-
-Outbox -> Outbox: Add signature to\nHTTP header
-
-Outbox -> Inbox: Activity
+inboxQueue -> Inbox: activity
 
 activate Inbox
 
-Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
-Outbox - -> Inbox: actor
+Inbox -> inboxDB: Put(activity)
 
-Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
-Inbox - -> Outbox: OK
+activate inboxDB
+  inboxDB - -> Inbox: ok
+deactivate inboxDB
 
-deactivate Outbox
+Inbox -> Inbox: Authorize(activity)
 
-Inbox -> InboxQueue: Activity message
+Inbox -> inboxHandler: Handle(activity)
 
-activate InboxQueue
+activate inboxHandler
+inboxHandler - -> Inbox: ok
+deactivate inboxHandler
 
-InboxQueue - -> Inbox: ACK
+Inbox - -> inboxQueue: ACK
 
-deactivate Inbox
-
-InboxQueue -> Inbox: Activity message
-
-activate Inbox
-
-Inbox -> InboxDB: Store Activity
-
-Inbox -> Inbox: Authorize and\nHandle Activity
-
-Inbox - -> InboxQueue: ACK
-
-deactivate InboxQueue
+deactivate inboxQueue
 @enduml
 
 @startuml
 
-actor Domain1Admin
 box Domain1 #White
+actor "Service or\nAdmin User" as adminUser
 participant Outbox
-database OutboxDB
-queue OutboxQueue
-participant KMS1
+participant "Inbox\nResolver" as resolver
+queue "Outbox\nQueue" as outboxQueue
+database "Outbox\nDB" as outboxDB
+participant "Activity\nHandler" as outboxHandler
 end box
 
 box DomainN
 participant Inbox
-database InboxDB
-queue InboxQueue
+queue "Inbox\nQueue" as inboxQueue
+database "Inbox\nDB" as inboxDB
+participant "Activity\nHandler" as inboxHandler
 end box
 
-Domain1Admin -> Outbox: Post Activity
+adminUser -> Outbox: Post(activity)
+
+activate Outbox
+  Outbox -> Outbox: validate(activity)
+  Outbox -> outboxQueue: Publish("broadcast",activity)
+  activate outboxQueue
+    outboxQueue - -> Outbox: ok
+deactivate Outbox
+
+outboxQueue -> Outbox: ("broadcast",activity)
 
 activate Outbox
 
-Outbox -> OutboxDB: Store Activity
+Outbox -> outboxDB: Put(activity)
+activate outboxDB
+  outboxDB - -> Outbox: ok
+deactivate outboxDB
 
-Outbox -> Outbox: Resolve URIs from\n"to" field"
+Outbox -> outboxHandler: activity
+activate outboxHandler
+  note over outboxHandler
+    The outbox handler
+    may perform additional
+    steps, depending on the
+    activity type.
+  end note
+  outboxHandler - -> Outbox: ok
+deactivate outboxHandler
 
-loop For each URI
+Outbox -> resolver: Resolve URI's\nin activity's\n"to" field
+activate resolver
+resolver - -> Outbox: results
+deactivate resolver
 
-Outbox -> OutboxQueue: Activity message
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+  else Transient error in resultN
+    note over outboxQueue
+      A transient error occurred
+      while attempting to resolve
+      the inbox of the target URI.
+      A "resolve-and-deliver" message is
+      published to the queue so that
+      the resolve of the URI may
+      be retried.
+    end note
+    Outbox -> outboxQueue: Publish("resolve-and-deliver",\nresultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+  else Persistent error in resultN. The URI will be skipped.
+  end alt
+end loop
 
-activate OutboxQueue
+Outbox - -> outboxQueue: ACK
 
-OutboxQueue - -> Outbox: ACK
+deactivate Outbox
 
+deactivate Outbox
+
+outboxQueue -> Outbox: ("deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> Inbox: HTTP Post(uriN,activity)
+
+activate Inbox
+
+Inbox -> inboxQueue: Publish(activity)
+
+activate inboxQueue
+
+inboxQueue - -> Inbox: ok
+
+Inbox - -> Outbox: ok
+
+note over Outbox
+ If the HTTP response from
+ the target URI is not OK
+ then a NACK is sent back to
+ the queue and the target will
+ be retried.
+end note
+
+deactivate Inbox
+
+Outbox - -> outboxQueue: ACK
+
+deactivate Outbox
+
+outboxQueue -> Outbox: ("resolve-and-deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> resolver: Resolve uriN
+activate resolver
+resolver - -> Outbox: results
+deactivate resolver
+
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue - -> Outbox: ok
+    Outbox - -> outboxQueue: ACK
+  else Error in resultN
+    note over outboxQueue
+      An error occurred while attempting
+      to resolve the inbox(es) of the target
+      URI. A NACK is sent back to the queue
+      so that the message may be retried
+      according to the backoff and retry limits
+      of the Pub/Sub sub-sysystem.
+    end note
+    Outbox - -> outboxQueue: NACK
+  end alt
 end loop
 
 deactivate Outbox
 
-OutboxQueue -> Outbox: Activity message
+deactivate outboxQueue
 
-note left
-An Activity message is
-processed for each URI
-in the "to" field of
-the Activity.
-end note
-
-activate Outbox
-
-deactivate OutboxQueue
-
-Outbox -> KMS1: Sign request
-
-activate KMS1
-
-KMS1 - -> Outbox: signature
-
-deactivate KMS1
-
-Outbox -> Outbox: Add signature to\nHTTP header
-
-Outbox -> Inbox: Activity
+inboxQueue -> Inbox: activity
 
 activate Inbox
 
-Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
-Outbox - -> Inbox: actor
+Inbox -> inboxDB: Put(activity)
 
-Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
-Inbox - -> Outbox: OK
+activate inboxDB
+  inboxDB - -> Inbox: ok
+deactivate inboxDB
 
-deactivate Outbox
+Inbox -> Inbox: Authorize(activity)
 
-Inbox -> InboxQueue: Activity message
+Inbox -> inboxHandler: Handle(activity)
 
-activate InboxQueue
+activate inboxHandler
+inboxHandler - -> Inbox: ok
+deactivate inboxHandler
 
-InboxQueue - -> Inbox: ACK
+Inbox - -> inboxQueue: ACK
 
-deactivate Inbox
-
-InboxQueue -> Inbox: Activity message
-
-activate Inbox
-
-Inbox -> InboxDB: Store Activity
-
-Inbox -> Inbox: Authorize and\nHandle Activity
-
-Inbox - -> InboxQueue: ACK
-
-deactivate InboxQueue
+deactivate inboxQueue
 @enduml
 
-PlantUML version 1.2022.2beta5(Unknown compile time)
+PlantUML version 1.2022.4beta2(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM

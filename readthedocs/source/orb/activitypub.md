@@ -7,28 +7,68 @@ and authorization.
 
 ## Outbox/Inbox
 
-When an activity is posted to the local server's outbox, it is first stored in the local *outbox* database and then
-posted to one or more recipients as specified in the Activity's "to" field. The ActivityPub
-[service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
-WebFinger (see [Discovery](discovery.html#Discovery)). The activity is then posted to the "inbox" URL that is specified
-in the service document. The post to each of the URLs is performed asynchronously using an AMQP message queue. The
-message is published to the _orb.activity.outbox_ queue and then one of the servers in the domain processes it by
-sending the HTTP request. Before sending the request, an [HTTP signature](authorization.html#headers)
-is added to the request header which may be verified by the recipient using the
-[public key](https://trustbloc.github.io/activityanchors/#actor-discovery) of the local service.
-
-The Inbox is a REST endpoint in Orb which accepts activities. When an activity is received, the HTTP signature in the
-header of the request is [verified](authorization.html#signature-verification) using the public key of the
-[actor](https://trustbloc.github.io/activityanchors/#actor-discovery) that sent the activity. After the actor is
-authenticated, a message is posted to the _orb.activity.inbox_ queue and is processed by one of the server instances in
-the domain.
-
-The inbox handler first stores the activity in the 'inbox' database and then authorizes the activity. Each activity
-could have different authorization criteria which are explained in each of the activities below.
+Inter-server communication is performed by posting an Activity to the Orb server's Outbox. The
+Outbox handler delivers the activity to one or more targets by resolving the URIs of the target inboxes
+(from the "to" field of the activity) and posting the activity to each of the URIs. The target Inbox authorizes
+the message and invokes the appropriate handler. 
 
 ```{image} ../_static/orb/ap-outbox-inbox.svg
 
 ```
+
+### Outbox
+
+Messages are published to the AMQP _orb.activity.outbox_ queue and are handled asynchronously by a single instance
+in the Orb domain. A message contains two fields:
+1) Type: One of 'broadcast', 'deliver', or 'resolve-and-deliver'
+2) Activity: The posted ActivityPub activity
+
+When an activity is posted to the Outbox, it is first validated and then a message of type, 'broadcast', is published
+to the AMQP _orb.activity.outbox_ queue. The message is handled by a single instance in the Orb domain.
+
+#### Broadcast Message Handler
+
+The 'broadcast' message handler performs the following steps:
+- Stores the activity (which is contained in the message) to the local *outbox* database.
+- Invokes an activity handler (this handler may include additional steps, depending on the type of activity).
+- Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
+  _followers_ or _witnesses_ collections. The ActivityPub
+  [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
+  WebFinger (see [Discovery](discovery.html#Discovery)) and a result containing the resolved URI (and potentially
+  an error) is returned for each resolved URI.
+
+Each result returned from the _Outbox Resolver_ contains a URI and potentially an error. For each result that does not
+contain an error, a message of type, 'deliver', is published to the _orb.activity.outbox_ queue with the URI from the
+result. For each result containing an error, a message of type, 'resolve-and-deliver', is published to the _outbox queue_
+so that the URI may be retried.
+
+#### Deliver Message Handler
+
+The 'deliver' handler posts the activity to the inbox URI (contained in the message). (Note that the appropriate
+[HTTP signatures](authorization.html#http-signatures) are added to the HTTP request.) If a transient error occurs
+(such as HTTP 500) then the message is NACK'ed and the 'deliver' message will be retried (according to the
+[Pub/Sub redelivery mechanism](pubsub.html#message-redelivery)).
+
+#### Resolve-and-Deliver Message Handler
+
+The 'resolve-and-deliver' handler resolves the inboxes of the URI contained in the message. Each result returned from
+the _Outbox Resolver_ contains a URI and potentially an error. For each result that does not contain
+an error, a 'deliver' message is published to the _orb.activity.outbox_ queue with the URI from the result.
+If the result contains a transient error (e.g. HTTP 500) then the message is NACK'ed and the 'resolve-and-deliver'
+message is retried (according to the [Pub/Sub redelivery mechanism](pubsub.html#message-redelivery)).
+If a persistent error occurs (e.g. 400) then the URI is skipped.
+
+### Inbox
+
+The [inbox](restendpoints/activitypub.html#inbox) is a REST endpoint in Orb which accepts activities. When an activity
+is received, the HTTP signature in the header of the request is [verified](authorization.html#signature-verification)
+using the public key of the [actor](https://trustbloc.github.io/activityanchors/#actor-discovery) that sent the activity.
+After the actor is authenticated, a message is posted to the _orb.activity.inbox_ queue and is processed by one of the
+server instances in the domain.
+
+The inbox handler first stores the activity in the 'inbox' database and authorizes the activity. (Each activity
+could have different authorization criteria which are explained in each of the activities below.) The appropriate
+activity handler is then invoked.
 
 ## Activities
 
