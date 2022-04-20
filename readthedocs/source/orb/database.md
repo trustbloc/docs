@@ -52,6 +52,11 @@ The _ldcontexts_ database stores JSON linked-data (JSON-LD) contexts.
 
 The _log-monitor_ database is used to manage the list of logs that domain is following.  
 
+### log-entry
+
+The _log-entry_ database is used to store the entries of observed logs.
+
+
 ### operation
 
 The _operation_ database stores Sidetree operations.

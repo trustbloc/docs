@@ -174,6 +174,13 @@ The maximum tree size for which new VCT logs will be re-constructed in order to 
 
 The maximum number of entries to be retrieved from VCT log in one attempt. Has to be less or equal than 1000 due to VCT limitation.
 
+### vct-log-entries-store-enabled
+
+| Arg                               | Env                           | Default |
+|-----------------------------------|-------------------------------|---------|
+| --vct-log-entries-store-enabled   | VCT_LOG_ENTRIES_STORE_ENABLED | false   |
+
+Enables storing of log entries during log monitoring. Defaults to false if not set.
 
 ### anchor-status-monitoring-interval
 
