@@ -1,93 +1,173 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-actor Domain1Admin
 box Domain1 #White
+actor "Service or\nAdmin User" as adminUser
 participant Outbox
-database OutboxDB
-queue OutboxQueue
-participant KMS1
+participant "Inbox\nResolver" as resolver
+queue "Outbox\nQueue" as outboxQueue
+database "Outbox\nDB" as outboxDB
+participant "Activity\nHandler" as outboxHandler
 end box
 
 box DomainN
 participant Inbox
-database InboxDB
-queue InboxQueue
+queue "Inbox\nQueue" as inboxQueue
+database "Inbox\nDB" as inboxDB
+participant "Activity\nHandler" as inboxHandler
 end box
 
-Domain1Admin -> Outbox: Post Activity
+adminUser -> Outbox: Post(activity)
+
+activate Outbox
+  Outbox -> Outbox: validate(activity)
+  Outbox -> outboxQueue: Publish("broadcast",activity)
+  activate outboxQueue
+    outboxQueue --> Outbox: ok
+deactivate Outbox
+
+outboxQueue -> Outbox: ("broadcast",activity)
 
 activate Outbox
 
-Outbox -> OutboxDB: Store Activity
+Outbox -> outboxDB: Put(activity)
+activate outboxDB
+  outboxDB --> Outbox: ok
+deactivate outboxDB
 
-Outbox -> Outbox: Resolve URIs from\n"to" field"
+Outbox -> outboxHandler: activity
+activate outboxHandler
+  note over outboxHandler
+    The outbox handler
+    may perform additional
+    steps, depending on the
+    activity type.
+  end note
+  outboxHandler --> Outbox: ok
+deactivate outboxHandler
 
-loop For each URI
+Outbox -> resolver: Resolve URI's\nin activity's\n"to" field
+activate resolver
+resolver --> Outbox: results
+deactivate resolver
 
-Outbox -> OutboxQueue: Activity message
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue --> Outbox: ok
+  else Transient error in resultN
+    note over outboxQueue
+      A transient error occurred
+      while attempting to resolve
+      the inbox of the target URI.
+      A "resolve-and-deliver" message is
+      published to the queue so that
+      the resolve of the URI may
+      be retried.
+    end note
+    Outbox -> outboxQueue: Publish("resolve-and-deliver",\nresultN.uri,activity)
+    outboxQueue --> Outbox: ok
+  else Persistent error in resultN. The URI will be skipped.
+  end alt
+end loop
 
-activate OutboxQueue
+Outbox --> outboxQueue: ACK
 
-OutboxQueue --> Outbox: ACK
+deactivate Outbox
 
+deactivate Outbox
+
+outboxQueue -> Outbox: ("deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> Inbox: HTTP Post(uriN,activity)
+
+activate Inbox
+
+Inbox -> inboxQueue: Publish(activity)
+
+activate inboxQueue
+
+inboxQueue --> Inbox: ok
+
+Inbox --> Outbox: ok
+
+note over Outbox
+ If the HTTP response from
+ the target URI is not OK
+ then a NACK is sent back to
+ the queue and the target will
+ be retried.
+end note
+
+deactivate Inbox
+
+Outbox --> outboxQueue: ACK
+
+deactivate Outbox
+
+outboxQueue -> Outbox: ("resolve-and-deliver",uriN,activity)
+
+activate Outbox
+
+Outbox -> resolver: Resolve uriN
+activate resolver
+resolver --> Outbox: results
+deactivate resolver
+
+loop For resultN in results
+  alt No error in resultN
+    note over outboxQueue
+      A "deliver" message is published
+      to the queue in order to deliver
+      the activity to the target URI.
+    end note
+    Outbox -> outboxQueue: Publish("deliver",resultN.uri,activity)
+    outboxQueue --> Outbox: ok
+    Outbox --> outboxQueue: ACK
+  else Error in resultN
+    note over outboxQueue
+      An error occurred while attempting
+      to resolve the inbox(es) of the target
+      URI. A NACK is sent back to the queue
+      so that the message may be retried
+      according to the backoff and retry limits
+      of the Pub/Sub sub-sysystem.
+    end note
+    Outbox --> outboxQueue: NACK
+  end alt
 end loop
 
 deactivate Outbox
 
-OutboxQueue -> Outbox: Activity message
+deactivate outboxQueue
 
-note left
-An Activity message is
-processed for each URI
-in the "to" field of
-the Activity.
-end note
-
-activate Outbox
-
-deactivate OutboxQueue
-
-Outbox -> KMS1: Sign request
-
-activate KMS1
-
-KMS1 --> Outbox: signature
-
-deactivate KMS1
-
-Outbox -> Outbox: Add signature to\nHTTP header
-
-Outbox -> Inbox: Activity
+inboxQueue -> Inbox: activity
 
 activate Inbox
 
-Inbox -> Outbox: Resolve actor\nin activity\nusing WebFinger
-Outbox --> Inbox: actor
+Inbox -> inboxDB: Put(activity)
 
-Inbox -> Inbox: Verify HTTP signature\nof request using\npublic key of actor
-Inbox --> Outbox: OK
+activate inboxDB
+  inboxDB --> Inbox: ok
+deactivate inboxDB
 
-deactivate Outbox
+Inbox -> Inbox: Authorize(activity)
 
-Inbox -> InboxQueue: Activity message
+Inbox -> inboxHandler: Handle(activity)
 
-activate InboxQueue
+activate inboxHandler
+inboxHandler --> Inbox: ok
+deactivate inboxHandler
 
-InboxQueue --> Inbox: ACK
+Inbox --> inboxQueue: ACK
 
-deactivate Inbox
-
-InboxQueue -> Inbox: Activity message
-
-activate Inbox
-
-Inbox -> InboxDB: Store Activity
-
-Inbox -> Inbox: Authorize and\nHandle Activity
-
-Inbox --> InboxQueue: ACK
-
-deactivate InboxQueue
+deactivate inboxQueue
 
 @enduml
