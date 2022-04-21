@@ -1,4 +1,4 @@
-# Discovery and WebFinger
+# Discovery
 
 ## Service Resource
 

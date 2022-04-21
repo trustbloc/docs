@@ -29,12 +29,12 @@ to the AMQP _orb.activity.outbox_ queue. The message is handled by a single inst
 #### Broadcast Message Handler
 
 The 'broadcast' message handler performs the following steps:
-- Stores the activity (which is contained in the message) to the local *outbox* database.
-- Invokes an activity handler (this handler may include additional steps, depending on the type of activity).
-- Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
+* Stores the activity (which is contained in the message) to the local *outbox* database.
+* Invokes an activity handler (this handler may include additional steps, depending on the type of activity).
+* Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
   _followers_ or _witnesses_ collections. The ActivityPub
   [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
-  WebFinger (see [Discovery](discovery.html#Discovery)) and a result containing the resolved URI (and potentially
+  WebFinger (see [Discovery](discovery.html#discovery)) and a result containing the resolved URI (and potentially
   an error) is returned for each resolved URI.
 
 Each result returned from the _Outbox Resolver_ contains a URI and potentially an error. For each result that does not
@@ -47,7 +47,7 @@ so that the URI may be retried.
 The 'deliver' handler posts the activity to the inbox URI (contained in the message). (Note that the appropriate
 [HTTP signatures](authorization.html#http-signatures) are added to the HTTP request.) If a transient error occurs
 (such as HTTP 500) then the message is NACK'ed and the 'deliver' message will be retried (according to the
-[Pub/Sub redelivery mechanism](pubsub.html#message-redelivery)).
+[message redelivery mechanism](pubsub.html#message-redelivery)).
 
 #### Resolve-and-Deliver Message Handler
 
@@ -55,7 +55,7 @@ The 'resolve-and-deliver' handler resolves the inboxes of the URI contained in t
 the _Outbox Resolver_ contains a URI and potentially an error. For each result that does not contain
 an error, a 'deliver' message is published to the _orb.activity.outbox_ queue with the URI from the result.
 If the result contains a transient error (e.g. HTTP 500) then the message is NACK'ed and the 'resolve-and-deliver'
-message is retried (according to the [Pub/Sub redelivery mechanism](pubsub.html#message-redelivery)).
+message is retried (according to the [message redelivery mechanism](pubsub.html#message-redelivery)).
 If a persistent error occurs (e.g. 400) then the URI is skipped.
 
 ### Inbox
