@@ -108,7 +108,7 @@ loop For resultN in results
       URI. A NACK is sent back to the queue
       so that the message may be retried
       according to the backoff and retry limits
-      of the Pub/Sub sub-sysystem.
+      of the Pub/Sub subsystem.
     end note
     Outbox --> outboxQueue: NACK
   end alt

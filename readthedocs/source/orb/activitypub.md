@@ -112,7 +112,7 @@ the _followers_ list.
 An Invite activity is posted to another server in order to invite that server to be a witness of
 [Anchor Events](https://trustbloc.github.io/activityanchors/#anchorevent). For example, domain1 posts an Invite activity
 to domain2 indicating that it wants domain2 to be a witness of Anchor Events produced by domain1 (using the
-[Offer](#offer) activity).
+[Offer](#offer-accept) activity).
 
 When a server receives an Invite witness activity in its inbox, it authorizes the actor (which is the originating
 server) in the Invite request using an [Invite Witness Authorization Policy](#invite-witness-authorization-policy). If
@@ -141,7 +141,7 @@ server as a witness. The Undo activity is posted to the server to which the prev
 target server is removed from the _witnesses_ list. The target server handles the Undo activity by removing the originating
 server from the _witnessing_ list.
 
-### Offer
+### Offer/Accept
 
 An [Offer](https://trustbloc.github.io/activityanchors/#offer-activity) activity is posted to one or more servers that are
 contained in the _witnesses_ collection in order to collect proofs. (The selection of witnesses is dictated by a
