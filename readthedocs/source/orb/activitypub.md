@@ -29,9 +29,9 @@ to the AMQP _orb.activity.outbox_ queue. The message is handled by a single inst
 #### Broadcast Message Handler
 
 The 'broadcast' message handler performs the following steps:
-* Stores the activity (which is contained in the message) to the local *outbox* database.
-* Invokes an activity handler (this handler may include additional steps, depending on the type of activity).
-* Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
+1) Stores the activity (which is contained in the message) to the local *outbox* database.
+2) Invokes an activity handler (this handler may include additional steps, depending on the type of activity).
+3) Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
   _followers_ or _witnesses_ collections. The ActivityPub
   [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
   WebFinger (see [Discovery](discovery.html#discovery)) and a result containing the resolved URI (and potentially

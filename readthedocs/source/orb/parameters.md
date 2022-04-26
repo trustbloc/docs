@@ -321,6 +321,15 @@ handled by a pool of subscribers. If not specified then the default size will be
 The size of the Outbox queue subscriber pool. When a message is posted to the Outbox queue, it is
 handled by a pool of subscribers. If not specified then the default size will be used.
 
+### mq-inbox-pool
+
+| Arg             | Env           | Default |
+|-----------------|---------------|---------|
+| --mq-inbox-pool | MQ_INBOX_POOL | 5       |
+
+The size of the Inbox queue subscriber pool. When a message is posted to the Inbox queue, it is
+handled by a pool of subscribers. If not specified then the default size will be used.
+
 ### mq-max-connection-subscriptions
 
 | Arg                               | Env                             | Default  |
