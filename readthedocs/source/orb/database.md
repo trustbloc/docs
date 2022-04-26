@@ -56,7 +56,6 @@ The _log-monitor_ database is used to manage the list of logs that domain is fol
 
 The _log-entry_ database is used to store the entries of observed logs.
 
-
 ### operation
 
 The _operation_ database stores Sidetree operations.
@@ -117,3 +116,10 @@ Operations are deleted from this database after they have been anchored.
 
 The _witness_ database stores the URIs of the domains that were asked for proofs for a given anchor.
 The witness URIs are deleted from this database after the anchor has been processed.
+
+### public-key
+
+The _public-key_ database stores the public keys of witnesses that are used to verify the proofs in anchor
+credentials signed by the witnesses. When the [Observer](observer.html#observer) verifies a proof, it first looks in
+this database for a public key. If the public key is not found then it is retrieved from the witness and then stored
+in this database.
