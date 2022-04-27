@@ -14,7 +14,7 @@ If the service has already encountered this log and log's STH has changed since 
 - Fetch a consistency proof for the new STH with the previous STH.
 - Verify the consistency proof.
 
-Upon successfull STH signature and consistency verificiation, log monitoring service will 
+Upon successful STH signature and consistency verification, log monitoring service will 
 save current STH for each domain.
 
 The service can be configured to retrieve and store all log entries during log monitoring. See [Log Entries Store Enabled Parameter](parameters.html###vct-log-entries-store-enabled).
