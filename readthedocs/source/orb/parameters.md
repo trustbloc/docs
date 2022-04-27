@@ -519,14 +519,6 @@ Always sign with local witness flag (default true).
 
 Discovery domains.
 
-### discovery-vct-domains
-
-| Arg                     | Env                    | Default |
-|-------------------------|------------------------|---------|
-| --discovery-vct-domains | DISCOVERY_VCT_DOMAINS  |         |
-
-Discovery VCT domains.
-
 ### discovery-minimum-resolvers
 
 | Arg                           | Env                          | Default |
