@@ -1,3 +1,18 @@
+# Log configuration
+
+An administrator can configure log per domain. When configured the log URL
+is stored into configuration database "orb-config" under "log-url" key.
+The log URL is cached on the server with periodic cache updates from the database.
+Default log URL cache expiry period has been set to 1 minute.
+
+### Configuring log URL
+
+Log URL can be configured by posting log URL to domain endpoint "/policy".
+
+### Retrieve log URL
+
+Log URL can be retrieved by issuing GET to domain endpoint "/policy".
+
 # Log Monitoring
 
 Orb server will periodically invoke log monitoring service that will watch logs for consistency 

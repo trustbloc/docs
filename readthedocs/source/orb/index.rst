@@ -25,4 +25,4 @@ Orb
    restendpoints/index.rst
    parameters.md
    database.md
-   logmonitoring.md
+   log.md

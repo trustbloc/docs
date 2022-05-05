@@ -133,14 +133,6 @@ URL that exposes the metrics endpoint. Format: HostName:Port.
 
 Total time in seconds to resolve config values.
 
-### vct-url
-
-| Arg       | Env          | Default  |
-|-----------|--------------|----------|
-| --vct-url | ORB_VCT_URL  |          |
-
-Verifiable credential transparency URL.
-
 ### vct-proof-monitoring-interval
 
 | Arg                             | Env                           | Default |
