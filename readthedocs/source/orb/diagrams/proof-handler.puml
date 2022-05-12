@@ -10,7 +10,7 @@ participant "VCT" as vct
 database "Anchor Status\nDB" as anchorStatusDB
 database "Anchor Link\nDB" as anchorLinkDB
 database "Witness\nDB" as witnessDB
-queue "Anchor\nLinkset" as anchorLinksetQueue
+queue "orb.anchor_linkset" as anchorLinksetQueue
 
 witness -> inbox: Post(Accept offer)
 note over inbox
@@ -66,7 +66,7 @@ activate proofHandler
           Create a linkset with the
           anchorLink (which includes all
           proofs) and publish the linkset
-          to the anchor linkset queue
+          to the orb.anchor_linkset queue
         end note
 
         proofHandler -> anchorLinksetQueue: Publish(anchorLinkset)

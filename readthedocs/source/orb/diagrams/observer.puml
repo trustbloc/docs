@@ -1,7 +1,7 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-queue "Anchor" as anchorQueue
+queue "orb.anchor" as anchorQueue
 
 participant "Observer" as observer
 
@@ -25,10 +25,10 @@ activate anchorQueue
   anchorQueue --> observer: ok
 deactivate anchorQueue
 
-anchorQueue -> observer: anchorLinkset
+anchorQueue -> observer: anchor info
 
 activate observer
-  observer -> cas: Read(anchor)
+  observer -> cas: Read(anchorInfo.hashlink)
   activate cas
     cas --> observer: anchorLinkset
   deactivate cas

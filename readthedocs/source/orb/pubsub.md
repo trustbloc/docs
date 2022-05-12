@@ -7,7 +7,7 @@ The publisher/subscriber subsystem in Orb is configurable to either use an
 The AMQP URL is specified by the startup parameter [mq-url](parameters.html#mq-url). If
 this parameter is not set then the in-memory implementation is used.
 
-## Publishers and Subscriber
+## Publisher and Subscriber
 
 A subscriber is a handler for a message posted to a queue. On startup, each Orb instance subscribes to various
 queues. The queues are global to the domain, i.e. each Orb instance subscribes to the same queues.
@@ -26,13 +26,13 @@ load-balancing algorithm.
 
 When a message is published to a queue, one of the subscribers in the Orb domain handles the
 message. If a processing error occurs (such as the DB is temporarily unavailable) then the handler replies 
-with a _nack_. In this case the message is sent to a _redelivery_ queue so that it may be retried at a later time.
+with a _nack_. In this case the message is sent to a _orb.redelivery_ queue so that it may be retried at a later time.
 
-The _redelivery_ queue is configured as the _dead-letter-queue_ for all queues in Orb.
-When a message is rejected (_nacked_) by a subscriber, it is automatically sent to the _redelivery_
+The _orb.redelivery_ queue is configured as the _dead-letter-queue_ for all queues in Orb.
+When a message is rejected (_nacked_) by a subscriber, it is automatically sent to the _orb.redelivery_
 queue. The first time a message is rejected, the redelivery handler immediately redelivers
 the message to the original destination queue. If the message is rejected again, an _expiration_
-header value is set on the message, and the message is posted to a _wait_ queue. The expiration value is
+header value is set on the message, and the message is posted to a _orb.wait_ queue. The expiration value is
 calculated by a backoff algorithm using the following parameters:
 
 1) [mq-redelivery-initial-interval](parameters.html#mq-redelivery-initial-interval)
@@ -44,12 +44,12 @@ is set to 2s and the multiplier is set to 1.5 then the expiration is set 3s. The
 message occurs, the expiration will be set to 4.5s. Expiration time is limited by parameter
 [mq-redelivery-max-interval](parameters.html#mq-redelivery-max-interval).
 
-The _wait_ queue has no subscribers, so the message sits there until it expires. The _redelivery_ queue is also
-configured as the _dead-letter-queue_ for the _wait_ queue, so when the message expires it is automatically sent
-back to the _redelivery_ queue and the redelivery handler processes the message again.
+The _orb.wait_ queue has no subscribers, so the message sits there until it expires. The _orb.redelivery_ queue is also
+configured as the _dead-letter-queue_ for the _orb.wait_ queue, so when the message expires it is automatically sent
+back to the _orb.redelivery_ queue and the redelivery handler processes the message again.
 
 The redelivery handler looks at the _reason_ field in the message header. If _reason_ is set to 'expired' then the
-message is posted to the original destination queue, otherwise (if reason is 'rejected') it is posted to the _wait_
+message is posted to the original destination queue, otherwise (if reason is 'rejected') it is posted to the _orb.wait_
 queue with an even greater expiration value. This process repeats until the
 [maximum](parameters.html#mq-redelivery-max-attempts) number of redelivery attempts has been reached, at which
 point redelivery for the message is aborted.
@@ -79,3 +79,49 @@ have a limit to the number of channels that can be opened for a single connectio
 of subscriber channels for a single connection is specified by parameter
 [mq-max-connection-subscriptions](parameters.html#mq-max-connection-subscriptions). If the size of the subscriber pool
 reaches this limit then a new connection is automatically opened for any new subscriber channel.
+
+## Queues
+
+When an Orb instance starts up it creates a number of queues (if they aren't already created) and subscribes to receive
+messages from these queues. Following is a description of the queues:
+
+### orb.activity.outbox
+
+ActivityPub activities posted to the [outbox](activitypub.html#outbox) are published to the orb.activity.outbox queue
+which is consumed by the outbox handler.
+
+### orb.activity.inbox
+
+ActivityPub activities posted to the [inbox](activitypub.html#inbox) are published to the orb.activity.inbox queue which
+is consumed by the inbox handler.
+
+### orb.operation
+
+Sidetree DID operations posted to the [operations](restendpoints/sidetree.html#operations) endpoint
+are published to the orb.operation queue which is consumed by the
+[operation queue handler](batchwriter.html#operation-queue).
+
+### orb.anchor_linkset
+
+The [witness proof handler](batchwriter.html#witness-proof-handler) publishes anchor linksets to the orb.anchor_linkset
+queue which is consumed by the [anchor linkset handler](batchwriter.html#anchor-linkset-handler).
+
+### orb.anchor
+
+The [anchor linkset handler](batchwriter.html#anchor-linkset-handler) publishes messages to the orb.anchor
+queue which is consumed by the [observer](observer.html#observer).
+
+### orb.did
+
+DID messages are published to the orb.did queue which is consumed by the [observer](observer.html#observer).
+
+### orb.redelivery
+
+A message that has been NACK'ed is published to the orb.redelivery queue so that it may be
+[redelivered](pubsub.html#message-redelivery).
+
+### orb.wait
+
+A message that has been NACK'ed and has a backoff time is published to the orb.wait queue. The message sits
+in this queue for the duration of the specified backoff time, then it is automatically sent to the
+orb.redeivery queue for [redelivery](pubsub.html#message-redelivery).

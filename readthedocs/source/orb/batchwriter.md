@@ -38,8 +38,8 @@ entry was last updated. (This timestamp is used to check the aliveness of the Or
 A Sidetree operation is posted by a client to the [operations](sidetree.html#did-operations) REST endpoint (which is
 exposed by the [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go) library). After the operation is validated,
 the _Add_ function of Orb's _Operation Queue_ is invoked. The _Operation Queue_ then publishes a message containing the operation
-to the AMQP _operation_ queue.
-Each Orb instance has a pool of subscribers for the operation queue. The number of subscribers in the pool is determined
+to the AMQP _orb.operation_ queue.
+Each Orb instance has a pool of subscribers for the _orb.operation_ queue. The number of subscribers in the pool is determined
 by startup parameter [op-queue-pool](parameters.html#op-queue-pool). One of the subscribers on an Orb instance handles the
 message by adding the operation to the _op-queue_ database and also to an in-memory queue. Operations are stored to the
 database for recovery purposes, i.e. if the Orb instance goes down then another instance will repost the operations.
@@ -71,9 +71,9 @@ then the _Ack_ function is called. The _Ack_ function deletes the removed operat
 #### Nack Function
 
 If the [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go) library has failed to successfully process the
-operations then the _Nack_ function is called. The _Nack_ function reposts the operations to the AMQP _operation_ queue so they
+operations then the _Nack_ function is called. The _Nack_ function reposts the operations to the AMQP _orb.operation_ queue so they
 may be retried (potentially by another server instance) and the operations are deleted from the database. Each operation
-message that is reposted to the _operation_ queue has a _retries_ header value which is incremented before it is reposted.
+message that is reposted to the _orb.operation_ queue has a _retries_ header value which is incremented before it is reposted.
 Once the maximum number of retries for an operation has been reached, the operation is discarded.
 
 ```{image} ../_static/orb/op-queue-cut.svg
@@ -86,7 +86,7 @@ An Orb server may go down with pending operations in the queue. The _Operation Q
 the [Task Manager](taskmanager.html#task-manager) on startup to periodically run on one server instance in the domain.
 The period is specified by startup parameter [op-queue-task-monitor-interval](parameters.html#op-queue-task-monitor-interval).
 This task monitors the operation queue tasks of other servers to ensure that if a server goes down then the operations
-associated with that server are reposted to the AMQP _operation_ queue.
+associated with that server are reposted to the AMQP _orb.operation_ queue.
 
 Each Orb instance periodically (also using the period specified by
 [op-queue-task-monitor-interval](parameters.html#op-queue-task-monitor-interval)) updates the _update time_
@@ -97,7 +97,7 @@ _update time_ of the entry. If the update time is older than the expiration time
 [op-queue-task-expiration](parameters.html#op-queue-task-expiration) then the server that owns the task is considered to
 be down. At this point, the _op-queue_ database is queried for the operations associated with the task and each operation
 is reposted to the queue. (As described in the [section](#nack-function) above, each operation
-message reposted to the _operation_ queue has a _retries_ header value which is incremented before it is reposted.
+message reposted to the _orb.operation_ queue has a _retries_ header value which is incremented before it is reposted.
 Once the maximum number of retries for an operation has been reached, the operation is discarded.)
 All operations associated with this _task_ are then deleted from the database and the _task_ entry itself is also
 deleted from the database. (The _task_ entry is deleted from the database since, when the dead server comes back online,
@@ -135,7 +135,8 @@ if the anchor has a sufficient number of proofs. If the witness policy is not sa
 else is done, otherwise:
 1) The status of the anchor is marked as _complete_
 2) The anchor linkset is updated with all witness proofs
-3) The anchor linkset is published to the _anchor linkset_ queue so that it may be processed by the [Anchor Linkset Handler](#anchor-linkset-handler)
+3) The anchor linkset is published to the _orb.anchor_linkset_ queue so that it may be processed by the
+4) [Anchor Linkset Handler](#anchor-linkset-handler)
 
 ```{image} ../_static/orb/proof-handler.svg
 
@@ -143,11 +144,11 @@ else is done, otherwise:
 
 ## Anchor Linkset Handler
 
-On startup, the Anchor Linkset Handler subscribes to the _anchor linkset_ queue in order to receive
+On startup, the Anchor Linkset Handler subscribes to the _orb.anchor_linkset_ queue in order to receive
 witnessed anchor linksets. Upon receiving an anchor linkset from the queue:
 1) The verifiable credential is extracted from the anchor linkset and saved to the verifiable credential database
 2) The anchor linkset is saved to the [Content Addressable Storage (CAS)](cas.html#content-addressable-storage-cas)
-3) The anchor linkset is published to the _anchor_ queue so that it may be processed by the [Observer](observer.html#observer)
+3) The anchor linkset is published to the _orb.anchor_ queue so that it may be processed by the [Observer](observer.html#observer)
 4) A [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity (containing the anchor linkset) is posted to all followers
 
 ```{image} ../_static/orb/anchor-linkset-handler.svg

@@ -9,7 +9,7 @@ end box
 
 database "op-queue\nDB" as opQueueDB
 
-queue "AMQP\nop-queue" as opQueue
+queue "orb.operation" as opQueue
 
 handler1 -> taskMgr1: RegisterTask\n(op-queue-monitor)
 

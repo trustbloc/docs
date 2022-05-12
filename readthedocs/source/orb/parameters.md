@@ -338,11 +338,20 @@ The maximum number of subscriptions per connection.
 
 The size of a channel pool for an AMQP publisher (default is 25). If set to 0 then a channel pool is not used and a new channel is opened/closed for every publish to a queue.
 
+### mq-publisher-confirm-delivery
+
+| Arg                             | Env                           | Default |
+|---------------------------------|-------------------------------|---------|
+| --mq-publisher-confirm-delivery | MQ_PUBLISHER_CONFIRM_DELIVERY | true    |
+
+Turns on delivery confirmation of published messages. If set to true then the AMQP publisher waits
+until a confirmation is received from the AMQP server to guarantee that the message is delivered.
+
 ### mq-redelivery-max-attempts
 
-| Arg                               | Env                    | Default |
-|-----------------------------------|------------------------|---------|
-| --mq-redelivery-max-attempts  | MQ_REDELIVERY_MAX_ATTEMPTS | 10      |
+| Arg                               | Env                        | Default  |
+|-----------------------------------|----------------------------|----------|
+| --mq-redelivery-max-attempts      | MQ_REDELIVERY_MAX_ATTEMPTS | 20       |
 
 The maximum number of redelivery attempts for a failed message.
 
@@ -401,7 +410,7 @@ to the queue, so that they will be processed by another Orb instance.
 
 | Arg                    | Env                  | Default |
 |------------------------|----------------------|---------|
-| --op-queue-max-reposts | OP_QUEUE_MAX_REPOSTS | 10     |
+| --op-queue-max-reposts | OP_QUEUE_MAX_REPOSTS | 20      |
 
 The maximum number of times an operation may be reposted to the queue after having failed.
 

@@ -5,14 +5,14 @@ box Domain1 #White
 actor "Service or\nAdmin User" as adminUser
 participant Outbox
 participant "Inbox\nResolver" as resolver
-queue "Outbox\nQueue" as outboxQueue
+queue "orb.activity.outbox" as outboxQueue
 database "Outbox\nDB" as outboxDB
 participant "Activity\nHandler" as outboxHandler
 end box
 
 box DomainN
 participant Inbox
-queue "Inbox\nQueue" as inboxQueue
+queue "orb.activity.inbox" as inboxQueue
 database "Inbox\nDB" as inboxDB
 participant "Activity\nHandler" as inboxHandler
 end box

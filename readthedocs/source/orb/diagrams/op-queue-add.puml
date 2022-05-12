@@ -7,7 +7,7 @@ box Instance 1
 participant "Operation\nQueue" as handler1
 end box
 
-queue "AMQP\nop-queue" as opQueue
+queue "orb.operation" as opQueue
 database "op-queue\nDB" as opQueueDB
 
 box Instance 2
