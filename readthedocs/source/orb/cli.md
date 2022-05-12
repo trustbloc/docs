@@ -376,3 +376,97 @@ witness --outbox-url=https://orb-1.com/services/orb/outbox --actor=https://orb-1
 witness --outbox-url=https://orb-1.com/services/orb/outbox --actor=https://orb-1.com/services/orb
 --to=https://orb-2.com/services/orb --action=InviteWitness --auth-token=token123 --invite-witness-id=r2WW##
 ```
+
+## Accept List
+
+The _acceptlist_ command adds and removes actors from the _follow_ and _witness_
+[accept-lists](activitypub.html#accept-list).
+
+### Usage
+
+```
+acceptlist [command] [flags]
+```
+
+### Flags
+ 
+* `url` _[string]_ - Accept-list [endpoint](restendpoints/activitypub.html#accept-list).
+* `actor` _[array|string]_ - Array of one or more actors to add to the accept-list.
+* `type` _[string]_ - Accept-list type - either _follow_ or _witness_.
+
+### Add Command
+
+Adds one or more actors to an accept-list of a given type.
+
+### Example
+
+The orb domain, orb-1.com, adds orb-2.com and orb-3.com to the _follow_ accept list:
+
+```
+acceptlist add --url https://orb-1.com/services/orb/acceptlist --actor https://orb-2.com/services/orb --actor https://orb-3.com/services/orb --type follow
+```
+
+### Remove Command
+
+Removes one or more actors from an accept-list of a given type:
+
+### Example
+
+The orb domain, orb-1.com, removes orb-2.com from the _witness_ accept list:
+
+```
+acceptlist remove --url https://orb-1.com/services/orb/acceptlist --actor https://orb-2.com/services/orb --type witness
+```
+
+### Get Command
+
+Retrieves all accept-lists or an accept-list of the given type.
+
+### Example
+
+Retrieve orb-1.com's _witness_ accept-list:
+
+```
+acceptlist get --url https://orb-1.com/services/orb/acceptlist --type witness
+```
+
+Retrieve all of orb-1's accept-lists:
+
+```
+acceptlist get --url https://orb-1.com/services/orb/acceptlist
+```
+
+## Policy
+
+The _policy_ command updates and retrieves the [witness policy](witnesspolicy.html#witness-policy).
+
+### Usage
+
+```
+policy [command] [flags]
+```
+
+#### Flags
+
+* `url` _[string]_ - Witness policy [endpoint](restendpoints/witness-policy.html#witness-policy-endpoint).
+* `policy` _[string]_ - The policy. For example "MinPercent(100,batch) AND OutOf(1,system)".
+
+### Update Command
+
+The _update_ command updates a witness policy.
+
+#### Example
+
+```
+policy update --url https://orb-1.com/policy --policy "MinPercent(100,batch) AND OutOf(1,system)"
+```
+
+### Get Command
+
+The _get_ command retrieves the witness policy.
+
+#### Example
+
+```
+policy get --url https://orb-1.com/policy
+```
