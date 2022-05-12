@@ -1,6 +1,6 @@
 # Observer
 
-The Observer subscribes to the _anchor_ queue and handles witnessed [anchor linksets](https://trustbloc.github.io/activityanchors/#anchorevent).
+The Observer subscribes to the _orb.anchor_ queue and handles witnessed [anchor linksets](https://trustbloc.github.io/activityanchors/#anchorevent).
 Upon receiving an anchor linkset, the Observer:
 
 1) Loads the anchor linkset from the [Content Addressable Storage (CAS)](cas.html#content-addressable-storage-cas)

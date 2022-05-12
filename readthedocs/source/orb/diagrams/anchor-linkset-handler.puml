@@ -1,10 +1,10 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-queue "Anchor\nLinkset" as anchorLinksetQueue
+queue "orb.anchor_linkset" as anchorLinksetQueue
 
 participant "Anchor Linkset\nHandler" as anchorLinksetHandler
-queue "Anchor" as anchorQueue
+queue "orb.anchor" as anchorQueue
 
 database "Verifiable\nCredential\nDB" as vcDB
 database "CAS" as cas
@@ -39,8 +39,13 @@ activate anchorLinksetHandler
     cas --> anchorLinksetHandler: ok
   deactivate cas
 
-  anchorLinksetHandler -> anchorQueue: Publish(anchorLinkset)
+  anchorLinksetHandler -> anchorQueue: Publish(anchorInfo)
   activate anchorQueue
+    note over anchorLinksetHandler
+      The hashlink of the anchor
+      linkset is published to the
+      anchor queue.
+    end note
     anchorQueue --> anchorLinksetHandler: ok
   deactivate anchorQueue
 

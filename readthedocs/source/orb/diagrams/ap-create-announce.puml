@@ -9,12 +9,12 @@ end box
 box Domain2
 participant Domain2
 database "Anchor\nReference" as Domain2DB
-queue "Anchor" as anchor_2
+queue "orb.anchor" as anchor_2
 end box
 
 box Domain3 #White
 participant Domain3
-queue "Anchor" as anchor_3
+queue "orb.anchor" as anchor_3
 end box
 
 activate Domain1
@@ -31,15 +31,15 @@ Domain2 --> Domain1: OK
 
 deactivate Domain1
 
-Domain2 -> anchor_2: Publish(anchorLinkset)
+Domain2 -> Domain2: Extract anchor linkset\nfrom Create activity\nand store to CAS
+
+Domain2 -> anchor_2: Publish(anchorInfo)
 
 note over anchor_2
-The anchor linkset in
-the Create activity
-is posted to the
-anchor queue to be
-processed by the
-Observer.
+The hashlink of the anchor
+linkset is posted to
+the anchor queue to be
+processed by the Observer.
 end note
 
 activate anchor_2
@@ -55,30 +55,33 @@ Domain3 --> Domain2: OK
 
 deactivate Domain2
 
-Domain3 -> anchor_3: Publish(anchorLinkset)
+Domain3 -> Domain3: Extract anchor linkset\nfrom Announce activity\nand store to CAS
+
+Domain3 -> anchor_3: Publish(anchorInfo)
 
 activate anchor_3
 
 note over anchor_3
-The anchor linkset in
-the Announce activity
-is posted to the anchor
-queue to be processed by
-the Observer.
+The hashlink of the anchor
+linkset is posted to
+the anchor queue to be
+processed by the Observer.
 end note
 anchor_3 --> Domain3: OK
 
 deactivate Domain3
 
-anchor_2 -> Domain2: anchorLinkset
-
-note left
-The anchor linkset
-is processed by the
-Observer.
-end note
+anchor_2 -> Domain2: anchorInfo
 
 activate Domain2
+
+note over Domain2
+The anchor linkset is retrieved
+from CAS using the hashlink in
+the anchorInfo and the anchor
+linkset is processed by the
+Observer.
+end note
 
 Domain2 -> Domain1: Like activity
 
@@ -98,13 +101,15 @@ Domain1DB --> Domain1: OK
 deactivate Domain1DB
 deactivate Domain1
 
-anchor_3 -> Domain3: anchorLinkset
+anchor_3 -> Domain3: anchorInfo
 
 activate Domain3
 
-note left
-The AnchorEvent is
-processed by the
+note over Domain3
+The anchor linkset is retrieved
+from CAS using the hashlink in
+the anchorInfo and the anchor
+linkset is processed by the
 Observer.
 end note
 

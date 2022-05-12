@@ -4,12 +4,12 @@
 actor "Publisher\nClient" as client
 
 queue "App\nQueue" as queue1
-queue "Redelivery\nQueue" as redeliveryQueue
+queue "orb.redelivery" as redeliveryQueue
 
 participant "Orb\nInstance 1" as service1
 participant "Orb\nInstance 2" as service2
 
-queue "Wait\nQueue" as waitQueue
+queue "orb.wait" as waitQueue
 
 service1 -> queue1: subscribe
 activate queue1

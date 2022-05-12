@@ -3,7 +3,7 @@
 
 box Domain1 #White
 participant Domain1
-queue anchor_event
+queue "orb.anchor_linkset" as anchorLinksetQueue
 end box
 
 box Domain2
@@ -90,16 +90,21 @@ We have enough proofs
 according Witness Policy.
 end note
 
-Domain1 -> anchor_event: AnchorEvent message
+Domain1 -> anchorLinksetQueue: Anchor linkset message
+
+activate anchorLinksetQueue
+
 note left
-Construct AnchorEvent with
+Construct anchor linkset with
 proofs from Domain1 and
 Domain2 and post to
-anchor_event queue, which
+orb.anchor_linkset queue, which
 is consumed by Batch Writer.
 end note
 
-anchor_event --> Domain1: ACK
+anchorLinksetQueue --> Domain1: OK
+
+deactivate anchorLinksetQueue
 
 deactivate Domain1
 
