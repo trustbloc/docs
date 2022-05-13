@@ -133,6 +133,14 @@ URL that exposes the metrics endpoint. Format: HostName:Port.
 
 Total time in seconds to resolve config values.
 
+### vct-enabled
+
+| Arg           | Env             | Default |
+|---------------|-----------------|---------|
+| --vct-enabled | ORB_VCT_ENABLED | false   |
+
+Enables setting VCT log. If enabled VCT URL has to be configured via cli log command or REST /log endpoint.
+
 ### vct-proof-monitoring-interval
 
 | Arg                             | Env                           | Default |
