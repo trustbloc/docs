@@ -7,11 +7,11 @@ Default log URL cache expiry period has been set to 1 minute.
 
 ### Configuring log URL
 
-Log URL can be configured by posting log URL to domain endpoint "/policy".
+Log URL can be configured by posting log URL to domain endpoint "/log".
 
 ### Retrieve log URL
 
-Log URL can be retrieved by issuing GET to domain endpoint "/policy".
+Log URL can be retrieved by issuing GET to domain endpoint "/log".
 
 # Log Monitoring
 

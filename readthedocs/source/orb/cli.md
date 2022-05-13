@@ -470,3 +470,93 @@ The _get_ command retrieves the witness policy.
 ```
 policy get --url https://orb-1.com/policy
 ```
+## Log
+
+The _log_ command updates and retrieves the VCT log URL.
+
+### Usage
+
+```
+log [command] [flags]
+```
+
+#### Flags
+
+* `url` _[string]_ - Log [endpoint](restendpoints/log.html#log-configuration).
+* `log` _[string]_ - The log URL. For example "https://vct.com/log".
+
+### Update Command
+
+The _update_ command updates a log URL.
+
+#### Example
+
+```
+log update --url https://orb-1.com/log --log https://vct.com/log
+```
+
+### Get Command
+
+The _get_ command retrieves the log URL.
+
+#### Example
+
+```
+log get --url https://orb-1.com/log
+```
+
+
+## Log Monitor
+
+The _logmonitor_ command activates and deactivates log from the list of logs that are observed by log monitoring service.
+[log-monitor](log.html#log-monitoring).
+
+### Usage
+
+```
+logmonitor [command] [flags]
+```
+
+### Flags
+
+* `url` _[string]_ - Log monitor [endpoint](restendpoints/log.html#log-monitoring).
+* `log` _[array|string]_ - Array of one or more logs to activate for log monitoring.
+
+### Activate Command
+
+Adds one or more logs to the list of logs that are monitored by log monitoring service.
+
+### Example
+
+```
+logmonitor activate --url https://orb-1.com/log-monitor --url https://vct.com/log --url https://other-vct.com/some-log 
+```
+
+### Deactivate Command
+ 
+Removes one or more logs from the list of logs that are monitored by log monitoring service.
+
+### Example
+
+```
+logmonitor deactivate --url https://orb-1.com/log-monitor --url https://vct.com/log --url https://other-vct.com/some-log 
+```
+
+### Get Command
+
+Retrieves all logs of the given status that are observed by monitoring service. Status can be either active or inactive. 
+If not supplied it defaults to active.
+
+### Example
+
+Retrieve orb-1.com's inactive logs:
+
+```
+logmonitor get --url https://orb-1.com/log-monitor --status inactive
+```
+
+Retrieve all of orb-1's active logs:
+
+```
+logmonitor get --url https://orb-1.com/log-monitor --status active
+```
