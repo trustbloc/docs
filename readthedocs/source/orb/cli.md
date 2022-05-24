@@ -560,3 +560,55 @@ Retrieve all of orb-1's active logs:
 ```
 logmonitor get --url https://orb-1.com/log-monitor --status active
 ```
+
+## VCT
+
+The _vct_ command interacts with the VCT server to verify that an anchor has been added to a log.
+
+### Usage
+
+```
+vct [command] [flags]
+```
+
+#### Flags
+
+* `anchor` _[string]_ - The hash of the anchor linkset.
+* `cas-url` _[string]_ - The CAS URL (optional). If no CAS URL is specified then IPFS CAS is assumed.
+* `vct-auth-token` _[string]_ - The authorization bearer token for the VCT server (optional).
+
+### Verify Command
+
+The _verify_ command verifies that the anchor linkset (given by the anchor hash) has been added to the VCT
+log(s) that are specified in the proofs of the verifiable credential in the linkset.
+
+#### Example
+
+```
+vct verify --anchor uEiDuIicNljP8PoHJk6_aA7w1d4U3FAvDMfF7Dsh7fkw3Wg --cas-url https://orb.domain1.com/cas
+```
+
+Response:
+
+```json
+[
+  {
+    "domain": "https://vct.domain1.com/maple2020",
+    "proofValue": "JnP2nE4jLiHsmR65q1a6Tp-HUKZanjpCstm7qAljIE3Z6Y2mEcNarOESiu1gFlsonz1soQJe69piE7qZnTqrAw",
+    "found": true,
+    "leafIndex": 12,
+    "auditPath": [
+      "rgWgpjyv6227zFbcpyRv3YR1vbLbXaOuCeYoF7uDaY4=",
+      "lg4iaTTfHNrH41C8CBuSlo+VIK+f+2dA+5i5N8NzsIM="
+    ]
+  },
+  {
+    "domain": "https://orb.domain2.com",
+    "proofValue": "6H8dEtYndINR48g4mFJ9wAxXMVYu7FdOEzpwRap5AuOTPPpd9E7LYjME-pH2kvqiFLe9ZmKDJa2YzqOoLjHJAQ",
+    "found": false,
+    "leafIndex": 0,
+    "auditPath": null,
+    "error": "get STH: 404 page not found\n"
+  }
+]
+```
