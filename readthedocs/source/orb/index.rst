@@ -5,6 +5,7 @@ Orb
    :maxdepth: 1
 
    introduction.md
+   gettingstarted.md
    activitypub.md
    authorization.md
    batchwriter.md
