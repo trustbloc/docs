@@ -14,6 +14,14 @@ Monitors cryptographically check that Anchor Credential have been included in VC
 
 Orb specification extended [RFC6962](https://www.rfc-editor.org/rfc/rfc6962) to include [Verifiable Credential (VC)](https://trustbloc.github.io/did-method-orb/#bib-vc-data-model) objects. 
 
+## Add Verifiable Credential Flow
+
+VCT node will validate verifiable credential and add it to Trillian log. 
+
+```{image} ../_static/orb/add-vc.svg
+```
+
+See [add-vc](restendpoints/vct.html#add-anchor-credential-to-log) REST endpoint for more information.
 
 ## Startup Parameters
 
