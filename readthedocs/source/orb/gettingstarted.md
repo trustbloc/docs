@@ -1,9 +1,9 @@
 # Getting Started Tutorial
 
-In this tutorial you'll start up two, stand-alone Orb nodes (with in-memory database and message queue)
-and be able to create and update DIDs. A second example starts up the Orb nodes with a
-[VCT](vct.html#verifiable-credential-transparency-vct) and you'll be able to verify that an anchor
-linkset is in the VCT log.
+In this tutorial you'll start up two stand-alone Orb nodes (with in-memory database and message queue)
+and create, update and resolve DIDs. Further in the tutorial you'll start up the Orb nodes along with a
+[VCT](vct.html#verifiable-credential-transparency-vct) node, and you'll verify that the proofs
+in an anchor linkset are in the VCT log.
 
 ## Setup
 
@@ -20,7 +20,7 @@ Build Orb and the CLI:
 ```commandline
 cd orb
 
-make clean generate-test-keys orb-docker build-orb-cli-binaries extract-orb-cli-binaries
+make clean orb-docker build-orb-cli-binaries extract-orb-cli-binaries
 ```
 
 ## Orb with no VCT
@@ -1174,7 +1174,7 @@ Response:
 ```
 
 Get hash of anchor from the _resolve_ response (from the "canonicalId" field in the metadata) and set the ANCHOR_HASH environment variable.
-Verify that the proofs in the anchor linkset are in the VCT log(s):
+Verify that the proof(s) in the anchor linkset are in the VCT log:
 
 **_NOTE:_**  Set ANCHOR_HASH to the anchor hash of the DID in the _did resolve_ response.
 
@@ -1198,8 +1198,9 @@ Response:
 ]
 ```
 
-Create another DID at orb1 and use `orb-cli vct verify` to verify that the proofs are in the log. You'll
-see that _leafIndex_ is 1 and _auditPath_ has one entry:
+You'll notice that _leafIndex_ is 0 and _auditPath_ is empty since there's only one entry in the Merkle tree.
+
+Create another DID at orb1 and use `orb-cli vct verify` to verify that the proofs are in the log.
 
 ```json
 [
@@ -1214,6 +1215,8 @@ see that _leafIndex_ is 1 and _auditPath_ has one entry:
   }
 ]
 ```
+
+You'll now notice that _leafIndex_ is 1 and _auditPath_ has one entry.
 
 Shut down the environment:
 
