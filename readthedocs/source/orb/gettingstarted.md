@@ -15,7 +15,7 @@ Clone the orb project:
 git clone git@github.com:trustbloc/orb.git
 ```
 
-Build Orb and the CLI:
+Build Orb and the [CLI](cli.html#cli):
 
 ```commandline
 cd orb
