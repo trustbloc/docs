@@ -1,5 +1,7 @@
 # Verifiable Credential Transparency (VCT)
 
+## Introduction
+
 The Verifiable Credential Transparency (VCT) Witness ledger is based on certificate transparency 
 [RFC6962](https://www.rfc-editor.org/rfc/rfc6962).
 VCT logs are append-only ledgers of anchor credentials.
@@ -22,6 +24,62 @@ VCT node will validate verifiable credential and add it to Trillian log.
 ```
 
 See [add-vc](restendpoints/vct.html#add-anchor-credential-to-log) REST endpoint for more information.
+
+## VCT Monitoring
+
+Monitors cryptographically check if verifiable credentials have been included in logs. They
+can also monitor log for consistency. Monitors can be set up and run by anyone. 
+
+VCT node supports the following monitoring API:
+
+#### Get Signed Tree Head (STH)
+
+Retrieve latest Signed Tree Head as described in [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-4.3).
+See [get-sth](restendpoints/vct.html#get-signed-tree-head-sth) REST endpoint for more information.
+
+### Get Signed Tree Head (STH) Consistency
+
+Retrieve Merkle Consistency Proof between Two Signed Tree Heads
+as per [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-4.4).
+
+See [get-sth-consistency](restendpoints/vct.html#get-signed-tree-head-sth-consistency) REST endpoint for more information.
+
+### Get Entries
+
+Retrieve entries from log as per [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-4.6).
+
+See [get-entries](restendpoints/vct.html#get-entries) REST endpoint for more information.
+
+### Retrieve Entry and Proof from Log
+
+Retrieve entry and Merkle audit proof from log as per [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-4.8).
+
+See [get-entry-and-proof](restendpoints/vct.html#retrieve-entry-and-proof-from-log) REST endpoint for more information.
+
+
+### Retrieve Merkle Audit Proof from Log by Leaf Hash
+
+Retrieve Merkle audit proof by leaf hash from log as per [RFC6962](https://datatracker.ietf.org/doc/html/rfc6962#section-4.5).
+
+See [get-proof-by-hash](restendpoints/vct.html#retrieve-merkle-audit-proof-from-log-by-leaf-hash) REST endpoint for more information.
+
+
+### VCT Discovery and Administration 
+
+### Webfinger
+
+Retrieve discovery information about VCT log.
+
+See [.well-known/webfinger](restendpoints/vct.html#webfinger) REST endpoint for more information.
+
+### Get Issuers
+
+Retrieves log issuers (if configured). If the log issuer list has been configured for the log
+then Verifiable Credential issuer ID has to be present in the log's issuer list
+in order to add Verifiable Credential to the log.
+
+See [get-issuers](restendpoints/vct.html#get-issuers) REST endpoint for more information.
+
 
 ## Startup Parameters
 
