@@ -574,7 +574,7 @@ vct [command] [flags]
 #### Flags
 
 * `anchor` _[string]_ - The hash of the anchor linkset.
-* `cas-url` _[string]_ - The CAS URL (optional). If no CAS URL is specified then IPFS CAS is assumed.
+* `cas-url` _[string]_ - The CAS URL.
 * `vct-auth-token` _[string]_ - The authorization bearer token for the VCT server (optional).
 
 ### Verify Command
