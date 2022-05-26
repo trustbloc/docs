@@ -134,7 +134,8 @@ Response:
 
 Resolve the un-anchored DID at orb1:
 
-**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _did create_ response.
+**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _id_ field of the _did create_ response. For example,
+did:orb:uAAA:<mark>EiDEfq8bA3CqrN3_s76O5uPhm3cGnV3D7oNloVvHfHTg3w</mark>.
 
 ```commandline
 export DID_SUFFIX=EiDEfq8bA3CqrN3_s76O5uPhm3cGnV3D7oNloVvHfHTg3w
@@ -245,9 +246,8 @@ Response:
 }
 ```
 
-Get the hash of the anchor from the _resolve_ response (from the "canonicalId" field in the metadata) and set the ANCHOR_HASH environment variable:
-
-**_NOTE:_**  Set ANCHOR_HASH to the anchor hash of the DID in the _did resolve_ response.
+Get the hash of the anchor from the _resolve_ response (from the _canonicalId_ field in the metadata) and set the ANCHOR_HASH environment variable.
+For example did:orb:<mark>uEiB_V_lRcrutfhF2LvEIvRqsR2uO4j_1nbx6T6X-pUZQPQ</mark>:EiDEfq8bA3CqrN3_s76O5uPhm3cGnV3D7oNloVvHfHTg3w:
 
 ```commandline
 export ANCHOR_HASH=uEiB_V_lRcrutfhF2LvEIvRqsR2uO4j_1nbx6T6X-pUZQPQ
@@ -380,10 +380,10 @@ Resolve a discoverable DID at orb2. This should return 'not found' but when we w
 available at orb2 since replication should have been triggered:
 
 ```commandline
-orb-cli did resolve --sidetree-url-resolution=http://orb2.local/sidetree/v1/identifiers --did-uri=did:orb:http:orb1.local:${ANCHOR_HASH}:${DID_SUFFIX}  --verify-resolution-result-type=all | jq
+orb-cli did resolve --sidetree-url-resolution=http://orb2.local/sidetree/v1/identifiers --did-uri=did:orb:http:orb1.local:${ANCHOR_HASH}:${DID_SUFFIX}  --verify-resolution-result-type=all
 ```
 
-Wait a couple of seconds and resolve the same DID at orb2. This should return the DID document:
+Wait a few seconds and resolve the same DID at orb2. This should return the DID document:
 
 ```commandline
 orb-cli did resolve --sidetree-url-resolution=http://orb2.local/sidetree/v1/identifiers --did-uri=did:orb:${ANCHOR_HASH}:${DID_SUFFIX}  --verify-resolution-result-type=all | jq
@@ -502,7 +502,8 @@ Response:
 }
 ```
 
-**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _did create_ response.
+**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _id_ field of the _did create_ response. For example,
+did:orb:uAAA:<mark>EiAEjRECXpwFaqFYwoJT5XuuUTqwigSNrOOlq4sZKlrnJg</mark>.
 
 ```commandline
 export DID_SUFFIX=EiAEjRECXpwFaqFYwoJT5XuuUTqwigSNrOOlq4sZKlrnJg
@@ -597,6 +598,7 @@ Response:
 ```
 
 **_NOTE:_**  Set ANCHOR_HASH to the anchor hash of the DID in the _did resolve_ response.
+For example, did:orb:<mark>uEiAISqEWoGwXgKEtx7Hgt1GXJkh0jPpq3w6bZ6_8FIo5nA</mark>:EiAEjRECXpwFaqFYwoJT...
 
 ```commandline
 export ANCHOR_HASH=uEiAISqEWoGwXgKEtx7Hgt1GXJkh0jPpq3w6bZ6_8FIo5nA
@@ -1062,7 +1064,8 @@ Response:
 
 Resolve the DID at orb1 to get the anchor hash:
 
-**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _did create_ response.
+**_NOTE:_**  Set DID_SUFFIX to the DID suffix in the _id_ field of the _did create_ response.
+For example, did:orb:uAAA:<mark>EiCGIu4PrFTVEZRb8SOZt4nbZRF7Wp2_qX4Zt0czROKHxg</mark>.
 
 ```commandline
 export DID_SUFFIX=EiCGIu4PrFTVEZRb8SOZt4nbZRF7Wp2_qX4Zt0czROKHxg
@@ -1173,10 +1176,10 @@ Response:
 }
 ```
 
-Get hash of anchor from the _resolve_ response (from the "canonicalId" field in the metadata) and set the ANCHOR_HASH environment variable.
-Verify that the proof(s) in the anchor linkset are in the VCT log:
+Get hash of anchor from the _resolve_ response (from the _canonicalId_ field in the metadata) and set the ANCHOR_HASH environment variable.
+For example, did:orb:<mark>uEiBtg3HASdLSUHLYds6givvkjJX_DEb8cqONqpKuq_Y_aA</mark>:EiCGIu4PrFTVEZRb8SOZ...
 
-**_NOTE:_**  Set ANCHOR_HASH to the anchor hash of the DID in the _did resolve_ response.
+Verify that the proof(s) in the anchor linkset are in the VCT log:
 
 ```commandline
 export ANCHOR_HASH=uEiBtg3HASdLSUHLYds6givvkjJX_DEb8cqONqpKuq_Y_aA
