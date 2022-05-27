@@ -15,19 +15,19 @@ Authorization:[Bearer mytoken]
 
 The server matches the bearer token in the request header against the required token(s) for the particular endpoint.
 Each REST endpoint may be
-[configured](parameters.html#auth-tokens-def) to require tokens for both read (GET) and write (POST)
+[configured](../parameters.html#auth-tokens-def) to require tokens for both read (GET) and write (POST)
 requests. If no token is defined for an endpoint then no authorization is performed. Multiple tokens may be defined
 for read and write requests. If more than one token is defined then authorization succeeds if any of the tokens is found
 in the request header. If a token for the request is required but not found in the request header then
 [HTTP signature](#http-signatures) verification is performed.
 
-```{image} ../_static/orb/auth-bearer-token.svg
+```{image} ../../_static/orb/auth-bearer-token.svg
 ```
 
 ## HTTP Signatures
 
 A common HTTP client within Orb is used for all server-to-server communications. If HTTP signatures are
-[enabled](parameters.html#enable-http-signatures) then the HTTP client sets additional headers on the HTTP
+[enabled](../parameters.html#enable-http-signatures) then the HTTP client sets additional headers on the HTTP
 request.
 
 ### Headers
@@ -62,7 +62,7 @@ The value of _keyId_ must be resolvable via HTTP or another protocol.
 ##### algorithm
 
 The _algorithm_ field contains the algorithm used to sign the request. Orb uses
-[KMS](../kms/index.html#key-management-system-kms) to sign the request using the _Ed25519_ algorithm.
+[KMS](../../kms/index.html#key-management-system-kms) to sign the request using the _Ed25519_ algorithm.
 
 ##### headers
 
@@ -126,9 +126,9 @@ key to ensure that they match. If they don't match then an _HTTP 401 Unauthorize
 If they _do_ match then authentication has succeeded and the request, along with the actor, is forwarded to the
 appropriate handler. (The actor may be used by the handler to perform authorization.)
 
-```{image} ../_static/orb/httpsignatures.svg
+```{image} ../../_static/orb/httpsignatures.svg
 
 ```
 
-Note that public keys and actors are cached (with an [expiry](parameters.html#apclient-cache-expiration))
+Note that public keys and actors are cached (with an [expiry](../parameters.html#apclient-cache-expiration))
 so that remote calls aren't required each time a signature verification is performed.

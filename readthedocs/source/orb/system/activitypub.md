@@ -12,7 +12,7 @@ Outbox handler delivers the activity to one or more targets by resolving the URI
 (from the "to" field of the activity) and posting the activity to each of the URIs. The target Inbox authorizes
 the message and invokes the appropriate handler. 
 
-```{image} ../_static/orb/ap-outbox-inbox.svg
+```{image} ../../_static/orb/ap-outbox-inbox.svg
 
 ```
 
@@ -60,7 +60,7 @@ If a persistent error occurs (e.g. 400) then the URI is skipped.
 
 ### Inbox
 
-The [inbox](restendpoints/activitypub.html#inbox) is a REST endpoint in Orb which accepts activities. When an activity
+The [inbox](../restendpoints/activitypub.html#inbox) is a REST endpoint in Orb which accepts activities. When an activity
 is received, the HTTP signature in the header of the request is [verified](authorization.html#signature-verification)
 using the public key of the [actor](https://trustbloc.github.io/activityanchors/#actor-discovery) that sent the activity.
 After the actor is authenticated, a message is posted to the _orb.activity.inbox_ queue and is processed by one of the
@@ -87,7 +87,7 @@ to the actor's inbox. When an [Accept](https://trustbloc.github.io/activityancho
 received in the inbox, the activity is first validated against a previously posted Follow activity and then the 'actor'
 in the Accept activity (which was the target server in Follow) is added to the _following_ collection.
 
-```{image} ../_static/orb/ap-follow-accept.svg
+```{image} ../../_static/orb/ap-follow-accept.svg
 
 ```
 
@@ -96,7 +96,7 @@ If the actor posting the Follow activity is not authorized then a
 A [Reject](https://trustbloc.github.io/activityanchors/#reject-follow-activity) of a Follow activity simply logs the
 fact that the request was rejected.
 
-```{image} ../_static/orb/ap-follow-reject.svg
+```{image} ../../_static/orb/ap-follow-reject.svg
 
 ```
 
@@ -122,7 +122,7 @@ inbox. When an [Accept](https://trustbloc.github.io/activityanchors/#accept-invi
 in the inbox, the activity is first validated against a previously posted Invite witness activity and then the 'actor' in
 the Accept activity is added to the _witnesses_ collection.
 
-```{image} ../_static/orb/ap-invite-accept.svg
+```{image} ../../_static/orb/ap-invite-accept.svg
 
 ```
 
@@ -130,7 +130,7 @@ If the actor is not authorized, then a [Reject](https://trustbloc.github.io/acti
 activity is posted to the actor's inbox. A [Reject](https://trustbloc.github.io/activityanchors/#reject-invite-witness-activity)
 of an Invite witness activity simply logs the fact that the request was rejected.
 
-```{image} ../_static/orb/ap-invite-reject.svg
+```{image} ../../_static/orb/ap-invite-reject.svg
 
 ```
 
@@ -158,7 +158,7 @@ added to the collection of existing proofs. Once a sufficient number of proofs i
 constructed and the anchor linkset is posted to the queue, _orb.anchor_linkset_, to be processed by the
 [Batch Writer](batchwriter.html#batch-writer).
 
-```{image} ../_static/orb/ap-offer-accept.svg
+```{image} ../../_static/orb/ap-offer-accept.svg
 
 ```
 
@@ -167,7 +167,7 @@ If the actor of the Offer is not in the _witnessing_ collection then a
 The [Reject](https://trustbloc.github.io/activityanchors/#reject-anchor-activity) of an Offer activity simply logs the
 fact that the request was rejected.
 
-```{image} ../_static/orb/ap-offer-reject.svg
+```{image} ../../_static/orb/ap-offer-reject.svg
 
 ```
 
@@ -185,13 +185,13 @@ activity back to the "actor" of the Create activity. The Create activity is also
 _followers_ collection using the [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity.
 
 When a server receives an [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity in its
-inbox the [anchor linkset](https://trustbloc.github.io/activityanchors/anchorevent) which is embedded in the
+inbox the [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) which is embedded in the
 Announce activity is first stored to CAS and then the hashlink of the anchor linkset is posted to the _orb.anchor_ queue
 so that it may be processed by the [Observer](observer.html#observer).
 After the Observer processes the anchor linkset, it posts a [Like](https://trustbloc.github.io/activityanchors/#like-activity)
 activity back to the "actor" of the Announce activity as well as to the originator of the anchor linkset.
 
-```{image} ../_static/orb/ap-create-announce.svg
+```{image} ../../_static/orb/ap-create-announce.svg
 
 ```
 
@@ -217,7 +217,7 @@ activity is posted to the originating server.
 ### Follow Authorization Policy
 
 An authorization policy may be configured for the [Follow](#follow) activity using the configuration parameters,
-[follow-auth-policy](parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If
+[follow-auth-policy](../parameters.html#follow-auth-policy). The possible values are  _accept-all_ and _accept-list_. If
 accept-all
 is used then all Follow requests are accepted. If accept-list is used then the actor in the Follow activity must be in the
 [accept-list](#accept-list) database.
@@ -225,7 +225,7 @@ is used then all Follow requests are accepted. If accept-list is used then the a
 ### Invite Witness Authorization Policy
 
 An authorization policy may be configured for the [Invite Witness](#invite-witness) activity using the configuration
-parameters, [invite-witness-auth-policy](parameters.html#invite-witness-auth-policy). The possible values are  _accept-all_
+parameters, [invite-witness-auth-policy](../parameters.html#invite-witness-auth-policy). The possible values are  _accept-all_
 and _accept-list_. If accept-all is used then all Invite witness requests are accepted. If accept-list is used then the
 actor in the Invite activity must be in the [accept-list](#accept-list) database.
 
@@ -236,4 +236,4 @@ two types of operations are _follow_ and _invite-witness_. If the actor URL is i
 Follow request from that server is authorized. If the actor URL is in the _invite-witness_ accept list then an Invite
 witness request from that server is authorized.
 
-The accept-list is managed via the REST endpoint [/services/orb/acceptlist](restendpoints/activitypub.html#accept-list)
+The accept-list is managed via the REST endpoint [/services/orb/acceptlist](../restendpoints/activitypub.html#accept-list)

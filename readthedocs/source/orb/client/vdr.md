@@ -1,5 +1,6 @@
-# VDR
-VDR used to manage DID operation.
+# Verifiable Data Registry (VDR)
+
+The VDR is a Go library that may be used by clients to manage DID operation.
 
 ## New
 New will return new instance of Orb VDR.

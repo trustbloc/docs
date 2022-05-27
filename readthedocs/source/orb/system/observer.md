@@ -14,6 +14,6 @@ Upon receiving an anchor linkset, the Observer:
 5) Stores each DID operation into the _Operation_ store
 6) Deletes the corresponding unpublished DID operations from the _Unpublished Operation_ store
 
-```{image} ../_static/orb/observer.svg
+```{image} ../../_static/orb/observer.svg
 
 ```

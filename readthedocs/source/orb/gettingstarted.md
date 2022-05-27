@@ -2,7 +2,7 @@
 
 In this tutorial you'll start up two stand-alone Orb nodes (with in-memory database and message queue)
 and create, update and resolve DIDs. Further in the tutorial you'll start up the Orb nodes along with a
-[VCT](vct.html#verifiable-credential-transparency-vct) node, and you'll verify that the proofs
+[VCT](vct/introduction.html#verifiable-credential-transparency-vct) node, and you'll verify that the proofs
 in an anchor linkset are in the VCT log.
 
 ## Setup
@@ -15,7 +15,7 @@ Clone the orb project:
 git clone git@github.com:trustbloc/orb.git
 ```
 
-Build Orb and the [CLI](cli.html#cli):
+Build Orb and the [CLI](client/cli.html#cli):
 
 ```commandline
 cd orb
@@ -955,7 +955,7 @@ docker-compose -f docker-compose-cli.yml -f ../docker/docker-compose-dev.yml dow
 
 ## Orb with VCT
 
-Start two Orb instances (orb1.local and orb2.local), [VCT](vct.html#verifiable-credential-transparency-vct)
+Start two Orb instances (orb1.local and orb2.local), [VCT](vct/introduction.html#verifiable-credential-transparency-vct)
 (includes the Google Trillian server and signer) and a command-line container:
 
 ```commandline

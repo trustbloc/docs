@@ -15,7 +15,7 @@ See the [latest spec](https://identity.foundation/sidetree/spec/) <span></span> 
 
 ## Sidetree Interactions
 
-![Sidetree Interactions Diagram](../_static/orb/sidetree-interactions.png)
+![Sidetree Interactions Diagram](../../_static/orb/sidetree-interactions.png)
 
 Orb node will validate each Sidetree operation as per specification. Valid operation will then be added 
 to the batch writer queue and unpublished operations store. Batch writer will then batch multiple Sidetree 
@@ -87,7 +87,7 @@ Orb node provides two unique caching features for resolving DIDs:
 The following section enumerates the startup parameters that have to be configured in order to enable
 operation caching and resolution from anchor origin domain.
 
-Parameter [enable-unpublished-operation-store](parameters.html#enable-unpublished-operation-store)
+Parameter [enable-unpublished-operation-store](../parameters.html#enable-unpublished-operation-store)
 should be set to true to enable un-published operation store. If set to true Orb node will
 upon validating Sidetree operation insert this operation into unpublished operations store
 and use it immediately for DID resolution. Hence, Orb clients will be able to immediately
@@ -97,12 +97,12 @@ when Orb node is done observing Sidetree operation. At this point Sidetree opera
 stored into published operation store and will be used for DID resolution.
 
 
-Parameter [unpublished-operation-store-operation-types](parameters.html#unpublished-operation-store-operation-types)
+Parameter [unpublished-operation-store-operation-types](../parameters.html#unpublished-operation-store-operation-types)
 determines the operation types that will be caches. Default value is "create,update" which enables storing unpublished 'create' and 'update' operations into
 unpublished store and using those unpublished 'create' and 'update' operations for resolving document.
 
 
-Parameter [resolve-from-anchor-origin](parameters.html#resolve-from-anchor-origin)
+Parameter [resolve-from-anchor-origin](../parameters.html#resolve-from-anchor-origin)
 should be set to "true" in order to resolve DID from anchor origin.
 Orb node will resolve DID document locally,
 determine DID's anchor origin and then resolve DID document from anchor origin Orb node.
@@ -110,11 +110,11 @@ If anchor origin Orb node has additional published/unpublished operations then O
 add those operations for DID resolution.
 This feature allows non origin servers to immediately resolve updated DIDs.
 
-Parameter [include-unpublished-operations-in-metadata](parameters.html#include-unpublished-operations-in-metadata)
+Parameter [include-unpublished-operations-in-metadata](../parameters.html#include-unpublished-operations-in-metadata)
 should be set to "true" to include unpublished operations in metadata. This setting is required
 on anchor origin node if non anchor origin nodes wish to resolve from anchor origin.
 
-Parameter [include-published-operations-in-metadata](parameters.html#include-published-operations-in-metadata)
+Parameter [include-published-operations-in-metadata](../parameters.html#include-published-operations-in-metadata)
 should be set to "true" to include published operations in metadata. This setting is required
 on anchor origin node if non anchor origin nodes wish to resolve from anchor origin.
 
@@ -126,7 +126,7 @@ an update operation for different anchor origin it will resolve DID against
 anchor origin Orb node and make sure it has processed the latest operations
 from anchor origin Orb node before accepting an update operation.
 
-Parameter [verify-latest-from-anchor-origin](parameters.html#verify-latest-from-anchor-origin)
+Parameter [verify-latest-from-anchor-origin](../parameters.html#verify-latest-from-anchor-origin)
 should be set to "true" to verify if Orb node has already processed the latest operations
 from anchor origin before accepting an update operation. If Orb node is behind in
 processing DID operations (comparing to anchor origin) then Sidetree operation

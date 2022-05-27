@@ -1,4 +1,4 @@
-# VCT endpoints
+# REST Endpoints
 
 ## Add Anchor Credential to Log
 

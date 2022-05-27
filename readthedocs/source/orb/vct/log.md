@@ -5,11 +5,11 @@ is stored into configuration database "orb-config" under "log-url" key.
 The log URL is cached on the server with periodic cache updates from the database.
 Default log URL cache expiry period has been set to 1 minute.
 
-### Configuring log URL
+## Configuring log URL
 
 Log URL can be configured by posting log URL to domain endpoint "/log".
 
-### Retrieve log URL
+## Retrieve log URL
 
 Log URL can be retrieved by issuing GET to domain endpoint "/log".
 

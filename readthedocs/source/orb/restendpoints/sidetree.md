@@ -8,7 +8,7 @@ Endpoints are defined to post Sidetree operations and to resolve DID documents.
 
 ### POST
 
-Post a Sidetree operation as per [Sidetree DID Operations](../sidetree.html#did-operations)
+Post a Sidetree operation as per [Sidetree DID Operations](../system/sidetree.html#did-operations)
 
 **Example**
 
@@ -548,7 +548,7 @@ that contains only id. Once DID document has been deactivated it is no longer po
 
 ### GET
 
-Resolve a DID document as per [Sidetree DID Resolution](../sidetree.html#did-resolution)
+Resolve a DID document as per [Sidetree DID Resolution](../system/sidetree.html#did-resolution)
 
 **Example**
 

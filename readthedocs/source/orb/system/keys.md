@@ -1,5 +1,5 @@
-# Keys
-Orb use two crypto keys to do the following operations:
+# Key Management
+Orb uses two crypto keys to do the following operations:
 
 - Sign HTTP requests between orb servers.
 - Sign VC.
@@ -7,11 +7,11 @@ Orb use two crypto keys to do the following operations:
 ## Establish orb key
 There are 2 ways to establish the orb key:
 
-- Import a pre-existing private key and id into KMS at Orb startup via Orb configuration
+- Import a pre-existing private key and ID into KMS at Orb startup via Orb configuration
 - Prior to orb startup, create a new key within KMS and establish orb configuration
 
 ### Add pre-existing private key to orb configuration
-When Orb server start will import the private key and id into KMS sever.
+When the Orb server starts, it will import the private key and ID into KMS sever.
 
 #### Steps to create VC sign key
 - Create ed25519 private key.
@@ -39,8 +39,8 @@ ORB_HTTP_SIGN_ACTIVE_KEY_ID=orbkey1
 Key need to be created in KMS before orb server starting.
 
 #### Steps to create VC sign key
-- Create KMS keystore using KMS [cli](../kms/cli.html).
-- Create ed25519 key in KMS using KMS [cli](../kms/cli.html).
+- Create KMS keystore using KMS [cli](../../kms/cli.html).
+- Create ed25519 key in KMS using KMS [cli](../../kms/cli.html).
 - Configure ORB_VC_SIGN_KEYS_ID with key id.
 
 #### Example VC sign key
@@ -51,8 +51,8 @@ ORB_VC_SIGN_ACTIVE_KEY_ID=orbkey1
 ```
 
 #### Steps to create HTTP sign key
-- Create KMS keystore using KMS [cli](../kms/cli.html).
-- Create ed25519 key in KMS using KMS [cli](../kms/cli.html).
+- Create KMS keystore using KMS [cli](../../kms/cli.html).
+- Create ed25519 key in KMS using KMS [cli](../../kms/cli.html).
 - Configure ORB_HTTP_SIGN_ACTIVE_KEY_ID with key id.
 
 #### Example HTTP sign key
@@ -62,7 +62,7 @@ ORB_HTTP_SIGN_ACTIVE_KEY_ID=orbkey1
 ```
 
 ## Storing
-The keys will be managed and stored in KMS please refer to this [doc](../kms/keys.html) for more details.
+The keys will be managed and stored in KMS please refer to this [doc](../../kms/keys.html) for more details.
 Orb is using Scenario 1 in kms doc.
 
 ## Rotation
@@ -102,7 +102,7 @@ ORB_HTTP_SIGN_ACTIVE_KEY_ID=orbkey2
 When you need to rotate the key just create new key in KMS and add key id to orb configuration.
 
 #### Steps to rotate VC sign key
-- Create new ed25519 key in KMS using KMS [cli](../kms/cli.html).
+- Create new ed25519 key in KMS using KMS [cli](../../kms/cli.html).
 - Configure ORB_VC_SIGN_KEYS_ID with key id.
 - Change the active key id to new key id.
 
@@ -114,7 +114,7 @@ ORB_VC_SIGN_ACTIVE_KEY_ID=orbkey2
 ```
 
 #### Steps to rotate HTTP sign key
-- Create new ed25519 key in KMS using KMS [cli](../kms/cli.html).
+- Create new ed25519 key in KMS using KMS [cli](../../kms/cli.html).
 - Change the active key id to new key id.
 
 #### Example HTTP sign key
@@ -124,7 +124,7 @@ ORB_HTTP_SIGN_ACTIVE_KEY_ID=orbkey2
 ```
 
 ## Distribute
-The key will be managed and stored in KMS please refer to this [doc](../kms/keys.md) for more details.
+The key will be managed and stored in KMS please refer to this [doc](../../kms/keys.md) for more details.
 Orb is using Scenario 1 in kms doc.
 
 ### Impact of loss

@@ -1,4 +1,5 @@
-# CLI
+# Command-Line Interface (CLI)
+
 The Orb Command Line Interface (Orb CLI) is a unified tool that provides a consistent interface for interacting with all parts of Orb. 
 
 ## Create DID
@@ -380,7 +381,7 @@ witness --outbox-url=https://orb-1.com/services/orb/outbox --actor=https://orb-1
 ## Accept List
 
 The _acceptlist_ command adds and removes actors from the _follow_ and _witness_
-[accept-lists](activitypub.html#accept-list).
+[accept-lists](../system/activitypub.html#accept-list).
 
 ### Usage
 
@@ -390,7 +391,7 @@ acceptlist [command] [flags]
 
 ### Flags
  
-* `url` _[string]_ - Accept-list [endpoint](restendpoints/activitypub.html#accept-list).
+* `url` _[string]_ - Accept-list [endpoint](../restendpoints/activitypub.html#accept-list).
 * `actor` _[array|string]_ - Array of one or more actors to add to the accept-list.
 * `type` _[string]_ - Accept-list type - either _follow_ or _witness_.
 
@@ -438,7 +439,7 @@ acceptlist get --url https://orb-1.com/services/orb/acceptlist
 
 ## Policy
 
-The _policy_ command updates and retrieves the [witness policy](witnesspolicy.html#witness-policy).
+The _policy_ command updates and retrieves the [witness policy](../system/witnesspolicy.html#witness-policy).
 
 ### Usage
 
@@ -448,7 +449,7 @@ policy [command] [flags]
 
 #### Flags
 
-* `url` _[string]_ - Witness policy [endpoint](restendpoints/witness-policy.html#witness-policy-endpoint).
+* `url` _[string]_ - Witness policy [endpoint](../restendpoints/witness-policy.html#witness-policy-endpoint).
 * `policy` _[string]_ - The policy. For example "MinPercent(100,batch) AND OutOf(1,system)".
 
 ### Update Command
@@ -482,7 +483,7 @@ log [command] [flags]
 
 #### Flags
 
-* `url` _[string]_ - Log [endpoint](restendpoints/log.html#log-configuration).
+* `url` _[string]_ - Log [endpoint](../vct/restendpoints.html#log-configuration).
 * `log` _[string]_ - The log URL. For example "https://vct.com/log".
 
 ### Update Command
@@ -509,7 +510,7 @@ log get --url https://orb-1.com/log
 ## Log Monitor
 
 The _logmonitor_ command activates and deactivates log from the list of logs that are observed by log monitoring service.
-[log-monitor](log.html#log-monitoring).
+[log-monitor](../vct/log.html#log-monitoring).
 
 ### Usage
 
@@ -519,7 +520,7 @@ logmonitor [command] [flags]
 
 ### Flags
 
-* `url` _[string]_ - Log monitor [endpoint](restendpoints/log.html#log-monitoring).
+* `url` _[string]_ - Log monitor [endpoint](../vct/restendpoints.html#log-monitoring).
 * `log` _[array|string]_ - Array of one or more logs to activate for log monitoring.
 
 ### Activate Command

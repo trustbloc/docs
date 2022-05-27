@@ -1,13 +1,10 @@
-Orb
+Verifiable Credential Transparency (VCT)
 ===============================================
 
 .. toctree::
    :maxdepth: 1
 
    introduction.md
-   gettingstarted.md
-   client/index.rst
-   system/index.rst
-   vct/index.rst
-   restendpoints/index.rst
+   log.md
+   restendpoints.md
    parameters.md
