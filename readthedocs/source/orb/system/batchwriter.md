@@ -15,7 +15,7 @@ as per [Sidetree file structure spec](https://identity.foundation/sidetree/spec/
 The number of operations that can be stored in the Sidetree batch files is limited by
 Sidetree protocol parameter [MAX_OPERATION_COUNT](https://identity.foundation/sidetree/spec/#:~:text=1%2C000%20bytes-,MAX_OPERATION_COUNT,-Maximum%20number%20of).
 The Batch Writer cuts Sidetree batches if the number of operations in the batch writer queue reaches MAX_OPERATION_COUNT
-or if the batch writer reaches the batch writer timeout [batch-writer-timeout](parameters.html#batch-writer-timeout).
+or if the batch writer reaches the batch writer timeout [batch-writer-timeout](../parameters.html#batch-writer-timeout).
 
 ## Operation Queue
 
@@ -40,16 +40,16 @@ exposed by the [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go)
 the _Add_ function of Orb's _Operation Queue_ is invoked. The _Operation Queue_ then publishes a message containing the operation
 to the AMQP _orb.operation_ queue.
 Each Orb instance has a pool of subscribers for the _orb.operation_ queue. The number of subscribers in the pool is determined
-by startup parameter [op-queue-pool](parameters.html#op-queue-pool). One of the subscribers on an Orb instance handles the
+by startup parameter [op-queue-pool](../parameters.html#op-queue-pool). One of the subscribers on an Orb instance handles the
 message by adding the operation to the _op-queue_ database and also to an in-memory queue. Operations are stored to the
 database for recovery purposes, i.e. if the Orb instance goes down then another instance will repost the operations.
 (See [Recovery](#recovery) for details.) Each database entry contains the contents of the operation and is also tagged
 (indexed) by:
 1) **Task ID**: Associates an operation with a specific _task_ entry (as described above)
 2) **Expiration Time**: Tells the [Database Expiry](taskmanager.html#database-expiry) service when this entry may be deleted.
-This value is set to (_current time_) + ([batch writer timeout](parameters.html#batch-writer-timeout)) + (1 minute).
+This value is set to (_current time_) + ([batch writer timeout](../parameters.html#batch-writer-timeout)) + (1 minute).
 
-```{image} ../_static/orb/op-queue-add.svg
+```{image} ../../_static/orb/op-queue-add.svg
 
 ```
 
@@ -58,7 +58,7 @@ This value is set to (_current time_) + ([batch writer timeout](parameters.html#
 The [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go) library queries the _Operation Queue_ to see if there are
 enough operations to cut a batch (according to the Sidetree protocol parameter
 [MAX_OPERATION_COUNT](https://identity.foundation/sidetree/spec/#:~:text=1%2C000%20bytes-,MAX_OPERATION_COUNT,-Maximum%20number%20of),
-or if the batch has timed out (according to startup parameter [batch-writer-timeout](parameters.html#batch-writer-timeout)).
+or if the batch has timed out (according to startup parameter [batch-writer-timeout](../parameters.html#batch-writer-timeout)).
 When the batch is cut then the sidetree-core-go library calls the _Remove_ function on the _Operation Queue_ to remove up
 to N operations from the queue. The _Remove_ function is quasi-transactional such that it returns an _Ack_ and a _Nack_ function
 along with the operations.
@@ -76,7 +76,7 @@ may be retried (potentially by another server instance) and the operations are d
 message that is reposted to the _orb.operation_ queue has a _retries_ header value which is incremented before it is reposted.
 Once the maximum number of retries for an operation has been reached, the operation is discarded.
 
-```{image} ../_static/orb/op-queue-cut.svg
+```{image} ../../_static/orb/op-queue-cut.svg
 
 ```
 
@@ -84,17 +84,17 @@ Once the maximum number of retries for an operation has been reached, the operat
 
 An Orb server may go down with pending operations in the queue. The _Operation Queue Monitor Task_ is registered with
 the [Task Manager](taskmanager.html#task-manager) on startup to periodically run on one server instance in the domain.
-The period is specified by startup parameter [op-queue-task-monitor-interval](parameters.html#op-queue-task-monitor-interval).
+The period is specified by startup parameter [op-queue-task-monitor-interval](../parameters.html#op-queue-task-monitor-interval).
 This task monitors the operation queue tasks of other servers to ensure that if a server goes down then the operations
 associated with that server are reposted to the AMQP _orb.operation_ queue.
 
 Each Orb instance periodically (also using the period specified by
-[op-queue-task-monitor-interval](parameters.html#op-queue-task-monitor-interval)) updates the _update time_
+[op-queue-task-monitor-interval](../parameters.html#op-queue-task-monitor-interval)) updates the _update time_
 of its own _task_ entry in the database in order to indicate to other servers that the instance is still alive.
 
 When the monitor task runs, it queries the _op-queue_ database for all _task_ entries (excluding its own) and checks the
 _update time_ of the entry. If the update time is older than the expiration time configured with startup parameter
-[op-queue-task-expiration](parameters.html#op-queue-task-expiration) then the server that owns the task is considered to
+[op-queue-task-expiration](../parameters.html#op-queue-task-expiration) then the server that owns the task is considered to
 be down. At this point, the _op-queue_ database is queried for the operations associated with the task and each operation
 is reposted to the queue. (As described in the [section](#nack-function) above, each operation
 message reposted to the _orb.operation_ queue has a _retries_ header value which is incremented before it is reposted.
@@ -103,7 +103,7 @@ All operations associated with this _task_ are then deleted from the database an
 deleted from the database. (The _task_ entry is deleted from the database since, when the dead server comes back online,
 it will generate a new task ID.)
 
-```{image} ../_static/orb/op-queue-recovery.svg
+```{image} ../../_static/orb/op-queue-recovery.svg
 
 ```
 
@@ -118,7 +118,7 @@ _WriteAnchor_ performs the following steps:
 3) Creates an [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) containing the operations
 4) Posts an [Offer](activitypub.html#offer-accept) activity (containing the anchor linkset) to each of the witnesses
 
-```{image} ../_static/orb/write-anchor.svg
+```{image} ../../_static/orb/write-anchor.svg
 
 ```
 
@@ -138,7 +138,7 @@ else is done, otherwise:
 3) The anchor linkset is published to the _orb.anchor_linkset_ queue so that it may be processed by the
 4) [Anchor Linkset Handler](#anchor-linkset-handler)
 
-```{image} ../_static/orb/proof-handler.svg
+```{image} ../../_static/orb/proof-handler.svg
 
 ```
 
@@ -151,6 +151,6 @@ witnessed anchor linksets. Upon receiving an anchor linkset from the queue:
 3) The anchor linkset is published to the _orb.anchor_ queue so that it may be processed by the [Observer](observer.html#observer)
 4) A [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity (containing the anchor linkset) is posted to all followers
 
-```{image} ../_static/orb/anchor-linkset-handler.svg
+```{image} ../../_static/orb/anchor-linkset-handler.svg
 
 ```

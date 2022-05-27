@@ -2,9 +2,9 @@
 
 **Endpoint:** /policy
 
-### POST
+## POST
 
-Configures the witness policy as per [Witness Policy](../witnesspolicy.html#witness-policy).
+Configures the witness policy as per [Witness Policy](../system/witnesspolicy.html#witness-policy).
 
 **Example**
 
@@ -18,9 +18,9 @@ Content-Type: text/plain
 MinPercent(100,batch) AND MinPercent(50,system)
 ```
 
-### GET
+## GET
 
-Retrieves the current witness policy as per [Witness Policy](../witnesspolicy.html#witness-policy).
+Retrieves the current witness policy as per [Witness Policy](../system/witnesspolicy.html#witness-policy).
 
 **Example**
 

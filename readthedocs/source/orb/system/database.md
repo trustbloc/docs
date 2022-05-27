@@ -7,15 +7,15 @@ The following databases store data permanently, i.e. the data (for now) is never
 ### activity
 
 The _activity_ database stores ActivityPub activities that are posted to the
-[outbox](restendpoints/activitypub.html#outbox) or received in the
-[inbox](restendpoints/activitypub.html#inbox).
+[outbox](../restendpoints/activitypub.html#outbox) or received in the
+[inbox](../restendpoints/activitypub.html#inbox).
 
 ### activity-ref
 
 The _activity-ref_ database stores references to the _activity_ database using a _RefType_ tag so that
 a query may be performed for activities referenced by a certain type. For example, setting the _RefType_
 tag to OUTBOX ensures that the activity is included in the result set for a query of activities
-in the [outbox](restendpoints/activitypub.html#outbox).
+in the [outbox](../restendpoints/activitypub.html#outbox).
 
 Valid values for _RefType_ are:
 1) INBOX
@@ -38,7 +38,7 @@ The _anchor_ref_ database contains the hashlinks (with metadata) of where an anc
 ### cas
 
 The _cas_ database stores content addressable objects. This database is only used if Orb is configured
-with the [local](parameters.html#cas-type) CAS type.
+with the [local](../parameters.html#cas-type) CAS type.
 
 ### did-anchor
 
@@ -109,7 +109,7 @@ Operations are deleted after they have been processed.
 ### unpublished-operation
 
 The _unpublished-operation_ database contains the operations that were posted by a client via the
-[operations endpoint](restendpoints/sidetree.html#operations) but have not yet been anchored.
+[operations endpoint](../restendpoints/sidetree.html#operations) but have not yet been anchored.
 Operations are deleted from this database after they have been anchored.
 
 ### witness

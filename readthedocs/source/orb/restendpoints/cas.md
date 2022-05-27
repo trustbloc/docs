@@ -2,7 +2,7 @@
 
 **Endpoint:** /cas/[id]
 
-### GET
+## GET
 
 Returns content stored in the Content Addressable Storage (CAS). The ID is either an IPFS
 [CID](https://docs.ipfs.io/concepts/content-addressing/) or the hash of the content.

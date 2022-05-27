@@ -346,7 +346,7 @@ Response contains items from page 41:
 ### POST
 
 A POST request to the outbox endpoint adds the activity contained in the request to the service's Outbox,
-which will be processed by the ActivityPub [Outbox](../activitypub.html#outbox-inbox). This endpoint is restricted by
+which will be processed by the ActivityPub [Outbox](../system/activitypub.html#outbox-inbox). This endpoint is restricted by
 authorization rules, i.e. the requester must have a valid authorization bearer token,
 which is usually an administrator token.
 
@@ -525,7 +525,7 @@ Response contains items from the first page:
 ### POST
 
 A POST request to the inbox endpoint adds the activity contained in the request to the service's Inbox,
-which will be processed by the ActivityPub [Inbox](../activitypub.html#outbox-inbox). This endpoint is restricted by
+which will be processed by the ActivityPub [Inbox](../system/activitypub.html#outbox-inbox). This endpoint is restricted by
 authorization rules, i.e. the requester must sign the HTTP request. Some activities also have authorization rules
 such that the actor must be in the destination server's [followers](#followers) and/or [witnessing](#witnessing)
 collection.
@@ -966,7 +966,7 @@ Response contains the activity:
 
 **Endpoint:** /services/orb/acceptlist
 
-An [accept list](../activitypub.html#accept-list) is a database of server URLs that are authorized for a particular type of operation.
+An [accept list](../system/activitypub.html#accept-list) is a database of server URLs that are authorized for a particular type of operation.
 
 ### GET
 

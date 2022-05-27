@@ -14,7 +14,7 @@ A typical Orb domain consists of the following services:
 1) [Orb](https://github.com/trustbloc/orb) instance (multiple instances may be running for redundancy scalability)
 2) Document database (AWS [DocumentDB](https://aws.amazon.com/documentdb/) or [MongoDB](https://www.mongodb.com/))
 3) AMQP message broker ([RabbitMQ](https://www.rabbitmq.com))
-4) [Key Management Service](../kms.html#key-management-system-kms) (Aries KMS)
+4) [Key Management Service](../kms/index.html#key-management-system-kms) (Aries KMS)
 5) Verifiable Credential Transparency (VCT) ([Google Trillian](https://github.com/google/trillian))
 6) [IPFS](https://ipfs.io/) (optional)
 
@@ -41,28 +41,28 @@ update, deactivate and recover DIDs. The DID Resolver endpoint reads the Sidetre
 returns a DID document.
 
 When an operation is posted to the Operation Writer, a message is posted to the AMQP operation queue which is
-consumed by the [Batch Writer](batchwriter.html#operation-queue). The Batch Writer stores the operation and cuts a
+consumed by the [Batch Writer](system/batchwriter.html#operation-queue). The Batch Writer stores the operation and cuts a
 batch when the maximum batch size is reached, or the batch [times out](parameters.html#batch-writer-timeout).
 The batch contains the DID operations that were posted since the last batch was cut. The batch is written to
-the [Content Addressable Storage](cas.html#content-addressable-storage-cas) (CAS) (which can be in a local storage or
+the [Content Addressable Storage](system/cas.html#content-addressable-storage-cas) (CAS) (which can be in a local storage or
 IPFS) and an [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) is created. The anchor linkset
 contains the DIDs from the batch and a verifiable credential containing a proof from the local server. The verifiable
-credential is added to the local [VCT](vct.html#vct). An [AnchorEvent](https://trustbloc.github.io/activityanchors/#anchorevent)
-(which wraps the linkset) is created and posted via an [Offer](activitypub.html#offer-accept) activity to the
-[Outbox](activitypub.html#outbox-inbox). The Offer activity is stored in the Activities database and an HTTP request
-(signed by [KMS](../kms/index.html#key-management-system-kms)) is sent to the [Inbox](activitypub.html#outbox-inbox) of
-one or more Orb servers in the [witnesses](activitypub.html#invite-witness) collection.
+credential is added to the local [VCT](vct/introduction.html#vct). An [AnchorEvent](https://trustbloc.github.io/activityanchors/#anchorevent)
+(which wraps the linkset) is created and posted via an [Offer](system/activitypub.html#offer-accept) activity to the
+[Outbox](system/activitypub.html#outbox-inbox). The Offer activity is stored in the Activities database and an HTTP request
+(signed by [KMS](../kms/index.html#key-management-system-kms)) is sent to the [Inbox](system/activitypub.html#outbox-inbox) of
+one or more Orb servers in the [witnesses](system/activitypub.html#invite-witness) collection.
 
-Proofs from witnessing servers are received in the Inbox as [Accept](activitypub.html#offer-accept) 
-activities. After the Inbox verifies the [HTTP signature](authorization.html#http-signatures) of the request,
+Proofs from witnessing servers are received in the Inbox as [Accept](system/activitypub.html#offer-accept) 
+activities. After the Inbox verifies the [HTTP signature](system/authorization.html#http-signatures) of the request,
 the Accept activity is stored in the Activities database and the
-proof is sent to the [Witness Proof Handler](batchwriter.html#witness-proof-handler). When this handler determines
-that enough proofs have been received (according to the [Witness Policy](witnesspolicy.html#witness-policy)),
+proof is sent to the [Witness Proof Handler](system/batchwriter.html#witness-proof-handler). When this handler determines
+that enough proofs have been received (according to the [Witness Policy](system/witnesspolicy.html#witness-policy)),
 a new [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) is constructed with the gathered
 proofs. The anchor linkset is written to CAS and the hash of the anchor linkset is posted to the _anchor_ queue for
 processing.
 
-The [Observer](observer.html#observer) consumes the anchor linkset hash from the queue and reads the anchor linkset
+The [Observer](system/observer.html#observer) consumes the anchor linkset hash from the queue and reads the anchor linkset
 (along with the corresponding Sidetree operations) from CAS, and processes/stores each operation to the _operations_
 database.
 

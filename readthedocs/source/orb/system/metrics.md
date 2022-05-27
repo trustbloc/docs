@@ -1,6 +1,6 @@
 # Metrics
 
-An Orb server records performance metrics at each subsystem. A [Prometheus](https://prometheus.io/) server may be used to periodically read the metrics at the URL specified by the startup parameter, [host-metrics-url](parameters.html#host-metrics-url). Below are the metrics defined at each subsystem.
+An Orb server records performance metrics at each subsystem. A [Prometheus](https://prometheus.io/) server may be used to periodically read the metrics at the URL specified by the startup parameter, [host-metrics-url](../parameters.html#host-metrics-url). Below are the metrics defined at each subsystem.
 
 ## ActivityPub
 
