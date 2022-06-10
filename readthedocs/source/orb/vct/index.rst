@@ -8,3 +8,4 @@ Verifiable Credential Transparency (VCT)
    log.md
    restendpoints.md
    parameters.md
+   rotate.md
