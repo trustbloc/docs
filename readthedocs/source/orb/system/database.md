@@ -96,14 +96,14 @@ The _activity-sync_ database stores the page number and index of the last activi
 that was synchronized for each of the domains that are followed. This information is used by the
 [Activity Sync task](onboardrecover.html#activity-sync-task).
 
-### monitoring
+### proof-monitor
 
-The _monitoring_ database keeps track of the proofs that were received by other domains and ensures
+The _proof-monitor_ database keeps track of the proofs that were received by other domains and ensures
 that the proofs were added to their VCTs.
 
-### op-queue
+### operation-queue
 
-The _op-queue_ database contains the operations posted to the [operation queue](batchwriter.html#operation-queue).
+The _operation-queue_ database contains the operations posted to the [operation queue](batchwriter.html#operation-queue).
 Operations are deleted after they have been processed.
 
 ### unpublished-operation
