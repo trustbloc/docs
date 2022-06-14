@@ -14,7 +14,6 @@ Request an [Anchor Linkset](https://trustbloc.github.io/activityanchors/#anchorl
 ```
 GET /cas/uEiBJQHYkD30RGKVlJ205wghkNQ_RTaZPxJkeGr5DDyaLIQ HTTP/1.1
 Host: orb.domain1.com
-Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
 ```
 
