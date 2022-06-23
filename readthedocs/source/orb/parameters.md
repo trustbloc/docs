@@ -330,13 +330,13 @@ handled by a pool of subscribers. If not specified then the default size will be
 The size of the Inbox queue subscriber pool. When a message is posted to the Inbox queue, it is
 handled by a pool of subscribers. If not specified then the default size will be used.
 
-### mq-max-connection-subscriptions
+### mq-max-connection-channels
 
-| Arg                               | Env                             | Default  |
-|-----------------------------------|---------------------------------|----------|
-| --mq-max-connection-subscriptions | MQ_MAX_CONNECTION_SUBSCRIPTIONS | 1000     |
+| Arg                          | Env                        | Default  |
+|------------------------------|----------------------------|----------|
+| --mq-max-connection-channels | MQ_MAX_CONNECTION_CHANNELS | 1000     |
 
-The maximum number of subscriptions per connection.
+The maximum number of channels per connection.
 
 ### mq-publisher-channel-pool-size
 
@@ -502,7 +502,15 @@ Anchor credential domain.
 |-------------------|------------------|---------|
 | --allowed-origins | ALLOWED_ORIGINS  |         |
 
-Allowed origins for this did method.
+Allowed origins are the bootstrap anchor origins for this did method. Anchor origins may be updated using the [allowedorigins]() REST API.
+
+### allowed-origins-cache-expiration
+
+| Arg                                | Env                              | Default |
+|------------------------------------|----------------------------------|---------|
+| --allowed-origins-cache-expiration | ALLOWED_ORIGINS_CACHE_EXPIRATION | 1m      |
+
+The expiration time(period) of the allowed origins cache.
 
 ### max-witness-delay
 
