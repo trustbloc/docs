@@ -341,3 +341,7 @@ The time (in seconds) it takes for a _create/update_ HTTP call.
 ### core_http_resolve_seconds
 
 The time (in seconds) it takes for a _resolve_ HTTP call.
+
+### orb_core_cas_write_size
+
+The size of the data written to CAS.

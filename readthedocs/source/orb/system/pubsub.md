@@ -60,11 +60,18 @@ point redelivery for the message is aborted.
 
 ## Publisher Pool
 
-The Publisher publishes messages over an AMQP channel to an AMQP server. There may be multiple publisher channels
-over a single connection and (for performance reasons) it is advisable to use multiple channels to publish
-messages concurrently. Also, channels should be reused and not recreated each time (since there is also a performance
-penalty for creating and closing channels). A publisher channel pool is created when the startup
-parameter [mq-publisher-channel-pool-size](../parameters.html#mq-publisher-channel-pool-size) is greater than zero.
+The Publisher publishes messages over an AMQP channel to an AMQP server. A single publisher channel publishes requests
+synchronously and therefore (for performance reasons) a pool of channels is used so that requests may be published concurrently.
+The channels in a pool are opened at startup over a single connection, and are reused over the lifetime of the server
+(since there is a performance penalty for creating and closing channels). The size of the channel pool is specified by parameter
+[mq-publisher-channel-pool-size](../parameters.html#mq-publisher-channel-pool-size). If the value of this paramter is zero
+then a publisher pool is not used and a channel is opened/closed for each publish request.
+
+An AMQP server may have a limit to the number of channels that can be opened for a single connection. This limit is
+specified by parameter [mq-max-connection-channels](../parameters.html#mq-max-connection-channels). If the value of
+[mq-publisher-channel-pool-size](../parameters.html#mq-publisher-channel-pool-size) is greater than the value of
+[mq-max-connection-channels](../parameters.html#mq-max-connection-channels) then multiple
+publisher pools are created (each with its own dedicated connection) and the requests are balanced across the pools.
 
 ## Subscriber Pool
 
@@ -76,8 +83,8 @@ multiple subscribers concurrently process messages from the same queue. This set
 
 Typically, all subscriber channels are created on the same AMQP connection, although an AMQP server may
 have a limit to the number of channels that can be opened for a single connection. Therefore, the limit for the number
-of subscriber channels for a single connection is specified by parameter
-[mq-max-connection-subscriptions](../parameters.html#mq-max-connection-subscriptions). If the size of the subscriber pool
+of channels for a single connection is specified by parameter
+[mq-max-connection-channels](../parameters.html#mq-max-connection-channels). If the size of the subscriber pool
 reaches this limit then a new connection is automatically opened for any new subscriber channel.
 
 ## Queues

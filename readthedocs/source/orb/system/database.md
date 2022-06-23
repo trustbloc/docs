@@ -40,9 +40,9 @@ The _anchor_ref_ database contains the hashlinks (with metadata) of where an anc
 The _cas_ database stores content addressable objects. This database is only used if Orb is configured
 with the [local](../parameters.html#cas-type) CAS type.
 
-### did-anchor
+### didanchor
 
-The _did-anchor_ database stores the latest anchor hash of a DID suffix.
+The _didanchor_ database stores the latest anchor hash of a DID suffix.
 
 ### ldcontexts
 
