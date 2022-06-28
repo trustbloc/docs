@@ -391,7 +391,7 @@ acceptlist [command] [flags]
 
 ### Flags
  
-* `url` _[string]_ - Accept-list [endpoint](../restendpoints/activitypub.html#accept-list).
+* `url` _[string]_ - Accept-list [endpoint](../restendpoints/system.html#accept-list).
 * `actor` _[array|string]_ - Array of one or more actors to add to the accept-list.
 * `type` _[string]_ - Accept-list type - either _follow_ or _witness_.
 

@@ -1,6 +1,138 @@
 # System Endpoints
 
-Various endpoints are defined to retrieve system information, such as Orb version and metrics.
+Various endpoints are defined to configure Orb and to retrieve system information, such as Orb version and metrics.
+
+## Accept List
+
+**Endpoint:** /services/orb/acceptlist
+
+An [accept list](../system/activitypub.html#accept-list) is a database of server URLs that are authorized for a particular type of operation.
+
+### GET
+
+The accept-list is retrieved using a GET request to this endpoint.
+
+**Example**
+
+Request:
+
+```
+GET /services/orb/acceptlist HTTP/1.1
+Host: orb.domain1.com
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate
+```
+
+Response contains the accept-list for both _follow_ and _invite-witness_:
+
+```json
+[
+  {
+    "type": "follow",
+    "url": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ]
+  },
+  {
+    "type": "invite-witness",
+    "url": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ]
+  }
+]
+```
+
+### POST
+
+The accept-list is updated using a POST request to this endpoint. Services may
+be added and removed from the accept-list for _Follow_ and _Invite_ witness activities.
+
+**Example**
+
+Request to add domain2 and domain3 to the _follow_ and _invite-witness_ accept-list as well as remove domain4
+from the _follow_ accept-list:
+
+```
+POST /services/orb/acceptlist HTTP/1.1
+Host: orb.domain1.com
+Content-Type: application/ld+json"
+Accept-Encoding: gzip, deflate
+
+[
+  {
+    "add": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ],
+    "remove": [
+      "https://orb.domain4.com/services/orb",
+    ],
+    "type": "follow"
+  },
+  {
+    "add": [
+      "https://orb.domain2.com/services/orb",
+      "https://orb.domain3.com/services/orb"
+    ],
+    "type": "invite-witness"
+  }
+]
+```
+
+## Allowed Anchor Origins
+
+**Endpoint:** /allowedorigins
+
+An allowed anchor origins is a database of server URIs that are authorized for DID create operations.
+
+### GET
+
+The allowed anchor origins are retrieved using a GET request to this endpoint.
+
+**Example**
+
+Request:
+
+```
+GET /allowedorigins HTTP/1.1
+Host: orb.domain1.com
+Accept: application/ld+json
+```
+
+Response contains the anchor origins:
+
+```json
+[
+  "https://orb.domain1.com",
+  "https://orb.domain2.com"
+]
+```
+
+### POST
+
+The allowed anchor origins are updated using a POST request to this endpoint. URIs may be added and removed.
+
+**Example**
+
+Request to add domain3 and domain4, and remove domain2 from the allowed anchor origins list:
+
+```
+POST /allowedorigins HTTP/1.1
+Host: orb.domain1.com
+Content-Type: application/json"
+
+{
+  "add": [
+    "https://orb.domain3.com",
+    "https://orb.domain4.com"
+  ],
+  "remove": [
+    "https://orb.domain2.com"
+  ]
+}
+```
 
 ## Node Info Endpoints
 
@@ -193,4 +325,52 @@ orb_activitypub_inbox_handler_seconds_count{type="Follow"} 0
 orb_activitypub_inbox_handler_seconds_bucket{type="InviteWitness",le="0.005"} 0
 orb_activitypub_inbox_handler_seconds_bucket{type="InviteWitness",le="0.01"} 0
 . . .
+```
+
+
+## Health Check Endpoint
+
+**Endpoint:** /healthcheck
+
+The health check endpoint performs a check on various subsystems. If the health check fails then an HTTP status,
+_503: Service Unavailable_, is returned along with details of which component(s) failed. An HTTP status, _200: OK_, is
+returned when Orb is ready to receive requests. Following are the returned statuses:
+
+- **mqStatus** - [Message Broker](../system/pubsub.html#amqp-publisher-subscriber)
+  - _success_ - The message broker is connected.
+  - _not connected_ = The message broker is not connected.
+- **dbStatus** - Database - Contains "success" or an error message.
+  - _success_ - a Database 'ping' has succeeded.
+  - _error message_ - The error message received from the database 'ping'.
+- **kmsStatus** - [KMS](../../kms/index.html) - Contains "success" or an error message.
+    - _success_ - The KMS health check succeeded.
+    - _error message_ - The error message received from the KMS health check.
+- **vctStatus** - [VCT](../vct/index.html)
+  - _success_ - VCT health check succeeded.
+  - _disabled_ - VCT is disabled for the Orb domain. (This status is not considered to be a failed status.)
+  - _log endpoint not configured_ - VCT is enabled but the log endpoint has not yet been [configured](../restendpoints/log.html#post). (This status is not considered to be a failed status.)
+  - _error message_ - The error message returned from the VCT health check.
+
+### GET
+
+**Example**
+
+Request:
+
+```
+GET /healthcheck HTTP/1.1
+Host: orb.domain1.com
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "mqStatus": "success",
+  "vctStatus": "disabled",
+  "dbStatus": "success",
+  "kmsStatus": "success",
+  "currentTime": "2022-06-24T20:10:43.0115373Z"
+}
 ```
