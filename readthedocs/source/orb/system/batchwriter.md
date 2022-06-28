@@ -71,10 +71,15 @@ then the _Ack_ function is called. The _Ack_ function deletes the removed operat
 #### Nack Function
 
 If the [sidetree-core-go](https://github.com/trustbloc/sidetree-core-go) library has failed to successfully process the
-operations then the _Nack_ function is called. The _Nack_ function reposts the operations to the AMQP _orb.operation_ queue so they
-may be retried (potentially by another server instance) and the operations are deleted from the database. Each operation
-message that is reposted to the _orb.operation_ queue has a _retries_ header value which is incremented before it is reposted.
-Once the maximum number of retries for an operation has been reached, the operation is discarded.
+operations then the _Nack_ function is called. The _Nack_ function reposts the operations to the AMQP _orb.operation_ queue
+so they may be retried (potentially by another server instance) and the operations are deleted from the database.
+Each operation message is reposted with a delay to give the server a chance to recover from whatever caused
+processing to fail in the first place. The delay is calculated according to the number of failed retries along with parameters,
+[op-queue-repost-initial-delay](../parameters.html#op-queue-repost-initial-delay),
+[op-queue-repost-max-delay](../parameters.html#op-queue-repost-max-delay),
+and [op-queue-repost-multiplier](../parameters.html#op-queue-repost-multiplier). The _retries_
+header value is also set on the message. The value is first incremented before it is reposted. Once the maximum number of
+retries for an operation has been reached, the operation is discarded.
 
 ```{image} ../../_static/orb/op-queue-cut.svg
 
