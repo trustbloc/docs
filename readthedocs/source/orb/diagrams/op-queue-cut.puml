@@ -56,7 +56,7 @@ else Process operations failed
       the retry count and repost it
     end note
 
-    handler -> opQueue: Publish(op)
+    handler -> opQueue: PublishWithDelay(op,delay)
     activate opQueue
     opQueue --> handler: ok
     deactivate opQueue

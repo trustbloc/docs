@@ -342,10 +342,10 @@ returned when Orb is ready to receive requests. Following are the returned statu
 - **dbStatus** - Database - Contains "success" or an error message.
   - _success_ - a Database 'ping' has succeeded.
   - _error message_ - The error message received from the database 'ping'.
-- **kmsStatus** - [KMS](../../kms/index.html) - Contains "success" or an error message.
+- **kmsStatus** - [Key Management Service](../../kms/index.html) - Contains "success" or an error message.
     - _success_ - The KMS health check succeeded.
     - _error message_ - The error message received from the KMS health check.
-- **vctStatus** - [VCT](../vct/index.html)
+- **vctStatus** - [Verifiable Credential Transparency](../vct/index.html)
   - _success_ - VCT health check succeeded.
   - _disabled_ - VCT is disabled for the Orb domain. (This status is not considered to be a failed status.)
   - _log endpoint not configured_ - VCT is enabled but the log endpoint has not yet been [configured](../restendpoints/log.html#post). (This status is not considered to be a failed status.)

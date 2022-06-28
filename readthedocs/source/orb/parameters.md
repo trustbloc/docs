@@ -422,6 +422,31 @@ to the queue, so that they will be processed by another Orb instance.
 
 The maximum number of times an operation may be reposted to the queue after having failed.
 
+### op-queue-repost-initial-delay
+
+| Arg                             | Env                           | Default |
+|---------------------------------|-------------------------------|---------|
+| --op-queue-repost-initial-delay | OP_QUEUE_REPOST_INITIAL_DELAY | 5s      |
+
+The delay for the initial retry attempt after having failed to process the operation in the queue.
+
+### op-queue-repost-max-delay
+
+| Arg                         | Env                       | Default |
+|-----------------------------|---------------------------|---------|
+| --op-queue-repost-max-delay | OP_QUEUE_REPOST_MAX_DELAY | 1m      |
+
+The maximum delay of a retry attempt after having failed to process the operation in the queue.
+
+### op-queue-repost-multiplier
+
+| Arg                          | Env                        | Default |
+|------------------------------|----------------------------|---------|
+| --op-queue-repost-multiplier | OP_QUEUE_REPOST_MULTIPLIER | 1.5     |
+
+The multiplier for a retry attempt after having failed to process the operation in the queue. For example, if set
+to 1.5 and the previous retry delay was 2s then the next retry delay is set to 3s.
+
 ### cid-version
 
 | Arg           | Env          | Default |
