@@ -75,9 +75,9 @@ operations then the _Nack_ function is called. The _Nack_ function reposts the o
 so they may be retried (potentially by another server instance) and the operations are deleted from the database.
 Each operation message is reposted with a delay to give the server a chance to recover from whatever caused
 processing to fail in the first place. The delay is calculated according to the number of failed retries along with parameters,
-[op-queue-repost-initial-delay](../parameters.html#op-queue-repost-initial-delay),
-[op-queue-repost-max-delay](../parameters.html#op-queue-repost-max-delay),
-and [op-queue-repost-multiplier](../parameters.html#op-queue-repost-multiplier). The _retries_
+[mq-redelivery-initial-interval](../parameters.html#mq-redelivery-initial-interval),
+[mq-redelivery-max-interval](../parameters.html#mq-redelivery-max-interval),
+and [mq-redelivery-multiplier](../parameters.html#mq-redelivery-multiplier). The _retries_
 header value is also set on the message. The value is first incremented before it is reposted. Once the maximum number of
 retries for an operation has been reached, the operation is discarded.
 
