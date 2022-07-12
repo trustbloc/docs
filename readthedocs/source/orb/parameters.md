@@ -195,7 +195,7 @@ policy.
 
 | Arg                                     | Env                                   | Default |
 |-----------------------------------------|---------------------------------------|---------|
-| --anchor-status-in-process-grace-period | ANCHOR_STATUS_IN_PROCESS_GRACE_PERIOD | 1m      |
+| --anchor-status-in-process-grace-period | ANCHOR_STATUS_IN_PROCESS_GRACE_PERIOD | 30s     |
 
 The period in which witnesses will not be re-selected for 'in-process' anchors.
 
@@ -357,9 +357,9 @@ until a confirmation is received from the AMQP server to guarantee that the mess
 
 ### mq-redelivery-max-attempts
 
-| Arg                               | Env                        | Default  |
-|-----------------------------------|----------------------------|----------|
-| --mq-redelivery-max-attempts      | MQ_REDELIVERY_MAX_ATTEMPTS | 20       |
+| Arg                               | Env                        | Default |
+|-----------------------------------|----------------------------|---------|
+| --mq-redelivery-max-attempts      | MQ_REDELIVERY_MAX_ATTEMPTS | 30      |
 
 The maximum number of redelivery attempts for a failed message.
 
@@ -384,7 +384,7 @@ redelivery interval was 2s then the next redelivery interval is set 3s.
 
 | Arg                          | Env                        | Default |
 |------------------------------|----------------------------|---------|
-| --mq-redelivery-max-interval | MQ_REDELIVERY_MAX_INTERVAL | 30s     |
+| --mq-redelivery-max-interval | MQ_REDELIVERY_MAX_INTERVAL | 1m      |
 
 The maximum delay for a redelivery.
 
@@ -413,14 +413,6 @@ The interval (period) in which operation queue tasks from other server instances
 The maximum time that an operation queue task can exist in the database before it is considered to have expired.
 Once expired, any other server instance may delete the task and repost operations associated with the task
 to the queue, so that they will be processed by another Orb instance.
-
-### op-queue-max-reposts
-
-| Arg                    | Env                  | Default |
-|------------------------|----------------------|---------|
-| --op-queue-max-reposts | OP_QUEUE_MAX_REPOSTS | 20      |
-
-The maximum number of times an operation may be reposted to the queue after having failed.
 
 ### cid-version
 
