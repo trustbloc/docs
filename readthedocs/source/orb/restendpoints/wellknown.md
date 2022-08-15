@@ -95,6 +95,7 @@ Response:
   ]
 }
 ```
+
 ## did.json
 
 **Endpoint:** /.well-known/did.json

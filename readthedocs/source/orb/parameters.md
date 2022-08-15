@@ -25,6 +25,18 @@ URL to run the orb-server instance on. Format: HostName:Port.
 
 External endpoint that clients use to invoke services. This endpoint is used to generate IDs of anchor credentials and ActivityPub objects and should be resolvable by external clients. Format: HostName[:Port].
 
+### service-id
+
+| Arg          | Env            |
+|--------------|----------------|
+| --service-id | ORB_SERVICE_ID |
+
+The ID of the ActivityPub service. By default, the ID is composed of the external endpoint appended with /services/orb.
+For example, if external-endpoint is set to https://alice.example.com then the service ID will
+be https://alice.example.com/services/orb. The value may be set to a different path, e.g.
+https://alice.example.com/services/anchor, or it can be set to a DID, e.g. did:web:alice.example.com:services:anchor.
+NOTE: The host of the ID must be the same as the host specified by external-endpoint.
+
 ### database-type
 
 | Arg             | Env            |
@@ -795,7 +807,7 @@ The maximum size of an ActivityPub service and public key cache.
 
 | Arg                         | Env                                  | Default |
 |-----------------------------|--------------------------------------|---------|
-| --apclient-cache-Expiration | ACTIVITYPUB_CLIENT_CACHE_EXPIRATION  | 1h      |
+| --apclient-cache-Expiration | ACTIVITYPUB_CLIENT_CACHE_EXPIRATION  | 10m     |
 
 The expiration time of an ActivityPub service and public key cache.
 
