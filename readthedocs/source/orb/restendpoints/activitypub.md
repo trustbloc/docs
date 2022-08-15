@@ -5,14 +5,20 @@ The [ActivityAnchors](https://trustbloc.github.io/activityanchors/#actor-discove
 
 ## Service
 
-**Endpoint:** /services/orb
+The REST endpoints for a service depend on the value of startup parameter [service-id](../parameters.html#service-id).
+By default, the endpoint is */services/orb*, but if, for example, *service-id* is set to *did:web:orb.domain1.com:services:anchor*,
+then the service REST endpoint will be */services/anchor*. 
+
+**Endpoint:** /<service-path>
+
+The returned data is a JSON document that contains REST endpoints that may be queried to return additional information.
 
 ### GET
 
-The Orb service is retrieved using the */services/orb* endpoint. The returned data is a JSON document
-that contains REST endpoints that may be queried to return additional information.
-
 **Example**
+
+Assuming that the default value for service-id is used, then the Orb service is retrieved using the
+*/services/orb* endpoint.
 
 Request:
 
@@ -51,9 +57,59 @@ Response contains the [service](https://trustbloc.github.io/activityanchors/#act
 }
 ```
 
+**Example**
+
+Assuming that the value of the service-id parameter is set to *did:web:orb.domain1.com:services:anchor*, then the Orb
+service is retrieved using the */services/anchor* endpoint.
+
+Request:
+
+```
+GET /services/anchor HTTP/1.1
+Host: orb.domain1.com
+Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
+Accept-Encoding: gzip, deflate
+```
+
+Response contains the [service](https://trustbloc.github.io/activityanchors/#actor-discovery):
+
+```json
+{
+  "@context": [
+    "https://www.w3.org/ns/activitystreams",
+    "https://w3id.org/security/v1",
+    "https://w3id.org/activityanchors/v1"
+  ],
+  "followers": "https://orb.domain1.com/services/anchor/followers",
+  "following": "https://orb.domain1.com/services/anchor/following",
+  "id": "did:web:orb.domain1.com:services:anchor",
+  "publicKey": "did:web:orb.domain1.com:services:anchor#MrWUYMOS4ZGF7LCBVSr8njn98OvG70XaLV31EDFhBH0",
+  "inbox": "https://orb.domain1.com/services/anchor/inbox",
+  "liked": "https://orb.domain1.com/services/anchor/liked",
+  "likes": "https://orb.domain1.com/services/anchor/likes",
+  "outbox": "https://orb.domain1.com/services/anchor/outbox",
+  "shares": "https://orb.domain1.com/services/anchor/shares",
+  "type": "Service",
+  "witnesses": "https://orb.domain1.com/services/anchor/witnesses",
+  "witnessing": "https://orb.domain1.com/services/anchor/witnessing"
+}
+```
+
 ## Keys
 
 **Endpoint:** /services/orb/keys/[id]
+
+Note: This endpoint is unavailable if a DID is used as the public key, for example,
+
+```json
+{
+  . . .
+  "publicKey": "did:web:orb.domain2.com:services:anchor#MrWUYMOS4ZGF7LCBVSr8njn98OvG70XaLV31EDFhBH0",
+  . . .
+}
+```
+
+In this case, a DID resolver is required to resolve the public key.
 
 ### GET
 
@@ -77,6 +133,54 @@ Response contains the public key of the service:
   "id": "https://orb.domain1.com/services/orb/keys/main-key",
   "owner": "https://orb.domain1.com/services/orb",
   "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhki....."
+}
+```
+
+## did.json
+
+**Endpoint:** /services/orb/did.json
+
+If the value of startup parameter [service-id](../parameters.html#service-id) is set to a DID, for example,
+*did:web:orb.domain2.com:services:orb*, then the DID document for the service may be resolved at this endpoint.
+
+### GET
+
+**Example**
+
+Request:
+
+```
+GET /services/orb/did.json HTTP/1.1
+Host: orb.domain2.com
+Accept: application/ld+json
+Accept-Encoding: gzip, deflate
+```
+
+Response contains the DID document for the service, which includes the public key(s) for HTTP signatures
+and the service endpoint:
+
+```json
+{
+  "@context": [
+    "https://w3id.org/did/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1"
+  ],
+  "id": "did:web:orb.domain2.com:services:orb",
+  "verificationMethod": [
+    {
+      "controller": "did:web:orb.domain2.com:services:orb",
+      "id": "did:web:orb.domain2.com:services:orb#MrWUYMOS4ZGF7LCBVSr8njn98OvG70XaLV31EDFhBH0",
+      "publicKeyMultibase": "z7a7SJkF8LTqGACTxB8r86i2btE7y8qrPnGuCe3M9vk8f",
+      "type": "Ed25519VerificationKey2020"
+    }
+  ],
+  "service": [
+    {
+      "id": "did:web:orb.domain2.com:services:orb#activity-pub",
+      "serviceEndpoint": "https://orb.domain2.com",
+      "type": "LinkedDomains"
+    }
+  ]
 }
 ```
 
@@ -517,6 +621,49 @@ Response contains items from the first page:
         "https://www.w3.org/ns/activitystreams#Public"
       ],
       "type": "Offer"
+    },
+    {
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "actor": "did:web:orb.domain2.com:services:orb",
+      "id": "https://orb.domain2.com/services/orb/activities/3dd6c5bf-dc7c-4743-87b2-12d303f0ecaf",
+      "object": {
+        "@context": "https://w3id.org/activityanchors/v1",
+        "object": {
+          "linkset": [
+            {
+              "anchor": "hl:uEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A",
+              "author": "did:web:orb.domain2.com:services:orb",
+              "original": [
+                {
+                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%22%2C%22author%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDvfNx40DmnAE9tKw6eWue8OiWPh5668PvnyfcHQtr5sQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCgK6K4eVoW2vYINhGDYyUsaFQh0Xq2GeQQ6No7sXrezg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiAI60PiHNKAX7zGRe10UOPIfl5vabGYAkzOSF8KLgzmmg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCgNvbqlq5yxQGrM6ipv6iMDLhwYmlDBZO1f60mfTnLaA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBCHij5TOiT_D1COIdMGbBbIAJJ7PSt_aCWqv7BXFGpxQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBkfnunulwm2oj9_PZXtrBxWFclC6Z64Ou2rX5sGM-D_A%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBxxIu6yc1aFlCvV5rbjSbJ-qFWLLwxKPBstDyLMrhlNA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCUipZOgwqREWpmRtln44hWDQhENOOPzX5ByukeYV5eLQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDk4OAYEyC3iQEqJcNxu6ljG7o5PayR-vugrtB27e_0KA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDY8i8w9v7yFb6VmcKvoxNZ7X_VjWfGuSN-QLH6crHnWg%22%7D%5D%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D",
+                  "type": "application/linkset+json"
+                }
+              ],
+              "profile": "https://w3id.org/orb#v0",
+              "related": [
+                {
+                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpRFJmcngyVUF5Nnd5ZGFYY2VKTDlobHBGUXdUVHVQX1JJUzV6bTdKOXNyMlE%22%7D%5D%7D%5D%7D",
+                  "type": "application/linkset+json"
+                }
+              ],
+              "replies": [
+                {
+                  "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%22%2C%22id%22%3A%22hl%3AuEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F63384454-28f5-4dd9-9833-b7f79d9087a9%22%2C%22issuanceDate%22%3A%222022-08-09T14%3A16%3A17.653656394Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-09T14%3A16%3A17.656966342Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z4H9r9tgoSDVczeC5WSig5Mp4ASojXuzQJ9JTqm78GXKKpKUx2ETQSf1TUXLYU84Uq36Y6SaPzon4AstwqxyYRFRv%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23m0lkGe6apkR_uzrcBHsttLf-cMgCS-Z4_27Qt5kyRG0%22%7D%2C%7B%22created%22%3A%222022-08-09T14%3A16%3A17.824Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z5fBV9Dwac2c3rgg5adjpvWpWM57QuK5zh5FQXsn2Jr3bZyTd3G5ACwN23hiBUHFunJC73F28wg9AdYmXfzdHVjcJ%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23ipyFbnxMIbWJME8K1uvIp-UdrdVpyuQ9QjCCgnHHjFg%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
+                  "type": "application/ld+json"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "AnchorEvent",
+        "url": "hl:uEiCP980v2AZbTgRmebFolD48LhE4u-yXzOoISRUJkUjToQ:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ1A5ODB2MkFaYlRnUm1lYkZvbEQ0OExoRTR1LXlYek9vSVNSVUprVWpUb1E"
+      },
+      "published": "2022-08-09T14:16:18.013015949Z",
+      "to": [
+        "https://orb.domain2.com/services/orb/followers",
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "type": "Create"
     }
   ]
 }
