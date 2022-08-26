@@ -403,30 +403,38 @@ Response contains items from page 41:
     {
       "@context": "https://www.w3.org/ns/activitystreams",
       "actor": "https://orb.domain1.com/services/orb",
-      "id": "https://orb.domain1.com/services/orb/activities/5a2efe8a-ea7f-4b85-a58c-bdcba86cbb32",
+      "id": "https://orb.domain1.com/services/orb/activities/c3f51db8-fa65-487b-85f5-201f110201b6",
       "object": {
         "@context": "https://w3id.org/activityanchors/v1",
         "object": {
           "linkset": [
             {
-              "anchor": "hl:uEiCbb4bC2VYhbQMtci_sE3OysFW9r-jbss5yM9F2mjYnVQ",
-              "author": "https://orb.domain1.com/services/orb",
+              "anchor": "hl:uEiCjjpFjLgWSPtDBJjZLk0oJyrLhcXw3K5SRcG9i5DTqbw",
+              "author": [
+                {
+                  "href": "https://orb.domain1.com/services/orb"
+                }
+              ],
               "original": [
                 {
-                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiClKstiM9lzsB-XnDpSThBcpRc62ah4NoOsByxafcE-BQ%22%2C%22author%22%3A%22https%3A%2F%2Forb.domain2.com%2Fservices%2Forb%22%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuEiAFbqLS7qyiDVPwsUgk1k5gXzill2codevVaNIio99FFA%3AEiDuEd9k8dT_8DD7MmN3ZDPVyynVp7dw0TE97zJO3ViotQ%22%2C%22previous%22%3A%5B%22hl%3AuEiAFbqLS7qyiDVPwsUgk1k5gXzill2codevVaNIio99FFA%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiC6kYQL3Oaxssinyk5EFbbAUkUzfjh6E24dfPfqGB3CqQ%3AEiCwzIfeommz_je33aQc3egz9InPgLnqyVk78xqakyiroQ%22%2C%22previous%22%3A%5B%22hl%3AuEiC6kYQL3Oaxssinyk5EFbbAUkUzfjh6E24dfPfqGB3CqQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiC6kYQL3Oaxssinyk5EFbbAUkUzfjh6E24dfPfqGB3CqQ%3AEiCugDLBgcTfR17JV61QF3QmiYbDrpgya1K3-nj9wcZAfw%22%2C%22previous%22%3A%5B%22hl%3AuEiC6kYQL3Oaxssinyk5EFbbAUkUzfjh6E24dfPfqGB3CqQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiC0dTmTbH7_tZhyj0G9qKsTX871xBGGTh42coY_epWxgA%3AEiC5AR9oibSJfWpG0SjLFHBLUlElmWpLx3LbSUCLOMfdOg%22%2C%22previous%22%3A%5B%22hl%3AuEiC0dTmTbH7_tZhyj0G9qKsTX871xBGGTh42coY_epWxgA%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiDFQjpUbwsZgf3ER9TkfRulkEp_d4265BK5TBVW_TE7hA%3AEiAGoqmCKktOdP-gFWTDIyuGTI1v9g7BM2A3-GGzElpbiA%22%2C%22previous%22%3A%5B%22hl%3AuEiDFQjpUbwsZgf3ER9TkfRulkEp_d4265BK5TBVW_TE7hA%22%5D%7D%5D%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D",
+                  "href": "data:application/gzip;base64,H4sIAAAAAAAA/2yOT0+DMBiHv8vrdY5NF429Vd38s3SBgRpdOBQo8I7S1lKYhPDdDTt58PzL8/yeASSqqhEOyGEArtJSWyBQStKukb6pkLH7sL3reRjIpKsjufu4CfdBxY8qN1fyk9ltf7k0/QlmwFt3pg8DlFbkk8Y50xDP0zaZZ7rmqJbzVNdeI2yHqWimAcZ4BuhE/RfMMCPaJqSllJI10m/DgqqLGH3m/pevdquX/bu/eqKLLRevUXHc/Dw+FJvbREt69hmrc5Tiv5bTNWZzbYvp+6JbwBiP8fgbAAD//9+kd3kHAQAA",
                   "type": "application/linkset+json"
                 }
               ],
-              "profile": "https://w3id.org/orb#v0",
+              "profile": [
+                {
+                  "href": "https://w3id.org/orb#v0"
+                }
+              ],
               "related": [
                 {
-                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiCbb4bC2VYhbQMtci_sE3OysFW9r-jbss5yM9F2mjYnVQ%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22up%22%3A%5B%7B%22href%22%3A%22hl%3AuEiAFbqLS7qyiDVPwsUgk1k5gXzill2codevVaNIio99FFA%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQUZicUxTN3F5aURWUHdzVWdrMWs1Z1h6aWxsMmNvZGV2VmFOSWlvOTlGRkF4QmlwZnM6Ly9iYWZrcmVpYWZuMnJuZjN2bXVpZ3ZoNGZyamFzbm10dGFsNDRrbGYzaGZiMjZ4dmxpMmlya2h4MmZjcQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiC6kYQL3Oaxssinyk5EFbbAUkUzfjh6E24dfPfqGB3CqQ%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQzZrWVFMM09heHNzaW55azVFRmJiQVVrVXpmamg2RTI0ZGZQZnFHQjNDcVE%22%7D%2C%7B%22href%22%3A%22hl%3AuEiC0dTmTbH7_tZhyj0G9qKsTX871xBGGTh42coY_epWxgA%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQzBkVG1UYkg3X3RaaHlqMEc5cUtzVFg4NzF4QkdHVGg0MmNvWV9lcFd4Z0F4QmlwZnM6Ly9iYWZrcmVpZnVvdTR6ZzNkNjc2MnpxNHVwaWc2MnJreXRsN2hwbHJhcnF6aGI0bnRzcXk3eHZmbnJxYQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiDFQjpUbwsZgf3ER9TkfRulkEp_d4265BK5TBVW_TE7hA%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpREZRanBVYndzWmdmM0VSOVRrZlJ1bGtFcF9kNDI2NUJLNVRCVldfVEU3aEE%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiClKstiM9lzsB-XnDpSThBcpRc62ah4NoOsByxafcE-BQ%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ2xLc3RpTTlsenNCLVhuRHBTVGhCY3BSYzYyYWg0Tm9Pc0J5eGFmY0UtQlE%22%7D%5D%7D%5D%7D",
+                  "href": "data:application/gzip;base64,H4sIAAAAAAAA/1TNTXOiMACA4f+SvbYrUHUGbrUtOhToIhAgOx4IoATyZeTTDv99Z731/s7zfgNKeHurOmD9/QY5L2qhgAVqavUf5K1ppN24lyT8073vnAa5rSacWbl1kY4vn5vwWOxNsnmPrngET0AqcSa0eki1qs7/na6TN2u1Gl9I+Vuoy0oo/GvQwHJ6AgPJf6SP5WvMQ8/bhb0552FA8cAi6ifb8Bi0ecPP0qCZpz7nZ13Oo9WL4Pmt+uhEeTiOxV0MrmHOGdm02NDrPFlPLvMHHJpNlnpDGUMZQNjHmu4H1Ne/UlrHun3LOOrgfvqCdxTF1FZZInvEX2dsU79ou40b2WOVluuA0RFxb+vOJskSpAoGZZZCrUydqUqcKz7UaxQ5V5RAozrsNBQddY8XOkp9ljHY51Gg+4a452yqKzYxnF7ueC+3OADLaTkt/wIAAP//F6rBvooBAAA=",
                   "type": "application/linkset+json"
                 }
               ],
               "replies": [
                 {
-                  "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%22hl%3AuEiCbb4bC2VYhbQMtci_sE3OysFW9r-jbss5yM9F2mjYnVQ%22%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F4bc3c6f6-47e0-4319-b9db-aabc02703504%22%2C%22issuanceDate%22%3A%222022-03-21T19%3A53%3A46.9426415Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-03-21T19%3A53%3A46.9433799Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22jKU4JefCffpwrcMW6Z3Lg7Nq2zwZAAOUmTIsQ-M7y-87WJFcIJLu4mY1fe-FfzRzyH12WQSw6dk4H8J72AOCBQ%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%230lKiyMUrLLv_LEYbQeW1iZ6fGpxf7u2NWKxUX6ynsL8%22%7D%2C%7B%22created%22%3A%222022-03-21T19%3A53%3A47.48Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22vFvEicqtNPtJlcIUnoDFnGSRQGJrYxdWkV3Zn3EXmbg75WQp1mL9-bw2-9EYkgaw2g_cgreq_lbEe8JvNiLhCg%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23fFqABxOfNIE903WpSg6hjnZwhW4RWmyt1SrtFQ4xTP4%22%7D%5D%2C%22type%22%3A%22VerifiableCredential%22%7D",
+                  "href": "data:application/gzip;base64,H4sIAAAAAAAA/6xUW3OqSBj8L5NXFRgYQZ5W4m29ZI0YL5xKpYZh1FFgcBjgQCr/fYtoEmu3zm4ezit099dfNx+v4A/CY0l/SmD/AAcpk9RWlKIoWoXe4mKvQFWzFCJoQGPJcJgquQYaX0CdBe8wTCTLmSxxTA5c/AqVUpIJJkslzZikqXIs0iZUofpNOA0gQlrnk/LcAF/O3Mw/UiKB/QouJoANDqGd9Vn3KXZnM8fNOiV2H0M/j5bhw7rtLh5P+BjvEhhuZ2JSNrWkLGobgu4+uffHYzI4Tvdrdy57zvjoTU8qH5dieiCbQp8gd0GGHYZ6y7NfcxPBdyykNf2fy3Dh3+UqaABBQ2CDkMWnlErQALJMaB1+9931lMUn8PzWACy4UeHCh62AR5jFWovwSMmJQk11pxLTaiJVt5oG0nZNDH3UxFRHOlFVarQhaACWphmOCe1hWfuCKoRN1WpCtISarUNb11qm0TE1pOuGd8VT8R+zL2vyHbB/vNb5Y0mDXwmjTi15IV8lL4qtnEjbUk1TiXAS0rrRD915JhKe1l5xmlIhGY9nVB548AFY4TCrX1cIOVw8cNMa/1zDxdAbROsSppbra5o/qzgzkXxw2lNreI654XlIJvt+4jytnGyx3kTbwXFGplM0ScfQnUAu0Xq41LbeZP1ZCuhfvjiX7WMsM/HhM6eC7RjBN95sELDALqhv19vdxHXXFsKs5MYZ9kf4z7/kepCOo3JIpBef7zVDNS11kQ307nhVWeCt8X+RWpquIdQ20b+CvXZ1nQ1vq/p+pFAGOUvKxCn19ix116tTnlQjHldPT+UEz0fBvurDylhtxodJe3naeosFYcWod+4bu6QX6ZU3Hm2yop8/8p4h995w03nQArn9XZG+r3WXbNDLkYsRiduR4Rxepk29P5cbs9stHX18nryERjwnSz1PCvD2/HViq/ch2A/p/ed/AzSul3fz6Pnt7wAAAP//2OYItxgFAAA=",
                   "type": "application/ld+json"
                 }
               ]
@@ -434,11 +442,11 @@ Response contains items from page 41:
           ]
         },
         "type": "AnchorEvent",
-        "url": "hl:uEiAFnozcDJ94h_Cr--d_bpmmuCRWh8tC2HasXJmpyN5vOA:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZub3pjREo5NGhfQ3ItLWRfYnBtbXVDUldoOHRDMkhhc1hKbXB5TjV2T0E"
+        "url": "hl:uEiCUKchKLxlnv5z9ovQ1_brtSIW4WUxrfalPfszpVPjUIg:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQ1VLY2hLTHhsbnY1ejlvdlExX2JydFNJVzRXVXhyZmFsUGZzenBWUGpVSWd4QmlwZnM6Ly9iYWZrcmVpZXVmaGVldWx5em02N3p6N25jNnEyNzNveG5qY2MzcXdrbW5uNjJzdDM2enR1dmo2Z3VlaQ"
       },
-      "published": "2022-03-21T19:53:48.0607948Z",
+      "published": "2022-08-25T21:32:31.941935474Z",
       "to": [
-        "https://orb.domain2.com/services/orb/followers",
+        "https://orb.domain1.com/services/orb/followers",
         "https://www.w3.org/ns/activitystreams#Public"
       ],
       "type": "Create"
@@ -530,7 +538,7 @@ Response contains items from the first page:
   "orderedItems": [
     {
       "@context": "https://www.w3.org/ns/activitystreams",
-      "actor": "https://orb.domain2.com/services/orb",
+      "actor": "did:web:orb.domain2.com:services:orb",
       "id": "https://orb.domain2.com/services/orb/activities/ba65fbd8-ef59-4f69-a3d0-0ba6a115c650",
       "object": "https://orb.domain1.com/services/orb",
       "to": "https://orb.domain1.com/services/orb",
@@ -538,7 +546,7 @@ Response contains items from the first page:
     },
     {
       "@context": "https://www.w3.org/ns/activitystreams",
-      "actor": "https://orb.domain2.com/services/orb",
+      "actor": "did:web:orb.domain2.com:services:orb",
       "id": "https://orb.domain2.com/services/orb/activities/29cdbde2-d82a-4594-8fbc-26292316c0af",
       "object": {
         "@context": "https://www.w3.org/ns/activitystreams",
@@ -556,7 +564,7 @@ Response contains items from the first page:
         "https://www.w3.org/ns/activitystreams",
         "https://w3id.org/activityanchors/v1"
       ],
-      "actor": "https://orb.domain2.com/services/orb",
+      "actor": "did:web:orb.domain2.com:services:orb",
       "id": "https://orb.domain2.com/services/orb/activities/30e184f6-f45f-43e2-9cf6-9e2b7c1ed230",
       "object": "https://w3id.org/activityanchors#AnchorWitness",
       "target": "https://orb.domain1.com/services/orb",
@@ -565,7 +573,7 @@ Response contains items from the first page:
     },
     {
       "@context": "https://www.w3.org/ns/activitystreams",
-      "actor": "https://orb.domain2.com/services/orb",
+      "actor": "did:web:orb.domain2.com:services:orb",
       "id": "https://orb.domain2.com/services/orb/activities/635fe297-47d5-4374-8278-8befcdea2055",
       "object": {
         "@context": [
@@ -584,37 +592,45 @@ Response contains items from the first page:
     },
     {
       "@context": "https://www.w3.org/ns/activitystreams",
-      "actor": "https://orb.domain2.com/services/orb",
-      "endTime": "2022-03-21T20:03:51.0383296Z",
-      "id": "https://orb.domain2.com/services/orb/activities/cb55746b-3fdf-441b-8cce-ae6cf47bf676",
+      "actor": "did:web:orb.domain2.com:services:orb",
+      "endTime": "2022-08-26T15:36:20.174639514Z",
+      "id": "https://orb.domain2.com/services/orb/activities/21646981-422c-46db-9bcb-66184aa2dd39",
       "object": {
         "linkset": [
           {
-            "anchor": "hl:uEiB9usl2nCTWvg2cqPKKkFctA-Msj0qtAYv4WzpAsxaErw",
-            "author": "https://orb.domain2.com/services/orb",
+            "anchor": "hl:uEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog",
+            "author": [
+              {
+                "href": "did:web:orb.domain2.com:services:orb"
+              }
+            ],
             "original": [
               {
-                "href": "data:application/gzip;base64,H4sIAAAAAAAA/8yYSa+i6haG/4t3WlYhPXtGK6CA9OhJhQAfPUgrCCf132/2SQ3uwBqQbHPP2Oj7+OZZKwv+3lX5vRzicffx19+74B5lTb/72GXVx4PPOTsfJesEiSsl5w87bdk2UNlaYoQMH3jCPzam0V7R3ge2vvu2Cx7j72+PYzt8/PjR9OF30NRBfj98j5r6xxD3Ux7Fw+cHu2+7fIzrf2KzPk52HzuQg4+mDz+TWQhYtRWKhD/esqWAjlR3GiyPJA5P5ni0MhSOmqsft+4zpT/4nI5waXSUp6no3cIRYEIRozbMSTrjE2fGnOtdb51EOhwB5t23XdvHU948ht3HX7//6Za83c9f314xc4JetHY4D7c0QXiDssrEeFQl3/oAhXGMOWEW47i+xRPZJzNzTc+sXeQNHpVSRUfkHCGnZ2LxVNPqe+x4reT1JsjziTy9Zt6S9ydmthBsABtY6oiKOPN2Ft7Fg4dVFdySa4rM8FE7iVzjsG2qf/A5K7eMxHXSfc4M+OTFsiowqdr7s16ZwjPRIvtizaF1XPXoDz1vyPsTMy2E3dkkuiXnnMs82Gl5KLHUW/OqgqMGxJMTqFLeUJQgfPbMweO14OqSBsx8HqEOcwRX9eJn3QexjiOpXTa3ha9KvyTol8xb8r6K2TzAFaRBOH+/kwoko/2dx4OHOrktZUiigLTEINH2NCNE+jZmRoAXX5FJGgtKHxcP9B3rSxfOzk97bBWWXcVDP4sn+bDH/3GjUuzc0ooh4+S5B23CLaXkgIsYyqiN0VYpwbOZDt79cX/NvCXvi3xmUpBDwyiRa1ZyFHIxTVvcQ9ysI4TLsNOzM3CLeSzKRXJeM3+Fzxt75gx9TlwjTEz0dqzZGtO4jjxz4hQ4K6MzCIAktVfDvZYkr33+ip437jp6GAZeVwvHzStQdJeyDO5RpYdY0eCR5p5Jgu3dqrnJbPK+XbeRmWMWbjQOnD6gnOoPrJ74TnbpITCdtL0yCofg4hZa5Cnpov9r9rOxMD5+54ACTU4lG70WjlzoTwyAkotaT2ekoc1DIjxvz/ft540+M3k0LRVMT046wUZCOPmoyQdqf59j7tbpaERbOsWUSgUf3ufzxp65hCupZ+iu8NywPDoB1TxSR8bo8gt1v3rduDZieYNm+Di+b29s3XUaE5uIlUhepWYUVVz2kB6YCMwIqagR0A08ijDbN1zHHF77/P9wg3mOXMfRFtPsXZopO/mc0W3+RCHG8zwH8erI7t0YP6zqa5+/xI1ttyizdx/ZgO/FKMBs5ACwRk4Rsb+d6sZ46OyxD32krrKCj+vXPn/FLbr13kCRtjrWgU8NLIotOBdZfjakhN5iqFogrEKnijP1SNsHr934intjY88c8GKJmp0ahRt4KFTgGex0hDMDDXrRTJVYqlxHNnq6Y/4wg1/Q89Ybabk+chB1UCmTVwjNLPMUhWC8QxCuttpwspzeoI8JySzL+24kGmTNHgfYJWGb/c0AjBKW1iV6WqM6zk8SFFaScGeP5Cf2k5lWNNg+WrwLrUMh3BgtO+355JzYtrr0uqj5ueufct8vcfr1DG7J+yI3aB/Cu4bF9hVbsDcC319upNE7khwjlRawafdIyYkuL77Svu95cOsMCkbdZIuMEF6GVhhBo3gDAJusw5AsM37zxWh/9VaAHNj3zeBWn8GICk8s00k/YWgD4FoCoMZkSx+l9PXRF4YdPXhSplXzfT5vZVbplfeCJunXESVYJrhGk6Fe4QS1ADzTT02baeTorY2Bvu55I/PPz99okryK/+fNyIzk4HvTpz+aPvzPBO1+/fz13wAAAP//1RF5K4oRAAA=",
+                "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDO4M4BoSmK4wFL-sSmFBhOyjeWfb2IuDovY1hRov5Cgg%22%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
                 "type": "application/linkset+json"
               }
             ],
-            "profile": "https://w3id.org/orb#v0",
+            "profile": [
+              {
+                "href": "https://w3id.org/orb#v0"
+              }
+            ],
             "related": [
               {
-                "href": "data:application/gzip;base64,H4sIAAAAAAAA/5yUy26jSBiF38WzTSZQ2E7IzhgKjE053ApTo5YFlM2luBkwt1befZQeaRbd6ZEmu9qU/qPvfDrfF3lasvbSLV7/+r4IyiipmsXrIslf70oqifc2B+XW8foYRLe3/Z7BqNs8Gm3G3bqN3y+9ud60Y6A0w+JhUTfVNc0vH9+7rm5fn54GIaV/Vk38VDXhHz23eFjc6x+HkuZy/ffMlqNO4YTa87kjyZRxqnjbt87p5ZkfJVV1kiWIKv98qb0x3rzeK/Nxe1G6imrWEM1VfwDi5KcrFgI+CbzleChQH9pi5p+Mnrq4NmeJYZV3fRYLJ8EKAi2/GUq0itxuxjBeohkuTUY1rMacUaDew2IeQbokHFyaRT6Q0lgfJjH1PdJEBa5JiXvqWGsyI4ayCBhlPSIND4H38daby8lqEUiGUNOTqITrQN1xYWnN0YkJF40UYamPvrl4f/iJggzNrHbDoSXxVVAs0WFX654zpT7TJVivpP3KkbB3dpTn5B8K0n9QmH6mYCnECkoJ+yWdvYIWBoftI7Yakut8qHYwgiJD8g4gVz8gbG1xTq9YcYVAUX6Nus2gS4G1irFmaIPiJmGp8adVnoP6ZY6FAajHvSZXeFvH5v+PaoJaxZ45uRkuMUuQrVGIvSQNWTx6Mm5DWR+OWl0aQjRZnHiwFavHDA2E/yTqBoa3g/18m1IZvw2tGzOereLTnOY5iCp66XGAdmklihB+xS2XpJE7OkiAq8C1PFejM/ZoY3gtT/hkHXhj++EUUTHABTzaXt4fnVy12Odu+R65G6V+JxkC4QnXRCAVUskUFHAOC56jKmyRbDWh6s+BSlIjI0tajLVR5FMAkqVRkCz6xC0Jguls6C+bVcDOa43flKuGeSA5jG5XG9vtrPHNoO11/nH9lcKYP12wiOwskZAHm9NMdoYL7+ikN3jWK0dLMNUkZHJobctwolxysDOlQ/lnhdGkelzT1dt1Wz0Si0pGyJy3aHQ61A3jC82c61U+nF6Ufmt+oTDPqsKJA0TGJmGoP+DaJoqO/KJzXRUtsWYdqUaXR9W6YZUUljL6RwUDk/9NYQ4ejSKeqeNyVDY4UjCBgK4wCr0kszURQepDr+uNYiUglVYXB0/UMXhUWAXN6BiUUkrMxfu3h0WfBr9Oo+ym3c7Zc9os6undjettHaBtsZNgsm6V57Na2VbtL5szdb9Aw4K4pkru2rO0u2T5PjhhTARJjlR4NAGvm4xUqEQQ8aIW8siOIOOiXGQY/2YaBTyFap0S0E5+RgajqKdQQ7Nf1GkAPjRFnA9gHqo7PlQhd5EpCwC6EbXuQkAGlOHmB433b+9/BwAA///+JdsNmQYAAA==",
+                "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ2R4bHpiQ01fcFFvcHljQkY4UV9LQTU4aW9pekVhV05KcWxLeEdyZGxTamc%22%7D%5D%7D%5D%7D",
                 "type": "application/linkset+json"
               }
             ],
             "replies": [
               {
-                "href": "data:application/gzip;base64,H4sIAAAAAAAA/4yS226jOhSG38X7NgRjDgm+2qQlUk+TtGmLmtGoMrYJpgSobTBp1XcfkSbpaKRKc+1vff/vZb+D/2ldad5rgH+CXOtGYds2xoyNO67lxkbQmdpUcsYrLUip7M4Boy/QFWyPKU5bKfTOVq3QXNmFURaCCP4jzhnyfSc8jfwaga/MVZsWnGqAQV7iNhazsFUlqs7uk26D6Ovy6uplTnVk3agCvuroqfOStyZSPYmlASMg2DB5aFDLdMzqLRGVM6b11u6ojWDqEddjlu8GyPICl1lhQDIrmDqUTDzku5AMGqVaUlF+TjQHGCCIkAVdCzn3Toh9F/twPPFCz4fB+kBz+X0wGIFG1nUG8PtwU6I5+04a7oWfswfhwddRjadwMrG3pCn5sLujdtnKplZDT6IUl1rU1Q3Xec2OwCMp2+E4y9Vzay4vHxATM3VXrf1mkpNE5XPaBjHvEmPCxa5wnnZ3L+r8wnXmaLGOz5YmeL4oFpf9Leun54trR0TXVcNk6kdvD7MIjIDeNYM//nzYldhURLfyWLLjUmSCkj+KYcAEw4an+K9V/ZfNX6NZv8h+XMQhdJNmtQnyolqbPPHuku1OOyup57def7/0wMcp+XEfQdKSn51+Evj4HQAA///2m9v98AIAAA==",
+                "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22href%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F65a306e4-1f86-480c-9fbd-c5e627363f0d%22%2C%22issuanceDate%22%3A%222022-08-26T15%3A26%3A20.114938493Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%7B%22created%22%3A%222022-08-26T15%3A26%3A20.116657916Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z63YhBwGe5h5y3ChrjTCeSXxFNf98krSDCP3FGQDRSFFCFbC7BryMpR5gaboGiaqtDRY4tNqUSZPHHHDr7jT3jSzd%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23W51yCsfyP-3uyHi9BhTTd9qBzPM14YaQk2A0bCybRbU%22%7D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
                 "type": "application/ld+json"
               }
             ]
           }
         ]
       },
-      "startTime": "2022-03-21T19:53:51.0383296Z",
+      "startTime": "2022-08-26T15:26:20.174639514Z",
       "target": "https://w3id.org/activityanchors#AnchorWitness",
       "to": [
         "https://orb.domain1.com/services/orb",
@@ -625,30 +641,38 @@ Response contains items from the first page:
     {
       "@context": "https://www.w3.org/ns/activitystreams",
       "actor": "did:web:orb.domain2.com:services:orb",
-      "id": "https://orb.domain2.com/services/orb/activities/3dd6c5bf-dc7c-4743-87b2-12d303f0ecaf",
+      "id": "https://orb.domain2.com/services/orb/activities/d5a83f39-f9e3-4833-b668-134e21f089d3",
       "object": {
         "@context": "https://w3id.org/activityanchors/v1",
         "object": {
           "linkset": [
             {
-              "anchor": "hl:uEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A",
-              "author": "did:web:orb.domain2.com:services:orb",
+              "anchor": "hl:uEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog",
+              "author": [
+                {
+                  "href": "did:web:orb.domain2.com:services:orb"
+                }
+              ],
               "original": [
                 {
-                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%22%2C%22author%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDvfNx40DmnAE9tKw6eWue8OiWPh5668PvnyfcHQtr5sQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCgK6K4eVoW2vYINhGDYyUsaFQh0Xq2GeQQ6No7sXrezg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiAI60PiHNKAX7zGRe10UOPIfl5vabGYAkzOSF8KLgzmmg%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCgNvbqlq5yxQGrM6ipv6iMDLhwYmlDBZO1f60mfTnLaA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBCHij5TOiT_D1COIdMGbBbIAJJ7PSt_aCWqv7BXFGpxQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBkfnunulwm2oj9_PZXtrBxWFclC6Z64Ou2rX5sGM-D_A%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiBxxIu6yc1aFlCvV5rbjSbJ-qFWLLwxKPBstDyLMrhlNA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCUipZOgwqREWpmRtln44hWDQhENOOPzX5ByukeYV5eLQ%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDk4OAYEyC3iQEqJcNxu6ljG7o5PayR-vugrtB27e_0KA%22%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDY8i8w9v7yFb6VmcKvoxNZ7X_VjWfGuSN-QLH6crHnWg%22%7D%5D%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D",
+                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDO4M4BoSmK4wFL-sSmFBhOyjeWfb2IuDovY1hRov5Cgg%22%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
                   "type": "application/linkset+json"
                 }
               ],
-              "profile": "https://w3id.org/orb#v0",
+              "profile": [
+                {
+                  "href": "https://w3id.org/orb#v0"
+                }
+              ],
               "related": [
                 {
-                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpRFJmcngyVUF5Nnd5ZGFYY2VKTDlobHBGUXdUVHVQX1JJUzV6bTdKOXNyMlE%22%7D%5D%7D%5D%7D",
+                  "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ2R4bHpiQ01fcFFvcHljQkY4UV9LQTU4aW9pekVhV05KcWxLeEdyZGxTamc%22%7D%5D%7D%5D%7D",
                   "type": "application/linkset+json"
                 }
               ],
               "replies": [
                 {
-                  "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiDRfrx2UAy6wydaXceJL9hlpFQwTTuP_RIS5zm7J9sr2Q%22%2C%22id%22%3A%22hl%3AuEiAsmhY5seUU6LNsy30iJEjM-urZ4g_EPylBeXUTlzK33A%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F63384454-28f5-4dd9-9833-b7f79d9087a9%22%2C%22issuanceDate%22%3A%222022-08-09T14%3A16%3A17.653656394Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-09T14%3A16%3A17.656966342Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z4H9r9tgoSDVczeC5WSig5Mp4ASojXuzQJ9JTqm78GXKKpKUx2ETQSf1TUXLYU84Uq36Y6SaPzon4AstwqxyYRFRv%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23m0lkGe6apkR_uzrcBHsttLf-cMgCS-Z4_27Qt5kyRG0%22%7D%2C%7B%22created%22%3A%222022-08-09T14%3A16%3A17.824Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z5fBV9Dwac2c3rgg5adjpvWpWM57QuK5zh5FQXsn2Jr3bZyTd3G5ACwN23hiBUHFunJC73F28wg9AdYmXfzdHVjcJ%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23ipyFbnxMIbWJME8K1uvIp-UdrdVpyuQ9QjCCgnHHjFg%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
+                  "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22href%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F65a306e4-1f86-480c-9fbd-c5e627363f0d%22%2C%22issuanceDate%22%3A%222022-08-26T15%3A26%3A20.114938493Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-26T15%3A26%3A20.116657916Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z63YhBwGe5h5y3ChrjTCeSXxFNf98krSDCP3FGQDRSFFCFbC7BryMpR5gaboGiaqtDRY4tNqUSZPHHHDr7jT3jSzd%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23W51yCsfyP-3uyHi9BhTTd9qBzPM14YaQk2A0bCybRbU%22%7D%2C%7B%22created%22%3A%222022-08-26T15%3A26%3A20.243Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22zr7L6vWBgVBLwPsbGnd59RWiv2t96wvwHCgRwjvLo3D69mvKpmQx6XE9qL2vR7c92LNE8xL58BAbGLWJqVb9WJBW%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23c9lXUEfQVRceUV6FdwzzR19EMv4nZE-eopNnSmxum14%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
                   "type": "application/ld+json"
                 }
               ]
@@ -656,9 +680,9 @@ Response contains items from the first page:
           ]
         },
         "type": "AnchorEvent",
-        "url": "hl:uEiCP980v2AZbTgRmebFolD48LhE4u-yXzOoISRUJkUjToQ:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ1A5ODB2MkFaYlRnUm1lYkZvbEQ0OExoRTR1LXlYek9vSVNSVUprVWpUb1E"
+        "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c"
       },
-      "published": "2022-08-09T14:16:18.013015949Z",
+      "published": "2022-08-26T15:26:20.404295851Z",
       "to": [
         "https://orb.domain2.com/services/orb/followers",
         "https://www.w3.org/ns/activitystreams#Public"
@@ -923,7 +947,7 @@ Response contains page information:
 Request first page:
 
 ```
-GET /services/orb/likes/hl%3AuEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c?page=true&page-num=0 HTTP/1.1
+GET /services/orb/likes/hl%3AuEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c?page=true&page-num=0 HTTP/1.1
 Host: orb.domain1.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
@@ -934,24 +958,22 @@ Response contains items from the first page:
 ```json
 {
   "@context": "https://www.w3.org/ns/activitystreams",
-  "id": "https://orb.domain1.com/services/orb/likes/hl%3AuEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c?page=true&page-num=0",
-  "type": "OrderedCollectionPage",
-  "totalItems": 1,
+  "id": "https://orb.domain2.com/services/orb/likes/hl%3AuEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c?page=true&page-num=0",
   "orderedItems": [
     {
       "@context": "https://www.w3.org/ns/activitystreams",
       "actor": "https://orb.domain3.com/services/orb",
-      "id": "https://orb.domain3.com/services/orb/activities/15d19d44-003d-4bf9-8952-bd69c107435f",
+      "id": "https://orb.domain3.com/services/orb/activities/4880e2fc-972d-46db-bc19-c08dc8668da7",
       "object": {
         "@context": "https://w3id.org/activityanchors/v1",
         "type": "AnchorEvent",
-        "url": "hl:uEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c"
+        "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c"
       },
-      "published": "2022-03-22T13:26:23.1871399Z",
+      "published": "2022-08-26T15:26:21.171433692Z",
       "result": {
         "@context": "https://w3id.org/activityanchors/v1",
         "type": "AnchorEvent",
-        "url": "hl:uEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw:uoQ-BeEtodHRwczovL29yYi5kb21haW4zLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c"
+        "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-BeEtodHRwczovL29yYi5kb21haW4zLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c"
       },
       "to": [
         "https://orb.domain1.com/services/orb",
@@ -959,8 +981,31 @@ Response contains items from the first page:
         "https://www.w3.org/ns/activitystreams#Public"
       ],
       "type": "Like"
+    },
+    {
+      "@context": "https://www.w3.org/ns/activitystreams",
+      "actor": "https://orb.domain1.com/services/orb",
+      "id": "https://orb.domain1.com/services/orb/activities/5a053c65-eaed-4004-968b-2ead5f94a238",
+      "object": {
+        "@context": "https://w3id.org/activityanchors/v1",
+        "type": "AnchorEvent",
+        "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c"
+      },
+      "published": "2022-08-26T15:26:21.433750066Z",
+      "result": {
+        "@context": "https://w3id.org/activityanchors/v1",
+        "type": "AnchorEvent",
+        "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2d4QmlwZnM6Ly9iYWZrcmVpYWZqanVmd3pqZGJ5ZWs2Z2VvdHR1Z2ZtdXRqMno1dGk0dHoyaW1kbXc1ZjJ6dHJrb2JxaQ"
+      },
+      "to": [
+        "https://orb.domain2.com/services/orb",
+        "https://www.w3.org/ns/activitystreams#Public"
+      ],
+      "type": "Like"
     }
-  ]
+  ],
+  "totalItems": 2,
+  "type": "OrderedCollectionPage"
 }
 ```
 
@@ -1002,7 +1047,7 @@ Response contains page information:
 Request first page:
 
 ```
-GET /services/orb/shares/hl%3AuEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c?page=true HTTP/1.1
+GET /services/orb/shares/hl%3AuEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c?page=true HTTP/1.1
 Host: orb.domain3.com
 Accept: application/ld+json; profile="https://www.w3.org/ns/activitystreams"
 Accept-Encoding: gzip, deflate
@@ -1013,14 +1058,12 @@ Response contains items from the first page:
 ```json
 {
   "@context": "https://www.w3.org/ns/activitystreams",
-  "id": "https://orb.domain3.com/services/orb/shares/hl%3AuEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c?page=true&page-num=0",
-  "type": "OrderedCollectionPage",
-  "totalItems": 1,
+  "id": "https://orb.domain3.com/services/orb/shares/hl%3AuEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c?page=true&page-num=0",
   "orderedItems": [
     {
       "@context": "https://www.w3.org/ns/activitystreams",
       "actor": "https://orb.domain1.com/services/orb",
-      "id": "https://orb.domain1.com/services/orb/activities/2f1706dc-723f-4d73-82c9-6cd23cd21541",
+      "id": "https://orb.domain1.com/services/orb/activities/12922991-3170-4912-95b9-f077b61eaaec",
       "object": {
         "items": [
           {
@@ -1028,24 +1071,32 @@ Response contains items from the first page:
             "object": {
               "linkset": [
                 {
-                  "anchor": "hl:uEiAKItnt8OwHFrvlE5pmMEUe9PJgJCY9Hy085IKjdOzAjQ",
-                  "author": "https://orb.domain2.com/services/orb",
+                  "anchor": "hl:uEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog",
+                  "author": [
+                    {
+                      "href": "did:web:orb.domain2.com:services:orb"
+                    }
+                  ],
                   "original": [
                     {
-                      "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiA8itLUWN1bmNXCUuksDuYhgMu4COs-SxhZIVc-FszrmA%22%2C%22author%22%3A%22https%3A%2F%2Forb.domain2.com%2Fservices%2Forb%22%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiCAXMhVMMdJCUCzOGHYfrstd0jbEGvMD149hTJhXVJXJg%22%7D%5D%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D",
+                      "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuAAA%3AEiDO4M4BoSmK4wFL-sSmFBhOyjeWfb2IuDovY1hRov5Cgg%22%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
                       "type": "application/linkset+json"
                     }
                   ],
-                  "profile": "https://w3id.org/orb#v0",
+                  "profile": [
+                    {
+                      "href": "https://w3id.org/orb#v0"
+                    }
+                  ],
                   "related": [
                     {
-                      "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAKItnt8OwHFrvlE5pmMEUe9PJgJCY9Hy085IKjdOzAjQ%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiA8itLUWN1bmNXCUuksDuYhgMu4COs-SxhZIVc-FszrmA%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQThpdExVV04xYm1OWENVdWtzRHVZaGdNdTRDT3MtU3hoWklWYy1Gc3pybUE%22%7D%5D%7D%5D%7D",
+                      "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ2R4bHpiQ01fcFFvcHljQkY4UV9LQTU4aW9pekVhV05KcWxLeEdyZGxTamc%22%7D%5D%7D%5D%7D",
                       "type": "application/linkset+json"
                     }
                   ],
                   "replies": [
                     {
-                      "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%22hl%3AuEiAKItnt8OwHFrvlE5pmMEUe9PJgJCY9Hy085IKjdOzAjQ%22%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F0b4801ad-659f-4d61-8425-aeeff666c41d%22%2C%22issuanceDate%22%3A%222022-03-22T13%3A20%3A43.868323Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-03-22T13%3A20%3A43.8688649Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22xQPOX5sCv6WAHBXNiJw6VKZbEshxRI53ZpN6kNQplVeckoju0sBFfrU3Kih4xxKfSm7TlC950phc2VuPuG-oDA%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23YHyyBBDM0daarzg95h-91zCEh-Ud_Yjaa1YpQQZFscU%22%7D%2C%7B%22created%22%3A%222022-03-22T13%3A20%3A43.991Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22VT8Nm5yxz2Ihx_dlFas59PpyXFKFFqeX8jDa-lVDRKlmCcQTgCjRBbma4gIiVq0VHwPHi_VK6yd8yR0K56AHAw%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%2343p30zaA40c5_pRaz774EAsA1y2MY0PwFB1lBfiCfhA%22%7D%5D%2C%22type%22%3A%22VerifiableCredential%22%7D",
+                      "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiCdxlzbCM_pQopycBF8Q_KA58ioizEaWNJqlKxGrdlSjg%22%2C%22href%22%3A%22hl%3AuEiBu8_7A4JQ1l9cRkxrInZ-2cxgeuoerMOueXmRI-mmfog%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F65a306e4-1f86-480c-9fbd-c5e627363f0d%22%2C%22issuanceDate%22%3A%222022-08-26T15%3A26%3A20.114938493Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-26T15%3A26%3A20.116657916Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z63YhBwGe5h5y3ChrjTCeSXxFNf98krSDCP3FGQDRSFFCFbC7BryMpR5gaboGiaqtDRY4tNqUSZPHHHDr7jT3jSzd%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23W51yCsfyP-3uyHi9BhTTd9qBzPM14YaQk2A0bCybRbU%22%7D%2C%7B%22created%22%3A%222022-08-26T15%3A26%3A20.243Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22zr7L6vWBgVBLwPsbGnd59RWiv2t96wvwHCgRwjvLo3D69mvKpmQx6XE9qL2vR7c92LNE8xL58BAbGLWJqVb9WJBW%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23c9lXUEfQVRceUV6FdwzzR19EMv4nZE-eopNnSmxum14%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
                       "type": "application/ld+json"
                     }
                   ]
@@ -1053,20 +1104,22 @@ Response contains items from the first page:
               ]
             },
             "type": "AnchorEvent",
-            "url": "hl:uEiCwSSUKoJxrWj_A80KxPE6rM5XA0fhHRVoPX09uVddgSw:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQ3dTU1VLb0p4cldqX0E4MEt4UEU2ck01WEEwZmhIUlZvUFgwOXVWZGRnU3c"
+            "url": "hl:uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUZTbWhiWlNNT0NLOFlqcHpvWXJLVFRyUFpvNVBPa01HeTNTNnpPS25CZ2c"
           }
         ],
         "totalItems": 1,
         "type": "Collection"
       },
-      "published": "2022-03-22T13:20:44.3037905Z",
+      "published": "2022-08-26T15:26:20.787897406Z",
       "to": [
         "https://orb.domain1.com/services/orb/followers",
         "https://www.w3.org/ns/activitystreams#Public"
       ],
       "type": "Announce"
     }
-  ]
+  ],
+  "totalItems": 1,
+  "type": "OrderedCollectionPage"
 }
 ```
 
