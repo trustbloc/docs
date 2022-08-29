@@ -11,3 +11,4 @@ Orb
    vct/index.rst
    restendpoints/index.rst
    parameters.md
+   model/index.rst
