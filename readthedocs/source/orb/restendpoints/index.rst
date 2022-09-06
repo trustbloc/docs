@@ -6,6 +6,7 @@ REST Endpoints
 
    activitypub.md
    sidetree.md
+   did-web.md
    wellknown.md
    cas.md
    witness-policy.md
