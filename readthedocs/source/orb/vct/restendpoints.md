@@ -262,21 +262,21 @@ audit_path:  An array of base64-encoded Merkle Tree nodes proving the inclusion 
 
 ### Webfinger
 
-**Endpoint:** "/{alias}/.well-known/webfinger"
+**Endpoint:** "/.well-known/webfinger?resource={log-id}"
 
 Retrieve discovery information about VCT log.
 
 **Example**
 
 ```
-GET /maple2020/.well-known/webfinger HTTP/1.1
+GET /.well-known/webfinger?resource=https://witness.com/maple2020 HTTP/1.1
 Host: witness.com
 ```
 Output:
 
 ```json
 {
-  "subject": "/maple2020",
+  "subject": "https://witness.com/maple2020",
   "properties": {
     "https://trustbloc.dev/ns/ledger-type": "vct-v1",
     "https://trustbloc.dev/ns/public-key": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfCc/5CT+K59Dv7+r+MiVX+ARfMeFK9CwdLlicTyjoNJdhFfP4/wnVfXg+vLjrqBYFsYzgokTSTZBSk72WF1RrQ=="
@@ -284,7 +284,7 @@ Output:
   "links": [
     {
       "rel": "self",
-      "href": "/maple2020"
+      "href": "https://witness.com/maple2020"
     }
   ]
 }
