@@ -8,7 +8,7 @@ The [.well-known](https://datatracker.ietf.org/doc/html/rfc5785) endpoints are u
 
 ### GET
 
-***Example***
+#### Example
 
 Request:
 
@@ -33,7 +33,7 @@ Response:
 
 ### GET
 
-***Example***
+#### Example
 
 Request:
 
@@ -68,7 +68,7 @@ Response:
 
 ### GET
 
-***Example***
+#### Example
 
 Request:
 
@@ -102,7 +102,7 @@ Response:
 
 ### GET
 
-***Example***
+#### Example
 
 Request:
 
@@ -156,7 +156,91 @@ Response:
 
 ### GET
 
-***Example***
+#### Example #1
+
+Request information about the domain, including the VCT (if configured):
+
+```
+GET /.well-known/webfinger?resource=https://orb.domain1.com
+Host: orb.domain1.com
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "subject": "https://orb.domain1.com",
+  "properties": {
+    "https://trustbloc.dev/ns/ledger-type": "vct-v1"
+  },
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/jrd+json",
+      "href": "https://orb.domain1.com"
+    },
+    {
+      "rel": "vct",
+      "type": "application/jrd+json",
+      "href": "http://orb.vct:8077/maple2022"
+    }
+  ]
+}
+```
+
+#### Example #2
+
+Request information about the resolution endpoint:
+
+```
+GET /.well-known/webfinger?resource=https://orb.domain1.com/sidetree/v1/identifiers
+Host: orb.domain1.com
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "subject": "https://orb.domain1.com/sidetree/v1/identifiers",
+  "properties": {
+    "https://trustbloc.dev/ns/min-resolvers": 1
+  },
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://orb.domain1.com/sidetree/v1/identifiers"
+    }
+  ]
+}
+```
+
+#### Example #3
+
+Request information about the _operations_ endpoint:
+
+```
+GET /.well-known/webfinger?resource=https://orb.domain1.com/sidetree/v1/operations
+Host: orb.domain1.com
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "subject": "https://orb.domain1.com/sidetree/v1/operations",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://orb.domain1.com/sidetree/v1/operations"
+    }
+  ]
+}
+```
+
+#### Example #4
 
 Request information about a specific DID:
 
@@ -194,6 +278,36 @@ Response:
 }
 ```
 
+#### Example #5
+
+Request information about an [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) which also includes alternate links to the file:
+
+```
+GET /.well-known/webfinger?resource=https://orb.domain1.com/cas/uEiCYEQhiFYGnf74G6jcOz7tRdJ6xaA_eakBhsHxu0KJJBg
+Host: orb.domain1.com
+Accept: application/json
+```
+
+Response:
+
+```json
+{
+  "subject": "https://orb.domain1.com/cas/uEiCYEQhiFYGnf74G6jcOz7tRdJ6xaA_eakBhsHxu0KJJBg",
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/ld+json",
+      "href": "https://orb.domain1.com/cas/uEiCYEQhiFYGnf74G6jcOz7tRdJ6xaA_eakBhsHxu0KJJBg"
+    },
+    {
+      "rel": "alternate",
+      "type": "application/ld+json",
+      "href": "https://orb.domain2.com/cas/uEiCYEQhiFYGnf74G6jcOz7tRdJ6xaA_eakBhsHxu0KJJBg"
+    }
+  ]
+}
+```
+
 ## nodeinfo
 
 **Endpoint:** /.well-known/nodeinfo
@@ -202,7 +316,7 @@ Response:
 
 Returns the [NodeInfo](system.html#node-info-endpoints) endpoints that may be queried to provide general information about an Orb server.
 
-***Example***
+#### Example
 
 Request:
 

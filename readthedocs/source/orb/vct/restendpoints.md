@@ -260,7 +260,7 @@ audit_path:  An array of base64-encoded Merkle Tree nodes proving the inclusion 
 
 ## VCT Discovery and Administration Endpoints
 
-### Webfinger
+### WebFinger
 
 **Endpoint:** "/.well-known/webfinger?resource={log-id}"
 

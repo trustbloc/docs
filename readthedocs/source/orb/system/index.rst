@@ -10,7 +10,6 @@ System Services
    observer.md
    sidetree.md
    cas.md
-   discovery.md
    pubsub.md
    taskmanager.md
    onboardrecover.md

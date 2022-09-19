@@ -120,7 +120,7 @@ _WriteAnchor_ performs the following steps:
 
 1) Retrieves previous anchors for all DIDs in the batch
 2) Resolves the witnesses for the batch
-3) Creates an [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) containing the operations
+3) Creates an [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) containing the operations
 4) Posts an [Offer](activitypub.html#offer-accept) activity (containing the anchor linkset) to each of the witnesses
 
 ```{image} ../../_static/orb/write-anchor.svg

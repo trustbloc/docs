@@ -34,7 +34,7 @@ The 'broadcast' message handler performs the following steps:
 3) Resolves the inboxes of the URIs in the "to" field of the activity. This may involve retrieving URIs from the
   _followers_ or _witnesses_ collections. The ActivityPub
   [service](https://trustbloc.github.io/activityanchors/#actor-discovery) (actor) of each recipient URI is resolved via
-  WebFinger (see [Discovery](discovery.html#discovery)) and a result containing the resolved URI (and potentially
+  [.well-known](../restendpoints/wellknown.html#host-meta) and a result containing the resolved URI (and potentially
   an error) is returned for each resolved URI.
 
 Each result returned from the _Outbox Resolver_ contains a URI and potentially an error. For each result that does not
@@ -147,12 +147,12 @@ An [Offer](https://trustbloc.github.io/activityanchors/#offer-activity) activity
 contained in the _witnesses_ collection in order to collect proofs. (The selection of witnesses is dictated by a
 [Witness Policy](witnesspolicy.html#witness-policy) which determines the minimum number of proofs required.) When a server
 receives an Offer activity in its inbox, the request is first authorized by ensuring that the actor of the Offer is in the
-_witnessing_ collection. Once authorized, the [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent)
+_witnessing_ collection. Once authorized, the [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset)
 which is embedded in the Offer activity is added to the ledger (VCT) and an
 [Accept](https://trustbloc.github.io/activityanchors/#accept-anchor-activity) anchor activity (which contains the proof)
 is posted back to the originator of the offer. When an [Accept](https://trustbloc.github.io/activityanchors/#accept-anchor-activity)
 anchor activity is received in the inbox, the activity is first validated against a previously posted Offer activity
-and then the embedded proof for the [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) is
+and then the embedded proof for the [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) is
 added to the collection of existing proofs. Once a sufficient number of proofs is received (according to the
 [Witness Policy](witnesspolicy.html#witness-policy)) then a complete anchor linkset (containing all proofs) is
 constructed and the anchor linkset is posted to the queue, _orb.anchor_linkset_, to be processed by the
@@ -177,7 +177,7 @@ A [Create](https://trustbloc.github.io/activityanchors/#create-activity) activit
 [Batch Writer](batchwriter.html#batch-writer) to one or more servers that are contained in the *followers* collection.
 
 When a server receives a [Create](https://trustbloc.github.io/activityanchors/#create-activity) activity in its
-inbox, the [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) which is embedded in the Create
+inbox, the [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) which is embedded in the Create
 activity is first stored to CAS and then the hashlink of the anchor linkset is posted to the _orb.anchor_ queue so that
 it may be processed by the [Observer](observer.html#observer).
 After the Observer processes the anchor linkset, it posts a [Like](https://trustbloc.github.io/activityanchors/#like-activity)
@@ -185,7 +185,7 @@ activity back to the "actor" of the Create activity. The Create activity is also
 _followers_ collection using the [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity.
 
 When a server receives an [Announce](https://trustbloc.github.io/activityanchors/#announce-activity) activity in its
-inbox the [anchor linkset](https://trustbloc.github.io/activityanchors/#anchorevent) which is embedded in the
+inbox the [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) which is embedded in the
 Announce activity is first stored to CAS and then the hashlink of the anchor linkset is posted to the _orb.anchor_ queue
 so that it may be processed by the [Observer](observer.html#observer).
 After the Observer processes the anchor linkset, it posts a [Like](https://trustbloc.github.io/activityanchors/#like-activity)
@@ -200,8 +200,9 @@ activity back to the "actor" of the Announce activity as well as to the originat
 A [Like](https://trustbloc.github.io/activityanchors/#like-activity) activity is posted by the Observer after having
 processed an anchor linkset. The Like activity includes a "url" field which is a
 [hashlink](https://datatracker.ietf.org/doc/html/draft-sporny-hashlink). This hashlink contains metadata of one or
-more locations where the anchor is replicated. When a server receives the Like activity in its inbox, it adds the
-additional URIs to the _anchor link_ database.
+more locations where the anchor is replicated. (The alternate locations may be retrieved using
+[WebFinger](../restendpoints/wellknown.html#example-5).) When a server receives the Like activity in its inbox,
+it adds the additional URIs to the _anchor link_ database.
 
 ## Undo Like
 
