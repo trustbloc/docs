@@ -16,7 +16,7 @@ contains the DIDs that were anchored, as well as the hashlink of the previous an
 {
   "linkset": [
     {
-      "anchor": "hl:uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog",
+      "anchor": "hl:uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw",
       "profile": [
         {
           "href": "https://w3id.org/orb#v0"
@@ -29,33 +29,33 @@ contains the DIDs that were anchored, as well as the hashlink of the previous an
       ],
       "item": [
         {
-          "href": "did:orb:uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ:EiABTjLFJYbV80tR8nwyheMozeu5NuTKobEhXj-WXgDANA",
+          "href": "did:orb:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:EiBas5ylB1UYwcNZOvCAg-50hyaihmh5BRebYFBiCgUsRg",
           "previous": [
-            "hl:uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ"
+            "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng"
           ]
         },
         {
-          "href": "did:orb:uEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A:EiCE2TdITX7NDszm_hmfu7YpiqWPdWmXaSVkctWBiaqNCg",
+          "href": "did:orb:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:EiCL4-s0fCA7ULamCm5Zbo1at5W27ffmBbXX-U4W6mOFJA",
           "previous": [
-            "hl:uEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A"
+            "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng"
           ]
         },
         {
-          "href": "did:orb:uEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ:EiAxOHn7Vs9CPwywMGH_Ha-CUyRwUf7ecBx1DYgaU8HwAw",
+          "href": "did:orb:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:EiBB8tY0zZAwnuqLEKSv9sRFj6hHcJev1iV1R0Ul61pTJw",
           "previous": [
-            "hl:uEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ"
+            "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng"
           ]
         },
         {
-          "href": "did:orb:uEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA:EiAk24hZ3nERLuLXCMOf11Ugx-CAhmf_ONH2oJdVOc-A9A",
+          "href": "did:orb:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:EiCTkfxfFi0wQRJurizVRXrrXW8Bod7N2HvmmnPn07ah6Q",
           "previous": [
-            "hl:uEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA"
+            "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng"
           ]
         },
         {
-          "href": "did:orb:uEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g:EiBSdKwgA5Nl0x-lVbEhcVwZZKvGHO4S314yAzWiX5p2TQ",
+          "href": "did:orb:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:EiAzWwqSPwc0WljWhMAgR2W2P7aXChaZ3Y1MMv51lvVhmw",
           "previous": [
-            "hl:uEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g"
+            "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng"
           ]
         }
       ]
@@ -87,7 +87,7 @@ the profile, "https://w3id.org/orb#v0", indicates that the linkset was generated
 The _item_ relation contains an array of the DIDs that were created or updated. The "href" member contains the DID and
 the "previous" member contains the hashlink of the previous anchor (in the case where the DID was updated).
 
-NOTE: If a DID was created, then the "href" member contains a
+NOTE: If the DID was created, then the "href" member contains a
 [non-canonical](https://trustbloc.github.io/did-method-orb/#example-an-orb-did-without-anchoring-information) DID and
 the "previous" member is not present. In the case of a DID update, the DID is in the
 [canonical](https://trustbloc.github.io/did-method-orb/#example-a-canonical-orb-did) form and the "previous" attribute
@@ -104,7 +104,7 @@ whereas this document contains full hashlinks, including resolvable links to the
 {
   "linkset": [
     {
-      "anchor": "hl:uEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w",
+      "anchor": "hl:uEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw",
       "profile": [
         {
           "href": "https://w3id.org/orb#v0"
@@ -112,24 +112,12 @@ whereas this document contains full hashlinks, including resolvable links to the
       ],
       "up": [
         {
-          "href": "hl:uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFYwTS0xUVQ4a3lkQU9uUE1xUE05MU5tMHowdU5CVkFta0o5dzkwNTFwS1F4QmlwZnM6Ly9iYWZrcmVpZ3YyZGgza3FqN2V0ZTVhZHU0Nm12ZHp0M3Znend0aHV4ZGlma2F0amJoM3E2NWhobGpmZQ"
-        },
-        {
-          "href": "hl:uEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQjAxRW1CVDZZTGNVb3RkQjBhTGhrYkZSUUJjbjI3TmFGcEthYUtva3JMNkF4QmlwZnM6Ly9iYWZrcmVpZHUycmV5Y3Q1Z2JueXV1bGx1ZHVuYzRnaTNjdWthYzR0NXhtMjJjMmpqdTJma2Vzd2w1YQ"
-        },
-        {
-          "href": "hl:uEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQWNXSmJwdl83cTlxb3BqZGt6R3h6MG5FV0Y5bUFjWEpoRlRUS3J4bVZDdFF4QmlwZnM6Ly9iYWZrcmVpYTRsY2xvdHA3NjVsM2t1a21uM2V6cndoaHV0cmN5bDV0YWRyb2pxcmtuZ2t2NG16a2N3dQ"
-        },
-        {
-          "href": "hl:uEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQ3FvOE1pSi14MHN4aENuN0xnUTY4aHJrWVBNYkFmRklJMkJNdnRsUmVBQkF4QmlwZnM6Ly9iYWZrcmVpZmt1cGJzZWo3bW9zenJxcXU3d2xxZWhsemJ2emRhNm1ucWQ0a2llbnFlenB3emtmNGFhcQ"
-        },
-        {
-          "href": "hl:uEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlBmYWxnWUlCaHI5alFaUVhVc1pMSXpla3dSaGh1VEV6M1RVbW01S2YyX2c"
+          "href": "hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQkdDYS1OQUxHWUpZd3pmU0FmbmRhLXFHckZWck5SeUlzcFRfRDdUYUlDbmd4QmlwZnM6Ly9iYWZrcmVpY2diZ3h5MmFmcnRhc3l5bTM1ZWFwejN2djZ2YnZta3Z2dGtoZWl3a2twNmQ1dTNpcWN0eQ"
         }
       ],
       "via": [
         {
-          "href": "hl:uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQVFyYnp5bVZtNjZTc19nTHpicTk4Z2g3VC1xajBDUnFDQktYblg4R2REb2c"
+          "href": "hl:uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlNOMW9obFZ6TWF5SVUtaWIxLVRadEduS2h0MHQtSzFHZkpJNHd4LVdmV3c"
         }
       ]
     }
@@ -159,15 +147,15 @@ anchors that were referenced in the [Document Operation Batch](#document-operati
 of the anchor as well as one or more links to the data. For example:
 
 ```
-hl:uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFYwTS0xUVQ4a3lkQU9uUE1xUE05MU5tMHowdU5CVkFta0o5dzkwNTFwS1F4QmlwZnM6Ly9iYWZrcmVpZ3YyZGgza3FqN2V0ZTVhZHU0Nm12ZHp0M3Znend0aHV4ZGlma2F0amJoM3E2NWhobGpmZQ
+hl:uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng:uoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQkdDYS1OQUxHWUpZd3pmU0FmbmRhLXFHckZWck5SeUlzcFRfRDdUYUlDbmd4QmlwZnM6Ly9iYWZrcmVpY2diZ3h5MmFmcnRhc3l5bTM1ZWFwejN2djZ2YnZta3Z2dGtoZWl3a2twNmQ1dTNpcWN0eQ
 ```
 
-The above hashlink contains the resource hash, ```uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ```, and the following
+The above hashlink contains the resource hash, ```uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng```, and the following
 links to the anchor file:
 
 ```
-https://orb.domain1.com/cas/uEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ
-ipfs://bafkreigv2dh3kqj7ete5adu46mvdzt3vgzwthuxdifkatjbh3q65hhljfe
+https://orb.domain1.com/cas/uEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng
+ipfs://bafkreicgbgxy2afrtasyym35eapz3vv6vbvmkvvtkheiwkkp6d5u3iqcty
 ```
 
 #### Via Relation
@@ -176,13 +164,13 @@ The _via_ relation contains the [hashlink](https://datatracker.ietf.org/doc/html
 [core index file](https://identity.foundation/sidetree/spec/#core-index-file). For example:
 
 ```
-hl:uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQVFyYnp5bVZtNjZTc19nTHpicTk4Z2g3VC1xajBDUnFDQktYblg4R2REb2c
+hl:uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlNOMW9obFZ6TWF5SVUtaWIxLVRadEduS2h0MHQtSzFHZkpJNHd4LVdmV3c
 ```
 
-The hashlink above contains the hash of the core index file, ```uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog```, and a link to the file:
+The hashlink above contains the hash of the core index file, ```uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw```, and links to the core index file:
 
 ```
-https://orb.domain2.com/cas/uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog
+https://orb.domain2.com/cas/uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw
 ```
 
 ## Anchor Credential
@@ -195,37 +183,36 @@ The [Anchor Credential](https://trustbloc.github.io/activityanchors/#anchorcrede
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://w3id.org/activityanchors/v1",
-    "https://w3id.org/security/suites/jws-2020/v1",
     "https://w3id.org/security/suites/ed25519-2020/v1"
   ],
   "credentialSubject": {
-    "anchor": "hl:uEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog",
-    "href": "hl:uEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w",
+    "anchor": "hl:uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw",
+    "href": "hl:uEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw",
     "profile": "https://w3id.org/orb#v0",
     "rel": "linkset",
     "type": [
       "AnchorLink"
     ]
   },
-  "id": "https://orb.domain2.com/vc/bb50fd02-724f-4ea4-ab6e-2bc8f61b211c",
-  "issuanceDate": "2022-08-26T18:36:04.336599487Z",
+  "id": "https://orb.domain2.com/vc/57cf856f-e489-47dd-8f4e-65ea9524d6ea",
+  "issuanceDate": "2022-09-19T14:14:02.112016149Z",
   "issuer": "https://orb.domain2.com",
   "proof": [
     {
-      "created": "2022-08-26T18:36:04.341591867Z",
+      "created": "2022-09-19T14:14:02.112971919Z",
       "domain": "https://orb.domain2.com",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z3R5bT34npK3n5rG7VkQ3K4Fw19aHofZy7B3MbsMXfmzsC3NJsBVuBDVEq5GBEzuu9oxz27zE6QNy9hdHfSz9ANQV",
+      "proofValue": "z4XcMUCpMULRSEYWZkTpvCyyraR6fJ3YonufK5Feg5pxFHgTKazTbaLXZkpSsJFj2PVWjnx9JPU2z8ASbrPmiTkDi",
       "type": "Ed25519Signature2020",
-      "verificationMethod": "did:web:orb.domain2.com#xz4CY1jQeBDdrXESTL07YF9jdRrgYqG2wQglqVRpNrc"
+      "verificationMethod": "did:web:orb.domain2.com#VqRaibhCQnw06DZBffoiKPpNKTWYpVDsSk_PkQ9jPSk"
     },
     {
-      "created": "2022-08-26T18:36:05.466Z",
+      "created": "2022-09-19T14:14:02.198Z",
       "domain": "http://orb.vct:8077/maple2020",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z47QAfosLrSPFQz6AfWo41EqS2kPWb7RV5Epj93LWfM7FiXxHGMPnsM7kMHN7vZ7gk1n9ek25bU4M75QDPRvA69Zj",
+      "proofValue": "z2984NKGGSaSzzypMyA4DogiB7gz16nZvs3aHd1eEkg9SynNHWTt7ccFguwdPc6usKGxxhaXhdRvxwpPEo4arWRCq",
       "type": "Ed25519Signature2020",
-      "verificationMethod": "did:web:orb.domain1.com#-pwP-8YI7KBG-Nc-r29Qo_erYs0gY_vOjSZE0BdnDk8"
+      "verificationMethod": "did:web:orb.domain1.com#U8MGBdXnSkT35IBqx21m_ODAC0z3Z4sgLtwSL3JGRKQ"
     }
   ],
   "type": [
@@ -272,7 +259,7 @@ The Anchor Linkset is a document that links all of the above documents: [Documen
 {
   "linkset": [
     {
-      "anchor": "hl:uEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w",
+      "anchor": "hl:uEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw",
       "profile": [
         {
           "href": "https://w3id.org/orb#v0"
@@ -285,19 +272,19 @@ The Anchor Linkset is a document that links all of the above documents: [Documen
       ],
       "original": [
         {
-          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%3AEiABTjLFJYbV80tR8nwyheMozeu5NuTKobEhXj-WXgDANA%22%2C%22previous%22%3A%5B%22hl%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%3AEiCE2TdITX7NDszm_hmfu7YpiqWPdWmXaSVkctWBiaqNCg%22%2C%22previous%22%3A%5B%22hl%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%3AEiAxOHn7Vs9CPwywMGH_Ha-CUyRwUf7ecBx1DYgaU8HwAw%22%2C%22previous%22%3A%5B%22hl%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%3AEiAk24hZ3nERLuLXCMOf11Ugx-CAhmf_ONH2oJdVOc-A9A%22%2C%22previous%22%3A%5B%22hl%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%3AEiBSdKwgA5Nl0x-lVbEhcVwZZKvGHO4S314yAzWiX5p2TQ%22%2C%22previous%22%3A%5B%22hl%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%22%5D%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
+          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiBas5ylB1UYwcNZOvCAg-50hyaihmh5BRebYFBiCgUsRg%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiCL4-s0fCA7ULamCm5Zbo1at5W27ffmBbXX-U4W6mOFJA%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiBB8tY0zZAwnuqLEKSv9sRFj6hHcJev1iV1R0Ul61pTJw%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiCTkfxfFi0wQRJurizVRXrrXW8Bod7N2HvmmnPn07ah6Q%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiAzWwqSPwc0WljWhMAgR2W2P7aXChaZ3Y1MMv51lvVhmw%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
           "type": "application/linkset+json"
         }
       ],
       "related": [
         {
-          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22up%22%3A%5B%7B%22href%22%3A%22hl%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFYwTS0xUVQ4a3lkQU9uUE1xUE05MU5tMHowdU5CVkFta0o5dzkwNTFwS1F4QmlwZnM6Ly9iYWZrcmVpZ3YyZGgza3FqN2V0ZTVhZHU0Nm12ZHp0M3Znend0aHV4ZGlma2F0amJoM3E2NWhobGpmZQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQjAxRW1CVDZZTGNVb3RkQjBhTGhrYkZSUUJjbjI3TmFGcEthYUtva3JMNkF4QmlwZnM6Ly9iYWZrcmVpZHUycmV5Y3Q1Z2JueXV1bGx1ZHVuYzRnaTNjdWthYzR0NXhtMjJjMmpqdTJma2Vzd2w1YQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQWNXSmJwdl83cTlxb3BqZGt6R3h6MG5FV0Y5bUFjWEpoRlRUS3J4bVZDdFF4QmlwZnM6Ly9iYWZrcmVpYTRsY2xvdHA3NjVsM2t1a21uM2V6cndoaHV0cmN5bDV0YWRyb2pxcmtuZ2t2NG16a2N3dQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQ3FvOE1pSi14MHN4aENuN0xnUTY4aHJrWVBNYkFmRklJMkJNdnRsUmVBQkF4QmlwZnM6Ly9iYWZrcmVpZmt1cGJzZWo3bW9zenJxcXU3d2xxZWhsemJ2emRhNm1ucWQ0a2llbnFlenB3emtmNGFhcQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlBmYWxnWUlCaHI5alFaUVhVc1pMSXpla3dSaGh1VEV6M1RVbW01S2YyX2c%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQVFyYnp5bVZtNjZTc19nTHpicTk4Z2g3VC1xajBDUnFDQktYblg4R2REb2c%22%7D%5D%7D%5D%7D",
+          "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22up%22%3A%5B%7B%22href%22%3A%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQkdDYS1OQUxHWUpZd3pmU0FmbmRhLXFHckZWck5SeUlzcFRfRDdUYUlDbmd4QmlwZnM6Ly9iYWZrcmVpY2diZ3h5MmFmcnRhc3l5bTM1ZWFwejN2djZ2YnZta3Z2dGtoZWl3a2twNmQ1dTNpcWN0eQ%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlNOMW9obFZ6TWF5SVUtaWIxLVRadEduS2h0MHQtSzFHZkpJNHd4LVdmV3c%22%7D%5D%7D%5D%7D",
           "type": "application/linkset+json"
         }
       ],
       "replies": [
         {
-          "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%22%2C%22href%22%3A%22hl%3AuEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2Fbb50fd02-724f-4ea4-ab6e-2bc8f61b211c%22%2C%22issuanceDate%22%3A%222022-08-26T18%3A36%3A04.336599487Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-26T18%3A36%3A04.341591867Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z3R5bT34npK3n5rG7VkQ3K4Fw19aHofZy7B3MbsMXfmzsC3NJsBVuBDVEq5GBEzuu9oxz27zE6QNy9hdHfSz9ANQV%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23xz4CY1jQeBDdrXESTL07YF9jdRrgYqG2wQglqVRpNrc%22%7D%2C%7B%22created%22%3A%222022-08-26T18%3A36%3A05.466Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z47QAfosLrSPFQz6AfWo41EqS2kPWb7RV5Epj93LWfM7FiXxHGMPnsM7kMHN7vZ7gk1n9ek25bU4M75QDPRvA69Zj%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23-pwP-8YI7KBG-Nc-r29Qo_erYs0gY_vOjSZE0BdnDk8%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
+          "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%22%2C%22href%22%3A%22hl%3AuEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F57cf856f-e489-47dd-8f4e-65ea9524d6ea%22%2C%22issuanceDate%22%3A%222022-09-19T14%3A14%3A02.112016149Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-09-19T14%3A14%3A02.112971919Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z4XcMUCpMULRSEYWZkTpvCyyraR6fJ3YonufK5Feg5pxFHgTKazTbaLXZkpSsJFj2PVWjnx9JPU2z8ASbrPmiTkDi%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23VqRaibhCQnw06DZBffoiKPpNKTWYpVDsSk_PkQ9jPSk%22%7D%2C%7B%22created%22%3A%222022-09-19T14%3A14%3A02.198Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z2984NKGGSaSzzypMyA4DogiB7gz16nZvs3aHd1eEkg9SynNHWTt7ccFguwdPc6usKGxxhaXhdRvxwpPEo4arWRCq%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23U8MGBdXnSkT35IBqx21m_ODAC0z3Z4sgLtwSL3JGRKQ%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
           "type": "application/ld+json"
         }
       ]
@@ -358,7 +345,12 @@ other Orb domains. For example:
   "object": {
     "linkset": [
       {
-        "anchor": "hl:uEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w",
+        "anchor": "hl:uEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw",
+        "profile": [
+          {
+            "href": "https://w3id.org/orb#v0"
+          }
+        ],
         "author": [
           {
             "href": "did:web:orb.domain2.com:services:orb"
@@ -366,24 +358,19 @@ other Orb domains. For example:
         ],
         "original": [
           {
-            "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%3AEiABTjLFJYbV80tR8nwyheMozeu5NuTKobEhXj-WXgDANA%22%2C%22previous%22%3A%5B%22hl%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%3AEiCE2TdITX7NDszm_hmfu7YpiqWPdWmXaSVkctWBiaqNCg%22%2C%22previous%22%3A%5B%22hl%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%3AEiAxOHn7Vs9CPwywMGH_Ha-CUyRwUf7ecBx1DYgaU8HwAw%22%2C%22previous%22%3A%5B%22hl%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%3AEiAk24hZ3nERLuLXCMOf11Ugx-CAhmf_ONH2oJdVOc-A9A%22%2C%22previous%22%3A%5B%22hl%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%3AEiBSdKwgA5Nl0x-lVbEhcVwZZKvGHO4S314yAzWiX5p2TQ%22%2C%22previous%22%3A%5B%22hl%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%22%5D%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
+            "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%22%2C%22author%22%3A%5B%7B%22href%22%3A%22did%3Aweb%3Aorb.domain2.com%3Aservices%3Aorb%22%7D%5D%2C%22item%22%3A%5B%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiBas5ylB1UYwcNZOvCAg-50hyaihmh5BRebYFBiCgUsRg%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiCL4-s0fCA7ULamCm5Zbo1at5W27ffmBbXX-U4W6mOFJA%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiBB8tY0zZAwnuqLEKSv9sRFj6hHcJev1iV1R0Ul61pTJw%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiCTkfxfFi0wQRJurizVRXrrXW8Bod7N2HvmmnPn07ah6Q%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%2C%7B%22href%22%3A%22did%3Aorb%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AEiAzWwqSPwc0WljWhMAgR2W2P7aXChaZ3Y1MMv51lvVhmw%22%2C%22previous%22%3A%5B%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%22%5D%7D%5D%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%7D%5D%7D",
             "type": "application/linkset+json"
-          }
-        ],
-        "profile": [
-          {
-            "href": "https://w3id.org/orb#v0"
           }
         ],
         "related": [
           {
-            "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22up%22%3A%5B%7B%22href%22%3A%22hl%3AuEiDV0M-1QT8kydAOnPMqPM91Nm0z0uNBVAmkJ9w9051pKQ%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpRFYwTS0xUVQ4a3lkQU9uUE1xUE05MU5tMHowdU5CVkFta0o5dzkwNTFwS1F4QmlwZnM6Ly9iYWZrcmVpZ3YyZGgza3FqN2V0ZTVhZHU0Nm12ZHp0M3Znend0aHV4ZGlma2F0amJoM3E2NWhobGpmZQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiB01EmBT6YLcUotdB0aLhkbFRQBcn27NaFpKaaKokrL6A%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQjAxRW1CVDZZTGNVb3RkQjBhTGhrYkZSUUJjbjI3TmFGcEthYUtva3JMNkF4QmlwZnM6Ly9iYWZrcmVpZHUycmV5Y3Q1Z2JueXV1bGx1ZHVuYzRnaTNjdWthYzR0NXhtMjJjMmpqdTJma2Vzd2w1YQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiAcWJbpv_7q9qopjdkzGxz0nEWF9mAcXJhFTTKrxmVCtQ%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQWNXSmJwdl83cTlxb3BqZGt6R3h6MG5FV0Y5bUFjWEpoRlRUS3J4bVZDdFF4QmlwZnM6Ly9iYWZrcmVpYTRsY2xvdHA3NjVsM2t1a21uM2V6cndoaHV0cmN5bDV0YWRyb2pxcmtuZ2t2NG16a2N3dQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiCqo8MiJ-x0sxhCn7LgQ68hrkYPMbAfFII2BMvtlReABA%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQ3FvOE1pSi14MHN4aENuN0xnUTY4aHJrWVBNYkFmRklJMkJNdnRsUmVBQkF4QmlwZnM6Ly9iYWZrcmVpZmt1cGJzZWo3bW9zenJxcXU3d2xxZWhsemJ2emRhNm1ucWQ0a2llbnFlenB3emtmNGFhcQ%22%7D%2C%7B%22href%22%3A%22hl%3AuEiBPfalgYIBhr9jQZQXUsZLIzekwRhhuTEz3TUmm5Kf2_g%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlBmYWxnWUlCaHI5alFaUVhVc1pMSXpla3dSaGh1VEV6M1RVbW01S2YyX2c%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQVFyYnp5bVZtNjZTc19nTHpicTk4Z2g3VC1xajBDUnFDQktYblg4R2REb2c%22%7D%5D%7D%5D%7D",
+            "href": "data:application/json,%7B%22linkset%22%3A%5B%7B%22anchor%22%3A%22hl%3AuEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw%22%2C%22profile%22%3A%5B%7B%22href%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%7D%5D%2C%22up%22%3A%5B%7B%22href%22%3A%22hl%3AuEiBGCa-NALGYJYwzfSAfnda-qGrFVrNRyIspT_D7TaICng%3AuoQ-CeEtodHRwczovL29yYi5kb21haW4xLmNvbS9jYXMvdUVpQkdDYS1OQUxHWUpZd3pmU0FmbmRhLXFHckZWck5SeUlzcFRfRDdUYUlDbmd4QmlwZnM6Ly9iYWZrcmVpY2diZ3h5MmFmcnRhc3l5bTM1ZWFwejN2djZ2YnZta3Z2dGtoZWl3a2twNmQ1dTNpcWN0eQ%22%7D%5D%2C%22via%22%3A%5B%7B%22href%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%3AuoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQlNOMW9obFZ6TWF5SVUtaWIxLVRadEduS2h0MHQtSzFHZkpJNHd4LVdmV3c%22%7D%5D%7D%5D%7D",
             "type": "application/linkset+json"
           }
         ],
         "replies": [
           {
-            "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fjws-2020%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiAQrbzymVm66Ss_gLzbq98gh7T-qj0CRqCBKXnX8GdDog%22%2C%22href%22%3A%22hl%3AuEiBTUKyDwg-WB6BvZiCiw6joOBvwUzfWlZioR2zpuMCw7w%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2Fbb50fd02-724f-4ea4-ab6e-2bc8f61b211c%22%2C%22issuanceDate%22%3A%222022-08-26T18%3A36%3A04.336599487Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-08-26T18%3A36%3A04.341591867Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z3R5bT34npK3n5rG7VkQ3K4Fw19aHofZy7B3MbsMXfmzsC3NJsBVuBDVEq5GBEzuu9oxz27zE6QNy9hdHfSz9ANQV%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23xz4CY1jQeBDdrXESTL07YF9jdRrgYqG2wQglqVRpNrc%22%7D%2C%7B%22created%22%3A%222022-08-26T18%3A36%3A05.466Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z47QAfosLrSPFQz6AfWo41EqS2kPWb7RV5Epj93LWfM7FiXxHGMPnsM7kMHN7vZ7gk1n9ek25bU4M75QDPRvA69Zj%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23-pwP-8YI7KBG-Nc-r29Qo_erYs0gY_vOjSZE0BdnDk8%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
+            "href": "data:application/json,%7B%22%40context%22%3A%5B%22https%3A%2F%2Fwww.w3.org%2F2018%2Fcredentials%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Factivityanchors%2Fv1%22%2C%22https%3A%2F%2Fw3id.org%2Fsecurity%2Fsuites%2Fed25519-2020%2Fv1%22%5D%2C%22credentialSubject%22%3A%7B%22anchor%22%3A%22hl%3AuEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw%22%2C%22href%22%3A%22hl%3AuEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw%22%2C%22profile%22%3A%22https%3A%2F%2Fw3id.org%2Forb%23v0%22%2C%22rel%22%3A%22linkset%22%2C%22type%22%3A%5B%22AnchorLink%22%5D%7D%2C%22id%22%3A%22https%3A%2F%2Forb.domain2.com%2Fvc%2F57cf856f-e489-47dd-8f4e-65ea9524d6ea%22%2C%22issuanceDate%22%3A%222022-09-19T14%3A14%3A02.112016149Z%22%2C%22issuer%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proof%22%3A%5B%7B%22created%22%3A%222022-09-19T14%3A14%3A02.112971919Z%22%2C%22domain%22%3A%22https%3A%2F%2Forb.domain2.com%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z4XcMUCpMULRSEYWZkTpvCyyraR6fJ3YonufK5Feg5pxFHgTKazTbaLXZkpSsJFj2PVWjnx9JPU2z8ASbrPmiTkDi%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain2.com%23VqRaibhCQnw06DZBffoiKPpNKTWYpVDsSk_PkQ9jPSk%22%7D%2C%7B%22created%22%3A%222022-09-19T14%3A14%3A02.198Z%22%2C%22domain%22%3A%22http%3A%2F%2Forb.vct%3A8077%2Fmaple2020%22%2C%22proofPurpose%22%3A%22assertionMethod%22%2C%22proofValue%22%3A%22z2984NKGGSaSzzypMyA4DogiB7gz16nZvs3aHd1eEkg9SynNHWTt7ccFguwdPc6usKGxxhaXhdRvxwpPEo4arWRCq%22%2C%22type%22%3A%22Ed25519Signature2020%22%2C%22verificationMethod%22%3A%22did%3Aweb%3Aorb.domain1.com%23U8MGBdXnSkT35IBqx21m_ODAC0z3Z4sgLtwSL3JGRKQ%22%7D%5D%2C%22type%22%3A%5B%22VerifiableCredential%22%2C%22AnchorCredential%22%5D%7D",
             "type": "application/ld+json"
           }
         ]
@@ -391,7 +378,7 @@ other Orb domains. For example:
     ]
   },
   "type": "AnchorEvent",
-  "url": "hl:uEiAH2Ea3QeUN8BEYhEsXGWWoY5JlYg767mxmYkSY4EcyjA:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUgyRWEzUWVVTjhCRVloRXNYR1dXb1k1SmxZZzc2N214bVlrU1k0RWN5akE"
+  "url": "hl:uEiA6I-h4ojz79jsieYNzRRlcOOlv7wpFl0gMEQDvBhRgDA:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQTZJLWg0b2p6Nzlqc2llWU56UlJsY09PbHY3d3BGbDBnTUVRRHZCaFJnREE"
 }
 ```
 
@@ -399,11 +386,11 @@ The "object" field contains the [Anchor Linkset](#anchor-linkset) and the "url" 
 the links to the Anchor Linkset. For example:
 
 ```
-hl:uEiAH2Ea3QeUN8BEYhEsXGWWoY5JlYg767mxmYkSY4EcyjA:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQUgyRWEzUWVVTjhCRVloRXNYR1dXb1k1SmxZZzc2N214bVlrU1k0RWN5akE
+hl:uEiA6I-h4ojz79jsieYNzRRlcOOlv7wpFl0gMEQDvBhRgDA:uoQ-BeEtodHRwczovL29yYi5kb21haW4yLmNvbS9jYXMvdUVpQTZJLWg0b2p6Nzlqc2llWU56UlJsY09PbHY3d3BGbDBnTUVRRHZCaFJnREE
 ```
 
-The hashlink above contains the multihash of the Anchor Linkset, ```uEiAH2Ea3QeUN8BEYhEsXGWWoY5JlYg767mxmYkSY4EcyjA``` and a link to the file:
+The hashlink above contains the multihash of the Anchor Linkset, ```uEiA6I-h4ojz79jsieYNzRRlcOOlv7wpFl0gMEQDvBhRgDA``` and a link to the file:
 
 ```
-https://orb.domain2.com/cas/uEiAH2Ea3QeUN8BEYhEsXGWWoY5JlYg767mxmYkSY4EcyjA
+https://orb.domain2.com/cas/uEiA6I-h4ojz79jsieYNzRRlcOOlv7wpFl0gMEQDvBhRgDA
 ```
