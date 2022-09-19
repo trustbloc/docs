@@ -173,7 +173,7 @@ The hashlink above contains the hash of the core index file, ```uEiBSN1ohlVzMayI
 https://orb.domain2.com/cas/uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw
 ```
 
-## Anchor Credential
+## Anchor Credential Document
 
 The [Anchor Credential](https://trustbloc.github.io/activityanchors/#anchorcredential) document is a
 [Verifiable Credential](https://www.w3.org/TR/vc-data-model/) containing witness proofs. For example:
@@ -250,10 +250,10 @@ The _href_ member contains the target IRI, which is the hash of the [canonicaliz
 The _rel_ relation describes the type of the target object. In this case we use "linkset" since the target (href) is the
 [Document Operation Batch](#document-operation-batch) linkset.
 
-## Anchor Linkset
+## Anchor Linkset Document
 
 The Anchor Linkset is a document that links all of the above documents: [Document Operation Batch](#document-operation-batch),
-[Related Links](#related-links-document), and [Anchor Credential](#anchor-credential). For example:
+[Related Links](#related-links-document), and [Anchor Credential](#anchor-credential-document). For example:
 
 ```json
 {
@@ -327,7 +327,7 @@ href and pasting it into a browser.
 
 ### Replies Relation
 
-The _replies_ relation links to the [Anchor Credential](#anchor-credential). In the above example anchor linkset,
+The _replies_ relation links to the [Anchor Credential Document](#anchor-credential-document). In the above example anchor linkset,
 a [data URL](https://datatracker.ietf.org/doc/html/rfc2397) is used for the target of this relation such that the anchor
 credential is embedded in the href. NOTE: The contents of the data URL may be resolved by copying the href and pasting
 it into a browser.

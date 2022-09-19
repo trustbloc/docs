@@ -9,7 +9,7 @@ Returns content stored in the Content Addressable Storage (CAS). The ID is eithe
 
 **Example**
 
-Request an [Anchor Linkset](https://trustbloc.github.io/activityanchors/#anchorlinkset) using its hash as the ID:
+Request an [Anchor Linkset](../model/anchorlinkset.html#anchor-linkset) using its hash as the ID:
 
 ```
 GET /cas/uEiAFSmhbZSMOCK8YjpzoYrKTTrPZo5POkMGy3S6zOKnBgg HTTP/1.1

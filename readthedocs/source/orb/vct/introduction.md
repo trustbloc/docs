@@ -64,7 +64,7 @@ See [get-proof-by-hash](restendpoints.html#retrieve-merkle-audit-proof-from-log-
 
 ## VCT Discovery and Administration 
 
-### Webfinger
+### WebFinger
 
 Retrieve discovery information about VCT log.
 
