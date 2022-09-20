@@ -101,22 +101,6 @@ DID Namespace.
 
 The type of the Content Addressable Storage (CAS). Supported options: local, ipfs.
 
-### anchor-credential-issuer
-
-| Arg                        | Env                      |
-|----------------------------|--------------------------|
-| --anchor-credential-issuer | ANCHOR_CREDENTIAL_ISSUER |
-
-Anchor credential issuer (required).
-
-### anchor-credential-url
-
-| Arg                     | Env                    |
-|-------------------------|------------------------|
-| --anchor-credential-url | ANCHOR_CREDENTIAL_URL  |
-
-Anchor credential url (required).
-
 ### anchor-credential-signature-suite
 
 | Arg                                 | Env                                 |

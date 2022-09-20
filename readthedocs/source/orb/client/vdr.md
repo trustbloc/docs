@@ -67,11 +67,11 @@ func WithUnanchoredMaxLifeTime(duration time.Duration) Option
 WithVerifyResolutionResultType option is set verify resolution result type.
 
 VerifyResolutionResultType Types:
-* All: will not trust server and verify provided resolution result from server against resolution result that is assembled
+- ***All***: Will not trust server and verify provided resolution result from server against resolution result that is assembled
   from published (DID anchored) and unpublished (DID not anchored yet) operations.
-* Unpublished: will not trust server and verify provided resolution result from server against resolution result that is assembled
+- ***Unpublished***: Will not trust server and verify provided resolution result from server against resolution result that is assembled
   from unpublished operations (DID not anchored yet).
-* None: will trust server and not verify document.
+- ***None***: Will trust server and not verify document.
 
 ```
 func WithVerifyResolutionResultType(v VerifyResolutionResultType) Option 
