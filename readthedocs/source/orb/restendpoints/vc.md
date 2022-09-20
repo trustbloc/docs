@@ -25,33 +25,33 @@ Response contains the verifiable credential:
     "https://w3id.org/security/suites/ed25519-2020/v1"
   ],
   "credentialSubject": {
-    "anchor": "hl:uEiBSN1ohlVzMayIU-ib1-TZtGnKht0t-K1GfJI4wx-WfWw",
-    "href": "hl:uEiAirtU3PmCxBQI_obHgUP6FmJLNkoZ6PLHOKQIGBbQHyw",
+    "anchor": "hl:uEiCJYS5Jin-3ZSwBT_RT0c0zZ0Z6B3_o0ddDDCMZXlUxAQ",
+    "href": "hl:uEiAIMnHwbdHbpWbL3OlruU1xtqW-Potpi0bW0ioXFCZ94w",
     "profile": "https://w3id.org/orb#v0",
     "rel": "linkset",
     "type": [
       "AnchorLink"
     ]
   },
-  "id": "https://orb.domain2.com/vc/57cf856f-e489-47dd-8f4e-65ea9524d6ea",
-  "issuanceDate": "2022-09-19T14:14:02.112016149Z",
-  "issuer": "https://orb.domain2.com",
+  "id": "https://orb.domain5.com/vc/2a649ce3-3412-4ca7-953c-bf89e333c3db",
+  "issuanceDate": "2022-09-20T20:57:11.776289881Z",
+  "issuer": "did:web:orb.domain5.com:services:anchor",
   "proof": [
     {
-      "created": "2022-09-19T14:14:02.112971919Z",
-      "domain": "https://orb.domain2.com",
+      "created": "2022-09-20T20:57:11.782036216Z",
+      "domain": "https://orb.domain5.com",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z4XcMUCpMULRSEYWZkTpvCyyraR6fJ3YonufK5Feg5pxFHgTKazTbaLXZkpSsJFj2PVWjnx9JPU2z8ASbrPmiTkDi",
+      "proofValue": "z3VUDMo8tksYYD14crKHQx7HZLtJPwi7V4g2az1puHDhRYxTXSFQ3a2Qch7Az8niyQ1TXdKKaWzjvXoYNFUbJJmr9",
       "type": "Ed25519Signature2020",
-      "verificationMethod": "did:web:orb.domain2.com#VqRaibhCQnw06DZBffoiKPpNKTWYpVDsSk_PkQ9jPSk"
+      "verificationMethod": "did:web:orb.domain5.com#H72rWxdnDTaf69z2OkDLUG0z7XtFkBY_WmG9__U060Y"
     },
     {
-      "created": "2022-09-19T14:14:02.198Z",
+      "created": "2022-09-20T20:57:11.966Z",
       "domain": "http://orb.vct:8077/maple2020",
       "proofPurpose": "assertionMethod",
-      "proofValue": "z2984NKGGSaSzzypMyA4DogiB7gz16nZvs3aHd1eEkg9SynNHWTt7ccFguwdPc6usKGxxhaXhdRvxwpPEo4arWRCq",
+      "proofValue": "z54WJu6r64W6Fq4LfiVzojHYHkwo4aVEMQ1KA15XYUhqwZPFwByqeV9Dwi3UPFPfKUsUsVUh92edAD1nGsd6n2nf6",
       "type": "Ed25519Signature2020",
-      "verificationMethod": "did:web:orb.domain1.com#U8MGBdXnSkT35IBqx21m_ODAC0z3Z4sgLtwSL3JGRKQ"
+      "verificationMethod": "did:web:orb.domain1.com#K3CezR1_tXyZSNbgdFbikNxkPCypfZ1bcJFh9NcsJlk"
     }
   ],
   "type": [
