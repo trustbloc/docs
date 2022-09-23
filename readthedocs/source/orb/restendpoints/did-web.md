@@ -26,7 +26,6 @@ Response:
     "https://w3id.org/security/suites/ed25519-2018/v1"
   ],
   "alsoKnownAs": [
-    "https://myblog.example/",
     "did:orb:uEiDDV4Yn9wx0c5dlrYT90TsjB6fg2Gc6x91X1gG3O5oJIA:EiCNuOisUYmxNfT2HugwwMYQAyzLr9FxI7tbT3eb5r3mFQ",
     "did:orb:hl:uEiDDV4Yn9wx0c5dlrYT90TsjB6fg2Gc6x91X1gG3O5oJIA:uoQ-BeEtodHRwczovL29yYi5kb21haW4zLmNvbS9jYXMvdUVpRERWNFluOXd4MGM1ZGxyWVQ5MFRzakI2ZmcyR2M2eDkxWDFnRzNPNW9KSUE:EiCNuOisUYmxNfT2HugwwMYQAyzLr9FxI7tbT3eb5r3mFQ"
   ],
