@@ -113,13 +113,26 @@ Anchor credential signature suite (required).
 
 Below are the optional parameters for an Orb server. If not specified then the default value is used.
 
-### host-metrics-url
+### metrics-provider-name
 
-| Arg                | Env                  | Default |
-|--------------------|----------------------|---------|
-| --host-metrics-url | ORB_HOST_METRICS_URL |         |
+| Arg                     | Env                       | Default |
+|-------------------------|---------------------------|---------|
+| --metrics-provider-name | ORB_METRICS_PROVIDER_NAME |         |
 
-URL that exposes the metrics endpoint. Format: HostName:Port.
+The name of the metrics provider. If not set then metrics are not gathered.
+
+Valid values:
+
+- prometheus - [Prometheus](https://prometheus.io/) metrics provider. Parameter [prom-http-url](#prom-http-url) must be set.
+
+### prom-http-url
+
+| Arg              | Env               | Default |
+|------------------|-------------------|---------|
+| --prom-http-url  | ORB_PROM_HTTP_URL |         |
+
+URL that exposes the Prometheus metrics endpoint. Format: host:port. A [Prometheus](https://prometheus.io/) server
+may be used to periodically read the metrics at this URL. (Note that the metrics endpoint would be at http://host:port/metrics.)
 
 ### sync-timeout
 
