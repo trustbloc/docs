@@ -687,6 +687,21 @@ The maximum page size for an ActivityPub collection or ordered collection.
 
 Set to "true" to enable dev mode. When dev mode is enabled, no TLS is used.
 
+### enable-maintenance-mode
+
+| Arg                        | Env                      | Default |
+|----------------------------|--------------------------|---------|
+| --enable-maintenance-mode  | MAINTENANCE_MODE_ENABLED | false   |
+
+Set to "true" to enable maintenance mode.
+
+When maintenance mode is enabled:
+
+1) Health check returns status OK (200) even if errors are detected
+2) Sidetree operations and resolution endpoints are not available (503)
+3) Activity pub inbox is not available (503)
+
+
 ### nodeinfo-refresh-interval
 
 | Arg                         | Env                        | Default |
