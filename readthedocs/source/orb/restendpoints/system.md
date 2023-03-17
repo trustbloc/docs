@@ -327,7 +327,6 @@ orb_activitypub_inbox_handler_seconds_bucket{type="InviteWitness",le="0.01"} 0
 . . .
 ```
 
-
 ## Health Check Endpoint
 
 **Endpoint:** /healthcheck
@@ -373,4 +372,47 @@ Response:
   "kmsStatus": "success",
   "currentTime": "2022-06-24T20:10:43.0115373Z"
 }
+```
+
+## Log Levels Endpoint
+
+**Endpoint:** /loglevels
+
+The log levels endpoint allows you to dynamically update the log levels of individual modules and/or to change the default log level.
+The format of the spec is as follows:
+
+```text
+module1=level1:module2=level2:module3=level3:defaultLevel
+```
+
+Valid log levels are: error, warning, info, debug.
+
+### GET
+
+**Example**
+
+Request:
+
+```
+GET /loglevels HTTP/1.1
+Host: orb.domain1.com
+Accept: text/plain
+```
+
+Response:
+
+```text
+activitypub_store=INFO:expiry-service=INFO:task-manager=INFO:watermill=INFO:DEBUG
+```
+
+### POST
+
+**Example**
+
+```
+POST /loglevels HTTP/1.1
+Host: orb.domain1.com
+Content-Type: text/plain
+
+activitypub_store=INFO:expiry-service=INFO:task-manager=INFO:watermill=INFO:DEBUG
 ```

@@ -873,3 +873,52 @@ Comma-separated list of Sidetree protocol versions.
 | --current-sidetree-protocol-version | CURRENT_SIDETREE_PROTOCOL_VERSION |         |
 
 One of available Sidetree protocol versions. Defaults to latest Sidetree protocol version.
+
+### log-level
+
+| Arg         | Env        | Default |
+|-------------|------------|---------|
+| --log-level | LOG_LEVEL  | INFO    |
+
+Sets the log levels for individual modules as well as the default log level. The format of the spec is as follows:
+
+```text
+module1=level1:module2=level2:module3=level3:defaultLevel
+```
+
+Valid log levels are: error, warning, info, debug.
+
+**Example:**
+
+```text
+activitypub_store=INFO:expiry-service=INFO:task-manager=INFO:watermill=INFO:DEBUG
+```
+
+### tracing-provider
+
+| Arg                 | Env                  | Default |
+|---------------------|----------------------|---------|
+| --tracing-provider  | ORB_TRACING_PROVIDER |         |
+
+The name of the tracing provider. If not set then tracing is disabled.
+
+Valid values:
+
+- JAEGER - [Jaeger](https://www.jaegertracing.io/) tracing provider. Parameter [tracing-collector-url](#tracing-collector-url) must be set.
+
+### tracing-collector-url
+
+| Arg                      | Env                       | Default |
+|--------------------------|---------------------------|---------|
+| --tracing-collector-url  | ORB_TRACING_COLLECTOR_URL |         |
+
+URL to which tracing data is sent.
+
+
+### tracing-service-name
+
+| Arg                     | Env                      | Default |
+|-------------------------|--------------------------|---------|
+| --tracing-service-name  | ORB_TRACING_SERVICE_NAME | orb     |
+
+The name of the service as will be displayed in the tracing console.
