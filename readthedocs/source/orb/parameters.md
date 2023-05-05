@@ -405,6 +405,14 @@ The maximum delay for a redelivery.
 
 The size of the operation queue subscriber pool. If <=1 then a pool will not be created.
 
+### mq-anchor-linkset-pool
+
+| Arg                      | Env                    | Default |
+|--------------------------|------------------------|---------|
+| --mq-anchor-linkset-pool | MQ_ANCHOR_LINKSET_POOL | 5       |
+
+The size of the anchor-linkset subscriber pool. If <=1 then a pool will not be created.
+
 ### op-queue-task-monitor-interval
 
 | Arg                              | Env                            | Default |
