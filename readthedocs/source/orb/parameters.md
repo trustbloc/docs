@@ -397,11 +397,11 @@ redelivery interval was 2s then the next redelivery interval is set 3s.
 
 The maximum delay for a redelivery.
 
-### op-queue-pool
+### mq-opqueue-pool
 
-| Arg             | Env           | Default  |
-|-----------------|---------------|----------|
-| --op-queue-pool | OP_QUEUE_POOL | 5        |
+| Arg               | Env             | Default  |
+|-------------------|-----------------|----------|
+| --mq-opqueue-pool | MQ_OPQUEUE_POOL | 5        |
 
 The size of the operation queue subscriber pool. If <=1 then a pool will not be created.
 
@@ -415,13 +415,30 @@ The interval (period) in which operation queue tasks from other server instances
 
 ### op-queue-task-expiration
 
-| Arg                        | Env                      | Default |
-|----------------------------|--------------------------|---------|
-| --op-queue-task-expiration | OP_QUEUE_TASK_EXPIRATION | 30s     |
+| Arg                        | Env                      | Default                           |
+|----------------------------|--------------------------|-----------------------------------|
+| --op-queue-task-expiration | OP_QUEUE_TASK_EXPIRATION | 3X op-queue-task-monitor-interval |
 
 The maximum time that an operation queue task can exist in the database before it is considered to have expired.
 Once expired, any other server instance may delete the task and repost operations associated with the task
 to the queue, so that they will be processed by another Orb instance.
+
+### op-queue-operation-lifespan
+
+| Arg                           | Env                         | Default |
+|-------------------------------|-----------------------------|---------|
+| --op-queue-operation-lifespan | OP_QUEUE_OPERATION_LIFESPAN | 24h     |
+
+The maximum time that an operation can exist in the database before it is deleted.
+
+### op-queue-max-ops-to-repost
+
+| Arg                           | Env                        | Default |
+|-------------------------------|----------------------------|---------|
+| --op-queue-max-ops-to-repost  | OP_QUEUE_MAX_OPS_TO_REPOST | 10,000  |
+
+The maximum number of operations to repost (in a single task run) to the queue after an instance dies. The next time
+the task runs, another batch of operations will be reposted.
 
 ### cid-version
 
