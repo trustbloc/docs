@@ -158,6 +158,14 @@ Enables setting VCT log. If enabled VCT URL has to be configured via cli log com
 
 The interval in which VCTs are monitored to ensure that proofs are anchored.
 
+### vct-proof-monitoring-max-records
+
+| Arg                                 | Env                               | Default |
+|-------------------------------------|-----------------------------------|---------|
+| --vct-proof-monitoring-max-records  | VCT_PROOF_MONITORING_MAX_RECORDS  | 500     |
+
+The maximum number of VCT records to check in a single monitoring interval.
+
 ### vct-log-monitoring-interval
 
 | Arg                           | Env                         | Default |
@@ -207,6 +215,14 @@ policy.
 | --anchor-status-in-process-grace-period | ANCHOR_STATUS_IN_PROCESS_GRACE_PERIOD | 30s     |
 
 The period in which witnesses will not be re-selected for 'in-process' anchors.
+
+### anchor-status-max-records
+
+| Arg                          | Env                        | Default |
+|------------------------------|----------------------------|---------|
+| --anchor-status-max-records  | ANCHOR_STATUS_MAX_RECORDS  | 500     |
+
+The maximum number of anchor status records to process per monitoring interval.
 
 ### kms-store-endpoint
 
@@ -447,6 +463,22 @@ The maximum time that an operation can exist in the database before it is delete
 
 The maximum number of operations to repost (in a single task run) to the queue after an instance dies. The next time
 the task runs, another batch of operations will be reposted.
+
+### op-queue-max-contiguous-operations-with-err
+
+| Arg                                            | Env                                          | Default |
+|------------------------------------------------|----------------------------------------------|---------|
+| --op-queue-max-contiguous-operations-with-err  | OP_QUEUE_MAX_CONTIGUOUS_OPERATIONS_WITH_ERR  | 10,000  |
+
+The maximum number of operations in the operation queue that are flagged with an error that should be grouped contiguously during defragmentation.
+
+### op-queue-max-contiguous-operations-without-err
+
+| Arg                                               | Env                                             | Default |
+|---------------------------------------------------|-------------------------------------------------|---------|
+| --op-queue-max-contiguous-operations-without-err  | OP_QUEUE_MAX_CONTIGUOUS_OPERATIONS_WITHOUT_ERR  | 10,000  |
+
+maximum number of operations in the operation queue that are NOT flagged with an error that should be grouped contiguously during defragmentation.
 
 ### cid-version
 
@@ -819,10 +851,27 @@ The interval in which anchor events are synchronized with other services that th
 
 | Arg                     | Env                                 | Default |
 |-------------------------|-------------------------------------|---------|
-| --sync-min-activity-age | ANCHOR_EVENT_SYNC_MIN_ACTIVITY_AGE  | 1m      |
+| --sync-min-activity-age | ANCHOR_EVENT_SYNC_MIN_ACTIVITY_AGE  | 10m     |
 
 The minimum age of an anchor activity to be synchronized. The activity will be processed only if its age is
-greater than this value. Defaults to 1m if not set.
+greater than this value.
+
+### sync-max-activities
+
+| Arg                     | Env                               | Default |
+|-------------------------|-----------------------------------|---------|
+| --sync-max-activities   | ANCHOR_EVENT_SYNC_MAX_ACTIVITIES  | 500     |
+
+The maximum number of activities to be synchronized in a single task run.
+
+### sync-accelerated-interval
+
+| Arg                          | Env                                     | Default |
+|------------------------------|-----------------------------------------|---------|
+| --sync-accelerated-interval  | ANCHOR_EVENT_SYNC_ACCELERATED_INTERVAL  | 15s     |
+
+The interval in which to run the activity sync task after the maximum number of activities (specified by sync-max-activities)
+have been processed for the current task run. This should be smaller than the default interval in order to accelerate processing.
 
 ### apclient-cache-size
 
@@ -871,6 +920,14 @@ The idle timeout for the HTTP server. For example, '30s' for a 30 second timeout
 | --witness-policy-cache-expiration | WITNESS_POLICY_CACHE_EXPIRATION  | 30s     |
 
 The expiration time(period) of witness policy cache. Default value is 30s.
+
+### anchor-ref-pending-record-lifespan
+
+| Arg                                   | Env                                 | Default |
+|---------------------------------------|-------------------------------------|---------|
+| --anchor-ref-pending-record-lifespan  | ANCHOR_REF_PENDING_RECORD_LIFESPAN  | 24h     |
+
+The lifespan of an anchor reference in PENDING state.
 
 ### anchor-data-uri-media-type
 
